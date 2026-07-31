@@ -38,7 +38,7 @@
 **接口：** SD 标准对接接口
 
 ### 货柜预览截图：
-![[../../../AUI-Atlas-SD-S.png]]
+![AUI Atlas 标准货柜 S 型](../../../assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-S.png)
 
 ##### 货柜模板基础参数
 >以下为货柜定义的通用基础数值。
@@ -87,7 +87,7 @@
 **接口：** SD 标准对接接口
 
 ### 货柜预览截图：
-![[../../../AUI-Atlas-SD-M.png]]
+![AUI Atlas 标准货柜 M 型](../../../assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-M.png)
 
 ##### 货柜模板基础参数
 >以下为货柜定义的通用基础数值。
@@ -131,7 +131,7 @@
 **接口：** SD 标准对接接口
 
 ### 货柜预览截图：
-![[../../../AUI-Atlas-SD-L.png]]
+![AUI Atlas 标准货柜 L 型](../../../assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-L.png)
 
 ##### 货柜模板基础参数
 >以下为货柜定义的通用基础数值。
@@ -175,7 +175,7 @@
 **接口：** SD 标准对接接口
 
 ### 货柜预览截图：
-![[../../../AUI-Atlas-SD-X.png]]
+![AUI Atlas 标准货柜 X 型](../../../assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-X.png)
 
 ##### 货柜模板基础参数
 >以下为货柜定义的通用基础数值。
