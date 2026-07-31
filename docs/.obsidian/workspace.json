@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/02内容设计/05_货柜结构制作规范.md",
+                "file": "02贸易点系统/02_贸易点结构生成层与制作规范.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05_货柜结构制作规范"
+              "title": "02_贸易点结构生成层与制作规范"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01货柜系统/02内容设计/05_货柜结构制作规范.md",
+                "file": "02贸易点系统/02_贸易点结构生成层与制作规范.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "05_货柜结构制作规范 的反向链接列表"
+              "title": "02_贸易点结构生成层与制作规范 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01货柜系统/02内容设计/05_货柜结构制作规范.md",
+                "file": "02贸易点系统/02_贸易点结构生成层与制作规范.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "05_货柜结构制作规范 的出链列表"
+              "title": "02_贸易点结构生成层与制作规范 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01货柜系统/02内容设计/05_货柜结构制作规范.md",
+                "file": "02贸易点系统/02_贸易点结构生成层与制作规范.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "05_货柜结构制作规范 的大纲"
+              "title": "02_贸易点结构生成层与制作规范 的大纲"
             }
           }
         ]
@@ -185,37 +185,49 @@
   },
   "active": "823c70df3ca7f29a",
   "lastOpenFiles": [
-    "01货柜系统/02内容设计/04_货柜设计模板.md",
-    "01货柜系统/02内容设计/05_货柜结构制作规范.md",
+    "02贸易点系统/03_贸易点设计模板.md",
+    "02贸易点系统/资源类/农场/云田农庄.md",
     "01货柜系统/02内容设计/03_货柜数据常数.md",
+    "03功能方块/04_航运终端.md",
+    "03功能方块/03_装饰性货柜方块.md",
+    "03功能方块/02_货柜连接器与货柜接口.md",
+    "03功能方块/01_买入终端与出售终端.md",
+    "03功能方块/05_航运统计与雷达图.md",
+    "03功能方块/06_贴花系统.md",
+    "03功能方块/README.md",
+    "04商店系统/01_商店体系.md",
     "01货柜系统/02内容设计/02_货柜命名规则.md",
     "01货柜系统/02内容设计/01_制造商.md",
     "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/01_Atlas系列货柜.md",
-    "03功能方块/03_装饰性货柜方块.md",
-    "03功能方块/04_航运终端.md",
-    "03功能方块/05_航运统计与雷达图.md",
-    "03功能方块/06_贴花系统.md",
-    "03功能方块/02_货柜连接器与货柜接口.md",
-    "03功能方块/01_买入终端与出售终端.md",
-    "未命名.base",
-    "01货柜系统/02内容设计/README.md",
-    "AUI-Atlas-SD-X.png",
+    "01货柜系统/01核心系统/01_项目概览.md",
+    "01货柜系统/01核心系统/05_货物类型.md",
+    "assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-L.png",
+    "assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-M.png",
+    "assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-S.png",
+    "assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-X.png",
     "AUI-Atlas-SD-L.png",
     "AUI-Atlas-SD-M.png",
-    "AUI-Atlas-SD-S.png",
+    "未命名.base",
+    "assets/images/cargo/AUI/Atlas",
+    "assets/images/tradepoint/tradepoint_Template_pool1.png",
+    "assets/images/tradepoint/tradepoint_Template_pool.png",
+    "assets/images/tradepoint/tradepoint_Structure.png",
+    "assets/images/tradepoint/tradepoint_Generation_direction.png",
+    "assets/images/cargo/AUI",
+    "assets/images/ui",
+    "assets/images/tradepoint",
+    "assets/images/cargo",
+    "assets/images",
+    "assets/icons",
+    "assets/diagrams",
+    "assets",
+    "01货柜系统/02内容设计/05_货柜结构制作规范.md",
+    "01货柜系统/02内容设计/04_货柜设计模板.md",
+    "01货柜系统/02内容设计/README.md",
     "02贸易点系统/02_贸易点结构生成层与制作规范.md",
-    "tradepoint_Template_pool1 1.png",
-    "tradepoint_Structure.png",
-    "tradepoint_Generation_direction.png",
-    "tradepoint_fixed_buildings.png",
-    "road_pool.png",
-    "tradepoint_Template_pool1.png",
-    "02贸易点系统/03_贸易点设计模板.md",
-    "02贸易点系统/资源类/农场/云田农庄.md",
     "02贸易点系统/README.md",
     "README.md",
     "01货柜系统/README.md",
-    "02贸易点系统/资源类/README.md",
-    "未命名"
+    "02贸易点系统/资源类/README.md"
   ]
 }
