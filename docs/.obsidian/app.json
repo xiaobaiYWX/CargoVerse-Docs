@@ -1,6 +1,6 @@
 {
   "newLinkFormat": "relative",
-  "attachmentFolderPath": "assets",
+  "attachmentFolderPath": "./附件",
   "alwaysUpdateLinks": true,
   "promptDelete": false
 }
