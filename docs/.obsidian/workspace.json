@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/README.md",
+                "file": "02贸易点系统/03_贸易点设计模板.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "03_贸易点设计模板"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01货柜系统/README.md",
+                "file": "02贸易点系统/03_贸易点设计模板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README 的反向链接列表"
+              "title": "03_贸易点设计模板 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01货柜系统/README.md",
+                "file": "02贸易点系统/03_贸易点设计模板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "README 的出链列表"
+              "title": "03_贸易点设计模板 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01货柜系统/README.md",
+                "file": "02贸易点系统/03_贸易点设计模板.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "03_贸易点设计模板 的大纲"
             }
           }
         ]
@@ -184,5 +184,12 @@
     }
   },
   "active": "67829b71e762c146",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "02贸易点系统/资源类/农场/云田农庄.md",
+    "02贸易点系统/03_贸易点设计模板.md",
+    "01货柜系统/README.md",
+    "02贸易点系统/资源类/README.md",
+    "未命名.base",
+    "未命名"
+  ]
 }
