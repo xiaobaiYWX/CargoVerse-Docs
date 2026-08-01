@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/01_Atlas系列货柜.md",
+                "file": "07货币系统/01_实体货币与多面额结算.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Atlas系列货柜"
+              "title": "01_实体货币与多面额结算"
             }
           }
         ]
@@ -207,8 +207,11 @@
   },
   "active": "823c70df3ca7f29a",
   "lastOpenFiles": [
-    "01货柜系统/02内容设计/04_货柜设计模板.md",
+    "07货币系统/README.md",
+    "07货币系统/01_实体货币与多面额结算.md",
     "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/01_Atlas系列货柜.md",
+    "07货币系统",
+    "01货柜系统/02内容设计/04_货柜设计模板.md",
     "01货柜系统/02内容设计/05_货柜结构制作规范.md",
     "02贸易点系统/02_贸易点结构生成层与制作规范.md",
     "02贸易点系统/03_贸易点设计模板.md",
@@ -245,7 +248,6 @@
     "assets/images",
     "assets/icons",
     "assets/diagrams",
-    "assets",
     "01货柜系统/02内容设计/README.md",
     "02贸易点系统/README.md",
     "README.md",
