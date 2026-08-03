@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07货币系统/01_实体货币与多面额结算.md",
+                "file": "01货柜系统/02内容设计/05_货柜结构制作规范.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_实体货币与多面额结算"
+              "title": "05_货柜结构制作规范"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/02内容设计/04_货柜设计模板.md",
+                "file": "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/01_Atlas系列货柜.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_货柜设计模板"
+              "title": "01_Atlas系列货柜"
             }
           }
         ]
@@ -207,13 +207,19 @@
   },
   "active": "823c70df3ca7f29a",
   "lastOpenFiles": [
-    "07货币系统/README.md",
-    "07货币系统/01_实体货币与多面额结算.md",
     "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/01_Atlas系列货柜.md",
-    "07货币系统",
-    "01货柜系统/02内容设计/04_货柜设计模板.md",
     "01货柜系统/02内容设计/05_货柜结构制作规范.md",
+    "01货柜系统/02内容设计/04_货柜设计模板.md",
+    "assets/images/cargo/test/cargo_decl.png",
+    "assets/images/cargo/test/cargo.png",
+    "assets/images/cargo/test/cargo_massblock.png",
+    "assets/images/cargo/test",
+    "assets/images/cargo/新建文件夹",
     "02贸易点系统/02_贸易点结构生成层与制作规范.md",
+    "02贸易点系统/01_贸易点运行时与经济.md",
+    "07货币系统/01_实体货币与多面额结算.md",
+    "07货币系统/README.md",
+    "07货币系统",
     "02贸易点系统/03_贸易点设计模板.md",
     "02贸易点系统/资源类/农场/云田农庄.md",
     "01货柜系统/02内容设计/03_货柜数据常数.md",
@@ -238,20 +244,13 @@
     "未命名.base",
     "assets/images/cargo/AUI/Atlas",
     "assets/images/tradepoint/tradepoint_Template_pool1.png",
-    "assets/images/tradepoint/tradepoint_Template_pool.png",
-    "assets/images/tradepoint/tradepoint_Structure.png",
-    "assets/images/tradepoint/tradepoint_Generation_direction.png",
     "assets/images/cargo/AUI",
     "assets/images/ui",
     "assets/images/tradepoint",
     "assets/images/cargo",
     "assets/images",
-    "assets/icons",
-    "assets/diagrams",
     "01货柜系统/02内容设计/README.md",
     "02贸易点系统/README.md",
-    "README.md",
-    "01货柜系统/README.md",
-    "02贸易点系统/资源类/README.md"
+    "README.md"
   ]
 }
