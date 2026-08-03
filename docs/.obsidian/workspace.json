@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/02内容设计/05_货柜结构制作规范.md",
+                "file": "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/01_Atlas系列货柜.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05_货柜结构制作规范"
+              "title": "01_Atlas系列货柜"
             }
           }
         ]
@@ -207,7 +207,16 @@
   },
   "active": "823c70df3ca7f29a",
   "lastOpenFiles": [
+    "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/README.md",
     "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/01_Atlas系列货柜.md",
+    "01货柜系统/02内容设计/3.深岩矿业集团-Deepcore Mining Corporation/README.md",
+    "01货柜系统/02内容设计/2.云港物流集团-Skyport Logistics/README.md",
+    "01货柜系统/02内容设计/01_制造商.md",
+    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/README.md",
+    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/README.md",
+    "01货柜系统/02内容设计/6.奥术研究院(前文明研究组织)-Horizon Research Institute/README.md",
+    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/README.md",
+    "01货柜系统/02内容设计/4.绿洲农业联盟-Verdant BioSystems/README.md",
     "01货柜系统/02内容设计/05_货柜结构制作规范.md",
     "01货柜系统/02内容设计/04_货柜设计模板.md",
     "assets/images/cargo/test/cargo_decl.png",
@@ -230,11 +239,6 @@
     "03功能方块/05_航运统计与雷达图.md",
     "03功能方块/06_贴花系统.md",
     "03功能方块/README.md",
-    "04商店系统/01_商店体系.md",
-    "01货柜系统/02内容设计/02_货柜命名规则.md",
-    "01货柜系统/02内容设计/01_制造商.md",
-    "01货柜系统/01核心系统/01_项目概览.md",
-    "01货柜系统/01核心系统/05_货物类型.md",
     "assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-L.png",
     "assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-M.png",
     "assets/images/cargo/AUI/Atlas/AUI-Atlas-SD-S.png",
@@ -248,9 +252,6 @@
     "assets/images/ui",
     "assets/images/tradepoint",
     "assets/images/cargo",
-    "assets/images",
-    "01货柜系统/02内容设计/README.md",
-    "02贸易点系统/README.md",
-    "README.md"
+    "assets/images"
   ]
 }
