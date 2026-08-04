@@ -1,32 +1,33 @@
+# 货柜设计模板
 
 | 产品系列     | 规格      | 接口  | 定位     | 特点             |
 | -------- | ------- | --- | ------ | -------------- |
 | Atlas 系列 | S/M/L/X | SD  | 通用标准货柜 | 最普及；最低成本；最高兼容性 |
 
-#### 适用货物
+## 适用货物
 
-| 代码                  | 名称      | 是否可用 |   额外条件   |
-| ------------------- | ------- | :--: | :------: |
-| `agriculture`       | 农业产品    |  √   |    限时    |
-| `livestock`         | 活体生物    |  ×   |          |
-| `ore`               | 矿石资源    |  √   |    无     |
-| `wood`              | 木材      |  √   |    无     |
-| `stone`             | 石材      |  √   |    无     |
-| `fuel_resource`     | 能源原料    |  √   |   易燃物    |
-| `textile`           | 纺织与轻工业品 |  √   |    无     |
-| `security`          | 安防与武装设备 |  √   |    无     |
-| `component`         | 工业零件    |  √   |   易碎品    |
-| `machinery`         | 机械设备    |  ×   |          |
-| `electronics`       | 电子设备    |  √   |    防潮    |
-| `chemical`          | 化工材料    |  ×   |          |
-| `construction`      | 建筑材料    |  √   |    无     |
-| `structural_module` | 大型结构组件  |  ×   |          |
-| `supplies`          | 生活补给    |  √   |    无     |
-| `medical`           | 医疗物资    |  √   | 限时\冷链运输  |
-| `luxury`            | 贵重消费品   |  √   | 易碎品\请勿倒置 |
-| `research_sample`   | 科研样本    |  ×   |          |
-| `data`              | 数据资源    |  ×   |          |
-| `experimental`      | 实验品     |  ×   |          |
+| CargoType           | 中文名称    | 是否可用 | 适用规格    |  词条或限制   |
+| ------------------- | ------- | :--: | ------- | :------: |
+| `agriculture`       | 农业产品    |  √   | S/M/L/X |    限时    |
+| `livestock`         | 活体生物    |  ×   |         |          |
+| `ore`               | 矿石资源    |  √   | S/M/L/X |    无     |
+| `wood`              | 木材      |  √   | S/M/L/X |    无     |
+| `stone`             | 石材      |  √   | S/M/L/X |    无     |
+| `fuel_resource`     | 能源原料    |  √   | S/M/L/X |   易燃物    |
+| `textile`           | 纺织与轻工业品 |  √   | S/M/L/X |    无     |
+| `security`          | 安防与武装设备 |  √   | S/M/L/X |    无     |
+| `component`         | 工业零件    |  √   | S/M/L/X |   易碎品    |
+| `machinery`         | 机械设备    |  ×   |         |          |
+| `electronics`       | 电子设备    |  √   | S/M/L/X |    防潮    |
+| `chemical`          | 化工材料    |  ×   |         |          |
+| `construction`      | 建筑材料    |  √   | S/M/L/X |    无     |
+| `structural_module` | 大型结构组件  |  ×   |         |          |
+| `supplies`          | 生活补给    |  √   | S/M/L/X |    无     |
+| `medical`           | 医疗物资    |  √   | S/M/L/X | 限时\冷链运输  |
+| `luxury`            | 贵重消费品   |  √   | S/M/L/X | 易碎品\请勿倒置 |
+| `research_sample`   | 科研样本    |  ×   |         |          |
+| `data`              | 数据资源    |  ×   |         |          |
+| `experimental`      | 实验品     |  ×   |         |          |
 
 ---
 ## AUI-Atlas-SD-S
