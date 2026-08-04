@@ -1,8 +1,8 @@
 # 货柜设计模板
 
-| 产品系列     | 规格    | 接口    | 定位     | 特点                  |
-| -------- | ----- | ----- | ------ | ------------------- |
-| Hermes系列 | S/M/L | SD/LM | 快速物流货柜 | 快速装卸；更低的初始完整度；更轻的重量 |
+| 产品系列     | 规格    | 接口  | 定位     | 特点                  |
+| -------- | ----- | --- | ------ | ------------------- |
+| Hermes系列 | S/M/L | SD  | 快速物流货柜 | 快速装卸；更低的初始完整度；更轻的重量 |
 
 ## 适用货物
 
@@ -30,30 +30,30 @@
 | `experimental`      | 实验品     |  ×   |       |                |
 
 ---
-## AUI-Vulcan-INTERFACE-S
+## AUI-Vulcan-SD-S
 
-### 【游戏内显示名称】
+### AUI Vulcan 便携货柜 S 型
 
-> 【描述该规格的定位、典型用途，以及与同系列其他规格的区别。】
+>天穹联合工业[Hermes]系列最小规格快速物流货柜，专为个人飞艇、短途运输以及紧急补给任务设计。采用轻量化结构与标准对接接口，可快速装卸并适配小型运输平台，是初级贸易与快速配送中最常见的物流货柜型号。
 
-**制造商：** 【Manufacturer】  
-**系列：** 【Series】  
-**接口：** 【Interface】
+**制造商：** Aether Union Industries
+**系列：** Vulcan
+**接口：** SD
 
 ### 货柜预览截图：
 
 
 ### 货柜基础参数
 
-| 参数 | 内容 |
-|---|---|
-| `template` | `cargoverse:【structure_template_id】` |
-| `display_name` | `【游戏内显示名称】` |
-| `cargo_description` | `§l【显示名称】\n§r§7【型号描述】\n§r§l制造商：【Manufacturer】\n§r§l系列：【Series】\n§r§l接口：【Interface】` |
-| `currency_id` | `minecraft:emerald` |
-| `max_owned` | 【待填写】 |
-| `cargo_level` | `S` |
-| `max_integrity` | 【待填写；无词条时不使用】 |
+| 参数                  | 内容                                                                                                                                                                                                                     |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | `cargoverse:【structure_template_id】`                                                                                                                                                                                   |
+| `display_name`      | `AUI Vulcan 便携货柜 S 型`                                                                                                                                                                                                  |
+| `cargo_description` | `§lAUI Hermes 快速货运箱 S 型\n§r§7天穹联合工业[Hermes]系列最小规格轻型货运箱，专为个人飞艇、短途运输以及紧急补给任务设计。采用轻量化结构与快速装卸接口，可在有限空间内实现高效货物周转，是小型运输艇与私人贸易网络中的常用型号。\n§r§l制造商：Aether Union Industries\n§r§l系列：Hermes Series\n§r§l接口：SD 标准对接接口 / LM 绑扎固定接口` |
+| `currency_id`       | `cargoverse:enderite`                                                                                                                                                                                                  |
+| `max_owned`         | 【待填写】                                                                                                                                                                                                                  |
+| `cargo_level`       | `S`                                                                                                                                                                                                                    |
+| `max_integrity`     | 【待填写；无词条时不使用】                                                                                                                                                                                                          |
 
 ### 结构信息
 
@@ -80,7 +80,7 @@
 
 ### 【游戏内显示名称】
 
-> 【描述该规格的定位、典型用途，以及与同系列其他规格的区别。】
+>天穹联合工业[Hermes]系列标准规格轻型货运箱，针对中型运输飞艇与区域物流任务优化设计。在保持较低重量的同时提供稳定的装载容量，支持快速部署与高频次运输，是商业物流航线中最常见的中型货柜型号。
 
 **制造商：** 【Manufacturer】  
 **系列：** 【Series】  
@@ -91,15 +91,15 @@
 
 ### 货柜基础参数
 
-| 参数 | 内容 |
-|---|---|
-| `template` | `cargoverse:【structure_template_id】` |
-| `display_name` | `【游戏内显示名称】` |
-| `cargo_description` | `§l【显示名称】\n§r§7【型号描述】\n§r§l制造商：【Manufacturer】\n§r§l系列：【Series】\n§r§l接口：【Interface】` |
-| `currency_id` | `minecraft:emerald` |
-| `max_owned` | 【待填写】 |
-| `cargo_level` | `M` |
-| `max_integrity` | 【待填写；无词条时不使用】 |
+| 参数                  | 内容                                                                                                                                                                                                                    |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | `cargoverse:【structure_template_id】`                                                                                                                                                                                  |
+| `display_name`      | `【游戏内显示名称】`                                                                                                                                                                                                           |
+| `cargo_description` | `§lAUI Hermes 快速货运箱 M 型\n§r§7天穹联合工业[Hermes]系列标准规格轻型货运箱，针对中型运输飞艇与区域物流任务优化设计。在保持较低重量的同时提供稳定的装载容量，支持快速部署与高频次运输，是商业物流航线中最常见的中型货柜型号。\n§r§l制造商：Aether Union Industries\n§r§l系列：Hermes Series\n§r§l接口：SD 标准对接接口 / LM 绑扎固定接口` |
+| `currency_id`       | `minecraft:emerald`                                                                                                                                                                                                   |
+| `max_owned`         | 【待填写】                                                                                                                                                                                                                 |
+| `cargo_level`       | `M`                                                                                                                                                                                                                   |
+| `max_integrity`     | 【待填写；无词条时不使用】                                                                                                                                                                                                         |
 
 ### 结构信息
 
