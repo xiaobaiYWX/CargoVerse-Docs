@@ -20,7 +20,7 @@
 | `machinery`         | 机械设备    |  ×   |         |          |
 | `electronics`       | 电子设备    |  √   | S/M/L/X |    防潮    |
 | `chemical`          | 化工材料    |  ×   |         |          |
-| `construction`      | 建筑材料    |  √   | S/M/L/X |    无     |
+| `construction`      | 建筑材料    |  √   | S/M/L/X |          |
 | `structural_module` | 大型结构组件  |  ×   |         |          |
 | `supplies`          | 生活补给    |  √   | S/M/L/X |    无     |
 | `medical`           | 医疗物资    |  √   | S/M/L/X | 限时\冷链运输  |
@@ -46,7 +46,7 @@
 
 | 代码                  | 名称           | 参数                                                                                                                                                                                                |
 | ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `template`          | 货柜结构ID       | `cargoverse:aui_atlas_sd_s`                                                                                                                                                                       |
+| `template`          | 货柜结构ID       | `cargoverse:aui/atlas/aui_atlas_sd_s`                                                                                                                                                             |
 | `display_name`      | 显示名称         | `AUI Atlas 标准货柜 S 型`                                                                                                                                                                              |
 | `cargo_description` | 货柜描述         | `§lAUI Atlas 标准货柜 S 型\n§r§7天穹联合工业[Atlas]系列最小规格标准货柜，专为小型飞艇、短距离运输以及快速补给任务设计。采用统一标准接口，可快速接入各类运输平台，是个人运输与小型贸易网络中最常见的货柜型号。\n§r§l制造商：Aether Union Industries  \n§r§l系列：Atlas Series \n§r§l接口：SD 标准对接接口` |
 | `currency_id`       | 交易物品ID       | cargoverse:enderite                                                                                                                                                                               |
@@ -87,6 +87,7 @@
 | `luxury`               |        1         |             1.0             |            1.0             |                1.0                 |               1.0                |                1.0                 | `keep_upright`<br>`fragile`  |
 
 
+
 ---
 ## AUI-Atlas-SD-M
 
@@ -106,7 +107,7 @@
 
 | 代码                  | 名称           | 参数                                                                                                                                                                                    |
 | ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `template`          | 货柜结构ID       | `cargoverse:aui_atlas_sd_m                                                                                                                                                            |
+| `template`          | 货柜结构ID       | `cargoverse:aui/atlas/aui_atlas_sd_m                                                                                                                                                  |
 | `display_name`      | 显示名称         | `AUI Atlas 标准货柜 M 型`                                                                                                                                                                  |
 | `cargo_description` | 货柜描述         | `§lAUI Atlas 标准货柜 M 型\n§r§7[Atlas]系列的主力型号，也是天穹联合工业销量最高的标准货柜。M型货柜在容量、重量和通用性之间取得平衡，被广泛应用于商业运输、资源贸易以及工业补给任务。\n§r§l制造商：Aether Union Industries  \n§r§l系列：Atlas Series \n§r§l接口：SD 标准对接接口` |
 | `currency_id`       | 交易物品ID       | cargoverse:enderite                                                                                                                                                                   |
@@ -164,7 +165,7 @@
 
 | 代码                  | 名称           | 参数                                                                                                                                                                                  |
 | ------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `template`          | 货柜结构ID       | `cargoverse:aui_atlas_slm                                                                                                                                                           |
+| `template`          | 货柜结构ID       | `cargoverse:aui/atlas/aui_atlas_l                                                                                                                                                   |
 | `display_name`      | 显示名称         | `AUI Atlas 标准货柜 L 型`                                                                                                                                                                |
 | `cargo_description` | 货柜描述         | `§lAUI Atlas 标准货柜 L 型\n§r§7面向大型运输飞艇设计的标准化货柜。L型[Atlas]在保持标准接口兼容性的同时扩大了载货空间，是矿产运输、工业原料供应以及区域贸易网络中的核心运输单元。\n§r§l制造商：Aether Union Industries  \n§r§l系列：Atlas Series \n§r§l接口：SD 标准对接接口` |
 | `currency_id`       | 交易物品ID       | cargoverse:enderite                                                                                                                                                                 |
@@ -222,7 +223,7 @@
 
 | 代码                  | 名称           | 参数                                                                                                                                                                                                |
 | ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `template`          | 货柜结构ID       | `cargoverse:aui_atlas_sxm                                                                                                                                                                         |
+| `template`          | 货柜结构ID       | `cargoverse:aui/atlas/aui_atlas_x                                                                                                                                                                 |
 | `display_name`      | 显示名称         | `AUI Atlas 标准货柜 X 型`                                                                                                                                                                              |
 | `cargo_description` | 货柜描述         | `§lAUI Atlas 标准货柜 X 型\n§r§7[Atlas]系列最大规模标准化型号之一，为满足大型工业运输需求而设计。X型货柜采用强化框架结构，可用于大型工程材料、工业设备以及区域级物资调配，是现代天空工业体系的重要组成部分。\n§r§l制造商：Aether Union Industries  \n§r§l系列：Atlas Series \n§r§l接口：SD 标准对接接口` |
 | `currency_id`       | 交易物品ID       | cargoverse:enderite                                                                                                                                                                               |
