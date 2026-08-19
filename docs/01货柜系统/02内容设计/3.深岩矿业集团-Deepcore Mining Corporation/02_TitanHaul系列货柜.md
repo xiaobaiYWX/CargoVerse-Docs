@@ -36,7 +36,7 @@
 
 ---
 
-## DMC-TitanHaul-【INTERFACE】-L
+## DMC-TitanHaul-HD-L
 
 ### DMC TitanHaul 重型矿运模块 L 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Deepcore Mining Corporation  
 **系列：** TitanHaul Series  
-**接口：** 【待确定】
+**接口：** HD 重型保持接口
 
 ### 货柜预览截图
 
@@ -52,16 +52,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:dmc/titanhaul/dmc_titanhaul_【interface】_l` |
-| `display_name` | 显示名称 | `DMC TitanHaul 重型矿运模块 L 型` |
-| `cargo_description` | 货柜描述 | `§lDMC TitanHaul 重型矿运模块 L 型\n§r§7装甲式承载骨架将高密度载荷直接传递至运输接口，可容纳大型矿块和未经破碎的矿体，代表深岩矿业面向重工业的超高承载能力。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：TitanHaul Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `L` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                             |
+| ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/dmc/titanhaul/dmc_titanhaul_hd_l`                                                                                                                                                            |
+| `display_name`      | 显示名称         | `DMC TitanHaul 重型矿运模块 L 型`                                                                                                                                                                                     |
+| `cargo_description` | 货柜描述         | `§lDMC TitanHaul 重型矿运模块 L 型\n§r§7装甲式承载骨架将高密度载荷直接传递至运输接口，可容纳大型矿块和未经破碎的矿体，代表深岩矿业面向重工业的超高承载能力。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：TitanHaul Series\n§r§l接口：HD 重型保持接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                          |
+| `max_owned`         | 每个玩家的同时最大持有量 | 7                                                                                                                                                                                                              |
+| `cargo_level`       | 货柜等级         | `L`                                                                                                                                                                                                            |
+| `max_integrity`     | 最大完整性        | 155                                                                                                                                                                                                            |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                                     |
 
 ### 结构信息
 
@@ -78,11 +78,14 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `ore` | 5 | 2.5 | 1.3 | 1.55 | 1.45 | 1.5 |
+| `stone` | 4 | 2.4 | 1.2 | 1.5 | 1.4 | 1.45 |
+| `machinery` | 2 | 2.2 | 1.15 | 1.4 | 1.35 | 1.4 |
+| `chemical` | 1 | 2.0 | 1.15 | 1.0 | 1.5 | 1.4 |
 
 ---
 
-## DMC-TitanHaul-【INTERFACE】-X
+## DMC-TitanHaul-HD-X
 
 ### DMC TitanHaul 重型矿运模块 X 型
 
@@ -90,7 +93,7 @@
 
 **制造商：** Deepcore Mining Corporation  
 **系列：** TitanHaul Series  
-**接口：** 【待确定】
+**接口：** HD 重型保持接口
 
 ### 货柜预览截图
 
@@ -100,13 +103,13 @@
 
 | 参数 | 名称 | 内容 |
 | --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:dmc/titanhaul/dmc_titanhaul_【interface】_x` |
+| `template` | 货柜结构ID | `cargoverse:cargo/dmc/titanhaul/dmc_titanhaul_hd_x` |
 | `display_name` | 显示名称 | `DMC TitanHaul 重型矿运模块 X 型` |
-| `cargo_description` | 货柜描述 | `§lDMC TitanHaul 重型矿运模块 X 型\n§r§7装甲式承载骨架将高密度载荷直接传递至运输接口，可容纳大型矿块和未经破碎的矿体，代表深岩矿业面向重工业的超高承载能力。该 X 型服务于大型工程与长距离主干运输，可容纳更完整的设备或更大批量货物。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：TitanHaul Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lDMC TitanHaul 重型矿运模块 X 型\n§r§7装甲式承载骨架将高密度载荷直接传递至运输接口，可容纳大型矿块和未经破碎的矿体，代表深岩矿业面向重工业的超高承载能力。该 X 型服务于大型工程与长距离主干运输，可容纳更完整的设备或更大批量货物。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：TitanHaul Series\n§r§l接口：HD 重型保持接口` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 5 |
 | `cargo_level` | 货柜等级 | `X` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 155 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
@@ -124,11 +127,15 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `ore` | 5 | 2.5 | 1.3 | 1.55 | 1.45 | 1.5 |
+| `stone` | 4 | 2.4 | 1.2 | 1.5 | 1.4 | 1.45 |
+| `machinery` | 2 | 2.2 | 1.15 | 1.4 | 1.35 | 1.4 |
+| `chemical` | 1 | 2.0 | 1.15 | 1.0 | 1.5 | 1.4 |
+| `structural_module` | 4 | 2.5 | 1.25 | 1.45 | 1.5 | 1.55 |
 
 ---
 
-## DMC-TitanHaul-【INTERFACE】-XL
+## DMC-TitanHaul-HD-XL
 
 ### DMC TitanHaul 重型矿运模块 XL 型
 
@@ -136,7 +143,7 @@
 
 **制造商：** Deepcore Mining Corporation  
 **系列：** TitanHaul Series  
-**接口：** 【待确定】
+**接口：** HD 重型保持接口
 
 ### 货柜预览截图
 
@@ -144,16 +151,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:dmc/titanhaul/dmc_titanhaul_【interface】_xl` |
-| `display_name` | 显示名称 | `DMC TitanHaul 重型矿运模块 XL 型` |
-| `cargo_description` | 货柜描述 | `§lDMC TitanHaul 重型矿运模块 XL 型\n§r§7装甲式承载骨架将高密度载荷直接传递至运输接口，可容纳大型矿块和未经破碎的矿体，代表深岩矿业面向重工业的超高承载能力。该 XL 型属于超规格平台，面向聚落级设施、战略物资和长期部署任务。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：TitanHaul Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `XL` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                              |
+| ------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/dmc/titanhaul/dmc_titanhaul_hd_xl`                                                                                                                                                            |
+| `display_name`      | 显示名称         | `DMC TitanHaul 重型矿运模块 XL 型`                                                                                                                                                                                     |
+| `cargo_description` | 货柜描述         | `§lDMC TitanHaul 重型矿运模块 XL 型\n§r§7装甲式承载骨架将高密度载荷直接传递至运输接口，可容纳大型矿块和未经破碎的矿体，代表深岩矿业面向重工业的超高承载能力。该 XL 型属于超规格平台，面向聚落级设施、战略物资和长期部署任务。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：TitanHaul Series\n§r§l接口：HD 重型保持接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                           |
+| `max_owned`         | 每个玩家的同时最大持有量 | 2                                                                                                                                                                                                               |
+| `cargo_level`       | 货柜等级         | `XL`                                                                                                                                                                                                            |
+| `max_integrity`     | 最大完整性        | 155                                                                                                                                                                                                             |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                                      |
 
 ### 结构信息
 
@@ -170,7 +177,10 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `ore` | 5 | 2.5 | 1.3 | 1.55 | 1.45 | 1.5 |
+| `stone` | 4 | 2.4 | 1.2 | 1.5 | 1.4 | 1.45 |
+| `machinery` | 2 | 2.2 | 1.15 | 1.4 | 1.35 | 1.4 |
+| `structural_module` | 4 | 2.5 | 1.25 | 1.45 | 1.5 | 1.55 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

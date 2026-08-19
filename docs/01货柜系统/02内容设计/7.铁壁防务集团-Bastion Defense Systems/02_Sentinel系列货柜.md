@@ -1,8 +1,8 @@
 # Sentinel 系列货柜设计
 
-| 产品系列 | 规格 | 接口 | 定位 | 特点 |
-| --- | --- | --- | --- | --- |
-| Sentinel 系列 | S/M | 【待确定】 | 安防设备箱 | 电子设备；传感器 |
+| 产品系列        | 规格  | 接口  | 定位    | 特点       |
+| ----------- | --- | --- | ----- | -------- |
+| Sentinel 系列 | S/M | MC  | 安防设备箱 | 电子设备；传感器 |
 
 ## 适用货物
 
@@ -36,7 +36,7 @@
 
 ---
 
-## BDS-Sentinel-【INTERFACE】-S
+## BDS-Sentinel-MC-S
 
 ### BDS Sentinel 安防设备箱 S 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Bastion Defense Systems  
 **系列：** Sentinel Series  
-**接口：** 【待确定】
+**接口：** MC 磁力约束
 
 ### 货柜预览截图
 
@@ -54,13 +54,13 @@
 
 | 参数 | 名称 | 内容 |
 | --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:bds/sentinel/bds_sentinel_【interface】_s` |
+| `template` | 货柜结构ID | `cargoverse:cargo/bds/sentinel/bds_sentinel_mc_s` |
 | `display_name` | 显示名称 | `BDS Sentinel 安防设备箱 S 型` |
-| `cargo_description` | 货柜描述 | `§lBDS Sentinel 安防设备箱 S 型\n§r§7利用内部缓冲、电磁防护和标准化设备分区承运传感器、监控终端与控制器，帮助铁壁防务团队快速建立区域警戒网络。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Bastion Defense Systems\n§r§l系列：Sentinel Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lBDS Sentinel 安防设备箱 S 型\n§r§7利用内部缓冲、电磁防护和标准化设备分区承运传感器、监控终端与控制器，帮助铁壁防务团队快速建立区域警戒网络。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Bastion Defense Systems\n§r§l系列：Sentinel Series\n§r§l接口：MC 磁力约束` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 10 |
 | `cargo_level` | 货柜等级 | `S` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 110 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
@@ -78,11 +78,13 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `security` | 4 | 1.1 | 1.35 | 0.75 | 1.4 | 1.3 |
+| `component` | 3 | 1.1 | 1.25 | 0.8 | 1.25 | 1.2 |
+| `electronics` | 5 | 1.1 | 1.4 | 0.65 | 1.4 | 1.3 |
 
 ---
 
-## BDS-Sentinel-【INTERFACE】-M
+## BDS-Sentinel-MC-M
 
 ### BDS Sentinel 安防设备箱 M 型
 
@@ -90,7 +92,7 @@
 
 **制造商：** Bastion Defense Systems  
 **系列：** Sentinel Series  
-**接口：** 【待确定】
+**接口：** MC 磁力约束
 
 ### 货柜预览截图
 
@@ -100,13 +102,13 @@
 
 | 参数 | 名称 | 内容 |
 | --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:bds/sentinel/bds_sentinel_【interface】_m` |
+| `template` | 货柜结构ID | `cargoverse:cargo/bds/sentinel/bds_sentinel_mc_m` |
 | `display_name` | 显示名称 | `BDS Sentinel 安防设备箱 M 型` |
-| `cargo_description` | 货柜描述 | `§lBDS Sentinel 安防设备箱 M 型\n§r§7利用内部缓冲、电磁防护和标准化设备分区承运传感器、监控终端与控制器，帮助铁壁防务团队快速建立区域警戒网络。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Bastion Defense Systems\n§r§l系列：Sentinel Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lBDS Sentinel 安防设备箱 M 型\n§r§7利用内部缓冲、电磁防护和标准化设备分区承运传感器、监控终端与控制器，帮助铁壁防务团队快速建立区域警戒网络。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Bastion Defense Systems\n§r§l系列：Sentinel Series\n§r§l接口：MC 磁力约束` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 10 |
 | `cargo_level` | 货柜等级 | `M` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 110 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
@@ -124,7 +126,9 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `security` | 4 | 1.1 | 1.35 | 0.75 | 1.4 | 1.3 |
+| `component` | 3 | 1.1 | 1.25 | 0.8 | 1.25 | 1.2 |
+| `electronics` | 5 | 1.1 | 1.4 | 0.65 | 1.4 | 1.3 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

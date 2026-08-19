@@ -2,7 +2,7 @@
 
 | 产品系列       | 规格  | 接口  | 定位    | 特点      |
 | ---------- | --- | --- | ----- | ------- |
-| Harvest 系列 | M/L | SD  | 农业运输箱 | 大容量；低成本 |
+| Harvest 系列 | M/L | LM  | 农业运输箱 | 大容量；低成本 |
 
 ## 适用货物
 
@@ -11,32 +11,32 @@
 > “CargoType 默认词条 ID”来自 `cargo_value_constants/default.json` 的 `cargo_type_affixes`，不在货柜定义中重复声明。
 > `最终词条 = CargoType 默认词条 - 本规格 blocked_affixes`；`blocked_affixes` 是货柜根节点字段，对该规格的所有 CargoType 统一生效。
 
-| CargoType | 中文名称 | 是否可用 | 适用规格 | CargoType 默认词条 ID | 简易描述 |
-| --- | --- | :---: | --- | --- | --- |
-| `agriculture`       | 农业产品    |  √   | M/L  | `time_limit` | 大容量、易清洁结构适合农产周转，可运输谷物、蔬果、种苗等农产品。                        |
-| `livestock`         | 活体生物    |  √   | M/L  | `height_limit` | 大容量、易清洁结构适合农产周转，可兼容运输活体生物，但由于没有配备BioPod的加压系统所以有不易在高空运输。 |
-| `ore`               | 矿石资源    |  ×   | —    | 无 |                                                         |
-| `wood`              | 木材      |  ×   | —    | 无 |                                                         |
-| `stone`             | 石材      |  ×   | —    | 无 |                                                         |
-| `fuel_resource`     | 能源原料    |  ×   | —    | `flammable`<br>`radioactive`<br>`cold_proof` |                                                         |
-| `textile`           | 纺织与轻工业品 |  √   | M/L  | 无 | 大容量、易清洁结构适合农产周转，可运输布匹、纤维原料和轻工业制品。                       |
-| `security`          | 安防与武装设备 |  ×   | —    | 无 |                                                         |
-| `component`         | 工业零件    |  ×   | —    | `fragile` |                                                         |
-| `machinery`         | 机械设备    |  ×   | —    | `keep_upright`<br>`fragile` |                                                         |
-| `electronics`       | 电子设备    |  ×   | —    | `moisture_proof`<br>`fragile` |                                                         |
-| `chemical`          | 化工材料    |  ×   | —    | `radioactive` |                                                         |
-| `construction`      | 建筑材料    |  ×   | —    | 无 |                                                         |
-| `structural_module` | 大型结构组件  |  ×   | —    | 无 |                                                         |
-| `supplies`          | 生活补给    |  √   | M/L  | 无 | 大容量、易清洁结构适合农产周转，可运输食品、工具和聚落日常补给。                        |
-| `medical`           | 医疗物资    |  ×   | —    | `time_limit`<br>`cold_chain`<br>`light_sensitive` |                                                         |
-| `luxury`            | 贵重消费品   |  ×   | —    | `keep_upright`<br>`fragile` |                                                         |
+| CargoType           | 中文名称    | 是否可用 | 适用规格 | CargoType 默认词条 ID                                                | 简易描述                                                    |
+| ------------------- | ------- | :--: | ---- | ---------------------------------------------------------------- | ------------------------------------------------------- |
+| `agriculture`       | 农业产品    |  √   | M/L  | `time_limit`                                                     | 大容量、易清洁结构适合农产周转，可运输谷物、蔬果、种苗等农产品。                        |
+| `livestock`         | 活体生物    |  √   | M/L  | `height_limit`                                                   | 大容量、易清洁结构适合农产周转，可兼容运输活体生物，但由于没有配备BioPod的加压系统所以有不易在高空运输。 |
+| `ore`               | 矿石资源    |  ×   | —    | 无                                                                |                                                         |
+| `wood`              | 木材      |  ×   | —    | 无                                                                |                                                         |
+| `stone`             | 石材      |  ×   | —    | 无                                                                |                                                         |
+| `fuel_resource`     | 能源原料    |  ×   | —    | `flammable`<br>`radioactive`<br>`cold_proof`                     |                                                         |
+| `textile`           | 纺织与轻工业品 |  √   | M/L  | 无                                                                | 大容量、易清洁结构适合农产周转，可运输布匹、纤维原料和轻工业制品。                       |
+| `security`          | 安防与武装设备 |  ×   | —    | 无                                                                |                                                         |
+| `component`         | 工业零件    |  ×   | —    | `fragile`                                                        |                                                         |
+| `machinery`         | 机械设备    |  ×   | —    | `keep_upright`<br>`fragile`                                      |                                                         |
+| `electronics`       | 电子设备    |  ×   | —    | `moisture_proof`<br>`fragile`                                    |                                                         |
+| `chemical`          | 化工材料    |  ×   | —    | `radioactive`                                                    |                                                         |
+| `construction`      | 建筑材料    |  ×   | —    | 无                                                                |                                                         |
+| `structural_module` | 大型结构组件  |  ×   | —    | 无                                                                |                                                         |
+| `supplies`          | 生活补给    |  √   | M/L  | 无                                                                | 大容量、易清洁结构适合农产周转，可运输食品、工具和聚落日常补给。                        |
+| `medical`           | 医疗物资    |  ×   | —    | `time_limit`<br>`cold_chain`<br>`light_sensitive`                |                                                         |
+| `luxury`            | 贵重消费品   |  ×   | —    | `keep_upright`<br>`fragile`                                      |                                                         |
 | `research_sample`   | 科研样本    |  ×   | —    | `time_limit`<br>`fragile`<br>`keep_upright`<br>`light_sensitive` |                                                         |
-| `data`              | 数据资源    |  ×   | —    | `cold_proof`<br>`fragile`<br>`moisture_proof` |                                                         |
-| `experimental`      | 实验品     |  ×   | —    | 无 |                                                         |
+| `data`              | 数据资源    |  ×   | —    | `cold_proof`<br>`fragile`<br>`moisture_proof`                    |                                                         |
+| `experimental`      | 实验品     |  ×   | —    | 无                                                                |                                                         |
 
 ---
 
-## VBS-Harvest-【INTERFACE】-M
+## VBS-Harvest-LM-M
 
 ### VBS Harvest 农业运输箱 M 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Verdant BioSystems  
 **系列：** Harvest Series  
-**接口：** 【待确定】
+**接口：** LM 绑扎固定
 
 ### 货柜预览截图
 
@@ -52,16 +52,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:vbs/harvest/vbs_harvest_【interface】_m` |
-| `display_name` | 显示名称 | `VBS Harvest 农业运输箱 M 型` |
-| `cargo_description` | 货柜描述 | `§lVBS Harvest 农业运输箱 M 型\n§r§7为谷物、蔬果和日常口粮提供易清洁、便于通风与批量堆放的经济型空间，连接农场、集市及聚落仓储的高频农业运输。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Verdant BioSystems\n§r§l系列：Harvest Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `M` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                         |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/vbs/harvest/vbs_harvest_lm_m`                                                                                                                                            |
+| `display_name`      | 显示名称         | `VBS Harvest 农业运输箱 M 型`                                                                                                                                                                    |
+| `cargo_description` | 货柜描述         | `§lVBS Harvest 农业运输箱 M 型\n§r§7为谷物、蔬果和日常口粮提供易清洁、便于通风与批量堆放的经济型空间，连接农场、集市及聚落仓储的高频农业运输。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Verdant BioSystems\n§r§l系列：Harvest Series\n§r§l接口：LM 绑扎固定` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                      |
+| `max_owned`         | 每个玩家的同时最大持有量 | 5                                                                                                                                                                                          |
+| `cargo_level`       | 货柜等级         | `M`                                                                                                                                                                                        |
+| `max_integrity`     | 最大完整性        | 90                                                                                                                                                                                         |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                 |
 
 ### 结构信息
 
@@ -78,11 +78,14 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `agriculture` | 5 | 0.8 | 1.15 | 1.45 | 1.0 | 1.35 |
+| `livestock` | 2 | 1.0 | 1.05 | 0.9 | 1.2 | 1.2 |
+| `textile` | 2 | 0.8 | 1.05 | 1.3 | 1.0 | 1.2 |
+| `supplies` | 4 | 0.8 | 1.1 | 1.4 | 1.0 | 1.3 |
 
 ---
 
-## VBS-Harvest-【INTERFACE】-L
+## VBS-Harvest-LM-L
 
 ### VBS Harvest 农业运输箱 L 型
 
@@ -90,7 +93,7 @@
 
 **制造商：** Verdant BioSystems  
 **系列：** Harvest Series  
-**接口：** 【待确定】
+**接口：** LM 绑扎固定
 
 ### 货柜预览截图
 
@@ -100,13 +103,13 @@
 
 | 参数 | 名称 | 内容 |
 | --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:vbs/harvest/vbs_harvest_【interface】_l` |
+| `template` | 货柜结构ID | `cargoverse:cargo/vbs/harvest/vbs_harvest_lm_l` |
 | `display_name` | 显示名称 | `VBS Harvest 农业运输箱 L 型` |
-| `cargo_description` | 货柜描述 | `§lVBS Harvest 农业运输箱 L 型\n§r§7为谷物、蔬果和日常口粮提供易清洁、便于通风与批量堆放的经济型空间，连接农场、集市及聚落仓储的高频农业运输。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Verdant BioSystems\n§r§l系列：Harvest Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lVBS Harvest 农业运输箱 L 型\n§r§7为谷物、蔬果和日常口粮提供易清洁、便于通风与批量堆放的经济型空间，连接农场、集市及聚落仓储的高频农业运输。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Verdant BioSystems\n§r§l系列：Harvest Series\n§r§l接口：LM 绑扎固定` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 2 |
 | `cargo_level` | 货柜等级 | `L` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 90 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
@@ -124,7 +127,10 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `agriculture` | 5 | 0.8 | 1.15 | 1.45 | 1.0 | 1.35 |
+| `livestock` | 2 | 1.0 | 1.05 | 0.9 | 1.2 | 1.2 |
+| `textile` | 2 | 0.8 | 1.05 | 1.3 | 1.0 | 1.2 |
+| `supplies` | 4 | 0.8 | 1.1 | 1.4 | 1.0 | 1.3 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

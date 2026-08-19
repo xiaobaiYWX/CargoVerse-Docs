@@ -36,7 +36,7 @@
 
 ---
 
-## SPL-Express-【INTERFACE】-S
+## SPL-Express-MC-S
 
 ### SPL Express 特快专递舱 S 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Skyport Logistics  
 **系列：** Express Series  
-**接口：** 【待确定】
+**接口：** MC 磁力约束
 
 ### 货柜预览截图
 
@@ -52,16 +52,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:spl/express/spl_express_【interface】_s` |
-| `display_name` | 显示名称 | `SPL Express 特快专递舱 S 型` |
-| `cargo_description` | 货柜描述 | `§lSPL Express 特快专递舱 S 型\n§r§7采用独立安全封装和可快速核验的交接设计，专门承运限时文件、精密小件与高价值急件，并优先进入云港物流的高速运输链路。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Skyport Logistics\n§r§l系列：Express Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `S` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                       |
+| ------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/spl/express/spl_express_mc_s`                                                                                                                                          |
+| `display_name`      | 显示名称         | `SPL Express 特快专递舱 S 型`                                                                                                                                                                  |
+| `cargo_description` | 货柜描述         | `§lSPL Express 特快专递舱 S 型\n§r§7采用独立安全封装和可快速核验的交接设计，专门承运限时文件、精密小件与高价值急件，并优先进入云港物流的高速运输链路。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Skyport Logistics\n§r§l系列：Express Series\n§r§l接口：MC 磁力约束` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                    |
+| `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                       |
+| `cargo_level`       | 货柜等级         | `S`                                                                                                                                                                                      |
+| `max_integrity`     | 最大完整性        | 85                                                                                                                                                                                       |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                               |
 
 ### 结构信息
 
@@ -78,7 +78,11 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `component` | 3 | 0.6 | 1.35 | 0.7 | 1.35 | 1.2 |
+| `medical` | 5 | 0.6 | 1.4 | 0.65 | 1.5 | 1.3 |
+| `luxury` | 5 | 0.6 | 1.5 | 0.6 | 1.45 | 1.2 |
+| `research_sample` | 4 | 0.6 | 1.45 | 0.6 | 1.5 | 1.3 |
+| `data` | 5 | 0.6 | 1.5 | 0.55 | 1.5 | 1.3 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

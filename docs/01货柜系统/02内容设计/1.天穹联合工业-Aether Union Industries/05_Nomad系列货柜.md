@@ -11,8 +11,8 @@
 > “CargoType 默认词条 ID”来自 `cargo_value_constants/default.json` 的 `cargo_type_affixes`，不在货柜定义中重复声明。
 > `最终词条 = CargoType 默认词条 - 本规格 blocked_affixes`；`blocked_affixes` 是货柜根节点字段，对该规格的所有 CargoType 统一生效。
 
-| CargoType | 中文名称 | 是否可用 | 适用规格 | CargoType 默认词条 ID | 简易描述 |
-| --- | --- | :---: | --- | --- | --- |
+| CargoType           | 中文名称    | 是否可用 | 适用规格 | CargoType 默认词条 ID                                                | 简易描述                                 |
+| ------------------- | ------- | :--: | ---- | ---------------------------------------------------------------- | ------------------------------------ |
 | `agriculture`       | 农业产品    |  ×   | —    | `time_limit` |                                      |
 | `livestock`         | 活体生物    |  ×   | —    | `height_limit` |                                      |
 | `ore`               | 矿石资源    |  ×   | —    | 无 |                                      |
@@ -36,7 +36,7 @@
 
 ---
 
-## AUI-Nomad-【INTERFACE】-L
+## AUI-Nomad-HD-L
 
 ### AUI Nomad 野外部署模块 L 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Aether Union Industries  
 **系列：** Nomad Series  
-**接口：** 【待确定】
+**接口：** HD 重型保持接口
 
 ### 货柜预览截图
 
@@ -52,37 +52,42 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:aui/nomad/aui_nomad_【interface】_l` |
+| 参数                  | 名称           | 内容                                                                                                                                                                                             |
+| ------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template` | 货柜结构ID | `cargoverse:cargo/aui/nomad/aui_nomad_hd_l` |
 | `display_name` | 显示名称 | `AUI Nomad 野外部署模块 L 型` |
-| `cargo_description` | 货柜描述 | `§lAUI Nomad 野外部署模块 L 型\n§r§7将标准货柜改造成具备基础供能、物资组织与环境防护能力的部署单元，供科考队、维修队和远征人员快速建立临时据点。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Aether Union Industries\n§r§l系列：Nomad Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lAUI Nomad 野外部署模块 L 型\n§r§7将标准货柜改造成具备基础供能、物资组织与环境防护能力的部署单元，供科考队、维修队和远征人员快速建立临时据点。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Aether Union Industries\n§r§l系列：Nomad Series\n§r§l接口：HD 重型保持接口` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 7 |
 | `cargo_level` | 货柜等级 | `L` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 120 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
 
-| 项目 | 内容 |
-| --- | --- |
-| 模板尺寸 | 【X × Y × Z】 |
-| 体积 | 【待填写】 |
-| 质量占位方块数量 | 【待填写】 |
-| 结构基本质量 | 【待填写】 |
+| 项目       | 内容     |
+| -------- | ------ |
+| 模板尺寸     | 12x7x8 |
+| 体积       | 672    |
+| 质量占位方块数量 | 4      |
+| 结构基本质量   | 【待填写】  |
 
 ### CargoType 参数
 
 > 修正倍率不填写时默认为 `1.0`；`weight` 越高越容易被抽取。实际货柜 JSON 只填写 `weight` 与可选的五项微调倍率；初始词条来自 `cargo_type_affixes`，再由根节点 `blocked_affixes` 统一屏蔽。
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| ---------------------- | :--------------: | :-------------------------: | :------------------------: | :--------------------------------: | :------------------------------: | :--------------------------------: |
+| `machinery` | 3 | 1.7 | 1.2 | 0.75 | 1.25 | 1.3 |
+| `electronics` | 3 | 1.7 | 1.2 | 0.75 | 1.25 | 1.3 |
+| `construction` | 4 | 1.7 | 1.2 | 0.75 | 1.25 | 1.3 |
+| `supplies` | 4 | 1.7 | 1.2 | 0.75 | 1.25 | 1.3 |
+| `medical` | 3 | 1.7 | 1.3 | 0.65 | 1.35 | 1.3 |
+| `research_sample` | 3 | 1.7 | 1.4 | 0.6 | 1.4 | 1.4 |
 
 ---
 
-## AUI-Nomad-【INTERFACE】-X
+## AUI-Nomad-HD-X
 
 ### AUI Nomad 野外部署模块 X 型
 
@@ -90,7 +95,7 @@
 
 **制造商：** Aether Union Industries  
 **系列：** Nomad Series  
-**接口：** 【待确定】
+**接口：** HD 重型保持接口
 
 ### 货柜预览截图
 
@@ -98,16 +103,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:aui/nomad/aui_nomad_【interface】_x` |
-| `display_name` | 显示名称 | `AUI Nomad 野外部署模块 X 型` |
-| `cargo_description` | 货柜描述 | `§lAUI Nomad 野外部署模块 X 型\n§r§7将标准货柜改造成具备基础供能、物资组织与环境防护能力的部署单元，供科考队、维修队和远征人员快速建立临时据点。该 X 型服务于大型工程与长距离主干运输，可容纳更完整的设备或更大批量货物。\n§r§l制造商：Aether Union Industries\n§r§l系列：Nomad Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `X` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                 |
+| ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/aui/nomad/aui_nomad_hd_x`                                                                                                                                                        |
+| `display_name`      | 显示名称         | `AUI Nomad 野外部署模块 X 型`                                                                                                                                                                             |
+| `cargo_description` | 货柜描述         | `§lAUI Nomad 野外部署模块 X 型\n§r§7将标准货柜改造成具备基础供能、物资组织与环境防护能力的部署单元，供科考队、维修队和远征人员快速建立临时据点。该 X 型服务于大型工程与长距离主干运输，可容纳更完整的设备或更大批量货物。\n§r§l制造商：Aether Union Industries\n§r§l系列：Nomad Series\n§r§l接口：HD 重型保持接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                              |
+| `max_owned`         | 每个玩家的同时最大持有量 | 5                                                                                                                                                                                                  |
+| `cargo_level`       | 货柜等级         | `X`                                                                                                                                                                                                |
+| `max_integrity`     | 最大完整性        | 120                                                                                                                                                                                                |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                         |
 
 ### 结构信息
 
@@ -124,7 +129,13 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `machinery` | 3 | 1.7 | 1.2 | 0.75 | 1.25 | 1.3 |
+| `electronics` | 3 | 1.7 | 1.2 | 0.75 | 1.25 | 1.3 |
+| `construction` | 4 | 1.7 | 1.2 | 0.75 | 1.25 | 1.3 |
+| `structural_module` | 4 | 2.0 | 1.3 | 0.65 | 1.35 | 1.45 |
+| `supplies` | 4 | 1.7 | 1.2 | 0.75 | 1.25 | 1.3 |
+| `medical` | 3 | 1.7 | 1.3 | 0.65 | 1.35 | 1.3 |
+| `research_sample` | 3 | 1.7 | 1.4 | 0.6 | 1.4 | 1.4 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

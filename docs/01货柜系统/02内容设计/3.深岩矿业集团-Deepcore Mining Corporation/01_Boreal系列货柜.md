@@ -11,32 +11,32 @@
 > “CargoType 默认词条 ID”来自 `cargo_value_constants/default.json` 的 `cargo_type_affixes`，不在货柜定义中重复声明。
 > `最终词条 = CargoType 默认词条 - 本规格 blocked_affixes`；`blocked_affixes` 是货柜根节点字段，对该规格的所有 CargoType 统一生效。
 
-| CargoType | 中文名称 | 是否可用 | 适用规格 | CargoType 默认词条 ID | 简易描述 |
-| --- | --- | :---: | --- | --- | --- |
-| `agriculture`       | 农业产品    |  ×   | —    | `time_limit` |                               |
-| `livestock`         | 活体生物    |  ×   | —    | `height_limit` |                               |
-| `ore`               | 矿石资源    |  √   | M/L  | 无 | 耐磨防撞箱体适合粗放装卸，可运输原矿、精炼矿料和稀有矿石。 |
-| `wood`              | 木材      |  ×   | —    | 无 |                               |
-| `stone`             | 石材      |  √   | M/L  | 无 | 耐磨防撞箱体适合粗放装卸，可运输石料、砖材和矿区岩样。   |
-| `fuel_resource`     | 能源原料    |  ×   | —    | `flammable`<br>`radioactive`<br>`cold_proof` |                               |
-| `textile`           | 纺织与轻工业品 |  ×   | —    | 无 |                               |
-| `security`          | 安防与武装设备 |  ×   | —    | 无 |                               |
-| `component`         | 工业零件    |  ×   | —    | `fragile` |                               |
-| `machinery`         | 机械设备    |  √   | M/L  | `keep_upright`<br>`fragile` | 耐磨防撞箱体适合粗放装卸，可运轻型开采设备。        |
-| `electronics`       | 电子设备    |  ×   | —    | `moisture_proof`<br>`fragile` |                               |
-| `chemical`          | 化工材料    |  ×   | —    | `radioactive` |                               |
-| `construction`      | 建筑材料    |  ×   | —    | 无 |                               |
-| `structural_module` | 大型结构组件  |  ×   | —    | 无 |                               |
-| `supplies`          | 生活补给    |  ×   | —    | 无 |                               |
-| `medical`           | 医疗物资    |  ×   | —    | `time_limit`<br>`cold_chain`<br>`light_sensitive` |                               |
-| `luxury`            | 贵重消费品   |  ×   | —    | `keep_upright`<br>`fragile` |                               |
+| CargoType           | 中文名称    | 是否可用 | 适用规格 | CargoType 默认词条 ID                                                | 简易描述                          |
+| ------------------- | ------- | :--: | ---- | ---------------------------------------------------------------- | ----------------------------- |
+| `agriculture`       | 农业产品    |  ×   | —    | `time_limit`                                                     |                               |
+| `livestock`         | 活体生物    |  ×   | —    | `height_limit`                                                   |                               |
+| `ore`               | 矿石资源    |  √   | M/L  | 无                                                                | 耐磨防撞箱体适合粗放装卸，可运输原矿、精炼矿料和稀有矿石。 |
+| `wood`              | 木材      |  ×   | —    | 无                                                                |                               |
+| `stone`             | 石材      |  √   | M/L  | 无                                                                | 耐磨防撞箱体适合粗放装卸，可运输石料、砖材和矿区岩样。   |
+| `fuel_resource`     | 能源原料    |  ×   | —    | `flammable`<br>`radioactive`<br>`cold_proof`                     |                               |
+| `textile`           | 纺织与轻工业品 |  ×   | —    | 无                                                                |                               |
+| `security`          | 安防与武装设备 |  ×   | —    | 无                                                                |                               |
+| `component`         | 工业零件    |  ×   | —    | `fragile`                                                        |                               |
+| `machinery`         | 机械设备    |  √   | M/L  | `keep_upright`<br>`fragile`                                      | 耐磨防撞箱体适合粗放装卸，可运轻型开采设备。        |
+| `electronics`       | 电子设备    |  ×   | —    | `moisture_proof`<br>`fragile`                                    |                               |
+| `chemical`          | 化工材料    |  ×   | —    | `radioactive`                                                    |                               |
+| `construction`      | 建筑材料    |  ×   | —    | 无                                                                |                               |
+| `structural_module` | 大型结构组件  |  ×   | —    | 无                                                                |                               |
+| `supplies`          | 生活补给    |  ×   | —    | 无                                                                |                               |
+| `medical`           | 医疗物资    |  ×   | —    | `time_limit`<br>`cold_chain`<br>`light_sensitive`                |                               |
+| `luxury`            | 贵重消费品   |  ×   | —    | `keep_upright`<br>`fragile`                                      |                               |
 | `research_sample`   | 科研样本    |  ×   | —    | `time_limit`<br>`fragile`<br>`keep_upright`<br>`light_sensitive` |                               |
-| `data`              | 数据资源    |  ×   | —    | `cold_proof`<br>`fragile`<br>`moisture_proof` |                               |
-| `experimental`      | 实验品     |  ×   | —    | 无 |                               |
+| `data`              | 数据资源    |  ×   | —    | `cold_proof`<br>`fragile`<br>`moisture_proof`                    |                               |
+| `experimental`      | 实验品     |  ×   | —    | 无                                                                |                               |
 
 ---
 
-## DMC-Boreal-【INTERFACE】-M
+## DMC-Boreal-SD-M
 
 ### DMC Boreal 矿石运输箱 M 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Deepcore Mining Corporation  
 **系列：** Boreal Series  
-**接口：** 【待确定】
+**接口：** SD 标准对接接口
 
 ### 货柜预览截图
 
@@ -52,16 +52,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:dmc/boreal/dmc_boreal_【interface】_m` |
-| `display_name` | 显示名称 | `DMC Boreal 矿石运输箱 M 型` |
-| `cargo_description` | 货柜描述 | `§lDMC Boreal 矿石运输箱 M 型\n§r§7粗犷的耐磨框架能够承受原矿装载时的撞击和碎石摩擦，结构简单且便于矿区现场修补，是深岩矿业基层采掘作业的标准矿石箱。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：Boreal Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `M` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/dmc/boreal/dmc_boreal_sd_m`                                                                                                                                                           |
+| `display_name`      | 显示名称         | `DMC Boreal 矿石运输箱 M 型`                                                                                                                                                                                  |
+| `cargo_description` | 货柜描述         | `§lDMC Boreal 矿石运输箱 M 型\n§r§7粗犷的耐磨框架能够承受原矿装载时的撞击和碎石摩擦，结构简单且便于矿区现场修补，是深岩矿业基层采掘作业的标准矿石箱。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：Boreal Series\n§r§l接口：SD 标准对接接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                   |
+| `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                                      |
+| `cargo_level`       | 货柜等级         | `M`                                                                                                                                                                                                     |
+| `max_integrity`     | 最大完整性        | 130                                                                                                                                                                                                     |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                              |
 
 ### 结构信息
 
@@ -78,11 +78,13 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `ore` | 5 | 1.9 | 1.25 | 1.25 | 1.2 | 1.3 |
+| `stone` | 4 | 1.8 | 1.2 | 1.2 | 1.15 | 1.25 |
+| `machinery` | 1 | 1.6 | 1.0 | 0.9 | 1.1 | 1.15 |
 
 ---
 
-## DMC-Boreal-【INTERFACE】-L
+## DMC-Boreal-SD-L
 
 ### DMC Boreal 矿石运输箱 L 型
 
@@ -90,7 +92,7 @@
 
 **制造商：** Deepcore Mining Corporation  
 **系列：** Boreal Series  
-**接口：** 【待确定】
+**接口：** SD 标准对接接口
 
 ### 货柜预览截图
 
@@ -98,16 +100,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:dmc/boreal/dmc_boreal_【interface】_l` |
-| `display_name` | 显示名称 | `DMC Boreal 矿石运输箱 L 型` |
-| `cargo_description` | 货柜描述 | `§lDMC Boreal 矿石运输箱 L 型\n§r§7粗犷的耐磨框架能够承受原矿装载时的撞击和碎石摩擦，结构简单且便于矿区现场修补，是深岩矿业基层采掘作业的标准矿石箱。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：Boreal Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `L` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                     |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/dmc/boreal/dmc_boreal_sd_l`                                                                                                                                                          |
+| `display_name`      | 显示名称         | `DMC Boreal 矿石运输箱 L 型`                                                                                                                                                                                 |
+| `cargo_description` | 货柜描述         | `§lDMC Boreal 矿石运输箱 L 型\n§r§7粗犷的耐磨框架能够承受原矿装载时的撞击和碎石摩擦，结构简单且便于矿区现场修补，是深岩矿业基层采掘作业的标准矿石箱。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：Boreal Series\n§r§l接口：SD 标准对接接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                  |
+| `max_owned`         | 每个玩家的同时最大持有量 | 7                                                                                                                                                                                                      |
+| `cargo_level`       | 货柜等级         | `L`                                                                                                                                                                                                    |
+| `max_integrity`     | 最大完整性        | 130                                                                                                                                                                                                    |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                             |
 
 ### 结构信息
 
@@ -124,7 +126,9 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `ore` | 5 | 1.9 | 1.25 | 1.25 | 1.2 | 1.3 |
+| `stone` | 4 | 1.8 | 1.2 | 1.2 | 1.15 | 1.25 |
+| `machinery` | 1 | 1.6 | 1.0 | 0.9 | 1.1 | 1.15 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

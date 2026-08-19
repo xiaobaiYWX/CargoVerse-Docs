@@ -2,7 +2,7 @@
 
 | 产品系列       | 规格  | 接口  | 定位   | 特点          |
 | ---------- | --- | --- | ---- | ----------- |
-| Courier 系列 | S/M | LM  | 快递货柜 | 极轻；快速装卸；高周转 |
+| Courier 系列 | S/M | MC  | 快递货柜 | 极轻；快速装卸；高周转 |
 
 ## 适用货物
 
@@ -11,8 +11,8 @@
 > “CargoType 默认词条 ID”来自 `cargo_value_constants/default.json` 的 `cargo_type_affixes`，不在货柜定义中重复声明。
 > `最终词条 = CargoType 默认词条 - 本规格 blocked_affixes`；`blocked_affixes` 是货柜根节点字段，对该规格的所有 CargoType 统一生效。
 
-| CargoType | 中文名称 | 是否可用 | 适用规格 | CargoType 默认词条 ID | 简易描述 |
-| --- | --- | :---: | --- | --- | --- |
+| CargoType           | 中文名称    | 是否可用 | 适用规格 | CargoType 默认词条 ID                                                | 简易描述                              |
+| ------------------- | ------- | :--: | ---- | ---------------------------------------------------------------- | --------------------------------- |
 | `agriculture`       | 农业产品    |  √   | S/M  | `time_limit` | 轻量快装结构适合小批量高频配送，可运输谷物、蔬果、种苗等农产品。  |
 | `livestock`         | 活体生物    |  ×   | —    | `height_limit` |                                   |
 | `ore`               | 矿石资源    |  ×   | —    | 无 |                                   |
@@ -36,7 +36,7 @@
 
 ---
 
-## SPL-Courier-【INTERFACE】-S
+## SPL-Courier-MC-S
 
 ### SPL Courier 快递货柜 S 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Skyport Logistics  
 **系列：** Courier Series  
-**接口：** 【待确定】
+**接口：** MC 磁力约束
 
 ### 货柜预览截图
 
@@ -52,16 +52,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:spl/courier/spl_courier_【interface】_s` |
-| `display_name` | 显示名称 | `SPL Courier 快递货柜 S 型` |
-| `cargo_description` | 货柜描述 | `§lSPL Courier 快递货柜 S 型\n§r§7采用醒目的橙白识别涂装和轻量化快速锁止结构，服务于急件分拣、区域中转与多站点接力，是云港物流高周转网络的快递单元。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Skyport Logistics\n§r§l系列：Courier Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `S` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                      |
+| ------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/spl/courier/spl_courier_mc_s`                                                                                                                                         |
+| `display_name`      | 显示名称         | `SPL Courier 快递货柜 S 型`                                                                                                                                                                  |
+| `cargo_description` | 货柜描述         | `§lSPL Courier 快递货柜 S 型\n§r§7采用醒目的橙白识别涂装和轻量化快速锁止结构，服务于急件分拣、区域中转与多站点接力，是云港物流高周转网络的快递单元。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Skyport Logistics\n§r§l系列：Courier Series\n§r§l接口：MC 磁力约束` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                   |
+| `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                      |
+| `cargo_level`       | 货柜等级         | `S`                                                                                                                                                                                     |
+| `max_integrity`     | 最大完整性        | 70                                                                                                                                                                                      |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                              |
 
 ### 结构信息
 
@@ -78,11 +78,17 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `agriculture` | 4 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `textile` | 4 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `component` | 4 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `electronics` | 4 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `supplies` | 5 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `medical` | 5 | 0.55 | 1.25 | 0.75 | 1.3 | 1.2 |
+| `luxury` | 3 | 0.55 | 1.2 | 0.75 | 1.2 | 1.1 |
 
 ---
 
-## SPL-Courier-【INTERFACE】-M
+## SPL-Courier-MC-M
 
 ### SPL Courier 快递货柜 M 型
 
@@ -90,7 +96,7 @@
 
 **制造商：** Skyport Logistics  
 **系列：** Courier Series  
-**接口：** 【待确定】
+**接口：** MC 磁力约束
 
 ### 货柜预览截图
 
@@ -100,13 +106,13 @@
 
 | 参数 | 名称 | 内容 |
 | --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:spl/courier/spl_courier_【interface】_m` |
+| `template` | 货柜结构ID | `cargoverse:cargo/spl/courier/spl_courier_mc_m` |
 | `display_name` | 显示名称 | `SPL Courier 快递货柜 M 型` |
-| `cargo_description` | 货柜描述 | `§lSPL Courier 快递货柜 M 型\n§r§7采用醒目的橙白识别涂装和轻量化快速锁止结构，服务于急件分拣、区域中转与多站点接力，是云港物流高周转网络的快递单元。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Skyport Logistics\n§r§l系列：Courier Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lSPL Courier 快递货柜 M 型\n§r§7采用醒目的橙白识别涂装和轻量化快速锁止结构，服务于急件分拣、区域中转与多站点接力，是云港物流高周转网络的快递单元。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Skyport Logistics\n§r§l系列：Courier Series\n§r§l接口：MC 磁力约束` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 10 |
 | `cargo_level` | 货柜等级 | `M` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 70 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
@@ -124,7 +130,14 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `agriculture` | 4 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `fuel_resource` | 1 | 0.75 | 1.1 | 0.85 | 1.25 | 1.1 |
+| `textile` | 4 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `component` | 4 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `electronics` | 4 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `supplies` | 5 | 0.55 | 1.05 | 0.85 | 1.1 | 1.1 |
+| `medical` | 5 | 0.55 | 1.25 | 0.75 | 1.3 | 1.2 |
+| `luxury` | 3 | 0.55 | 1.2 | 0.75 | 1.2 | 1.1 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/02内容设计/3.深岩矿业集团-Deepcore Mining Corporation/03_CoreVault系列货柜.md",
+                "file": "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/99_特别订单系列货柜.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_CoreVault系列货柜"
+              "title": "99_特别订单系列货柜"
             }
           }
         ],
@@ -50,12 +50,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/03_CryoVault系列货柜.md",
+                "file": "01货柜系统/02内容设计/02_货柜命名规则.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_CryoVault系列货柜"
+              "title": "02_货柜命名规则"
             }
           }
         ]
@@ -224,32 +224,33 @@
   },
   "active": "f44f19913f2013d1",
   "lastOpenFiles": [
-    "01货柜系统/02内容设计/3.深岩矿业集团-Deepcore Mining Corporation/02_TitanHaul系列货柜.md",
-    "01货柜系统/02内容设计/3.深岩矿业集团-Deepcore Mining Corporation/03_CoreVault系列货柜.md",
-    "01货柜系统/02内容设计/3.深岩矿业集团-Deepcore Mining Corporation/01_Boreal系列货柜.md",
-    "01货柜系统/02内容设计/2.云港物流集团-Skyport Logistics/03_Express系列货柜.md",
-    "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/01_Atlas系列货柜.md",
-    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/01_Apollo系列货柜.md",
+    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/02_Explorer系列货柜.md",
+    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/01_Bastion系列货柜.md",
+    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/03_Fortress系列货柜.md",
+    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/README.md",
+    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/99_特别订单系列货柜.md",
+    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/99_特别订单系列货柜.md",
+    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/99_特别订单系列货柜.md",
+    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/99_特别订单系列货柜.md",
+    "01货柜系统/02内容设计/4.绿洲农业联盟-Verdant BioSystems/99_特别订单系列货柜.md",
+    "01货柜系统/02内容设计/3.深岩矿业集团-Deepcore Mining Corporation/99_特别订单系列货柜.md",
+    "01货柜系统/02内容设计/2.云港物流集团-Skyport Logistics/99_特别订单系列货柜.md",
+    "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/99_特别订单系列货柜.md",
+    "01货柜系统/02内容设计/02_货柜命名规则.md",
+    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/02_Sentinel系列货柜.md",
+    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/03_Genesis系列货柜.md",
+    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/01_Archive系列货柜.md",
+    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/README.md",
+    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/01_Salvage系列货柜.md",
+    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/02_Relic系列货柜.md",
+    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/03_Blackbox系列货柜.md",
+    "01货柜系统/02内容设计/01_制造商.md",
     "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/03_CryoVault系列货柜.md",
     "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/02_Reactor系列货柜.md",
-    "01货柜系统/02内容设计/6.奥术研究院(前文明研究组织)-Horizon Research Institute/01_Archive系列货柜.md",
-    "01货柜系统/02内容设计/6.奥术研究院(前文明研究组织)-Horizon Research Institute/03_Genesis系列货柜.md",
-    "01货柜系统/02内容设计/6.奥术研究院(前文明研究组织)-Horizon Research Institute/02_Explorer系列货柜.md",
-    "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/04_Vulcan系列货柜.md",
+    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/01_Apollo系列货柜.md",
     "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/README.md",
-    "01货柜系统/02内容设计/02_货柜命名规则.md",
-    "01货柜系统/01核心系统/04_词条与完整度系统.md",
-    "01货柜系统/01核心系统/06_货柜数值与词条常量.md",
-    "01货柜系统/02内容设计/03_货柜数据常数.md",
-    "01货柜系统/01核心系统/02_货柜定义系统.md",
-    "01货柜系统/02内容设计/2.云港物流集团-Skyport Logistics/01_Courier系列货柜.md",
-    "01货柜系统/02内容设计/2.云港物流集团-Skyport Logistics/02_Cargo系列货柜.md",
-    "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/02_Hermes系列货柜.md",
-    "01货柜系统/02内容设计/4.绿洲农业联盟-Verdant BioSystems/02_Harvest系列货柜.md",
-    "01货柜系统/02内容设计/4.绿洲农业联盟-Verdant BioSystems/01_BioPod系列货柜.md",
     "01货柜系统/02内容设计/4.绿洲农业联盟-Verdant BioSystems/03_Eden系列货柜.md",
-    "01货柜系统/02内容设计/3.深岩矿业集团-Deepcore Mining Corporation/README.md",
-    "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/03_Titan系列货柜.md",
+    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute",
     "assets/images/cargo/AUI/Titan/AUI-Titan-SD-XL.png",
     "assets/images/cargo/AUI/Titan/AUI-Titan-SD-X.png",
     "assets/images/cargo/AUI/Titan/AUI-Titan-SD-L.png",
@@ -268,7 +269,6 @@
     "07货币系统",
     "未命名.base",
     "assets/images/cargo/AUI/Atlas",
-    "assets/images/cargo/AUI",
-    "assets/images/ui"
+    "assets/images/cargo/AUI"
   ]
 }

@@ -36,7 +36,7 @@
 
 ---
 
-## HEC-Reactor-【INTERFACE】-L
+## HEC-Reactor-HD-L
 
 ### HEC Reactor 高能设备运输 L 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Helios Energy Corporation  
 **系列：** Reactor Series  
-**接口：** 【待确定】
+**接口：** HD 重型保持接口
 
 ### 货柜预览截图
 
@@ -52,16 +52,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:hec/reactor/hec_reactor_【interface】_l` |
-| `display_name` | 显示名称 | `HEC Reactor 高能设备运输 L 型` |
-| `cargo_description` | 货柜描述 | `§lHEC Reactor 高能设备运输 L 型\n§r§7以厚重屏蔽层、多级安全锁和强化防护结构封装反应设备核心部件及高能装置，只允许在具备资质的设施之间进行受控运输。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Helios Energy Corporation\n§r§l系列：Reactor Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `L` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                    |
+| ------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/hec/reactor/hec_reactor_hd_l`                                                                                                                                                       |
+| `display_name`      | 显示名称         | `HEC Reactor 高能设备运输 L 型`                                                                                                                                                                              |
+| `cargo_description` | 货柜描述         | `§lHEC Reactor 高能设备运输 L 型\n§r§7以厚重屏蔽层、多级安全锁和强化防护结构封装反应设备核心部件及高能装置，只允许在具备资质的设施之间进行受控运输。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Helios Energy Corporation\n§r§l系列：Reactor Series\n§r§l接口：HD 重型保持接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                 |
+| `max_owned`         | 每个玩家的同时最大持有量 | 7                                                                                                                                                                                                     |
+| `cargo_level`       | 货柜等级         | `L`                                                                                                                                                                                                   |
+| `max_integrity`     | 最大完整性        | 155                                                                                                                                                                                                   |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                            |
 
 ### 结构信息
 
@@ -78,11 +78,14 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `fuel_resource` | 4 | 2.4 | 1.6 | 0.55 | 1.7 | 1.5 |
+| `machinery` | 4 | 2.2 | 1.5 | 0.6 | 1.6 | 1.4 |
+| `electronics` | 2 | 2.2 | 1.4 | 0.5 | 1.6 | 1.4 |
+| `experimental` | 4 | 2.3 | 1.8 | 0.4 | 1.8 | 1.6 |
 
 ---
 
-## HEC-Reactor-【INTERFACE】-X
+## HEC-Reactor-HD-X
 
 ### HEC Reactor 高能设备运输 X 型
 
@@ -90,7 +93,7 @@
 
 **制造商：** Helios Energy Corporation  
 **系列：** Reactor Series  
-**接口：** 【待确定】
+**接口：** HD 重型保持接口
 
 ### 货柜预览截图
 
@@ -100,13 +103,13 @@
 
 | 参数 | 名称 | 内容 |
 | --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:hec/reactor/hec_reactor_【interface】_x` |
+| `template` | 货柜结构ID | `cargoverse:cargo/hec/reactor/hec_reactor_hd_x` |
 | `display_name` | 显示名称 | `HEC Reactor 高能设备运输 X 型` |
-| `cargo_description` | 货柜描述 | `§lHEC Reactor 高能设备运输 X 型\n§r§7以厚重屏蔽层、多级安全锁和强化防护结构封装反应设备核心部件及高能装置，只允许在具备资质的设施之间进行受控运输。该 X 型服务于大型工程与长距离主干运输，可容纳更完整的设备或更大批量货物。\n§r§l制造商：Helios Energy Corporation\n§r§l系列：Reactor Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lHEC Reactor 高能设备运输 X 型\n§r§7以厚重屏蔽层、多级安全锁和强化防护结构封装反应设备核心部件及高能装置，只允许在具备资质的设施之间进行受控运输。该 X 型服务于大型工程与长距离主干运输，可容纳更完整的设备或更大批量货物。\n§r§l制造商：Helios Energy Corporation\n§r§l系列：Reactor Series\n§r§l接口：HD 重型保持接口` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 5 |
 | `cargo_level` | 货柜等级 | `X` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 155 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
@@ -124,7 +127,11 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `fuel_resource` | 4 | 2.4 | 1.6 | 0.55 | 1.7 | 1.5 |
+| `machinery` | 4 | 2.2 | 1.5 | 0.6 | 1.6 | 1.4 |
+| `electronics` | 2 | 2.2 | 1.4 | 0.5 | 1.6 | 1.4 |
+| `structural_module` | 4 | 2.5 | 1.6 | 0.5 | 1.7 | 1.55 |
+| `experimental` | 4 | 2.3 | 1.8 | 0.4 | 1.8 | 1.6 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

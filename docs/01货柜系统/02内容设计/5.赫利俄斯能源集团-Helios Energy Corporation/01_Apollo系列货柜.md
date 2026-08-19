@@ -36,7 +36,7 @@
 
 ---
 
-## HEC-Apollo-【INTERFACE】-M
+## HEC-Apollo-SD-M
 
 ### HEC Apollo 标准能源运输 M 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Helios Energy Corporation  
 **系列：** Apollo Series  
-**接口：** 【待确定】
+**接口：** SD 标准对接接口
 
 ### 货柜预览截图
 
@@ -52,16 +52,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:hec/apollo/hec_apollo_【interface】_m` |
-| `display_name` | 显示名称 | `HEC Apollo 标准能源运输 M 型` |
-| `cargo_description` | 货柜描述 | `§lHEC Apollo 标准能源运输 M 型\n§r§7通过醒目的危险标识、分区隔离和安全阀组承运常规燃料与能源材料，是赫利俄斯能源连接聚落、电站和工业设施的标准供应货柜。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Helios Energy Corporation\n§r§l系列：Apollo Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `M` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/hec/apollo/hec_apollo_sd_m`                                                                                                                                                           |
+| `display_name`      | 显示名称         | `HEC Apollo 标准能源运输 M 型`                                                                                                                                                                                 |
+| `cargo_description` | 货柜描述         | `§lHEC Apollo 标准能源运输 M 型\n§r§7通过醒目的危险标识、分区隔离和安全阀组承运常规燃料与能源材料，是赫利俄斯能源连接聚落、电站和工业设施的标准供应货柜。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Helios Energy Corporation\n§r§l系列：Apollo Series\n§r§l接口：SD 标准对接接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                   |
+| `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                                      |
+| `cargo_level`       | 货柜等级         | `M`                                                                                                                                                                                                     |
+| `max_integrity`     | 最大完整性        | 125                                                                                                                                                                                                     |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                              |
 
 ### 结构信息
 
@@ -78,11 +78,12 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `fuel_resource` | 5 | 1.9 | 1.3 | 1.15 | 1.3 | 1.35 |
+| `chemical` | 3 | 1.7 | 1.25 | 0.9 | 1.4 | 1.25 |
 
 ---
 
-## HEC-Apollo-【INTERFACE】-L
+## HEC-Apollo-SD-L
 
 ### HEC Apollo 标准能源运输 L 型
 
@@ -90,7 +91,7 @@
 
 **制造商：** Helios Energy Corporation  
 **系列：** Apollo Series  
-**接口：** 【待确定】
+**接口：** SD 标准对接接口
 
 ### 货柜预览截图
 
@@ -100,13 +101,13 @@
 
 | 参数 | 名称 | 内容 |
 | --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:hec/apollo/hec_apollo_【interface】_l` |
+| `template` | 货柜结构ID | `cargoverse:cargo/hec/apollo/hec_apollo_sd_l` |
 | `display_name` | 显示名称 | `HEC Apollo 标准能源运输 L 型` |
-| `cargo_description` | 货柜描述 | `§lHEC Apollo 标准能源运输 L 型\n§r§7通过醒目的危险标识、分区隔离和安全阀组承运常规燃料与能源材料，是赫利俄斯能源连接聚落、电站和工业设施的标准供应货柜。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Helios Energy Corporation\n§r§l系列：Apollo Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lHEC Apollo 标准能源运输 L 型\n§r§7通过醒目的危险标识、分区隔离和安全阀组承运常规燃料与能源材料，是赫利俄斯能源连接聚落、电站和工业设施的标准供应货柜。该 L 型扩大了承载空间并强化受力结构，面向批量货流和大型运输平台。\n§r§l制造商：Helios Energy Corporation\n§r§l系列：Apollo Series\n§r§l接口：SD 标准对接接口` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 7 |
 | `cargo_level` | 货柜等级 | `L` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 125 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
@@ -124,7 +125,8 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `fuel_resource` | 5 | 1.9 | 1.3 | 1.15 | 1.3 | 1.35 |
+| `chemical` | 3 | 1.7 | 1.25 | 0.9 | 1.4 | 1.25 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)

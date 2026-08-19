@@ -36,7 +36,7 @@
 
 ---
 
-## DMC-CoreVault-【INTERFACE】-S
+## DMC-CoreVault-SD-S
 
 ### DMC CoreVault 稀有矿物存储 S 型
 
@@ -44,7 +44,7 @@
 
 **制造商：** Deepcore Mining Corporation  
 **系列：** CoreVault Series  
-**接口：** 【待确定】
+**接口：** SD 标准对接接口
 
 ### 货柜预览截图
 
@@ -52,16 +52,16 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:dmc/corevault/dmc_corevault_【interface】_s` |
-| `display_name` | 显示名称 | `DMC CoreVault 稀有矿物存储 S 型` |
-| `cargo_description` | 货柜描述 | `§lDMC CoreVault 稀有矿物存储 S 型\n§r§7通过装甲外壳、缓冲内衬与分隔式内仓保护宝石、稀有晶体及高纯矿物，并以独立封条满足矿区和交易点之间的安全交接。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：CoreVault Series\n§r§l接口：【待确定】` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
-| `cargo_level` | 货柜等级 | `S` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                     |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/dmc/corevault/dmc_corevault_sd_s`                                                                                                                                                    |
+| `display_name`      | 显示名称         | `DMC CoreVault 稀有矿物存储 S 型`                                                                                                                                                                             |
+| `cargo_description` | 货柜描述         | `§lDMC CoreVault 稀有矿物存储 S 型\n§r§7通过装甲外壳、缓冲内衬与分隔式内仓保护宝石、稀有晶体及高纯矿物，并以独立封条满足矿区和交易点之间的安全交接。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：CoreVault Series\n§r§l接口：SD 标准对接接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                  |
+| `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                                     |
+| `cargo_level`       | 货柜等级         | `S`                                                                                                                                                                                                    |
+| `max_integrity`     | 最大完整性        | 140                                                                                                                                                                                                    |
+| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                             |
 
 ### 结构信息
 
@@ -78,11 +78,14 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `ore` | 5 | 1.8 | 1.55 | 0.75 | 1.4 | 1.35 |
+| `luxury` | 5 | 1.8 | 1.65 | 0.55 | 1.5 | 1.3 |
+| `research_sample` | 3 | 1.8 | 1.5 | 0.55 | 1.45 | 1.35 |
+| `experimental` | 2 | 1.8 | 1.6 | 0.45 | 1.55 | 1.4 |
 
 ---
 
-## DMC-CoreVault-【INTERFACE】-M
+## DMC-CoreVault-SD-M
 
 ### DMC CoreVault 稀有矿物存储 M 型
 
@@ -90,7 +93,7 @@
 
 **制造商：** Deepcore Mining Corporation  
 **系列：** CoreVault Series  
-**接口：** 【待确定】
+**接口：** SD 标准对接接口
 
 ### 货柜预览截图
 
@@ -100,13 +103,13 @@
 
 | 参数 | 名称 | 内容 |
 | --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:dmc/corevault/dmc_corevault_【interface】_m` |
+| `template` | 货柜结构ID | `cargoverse:cargo/dmc/corevault/dmc_corevault_sd_m` |
 | `display_name` | 显示名称 | `DMC CoreVault 稀有矿物存储 M 型` |
-| `cargo_description` | 货柜描述 | `§lDMC CoreVault 稀有矿物存储 M 型\n§r§7通过装甲外壳、缓冲内衬与分隔式内仓保护宝石、稀有晶体及高纯矿物，并以独立封条满足矿区和交易点之间的安全交接。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：CoreVault Series\n§r§l接口：【待确定】` |
+| `cargo_description` | 货柜描述 | `§lDMC CoreVault 稀有矿物存储 M 型\n§r§7通过装甲外壳、缓冲内衬与分隔式内仓保护宝石、稀有晶体及高纯矿物，并以独立封条满足矿区和交易点之间的安全交接。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Deepcore Mining Corporation\n§r§l系列：CoreVault Series\n§r§l接口：SD 标准对接接口` |
 | `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 【待填写】 |
+| `max_owned` | 每个玩家的同时最大持有量 | 10 |
 | `cargo_level` | 货柜等级 | `M` |
-| `max_integrity` | 最大完整性 | 【待填写；无词条时不使用】 |
+| `max_integrity` | 最大完整性 | 140 |
 | `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
 
 ### 结构信息
@@ -124,7 +127,10 @@
 
 | `cargo_type` | `weight` | `mass_modifier` | `price_modifier` | `cargo_units_modifier` | `license_modifier` | `prosperity_modifier` |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `【cargo_type】` | 1 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| `ore` | 5 | 1.8 | 1.55 | 0.75 | 1.4 | 1.35 |
+| `luxury` | 5 | 1.8 | 1.65 | 0.55 | 1.5 | 1.3 |
+| `research_sample` | 3 | 1.8 | 1.5 | 0.55 | 1.45 | 1.35 |
+| `experimental` | 2 | 1.8 | 1.6 | 0.45 | 1.55 | 1.4 |
 
 [返回制造商目录](README.md)  
 [返回货柜内容设计](../README.md)
