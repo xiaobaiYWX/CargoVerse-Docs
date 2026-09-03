@@ -1,5 +1,8 @@
 # Fortress 系列货柜设计
 
+> 预留（内容设计）／待验收：保留世界观、命名、美术及历史平衡目标；已迁入数据包的型号以实际 cargo_containers 为准。下文旧整柜字段、类型表和数值不作为现行 JSON 契约，不能直接复制。
+> 现行字段见[容器定义](<../../01核心系统/02_货柜定义系统.md>)与[货物定义](<../../01核心系统/05_货物类型.md>)；用[新设计模板](<../04_货柜设计模板.md>)继续制作。接口文字仅为展示／结构约定，不是容器数据字段。
+
 | 产品系列        | 规格    | 接口  | 定位     | 特点        |
 | ----------- | ----- | --- | ------ | --------- |
 | Fortress 系列 | XL | HD  | 堡垒部署模块 | 前线基地；大型装备 |
@@ -52,25 +55,26 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:cargo/bds/fortress/bds_fortress_hd_xl` |
-| `display_name` | 显示名称 | `BDS Fortress 堡垒部署模块 XL 型` |
-| `cargo_description` | 货柜描述 | `§lBDS Fortress 堡垒部署模块 XL 型\n§r§7将厚重装甲、大型防御装备、指挥设施和基础保障单元整合为可部署模块，用于在高风险区域快速建立长期前线基地。该 XL 型属于超规格平台，面向聚落级设施、战略物资和长期部署任务。\n§r§l制造商：Bastion Defense Systems\n§r§l系列：Fortress Series\n§r§l接口：HD 重型保持接口` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 2 |
-| `cargo_level` | 货柜等级 | `XL` |
-| `max_integrity` | 最大完整性 | 170 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                  |
+| ------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/bds/fortress/bds_fortress_hd_xl`                                                                                                                                                  |
+| `display_name`      | 显示名称         | `BDS Fortress 堡垒部署模块 XL 型`                                                                                                                                                                          |
+| `cargo_description` | 货柜描述         | `§lBDS Fortress 堡垒部署模块 XL 型\n§r§7将厚重装甲、大型防御装备、指挥设施和基础保障单元整合为可部署模块，用于在高风险区域快速建立长期前线基地。该 XL 型属于超规格平台，面向聚落级设施、战略物资和长期部署任务。\n§r§l制造商：Bastion Defense Systems\n§r§l系列：Fortress Series\n§r§l接口：HD 重型保持接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                               |
+| `max_owned`         | 每个玩家的同时最大持有量 | 2                                                                                                                                                                                                   |
+| `cargo_level`       | 货柜等级         | `XL`                                                                                                                                                                                                |
+| `max_integrity`     | 最大完整性        | 170                                                                                                                                                                                                 |
+| `blocked_affixes`   | 屏蔽词条         | `fragile` `radioactive`                                                                                                                                                                             |
+| `base_affixes`      | 货柜基础词条       | `keep_upright`                                                                                                                                                                                      |
 
 ### 结构信息
 
 | 项目 | 内容 |
 | --- | --- |
-| 模板尺寸 | 【X × Y × Z】 |
-| 体积 | 【待填写】 |
-| 质量占位方块数量 | 【待填写】 |
-| 结构基本质量 | 【待填写】 |
+| 模板尺寸 | 16 × 16 × 16 |
+| 体积 | 4096 |
+| 质量占位方块数量 | 8 |
+| 结构基本质量 | 12 |
 
 ### CargoType 参数
 

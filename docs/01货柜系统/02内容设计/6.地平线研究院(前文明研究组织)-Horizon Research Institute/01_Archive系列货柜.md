@@ -1,5 +1,8 @@
 # Archive 系列货柜设计
 
+> 预留（内容设计）／待验收：保留世界观、命名、美术及历史平衡目标；已迁入数据包的型号以实际 cargo_containers 为准。下文旧整柜字段、类型表和数值不作为现行 JSON 契约，不能直接复制。
+> 现行字段见[容器定义](<../../01核心系统/02_货柜定义系统.md>)与[货物定义](<../../01核心系统/05_货物类型.md>)；用[新设计模板](<../04_货柜设计模板.md>)继续制作。接口文字仅为展示／结构约定，不是容器数据字段。
+
 | 产品系列       | 规格  | 接口  | 定位    | 特点       |
 | ---------- | --- | --- | ----- | -------- |
 | Archive 系列 | S/M | SI  | 数据存储舱 | 高安全；数据保护 |
@@ -61,16 +64,17 @@
 | `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                              |
 | `cargo_level`       | 货柜等级         | `S`                                                                                                                                                                                             |
 | `max_integrity`     | 最大完整性        | 90                                                                                                                                                                                              |
-| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                      |
+| `blocked_affixes`   | 屏蔽词条         | `moisture_proof` `fragile` `keep_upright` `light_sensitive`                                                                                                                                     |
+| `base_affixes`      | 货柜基础词条       | 无                                                                                                                                                                                               |
 
 ### 结构信息
 
 | 项目 | 内容 |
 | --- | --- |
-| 模板尺寸 | 【X × Y × Z】 |
-| 体积 | 【待填写】 |
-| 质量占位方块数量 | 【待填写】 |
-| 结构基本质量 | 【待填写】 |
+| 模板尺寸 | 5 × 5 × 5 |
+| 体积 | 125 |
+| 质量占位方块数量 | 1 |
+| 结构基本质量 | 3 |
 
 ### CargoType 参数
 
@@ -99,25 +103,26 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:cargo/hri/archive/hri_archive_si_m` |
-| `display_name` | 显示名称 | `HRI Archive 数据存储舱 M 型` |
-| `cargo_description` | 货柜描述 | `§lHRI Archive 数据存储舱 M 型\n§r§7采用黑色屏蔽外壳、冗余供能和多重访问控制保护加密记录、研究终端及珍贵数据载体，承担地平线研究院的知识保存任务。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Horizon Research Institute\n§r§l系列：Archive Series\n§r§l接口：SI 滑轨接口` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 10 |
-| `cargo_level` | 货柜等级 | `M` |
-| `max_integrity` | 最大完整性 | 90 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                   |
+| ------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/hri/archive/hri_archive_si_m`                                                                                                                                                      |
+| `display_name`      | 显示名称         | `HRI Archive 数据存储舱 M 型`                                                                                                                                                                              |
+| `cargo_description` | 货柜描述         | `§lHRI Archive 数据存储舱 M 型\n§r§7采用黑色屏蔽外壳、冗余供能和多重访问控制保护加密记录、研究终端及珍贵数据载体，承担地平线研究院的知识保存任务。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Horizon Research Institute\n§r§l系列：Archive Series\n§r§l接口：SI 滑轨接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                |
+| `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                                   |
+| `cargo_level`       | 货柜等级         | `M`                                                                                                                                                                                                  |
+| `max_integrity`     | 最大完整性        | 90                                                                                                                                                                                                   |
+| `blocked_affixes`   | 屏蔽词条         | `moisture_proof` `fragile` `keep_upright` `light_sensitive`                                                                                                                                          |
+| `base_affixes`      | 货柜基础词条       | 无                                                                                                                                                                                                    |
 
 ### 结构信息
 
 | 项目 | 内容 |
 | --- | --- |
-| 模板尺寸 | 【X × Y × Z】 |
-| 体积 | 【待填写】 |
-| 质量占位方块数量 | 【待填写】 |
-| 结构基本质量 | 【待填写】 |
+| 模板尺寸 | 7 × 6 × 7 |
+| 体积 | 294 |
+| 质量占位方块数量 | 1 |
+| 结构基本质量 | 7 |
 
 ### CargoType 参数
 

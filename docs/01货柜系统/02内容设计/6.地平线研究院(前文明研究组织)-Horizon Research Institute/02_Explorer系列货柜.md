@@ -1,5 +1,8 @@
 # Explorer 系列货柜设计
 
+> 预留（内容设计）／待验收：保留世界观、命名、美术及历史平衡目标；已迁入数据包的型号以实际 cargo_containers 为准。下文旧整柜字段、类型表和数值不作为现行 JSON 契约，不能直接复制。
+> 现行字段见[容器定义](<../../01核心系统/02_货柜定义系统.md>)与[货物定义](<../../01核心系统/05_货物类型.md>)；用[新设计模板](<../04_货柜设计模板.md>)继续制作。接口文字仅为展示／结构约定，不是容器数据字段。
+
 | 产品系列        | 规格    | 接口  | 定位    | 特点        |
 | ----------- | ----- | --- | ----- | --------- |
 | Explorer 系列 | S/M/L | SI  | 科考样本舱 | 野外采样；环境适应 |
@@ -52,25 +55,26 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:cargo/hri/explorer/hri_explorer_si_s` |
-| `display_name` | 显示名称 | `HRI Explorer 科考样本舱 S 型` |
-| `cargo_description` | 货柜描述 | `§lHRI Explorer 科考样本舱 S 型\n§r§7通过模块化保存单元和耐候外壳收纳土壤、矿物、生物样本及现场仪器，使地平线研究院的调查队能在复杂遗迹环境中完成采集与回运。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Horizon Research Institute\n§r§l系列：Explorer Series\n§r§l接口：SI 滑轨接口` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 10 |
-| `cargo_level` | 货柜等级 | `S` |
-| `max_integrity` | 最大完整性 | 100 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                     |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/hri/explorer/hri_explorer_si_s`                                                                                                                                                      |
+| `display_name`      | 显示名称         | `HRI Explorer 科考样本舱 S 型`                                                                                                                                                                               |
+| `cargo_description` | 货柜描述         | `§lHRI Explorer 科考样本舱 S 型\n§r§7通过模块化保存单元和耐候外壳收纳土壤、矿物、生物样本及现场仪器，使地平线研究院的调查队能在复杂遗迹环境中完成采集与回运。该 S 型强调便携与快速交接，适合小批量货物及小型运输平台。\n§r§l制造商：Horizon Research Institute\n§r§l系列：Explorer Series\n§r§l接口：SI 滑轨接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                  |
+| `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                                     |
+| `cargo_level`       | 货柜等级         | `S`                                                                                                                                                                                                    |
+| `max_integrity`     | 最大完整性        | 100                                                                                                                                                                                                    |
+| `blocked_affixes`   | 屏蔽词条         | `moisture_proof` `light_sensitive`                                                                                                                                                                     |
+| `base_affixes`      | 货柜基础词条       | 无                                                                                                                                                                                                      |
 
 ### 结构信息
 
 | 项目 | 内容 |
 | --- | --- |
-| 模板尺寸 | 【X × Y × Z】 |
-| 体积 | 【待填写】 |
-| 质量占位方块数量 | 【待填写】 |
-| 结构基本质量 | 【待填写】 |
+| 模板尺寸 | 7 × 4 × 5 |
+| 体积 | 140 |
+| 质量占位方块数量 | 1 |
+| 结构基本质量 | 16 |
 
 ### CargoType 参数
 
@@ -101,25 +105,26 @@
 
 ### 货柜基础参数
 
-| 参数 | 名称 | 内容 |
-| --- | --- | --- |
-| `template` | 货柜结构ID | `cargoverse:cargo/hri/explorer/hri_explorer_si_m` |
-| `display_name` | 显示名称 | `HRI Explorer 科考样本舱 M 型` |
-| `cargo_description` | 货柜描述 | `§lHRI Explorer 科考样本舱 M 型\n§r§7通过模块化保存单元和耐候外壳收纳土壤、矿物、生物样本及现场仪器，使地平线研究院的调查队能在复杂遗迹环境中完成采集与回运。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Horizon Research Institute\n§r§l系列：Explorer Series\n§r§l接口：SI 滑轨接口` |
-| `currency_id` | 交易物品ID | `cargoverse:enderite` |
-| `max_owned` | 每个玩家的同时最大持有量 | 10 |
-| `cargo_level` | 货柜等级 | `M` |
-| `max_integrity` | 最大完整性 | 100 |
-| `blocked_affixes` | 屏蔽词条 | `[]`（待根据本规格货柜能力调整；填写词条 ID） |
+| 参数                  | 名称           | 内容                                                                                                                                                                                                          |
+| ------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `template`          | 货柜结构ID       | `cargoverse:cargo/hri/explorer/hri_explorer_si_m`                                                                                                                                                           |
+| `display_name`      | 显示名称         | `HRI Explorer 科考样本舱 M 型`                                                                                                                                                                                    |
+| `cargo_description` | 货柜描述         | `§lHRI Explorer 科考样本舱 M 型\n§r§7通过模块化保存单元和耐候外壳收纳土壤、矿物、生物样本及现场仪器，使地平线研究院的调查队能在复杂遗迹环境中完成采集与回运。该 M 型在容量、重量与周转效率之间取得平衡，是系列中的常用主力规格。\n§r§l制造商：Horizon Research Institute\n§r§l系列：Explorer Series\n§r§l接口：SI 滑轨接口` |
+| `currency_id`       | 交易物品ID       | `cargoverse:enderite`                                                                                                                                                                                       |
+| `max_owned`         | 每个玩家的同时最大持有量 | 10                                                                                                                                                                                                          |
+| `cargo_level`       | 货柜等级         | `M`                                                                                                                                                                                                         |
+| `max_integrity`     | 最大完整性        | 100                                                                                                                                                                                                         |
+| `blocked_affixes`   | 屏蔽词条         | `moisture_proof` `light_sensitive`                                                                                                                                                                          |
+| `base_affixes`      | 货柜基础词条       | 无                                                                                                                                                                                                           |
 
 ### 结构信息
 
 | 项目 | 内容 |
 | --- | --- |
-| 模板尺寸 | 【X × Y × Z】 |
-| 体积 | 【待填写】 |
-| 质量占位方块数量 | 【待填写】 |
-| 结构基本质量 | 【待填写】 |
+| 模板尺寸 | 9 × 5 × 5 |
+| 体积 | 225 |
+| 质量占位方块数量 | 1 |
+| 结构基本质量 | 25 |
 
 ### CargoType 参数
 
@@ -161,16 +166,17 @@
 | `max_owned`         | 每个玩家的同时最大持有量 | 7                                                                                                                                                                                                          |
 | `cargo_level`       | 货柜等级         | `L`                                                                                                                                                                                                        |
 | `max_integrity`     | 最大完整性        | 100                                                                                                                                                                                                        |
-| `blocked_affixes`   | 屏蔽词条         | `[]`（待根据本规格货柜能力调整；填写词条 ID）                                                                                                                                                                                 |
+| `blocked_affixes`   | 屏蔽词条         | `moisture_proof` `light_sensitive`                                                                                                                                                                         |
+| `base_affixes`      | 货柜基础词条       | 无                                                                                                                                                                                                          |
 
 ### 结构信息
 
 | 项目 | 内容 |
 | --- | --- |
-| 模板尺寸 | 【X × Y × Z】 |
-| 体积 | 【待填写】 |
-| 质量占位方块数量 | 【待填写】 |
-| 结构基本质量 | 【待填写】 |
+| 模板尺寸 | 13 × 7 × 7 |
+| 体积 | 637 |
+| 质量占位方块数量 | 2 |
+| 结构基本质量 | 108 |
 
 ### CargoType 参数
 
