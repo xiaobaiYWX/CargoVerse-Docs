@@ -4,61 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "887dbfa76514ea5b",
+        "id": "3c4c6a18663a2c9e",
         "type": "tabs",
-        "dimension": 45.53249097472924,
         "children": [
           {
-            "id": "f13b5441bcf385ed",
+            "id": "d5ddb6253b151254",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/02内容设计/02_货柜命名规则.md",
+                "file": "10世界表面UI系统/04_交互按钮组件规范.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_货柜命名规则"
+              "title": "04_交互按钮组件规范"
             }
           },
           {
-            "id": "f44f19913f2013d1",
+            "id": "550bc88d7702ce03",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/99_特别订单系列货柜.md",
+                "file": "06开发与运维/03_命令.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "99_特别订单系列货柜"
+              "title": "03_命令"
             }
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "d0d03e71e53004b2",
-        "type": "tabs",
-        "dimension": 54.46750902527076,
-        "children": [
-          {
-            "id": "fb0a652155b10e33",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01货柜系统/02内容设计/02_货柜命名规则.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02_货柜命名规则"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -222,53 +200,54 @@
       "bases:新建数据库": false
     }
   },
-  "active": "f44f19913f2013d1",
+  "active": "ae1b675a1d7513a1",
   "lastOpenFiles": [
-    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/02_Explorer系列货柜.md",
-    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/01_Bastion系列货柜.md",
-    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/03_Fortress系列货柜.md",
-    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/README.md",
-    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/99_特别订单系列货柜.md",
-    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/99_特别订单系列货柜.md",
-    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/99_特别订单系列货柜.md",
-    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/99_特别订单系列货柜.md",
-    "01货柜系统/02内容设计/4.绿洲农业联盟-Verdant BioSystems/99_特别订单系列货柜.md",
-    "01货柜系统/02内容设计/3.深岩矿业集团-Deepcore Mining Corporation/99_特别订单系列货柜.md",
-    "01货柜系统/02内容设计/2.云港物流集团-Skyport Logistics/99_特别订单系列货柜.md",
-    "01货柜系统/02内容设计/1.天穹联合工业-Aether Union Industries/99_特别订单系列货柜.md",
-    "01货柜系统/02内容设计/02_货柜命名规则.md",
-    "01货柜系统/02内容设计/7.铁壁防务集团-Bastion Defense Systems/02_Sentinel系列货柜.md",
-    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/03_Genesis系列货柜.md",
-    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/01_Archive系列货柜.md",
-    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute/README.md",
-    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/01_Salvage系列货柜.md",
-    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/02_Relic系列货柜.md",
-    "01货柜系统/02内容设计/8.遗民贸易协会-Remnant Exchange/03_Blackbox系列货柜.md",
-    "01货柜系统/02内容设计/01_制造商.md",
-    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/03_CryoVault系列货柜.md",
-    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/02_Reactor系列货柜.md",
-    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/01_Apollo系列货柜.md",
-    "01货柜系统/02内容设计/5.赫利俄斯能源集团-Helios Energy Corporation/README.md",
-    "01货柜系统/02内容设计/4.绿洲农业联盟-Verdant BioSystems/03_Eden系列货柜.md",
-    "01货柜系统/02内容设计/6.地平线研究院(前文明研究组织)-Horizon Research Institute",
+    "03功能方块/04_玩家航运档案.md",
+    "03功能方块/04_航运终端.md",
+    "未命名.md",
+    "03功能方块/15_物品售货机.md",
+    "10世界表面UI系统/05_五终端验收矩阵.md",
+    "06开发与运维/08_阶段性重构评估.md",
+    "04商店系统/01_商店体系.md",
+    "04商店系统/README.md",
+    "临时设计/货柜货物制造商重构/05_运行时装载与数值解析.md",
+    "临时设计/货柜货物制造商重构/03_货柜容器定义.md",
+    "10世界表面UI系统/04_交互按钮组件规范.md",
+    "10世界表面UI系统/03_封装仪表组件规范.md",
+    "01货柜系统/01核心系统/02_货柜定义系统.md",
+    "10世界表面UI系统/01_系统架构与接入规范.md",
+    "00_重构状态与验收清单.md",
+    "01货柜系统/01核心系统/09_玩家档案与货柜调度点.md",
+    "02贸易点系统/06_货柜制造台定义.md",
+    "08贸易点网络/01_贸易航图第二版框架.md",
+    "02贸易点系统/05_贸易点定义.md",
+    "02贸易点系统/04_生产线池定义.md",
+    "02贸易点系统/02_贸易点结构生成层与制作规范.md",
+    "02贸易点系统/资源类/农场/云天农庄/贸易点定义.md",
+    "02贸易点系统/01_贸易点运行时与经济.md",
+    "03功能方块/08_货柜轨道系统概览.md",
+    "06开发与运维/02_UI信息显示与数据入口.md",
+    "03功能方块/14_货物卸载机.md",
+    "10世界表面UI系统",
+    "历史归档/2026-08-28整编前/docs/04商店系统",
+    "历史归档/2026-08-28整编前/docs/临时设计/货柜货物制造商重构",
+    "历史归档/2026-08-28整编前/docs/临时设计",
+    "历史归档/2026-08-28整编前/docs/02贸易点系统/03_贸易点设计模板",
+    "历史归档/2026-08-28整编前/docs/01货柜系统/02内容设计",
+    "历史归档/2026-08-28整编前/docs/06开发与运维",
+    "历史归档/2026-08-28整编前/docs/03功能方块",
+    "历史归档/2026-08-28整编前/docs/02贸易点系统",
+    "历史归档/2026-08-28整编前/docs/01货柜系统/01核心系统",
+    "未命名.canvas",
     "assets/images/cargo/AUI/Titan/AUI-Titan-SD-XL.png",
     "assets/images/cargo/AUI/Titan/AUI-Titan-SD-X.png",
     "assets/images/cargo/AUI/Titan/AUI-Titan-SD-L.png",
-    "assets/images/cargo/AUI/Titan",
-    "assets/images/cargo/AUI/新建文件夹",
     "assets/images/cargo/AUI/Hermes/AUI-Hermes-MC-L.png",
     "assets/images/cargo/AUI/Hermes/AUI-Hermes-MC-M.png",
     "assets/images/cargo/AUI/Hermes/AUI-Hermes-MC-S.png",
     "assets/images/cargo/AUI/Hermes/S.png",
-    "assets/images/cargo/AUI/Hermes",
     "assets/images/cargo/test/cargo_decl.png",
     "assets/images/cargo/test/cargo.png",
-    "assets/images/cargo/test/cargo_massblock.png",
-    "assets/images/cargo/test",
-    "assets/images/cargo/新建文件夹",
-    "07货币系统",
-    "未命名.base",
-    "assets/images/cargo/AUI/Atlas",
-    "assets/images/cargo/AUI"
+    "assets/images/cargo/test/cargo_massblock.png"
   ]
 }

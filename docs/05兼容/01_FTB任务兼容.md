@@ -1,6 +1,6 @@
 # FTB Quests 可选兼容
 
-FTB Quests 不是 Cargoverse 的必需前置。未安装 FTB Quests 时，货柜定义、买入终端、出售终端、航运终端、货柜词条和运输许可均可正常工作。
+FTB Quests 不是 Cargoverse 的必需前置。未安装 FTB Quests 时，货柜定义、买入终端、出售终端、玩家航运档案、货柜词条和运输许可均可正常工作。
 
 安装 FTB Quests 后，任务编辑器会额外出现两个 Cargoverse 任务类型：
 
