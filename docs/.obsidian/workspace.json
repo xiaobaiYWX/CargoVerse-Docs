@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10数据包定义与模板/07_贸易点/factory/electronics/精密电子与测绘中心.md",
+                "file": "10数据包定义与模板/07_贸易点/resource/research/地平线野外科考站.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "精密电子与测绘中心"
+              "title": "地平线野外科考站"
+            }
+          },
+          {
+            "id": "23ef2b52cb46eb00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10数据包定义与模板/07_贸易点/resource/anomaly/虚空相位研究站.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "虚空相位研究站"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,54 +200,53 @@
       "bases:新建数据库": false
     }
   },
-  "active": "d5ddb6253b151254",
+  "active": "23ef2b52cb46eb00",
   "lastOpenFiles": [
-    "10数据包定义与模板/07_贸易点/factory/defense/铁壁防务装备站.md",
-    "10数据包定义与模板/07_贸易点/factory/chemical/工业化学品供应站.md",
-    "10数据包定义与模板/07_贸易点/factory/construction/标准建材装配港.md",
-    "10数据包定义与模板/07_贸易点/factory/environment/reclamation_station.md",
-    "10数据包定义与模板/07_贸易点/factory/heavy/heavy_works.md",
-    "10数据包定义与模板/07_贸易点/factory/biology/绿洲生物工程站.md",
-    "10数据包定义与模板/07_贸易点/resource/research/field_station.md",
-    "10数据包定义与模板/07_贸易点/resource/salvage/遗民打捞交换所.md",
-    "10数据包定义与模板/07_贸易点/resource/research/地平线野外科考站.md",
-    "10数据包定义与模板/07_贸易点/resource/mining/深岩露天矿站.md",
+    "10数据包定义与模板/07_贸易点/resource/anomaly/远界异常交换站.md",
+    "10数据包定义与模板/07_贸易点/resource/anomaly/虚空相位研究站.md",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/floor_plans.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/phase_receiving_apron_plan.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/finite_goods_shipping_apron_plan.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/anomaly_outer_shell_plan.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/phase_receiving_cabin_plan.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/finite_anomaly_vaults_cutaway.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/finite_anomaly_vaults_plan.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/stable_trade_cabin_cutaway.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/stable_trade_cabin_plan.png",
+    "10数据包定义与模板/07_贸易点/resource/agriculture/梯田农林站.md",
     "10数据包定义与模板/07_贸易点/resource/general/默认资源贸易点1.md",
     "10数据包定义与模板/07_贸易点/resource/ecology/云泽水产与育种站.md",
+    "10数据包定义与模板/07_贸易点/resource/research/地平线野外科考站.md",
+    "10数据包定义与模板/07_贸易点/resource/salvage/遗民打捞交换所.md",
+    "未命名.md",
+    "10数据包定义与模板/07_贸易点/参考模板分析/Farmstead.md",
+    "10数据包定义与模板/07_贸易点/参考模板分析",
+    "assets/images/trade_points/reference/farmstead/overview.png",
+    "assets/images/trade_points/reference/farmstead",
+    "assets/images/trade_points/reference",
+    "附件/README_GH8_Voxelizer_中文.md",
+    "附件",
+    "10数据包定义与模板/07_贸易点/resource/research/附件/README_GH8_Voxelizer_中文.md",
+    "10数据包定义与模板/07_贸易点/resource/research/附件",
+    "10数据包定义与模板/07_贸易点/resource/mining/深岩露天矿站.md",
+    "assets/images/trade_points/resource/general/default",
+    "assets/images/trade_points/resource/general",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange",
+    "assets/images/trade_points/resource/salvage/remnant_exchange",
+    "assets/images/trade_points/resource/salvage",
     "10数据包定义与模板/07_贸易点/factory/aviation/飞艇总装与航修港.md",
-    "10数据包定义与模板/07_贸易点/resource/general/default.md",
-    "10数据包定义与模板/07_贸易点/resource/anomaly/far_reach_exchange.md",
-    "10数据包定义与模板/07_贸易点/resource/anomaly/phase_station.md",
-    "10数据包定义与模板/07_贸易点/resource/agriculture/terrace_farm.md",
-    "10数据包定义与模板/07_贸易点/数据包落地状态.md",
-    "10数据包定义与模板/07_贸易点/整合包数据包适配边界.md",
-    "10数据包定义与模板/07_贸易点/生成密度与库存校核.md",
-    "10数据包定义与模板/07_贸易点/结构生成规则与概率.md",
-    "10数据包定义与模板/06_资源表/factory/electronics/precision_center.md",
-    "10数据包定义与模板/06_资源表/factory/electronics",
-    "10数据包定义与模板/07_贸易点/resource/research",
-    "10数据包定义与模板/06_资源表/resource/research/field_station.md",
-    "10数据包定义与模板/06_资源表/resource/research",
-    "10数据包定义与模板/06_资源表/factory/environment/reclamation_station.md",
-    "10数据包定义与模板/06_资源表/factory/environment",
-    "10数据包定义与模板/06_资源表/factory/chemical/chemical_works.md",
-    "10数据包定义与模板/06_资源表/factory/chemical",
-    "10数据包定义与模板/06_资源表/factory/energy/fuel_depot.md",
-    "10数据包定义与模板/06_资源表/factory/energy",
-    "10数据包定义与模板/06_资源表/factory/biology",
-    "10数据包定义与模板/07_贸易点/resource/ecology",
-    "10数据包定义与模板/06_资源表/resource/ecology",
-    "10数据包定义与模板/07_贸易点/resource/agriculture",
-    "未命名.canvas",
-    "assets/images/cargo/AUI/Titan/AUI-Titan-SD-XL.png",
-    "assets/images/cargo/AUI/Titan/AUI-Titan-SD-X.png",
-    "assets/images/cargo/AUI/Titan/AUI-Titan-SD-L.png",
-    "assets/images/cargo/AUI/Hermes/AUI-Hermes-MC-L.png",
-    "assets/images/cargo/AUI/Hermes/AUI-Hermes-MC-M.png",
-    "assets/images/cargo/AUI/Hermes/AUI-Hermes-MC-S.png",
-    "assets/images/cargo/AUI/Hermes/S.png",
-    "assets/images/cargo/test/cargo_decl.png",
-    "assets/images/cargo/test/cargo.png",
-    "assets/images/cargo/test/cargo_massblock.png"
+    "10数据包定义与模板/07_贸易点/factory/machinery/通用机电装备厂.md",
+    "10数据包定义与模板/07_贸易点/factory/chemical/工业化学品供应站.md",
+    "10数据包定义与模板/07_贸易点/factory/biology/绿洲生物工程站.md",
+    "02贸易点系统/03_资源表定义.md",
+    "10数据包定义与模板/07_贸易点/独立建筑模板建造规范.md",
+    "02贸易点系统/04_贸易点定义.md",
+    "02贸易点系统/05_货柜制造台定义.md",
+    "02贸易点系统/06_注册点与基础货柜定义.md",
+    "02贸易点系统/02_贸易点结构生成层与制作规范.md",
+    "02贸易点系统/01_贸易点运行时与经济.md",
+    "10数据包定义与模板/07_贸易点/factory/electronics/精密电子与测绘中心.md",
+    "10数据包定义与模板/07_贸易点/factory/defense/铁壁防务装备站.md",
+    "未命名.canvas"
   ]
 }
