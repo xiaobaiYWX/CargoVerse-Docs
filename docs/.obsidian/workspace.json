@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10数据包定义与模板/07_贸易点/供需覆盖与数值校核.md",
+                "file": "10数据包定义与模板/07_贸易点/起步航线与投放顺序.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "供需覆盖与数值校核"
+              "title": "起步航线与投放顺序"
             }
           }
         ],
@@ -200,15 +200,15 @@
       "bases:新建数据库": false
     }
   },
-  "active": "ae1b675a1d7513a1",
+  "active": "23ef2b52cb46eb00",
   "lastOpenFiles": [
+    "10数据包定义与模板/07_贸易点/结构生成规则与概率.md",
     "10数据包定义与模板/07_贸易点/供需覆盖与数值校核.md",
+    "10数据包定义与模板/07_贸易点/设计总览.md",
     "10数据包定义与模板/07_贸易点/独立建筑模板建造规范.md",
     "10数据包定义与模板/07_贸易点/整合包数据包适配边界.md",
     "10数据包定义与模板/07_贸易点/数据包落地状态.md",
-    "10数据包定义与模板/07_贸易点/设计总览.md",
     "10数据包定义与模板/07_贸易点/起步航线与投放顺序.md",
-    "10数据包定义与模板/07_贸易点/结构生成规则与概率.md",
     "10数据包定义与模板/07_贸易点/resource/anomaly/虚空相位研究站.md",
     "10数据包定义与模板/07_贸易点/resource/anomaly/远界异常交换站.md",
     "assets/images/trade_points/resource/anomaly/far_reach_exchange/floor_plans.png",
