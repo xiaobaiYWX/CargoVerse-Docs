@@ -1,0 +1,30 @@
+Use case: stylized-concept
+Asset type: ONE authoritative architectural reference board for a Minecraft Java 1.21.1 structure template.
+Primary request: redesign the VBS Terrace Agroforestry Station as one coherent ground-based agricultural trade station. It must combine stepped cultivation terraces, a working agricultural hall, one greenhouse and one shared aerial cargo H pad without becoming a village of small unrelated houses.
+Scene/backdrop: isolated station on a shallow cut of ordinary earth, neutral light-grey studio backdrop, no surrounding settlement, no dramatic mountains, no floating island.
+Style/medium: polished Minecraft voxel architectural render with countable one-block geometry, vanilla-like materials and believable structural support. Calm functional rural-industrial architecture, not a fantasy cottage.
+Composition/framing: one dominant front-left three-quarter master view, one small roofless plan inset of exactly the SAME geometry, and three countable detail insets for the three-block terrace stair, a five-block timber structural bay, and a greenhouse wall/roof joint. Minimal labels only; architecture is authoritative, text is not.
+
+Station layout and hierarchy:
+- Overall soft footprint about 74 blocks wide by 62 blocks deep; derive actual scale from doors, stairs, column bays and the H pad rather than dimension text. Ground/yards sit around Y=7, lowest terrace bed around Y=2, building roofs below about Y=23.
+- LEFT/FRONT: a broad three-level agricultural terrace approximately 31x31 blocks. Each retaining wall is only 2-3 blocks high and uses stone/mud-brick textures with full-block coping. The beds are empty dark soil or restrained greenery, divided by simple water channels; no mature crops, hay sculptures or decorative animals. A real THREE-BLOCK-WIDE straight stair with full landings connects all levels along one side. The terraces remain open to the sky.
+- REAR/CENTRE: ONE main agricultural hall about 25 blocks wide and 23 deep. It has a warm timber post-and-beam frame, pale infill, stone base, broad low gabled dark roof, and two large equal front openings under a shared lintel for empty agricultural storage and handling. A modest two-storey central/front office bay is integrated into the same hall, with a two-block-high entrance, continuous upper observation window and one shallow supported porch. It is the station's only public business entrance.
+- The main hall's LEFT side has one open timber-and-textile lean-to under the extended roof, formed by repeated supported bays. The RIGHT side has one ecology-supply receiving canopy with two open bays. These are parts of the same hall, not separate buildings.
+- REAR/RIGHT: ONE long greenhouse about 21x27 blocks, aligned to the same yard and connected to the main hall by a three-to-five-block-wide outdoor path. Use a low stone base, pale vertical frames at regular five-block centres, uninterrupted clear/light-grey glass panels, and a countable symmetrical shallow gabled glass roof with solid ridge and eaves. Leave the interior empty except for clearly reserved long floor strips; no planted crops or laboratory equipment.
+- FRONT/RIGHT: ONE shared 25x25 H receiving/sending platform, level with the public yard. Muted grey paving, flush white H and perimeter, a muted yellow-green perimeter accent, and two narrow equipment strips outside the H. No roof, greenhouse, tree, crane, lamp post or building overlaps its airspace.
+- Between terrace, hall, greenhouse and H pad is a coherent 4-5-block-wide public yard/cross-path. The business entrance is reached without crossing the H. No second landing pad.
+- The complete template carries a shallow terrain base under the terraces and buildings so the retaining levels make sense when embedded into normal terrain; avoid a huge artificial concrete slab.
+
+Scale and construction rules:
+- Door leaves exactly two blocks high, separate transom above. Main hall openings about 7 blocks wide and 6 blocks high. Ordinary clear height 5-6 blocks. Structural posts repeat at 5-7 block centres.
+- Terrace stairs begin one stair block above the lower landing and finish flush with the next full-block landing. Three blocks clear width and two blocks clear headroom.
+- Every lintel, porch, canopy, roof ridge, stair landing and lamp has visible support. Lamps mount beside posts or hang below real beams into air; never replace wall or column blocks.
+- Roof slab/stair edges have full-block backing, with no accidental half-block gaps. Each local door, window, greenhouse bay and storage opening is symmetric around its own centre; the full station may remain functionally asymmetric.
+- Greenhouse glazing is continuous glass blocks or panes without iron-bar grids. Iron bars, if any, are only independent terrace or platform guardrails.
+
+Materials and identity:
+- Main palette follows function: spruce/dark-oak beams, stripped logs, stone bricks, mud bricks, packed mud, coarse dirt, terracotta, smooth stone, pale calcite/quartz-like greenhouse framing, glass, dark deepslate roof tiles.
+- VBS identity colours are yellow-green, white and restrained fresh green, repeated at the public entrance, greenhouse ridge ends, warehouse headers, terrace stair markers, platform corners and short sign panels. These are visible secondary accents, not the main wall material.
+- Use inexpensive architectural blocks. Exclude iron blocks, gold blocks, diamond blocks, netherite blocks, emerald blocks and beacons.
+
+Constraints: empty interiors and equipment reserves; no furniture, trade terminals, inventory, goods, crates, mature crops, livestock, bees, vehicles, fuel tanks, wind turbines, silos, decorative machinery, hanging hooks, text-dependent logos or extra H pads. The result must be directly translatable into a coherent vanilla Minecraft NBT structure.

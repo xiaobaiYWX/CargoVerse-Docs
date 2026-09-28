@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "3c4c6a18663a2c9e",
+        "id": "e70e1dca517a2f33",
         "type": "tabs",
         "children": [
           {
-            "id": "d5ddb6253b151254",
+            "id": "1a10e93aa69143cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10数据包定义与模板/07_贸易点/resource/research/地平线野外科考站.md",
+                "file": "10数据包定义与模板/08_货柜制造台/制造配方与投放总表.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "地平线野外科考站"
-            }
-          },
-          {
-            "id": "23ef2b52cb46eb00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10数据包定义与模板/07_贸易点/起步航线与投放顺序.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "起步航线与投放顺序"
+              "title": "制造配方与投放总表"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,54 +185,54 @@
       "bases:新建数据库": false
     }
   },
-  "active": "23ef2b52cb46eb00",
+  "active": "1a10e93aa69143cf",
   "lastOpenFiles": [
-    "10数据包定义与模板/07_贸易点/结构生成规则与概率.md",
-    "10数据包定义与模板/07_贸易点/供需覆盖与数值校核.md",
-    "10数据包定义与模板/07_贸易点/设计总览.md",
-    "10数据包定义与模板/07_贸易点/独立建筑模板建造规范.md",
-    "10数据包定义与模板/07_贸易点/整合包数据包适配边界.md",
-    "10数据包定义与模板/07_贸易点/数据包落地状态.md",
-    "10数据包定义与模板/07_贸易点/起步航线与投放顺序.md",
-    "10数据包定义与模板/07_贸易点/resource/anomaly/虚空相位研究站.md",
-    "10数据包定义与模板/07_贸易点/resource/anomaly/远界异常交换站.md",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/floor_plans.png",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/phase_receiving_apron_plan.png",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/finite_goods_shipping_apron_plan.png",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/anomaly_outer_shell_plan.png",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/phase_receiving_cabin_plan.png",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/finite_anomaly_vaults_cutaway.png",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/finite_anomaly_vaults_plan.png",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/stable_trade_cabin_cutaway.png",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange/stable_trade_cabin_plan.png",
-    "10数据包定义与模板/07_贸易点/resource/agriculture/梯田农林站.md",
-    "10数据包定义与模板/07_贸易点/resource/general/默认资源贸易点1.md",
-    "10数据包定义与模板/07_贸易点/resource/ecology/云泽水产与育种站.md",
-    "10数据包定义与模板/07_贸易点/resource/research/地平线野外科考站.md",
-    "10数据包定义与模板/07_贸易点/resource/salvage/遗民打捞交换所.md",
-    "未命名.md",
-    "10数据包定义与模板/07_贸易点/参考模板分析/Farmstead.md",
-    "10数据包定义与模板/07_贸易点/参考模板分析",
-    "assets/images/trade_points/reference/farmstead/overview.png",
-    "assets/images/trade_points/reference/farmstead",
-    "assets/images/trade_points/reference",
-    "附件/README_GH8_Voxelizer_中文.md",
-    "附件",
-    "10数据包定义与模板/07_贸易点/resource/research/附件/README_GH8_Voxelizer_中文.md",
-    "10数据包定义与模板/07_贸易点/resource/research/附件",
-    "10数据包定义与模板/07_贸易点/resource/mining/深岩露天矿站.md",
-    "assets/images/trade_points/resource/general/default",
-    "assets/images/trade_points/resource/general",
-    "assets/images/trade_points/resource/anomaly/far_reach_exchange",
-    "assets/images/trade_points/resource/salvage/remnant_exchange",
-    "assets/images/trade_points/resource/salvage",
-    "10数据包定义与模板/07_贸易点/factory/aviation/飞艇总装与航修港.md",
-    "10数据包定义与模板/07_贸易点/factory/machinery/通用机电装备厂.md",
-    "10数据包定义与模板/07_贸易点/factory/chemical/工业化学品供应站.md",
-    "10数据包定义与模板/07_贸易点/factory/biology/绿洲生物工程站.md",
-    "02贸易点系统/03_资源表定义.md",
-    "02贸易点系统/04_贸易点定义.md",
-    "02贸易点系统/05_货柜制造台定义.md",
+    "10数据包定义与模板/07_贸易点/resource/默认资源贸易点1/01_外观与装饰参考.md",
+    "10数据包定义与模板/07_贸易点/resource/默认资源贸易点1/04_卸载区域结构.md",
+    "10数据包定义与模板/07_贸易点/resource/默认资源贸易点1/03_装载区域结构.md",
+    "10数据包定义与模板/07_贸易点/resource/默认资源贸易点1/02_货柜生成结构.md",
+    "10数据包定义与模板/07_贸易点/resource/遗民打捞交换所/01_外观与装饰参考.md",
+    "10数据包定义与模板/07_贸易点/market/旧世珍品商馆/01_外观与装饰参考.md",
+    "10数据包定义与模板/07_贸易点/market/旧世珍品商馆/04_卸载区域结构.md",
+    "10数据包定义与模板/07_贸易点/market/旧世珍品商馆/03_装载区域结构.md",
+    "10数据包定义与模板/07_贸易点/market/旧世珍品商馆/02_货柜生成结构.md",
+    "10数据包定义与模板/07_贸易点/market/天空城综合市场/04_卸载区域结构.md",
+    "10数据包定义与模板/07_贸易点/market/天空城综合市场/03_装载区域结构.md",
+    "10数据包定义与模板/07_贸易点/factory/矿物分选精炼站/01_外观与装饰参考.md",
+    "10数据包定义与模板/07_贸易点/factory/矿物分选精炼站/03_装载区域结构.md",
+    "10数据包定义与模板/07_贸易点/factory/矿物分选精炼站/02_货柜生成结构.md",
+    "10数据包定义与模板/07_贸易点/factory/标准建材装配港/01_外观与装饰参考.md",
+    "10数据包定义与模板/07_贸易点/factory/标准建材装配港/04_卸载区域结构.md",
+    "10数据包定义与模板/07_贸易点/factory/标准建材装配港/03_装载区域结构.md",
+    "10数据包定义与模板/07_贸易点/factory/标准建材装配港/02_货柜生成结构.md",
+    "10数据包定义与模板/07_贸易点/factory/工业化学品供应站/01_外观与装饰参考.md",
+    "10数据包定义与模板/07_贸易点/factory/工业化学品供应站/04_卸载区域结构.md",
+    "10数据包定义与模板/07_贸易点/factory/工业化学品供应站/03_装载区域结构.md",
+    "10数据包定义与模板/07_贸易点/factory/工业化学品供应站/02_货柜生成结构.md",
+    "10数据包定义与模板/07_贸易点/factory/安防设施集成厂/01_外观与装饰参考.md",
+    "10数据包定义与模板/07_贸易点/factory/安防设施集成厂/04_卸载区域结构.md",
+    "10数据包定义与模板/07_贸易点/factory/安防设施集成厂/03_装载区域结构.md",
+    "10数据包定义与模板/07_贸易点/factory/安防设施集成厂/02_货柜生成结构.md",
+    "assets/images/trade_points/resource/ecology/aquaculture_station/master_v2/actual/station_plan.png",
+    "assets/images/trade_points/resource/ecology/aquaculture_station/master_v2/actual/station_front.png",
+    "assets/images/trade_points/resource/ecology/aquaculture_station/master_v2/concept/01_buildings.png",
+    "assets/images/trade_points/resource/ecology/aquaculture_station/master_v2/concept/prompts.txt",
+    "assets/images/trade_points/resource/ecology/aquaculture_station/master_v2/concept/00_master.png",
+    "assets/images/trade_points/resource/ecology/aquaculture_station/master_v2/concept",
+    "assets/images/trade_points/resource/ecology/aquaculture_station/master_v2/actual",
+    "assets/images/trade_points/resource/ecology/aquaculture_station/master_v2",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/master_v2/actual/station_plan.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/master_v2/actual/station_front.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/master_v2/concept/prompts.txt",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/master_v2/concept/01_headquarters.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/master_v2/concept/00_master.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/master_v2/actual",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/master_v2/concept",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/master_v2",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/assembled/actual/station_plan.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/assembled/actual/station_front.png",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/assembled/concept/prompts.txt",
+    "assets/images/trade_points/resource/anomaly/far_reach_exchange/assembled/concept",
     "未命名.canvas"
   ]
 }

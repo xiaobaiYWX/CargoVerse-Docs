@@ -1,0 +1,30 @@
+Use case: stylized-concept
+Asset type: ONE authoritative architectural reference board for a Minecraft Java 1.21.1 structure template.
+Primary request: redesign the SPL Longhaul Freight Hub as one coherent suspended aviation freight terminal. It must read as a single large civilian cargo-port building, not a collection of unrelated sheds. One station, one shared H cargo deck, one central operations block.
+Scene/backdrop: isolated engineered platform over open sky, neutral light-grey studio backdrop, no city and no terrain island.
+Style/medium: polished Minecraft voxel architectural render using countable one-block geometry and vanilla-like materials; realistic construction logic, restrained industrial detail.
+Composition/framing: one dominant front-left three-quarter master view, plus one small roofless plan inset of exactly the SAME geometry and three countable local detail insets for a two-block door, a five-block structural bay, and a three-block-wide stair. Keep every inset consistent with the main view. Minimal labels only; architecture is authoritative, text is not.
+
+Architecture and layout:
+- Overall footprint about 72 blocks wide by 62 blocks deep, soft budget rather than a dimension claim. Height about 25 blocks. Derive final scale from doors, stairs, columns and the H pad.
+- A 27x27 shared H receiving/sending deck occupies the centre front. It has a muted charcoal surface, flush white H, white perimeter, four orange corner marks, open airspace, and narrow equipment strips outside its left and right edges. No canopy, bridge, tower or crane over the H.
+- Behind the H is a broad 5-block-deep public cross-apron connecting all entrances without crossing the H.
+- The back half is ONE symmetrical U-shaped terminal complex under a coherent roofline: a central operations hall 20 blocks wide and two lower warehouse/hangar wings, each about 21 blocks wide. The central hall projects slightly forward and rises one storey above both wings.
+- Central operations hall: strong entrance portal facing the H, two-block-high double door with glass transom, broad continuous upper control-room glazing, one shallow balcony/awning, and a low raised monitor roof. Ground floor remains an empty business/dispatch shell. The upper operations floor is reached by a visible three-block-wide exterior switchback stair attached to the LEFT SIDE of the central hall, with full intermediate and upper landings supported by real columns. Stair must not cut windows, walls or the H route.
+- Left wing: construction-supply receiving warehouse, two equal open loading bays under one shared lintel and roof, with empty interior reservations. Right wing: air-maintenance and ground-crew warehouse, two equal large service openings under one shared lintel and roof, empty inside. Both wings have the same column rhythm and matching roof height, but different small sign plates so their functions remain legible.
+- A shallow open rear service court is visible through side passages. One low static rectangular maintenance gantry stands at the far rear, supported by four real posts; no hook, cable or machine. It must not dominate the silhouette.
+- Platform outline follows the building and H deck with clipped front corners. Use a shallow layered edge, dark underside beams, repeated short vertical supports and modest guardrails. Avoid a thick square floating island.
+
+Scale and construction rules:
+- Main deck surface around Y=5. Ordinary wing clear height 6 blocks; central ground hall clear height 6 blocks; upper operations floor about Y=14 with 4 blocks clear; top roof about Y=21-23.
+- Door leaves exactly two blocks high, transoms separate. Large loading openings 7 blocks wide and 6 blocks high. Structural columns at corners and at consistent 5-7 block bay centres.
+- Every roof, lintel, balcony, stair landing, gantry and lamp has visible support. Lamps mount beside columns or under beams into air; never replace a wall or column block.
+- Slab roof edges have full-block backing and no accidental half-block gaps. Local window and portal bays are symmetric around their own centre axes; the whole station may remain functionally asymmetric only at the exterior stair.
+- Broad glass areas use continuous light-grey glass blocks or panes. Never insert iron bars into glass. Iron bars appear only as independent guardrails.
+
+Materials and identity:
+- Functional main palette: stone bricks and tuff bricks at bases, polished andesite columns/coping, smooth stone and light-grey/off-white wall panels, dark deepslate roof bands and underside framing, continuous light-grey glass.
+- SPL identification colours are orange, white and dark grey as repeated accent strips at the central entrance, wing headers, stair landing, platform edge inserts and gantry end plates. Accents are clearly visible but remain secondary to the structural material palette.
+- Use inexpensive architectural blocks. Exclude iron blocks, gold blocks, diamond blocks, netherite blocks, emerald blocks and beacons.
+
+Constraints: empty interiors; no furniture, inventory, trade terminals, goods, crates, ships, vehicles, robots, fuel tanks, radar dishes, decorative machinery, hanging hooks, text-dependent logos or extra landing pads. Only one H deck and one low rear gantry. The result must be directly translatable into a coherent vanilla Minecraft NBT structure.
