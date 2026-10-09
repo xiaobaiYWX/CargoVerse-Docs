@@ -12,8 +12,8 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [HEC Reclaimer 工业废料柜 M 型](<reclaimer_sd_m.md>) | `cargoverse:hec/reclaimer_sd_m` | 24 | 64 | 130 | 2 | 180 | 已提供正式模板 |
-| [HEC Reclaimer 工业废料柜 L 型](<reclaimer_sd_l.md>) | `cargoverse:hec/reclaimer_sd_l` | 48 | 128 | 130 | 4 | 360 | 已提供正式模板 |
+| [HEC Reclaimer 工业废料柜 M 型](<reclaimer_sd_m.md>) | `cargoverse:hec/reclaimer_sd_m` | 120 | 64 | 130 | 2 | 180 | 已提供正式模板 |
+| [HEC Reclaimer 工业废料柜 L 型](<reclaimer_sd_l.md>) | `cargoverse:hec/reclaimer_sd_l` | 240 | 128 | 130 | 4 | 360 | 已提供正式模板 |
 
 规划投放节点：工业废物回收站、净化厂。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

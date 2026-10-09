@@ -4,7 +4,7 @@
 
 [返回制造商](<../README.md>) · [货柜目录](<../../README.md>)
 
-承运大型防御工事、建材和配套装备，以高耐久结构、缓冲及固定设计保障工程交付。
+承运大型防御工事、建材和配套装备，以加固结构、缓冲及固定设计保障工程交付。
 
 允许分类：预制结构（`prefab_structure`）、建筑材料（`construction_material`）、武器护甲（`weapon_armor`）、机械设备（`machinery`）。未列出的分类均不允许。
 
@@ -12,7 +12,7 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [BDS Fortress 工事运输堡 XL 型](<fortress_hd_xl.md>) | `cargoverse:bds/fortress_hd_xl` | 72 | 288 | 300 | 8 | 2280 | 已提供正式模板 |
+| [BDS Fortress 工事运输堡 XL 型](<fortress_hd_xl.md>) | `cargoverse:bds/fortress_hd_xl` | 360 | 288 | 300 | 8 | 2280 | 已提供正式模板 |
 
 规划投放节点：防御工程集散地。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

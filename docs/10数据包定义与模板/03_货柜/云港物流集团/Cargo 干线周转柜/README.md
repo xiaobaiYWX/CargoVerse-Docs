@@ -12,8 +12,8 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [SPL Cargo 干线周转柜 M 型](<cargo_mc_m.md>) | `cargoverse:spl/cargo_mc_m` | 22 | 36 | 90 | 2 | 140 | 已提供正式模板 |
-| [SPL Cargo 干线周转柜 L 型](<cargo_mc_l.md>) | `cargoverse:spl/cargo_mc_l` | 44 | 72 | 90 | 4 | 280 | 已提供正式模板 |
+| [SPL Cargo 干线周转柜 M 型](<cargo_mc_m.md>) | `cargoverse:spl/cargo_mc_m` | 110 | 36 | 90 | 2 | 140 | 已提供正式模板 |
+| [SPL Cargo 干线周转柜 L 型](<cargo_mc_l.md>) | `cargoverse:spl/cargo_mc_l` | 220 | 72 | 90 | 4 | 280 | 已提供正式模板 |
 
 规划投放节点：区域集散港、干线物流站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

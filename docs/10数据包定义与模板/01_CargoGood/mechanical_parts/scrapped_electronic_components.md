@@ -1,0 +1,43 @@
+# 报废电子组件
+
+状态：正式 CargoGood 定义，2026-10-06 回收货物批次。已接入定义和 32×32 透明图标；交易目录随本轮贸易网络发布。
+
+## 定义
+
+| 项目 | 内容 |
+| --- | --- |
+| 资源 ID | `cargoverse:mechanical_parts/scrapped_electronic_components` |
+| JSON 文件 | `src/main/resources/data/cargoverse/cargo_goods/mechanical_parts/scrapped_electronic_components.json` |
+| Schema 版本 | 1 |
+| CargoClass | `mechanical_parts` |
+| 显示名称 | 报废电子组件 |
+| UI 图标 | `cargoverse:textures/gui/cargo_goods/mechanical_parts/scrapped_electronic_components.png`（32×32 透明 PNG） |
+| 科技等级 | 1 |
+| 标签 | `ingredient.mechanical_parts.scrapped_electronic_components` |
+| 结算单位 | `cargoverse:void_byte` |
+
+## 数值
+
+| 项目 | 数值 | 单位 |
+| --- | ---: | --- |
+| 单位质量 | 2 | Kpg/t |
+| 单位基础价值 | 14 | VB/t |
+| 单位许可证经验 | 1 | exp/t |
+| 单位繁荣经验 | 1 | exp/t |
+| 基础完整度 | 200 | 点 |
+
+## 运输要求
+
+无额外词条。货物已完成分拣、去污或封装，属于稳定普通回收料，不引入运行时处理步骤。现有 AUI Atlas S 兼容本分类，基础容量 50 t；t 是数量符号，不是吨。
+
+## 内容定位与投放
+
+已拆除电池、擦除敏感存储的普通线路板与器件；不等于前文明导航核心。
+
+- 来源：[A03 飞艇总装与航修港](<../../07_贸易点/factory/飞艇总装与航修港/00_总体说明.md>)、[S02 远航货运枢纽](<../../07_贸易点/market/远航货运枢纽/00_总体说明.md>)、[E02 工业化学品供应站](<../../07_贸易点/factory/工业化学品供应站/00_总体说明.md>)、[H01 地平线野外科考站](<../../07_贸易点/resource/地平线野外科考站/00_总体说明.md>)、[H03 虚空相位研究站](<../../07_贸易点/resource/虚空相位研究站/00_总体说明.md>)、[B02 安防设施集成厂](<../../07_贸易点/factory/安防设施集成厂/00_总体说明.md>)、[B03 边境驻防补给港](<../../07_贸易点/market/边境驻防补给港/00_总体说明.md>)。
+- 收购方：[A02 通用机电装备厂](<../../07_贸易点/factory/通用机电装备厂/00_总体说明.md>)、[H02 精密电子与测绘中心](<../../07_贸易点/factory/精密电子与测绘中心/00_总体说明.md>)、[R01 遗民打捞交换所](<../../07_贸易点/resource/遗民打捞交换所/00_总体说明.md>)。
+- 各来源的库存、日补和价格分别见站点关联资源表；回收收购不触发材料转化或产出。玩家先购入有残值的物料，再运输出售，不采用负价格清运费。
+- 两种经验均采用 1/单位，作为普通回程货物的低成长收益例外，不套用常规 T1 的 4/2。
+- 图标由内置 image_gen 独立生成并最近邻导出，原图及提示保存在美术资产归档。
+
+[CargoGood 目录](<../README.md>) · [贸易网络总览](<../../07_贸易点/设计总览.md>)

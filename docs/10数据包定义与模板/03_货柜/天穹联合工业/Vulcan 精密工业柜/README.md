@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [AUI Vulcan 精密工业柜 M 型](<vulcan_sd_m.md>) | `cargoverse:aui/vulcan_sd_m` | 16 | 52 | 140 | 2 | 240 | 已提供正式模板 |
-| [AUI Vulcan 精密工业柜 L 型](<vulcan_sd_l.md>) | `cargoverse:aui/vulcan_sd_l` | 32 | 104 | 140 | 4 | 480 | 已提供正式模板 |
-| [AUI Vulcan 精密工业柜 X 型](<vulcan_sd_x.md>) | `cargoverse:aui/vulcan_sd_x` | 56 | 182 | 140 | 6 | 840 | 已提供正式模板 |
+| [AUI Vulcan 精密工业柜 M 型](<vulcan_sd_m.md>) | `cargoverse:aui/vulcan_sd_m` | 80 | 52 | 140 | 2 | 240 | 已提供正式模板 |
+| [AUI Vulcan 精密工业柜 L 型](<vulcan_sd_l.md>) | `cargoverse:aui/vulcan_sd_l` | 160 | 104 | 140 | 4 | 480 | 已提供正式模板 |
+| [AUI Vulcan 精密工业柜 X 型](<vulcan_sd_x.md>) | `cargoverse:aui/vulcan_sd_x` | 280 | 182 | 140 | 6 | 840 | 已提供正式模板 |
 
 规划投放节点：工业设备厂、航空维修站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

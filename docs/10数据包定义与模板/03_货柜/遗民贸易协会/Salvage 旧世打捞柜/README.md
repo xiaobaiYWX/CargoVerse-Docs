@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [REX Salvage 旧世打捞柜 S 型](<salvage_lm_s.md>) | `cargoverse:rex/salvage_lm_s` | 9 | 22 | 80 | 1 | 70 | 已提供正式模板 |
-| [REX Salvage 旧世打捞柜 M 型](<salvage_lm_m.md>) | `cargoverse:rex/salvage_lm_m` | 18 | 44 | 80 | 2 | 140 | 已提供正式模板 |
-| [REX Salvage 旧世打捞柜 L 型](<salvage_lm_l.md>) | `cargoverse:rex/salvage_lm_l` | 36 | 88 | 80 | 4 | 280 | 已提供正式模板 |
+| [REX Salvage 旧世打捞柜 S 型](<salvage_lm_s.md>) | `cargoverse:rex/salvage_lm_s` | 45 | 22 | 80 | 1 | 70 | 已提供正式模板 |
+| [REX Salvage 旧世打捞柜 M 型](<salvage_lm_m.md>) | `cargoverse:rex/salvage_lm_m` | 90 | 44 | 80 | 2 | 140 | 已提供正式模板 |
+| [REX Salvage 旧世打捞柜 L 型](<salvage_lm_l.md>) | `cargoverse:rex/salvage_lm_l` | 180 | 88 | 80 | 4 | 280 | 已提供正式模板 |
 
 规划投放节点：遗民交换所、旧世打捞交接点。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

@@ -1,70 +1,61 @@
-# 资源表设计
+# 资源表正式定义
 
-## 基本信息
+40 个正式站点各有一份资源表，2026-10-07 小站扩展已接入：104 种正式货物、212 条出售规则、375 条收购规则。每商品独立 price_multiplier；出售有限库存、收购无库存，按条目选择每日限额。4 种 NONE 预留货物不参与贸易。
 
-| 项目 | 内容 |
-| --- | --- |
-| 资源 ID |  |
-| JSON 文件 | `src/main/resources/data/<namespace>/trade_points/resource_tables/<type>/<category>/<name>.json` |
-| Schema 版本 | 1 |
-| 用途 |  |
+各页是库存、日补、倍率与额度的正式维护入口，站点目录只保留用途和线路。规则 schema_version 为 1，唯一标签匹配，不做同站同货物双向贸易。字段约束见[资源表定义](<../../02贸易点系统/03_资源表定义.md>)。
 
-## 出售规则
+## 天空站资源表
 
-| 规则 ID | match_mode | 标签 | 创建库存 | 初始量 | 每种货物容量 | 每日补货 |
-| --- | --- | --- | --- | ---: | ---: | ---: |
-|  |  |  |  |  |  |  |
-
-## 收购规则
-
-| 规则 ID | match_mode | 标签 | 创建库存 | 初始量 | 每种货物容量 | 每日消耗 | 满库继续收购 |
-| --- | --- | --- | --- | ---: | ---: | ---: | --- |
-|  |  |  |  |  |  |  |  |
-
-`create_inventory: false` 的规则只填写 ID、匹配方式、标签和库存开关，其余库存字段留空。每种匹配货物独享表中容量和周转量，不与同规则的其他货物共享。
-
-## 当前定义
-
-| 资源表 | 出售规则 | 收购规则 |
-| --- | ---: | ---: |
-| [cargoverse:resource/agriculture/default](resource/agriculture/default.md) | 1 | 0 |
-| [cargoverse:resource/general/default](resource/general/default.md) | 3 | 2 |
-
-字段规则见[资源表定义](../../02贸易点系统/03_资源表定义.md)。
-
-## 新增定义（已同步，结构待补）
-
-24 个贸易点及其资源表已同步数据包；当前共 25 个贸易点定义（含 1 个测试点）、26 份资源表（含 2 份示例）。新节点的自然结构与生成绑定尚未接入。
-
-[整体设计与制造商定位](<../07_贸易点/设计总览.md>) · [100 项货物供需校核](<../07_贸易点/供需覆盖与数值校核.md>) · [起步航线与投放顺序](<../07_贸易点/起步航线与投放顺序.md>)
-
-| 编号 | 资源表 | 出售规则 | 收购规则 |
+| 编号 | 资源表 | 出售条目 | 收购条目 |
 | --- | --- | ---: | ---: |
-| A01 | [标准建材装配港](<factory/construction/standard_assembly.md>) | 6 | 4 |
-| A02 | [通用机电装备厂](<factory/machinery/modular_equipment.md>) | 7 | 4 |
-| A03 | [飞艇总装与航修港](<factory/aviation/airship_yard.md>) | 5 | 5 |
-| S01 | [云港民生集配站](<market/logistics/civic_distribution.md>) | 3 | 6 |
-| S02 | [远航货运枢纽](<market/logistics/longhaul_port.md>) | 0 | 9 |
-| S03 | [天空城综合市场](<market/settlement/skycity_market.md>) | 0 | 10 |
-| D01 | [深岩露天矿站](<resource/mining/deepcore_mine.md>) | 4 | 4 |
-| D02 | [矿物分选精炼站](<factory/mineral/mineral_refinery.md>) | 3 | 3 |
-| D03 | [重工材料与矿机厂](<factory/heavy/heavy_works.md>) | 7 | 5 |
-| V01 | [梯田农林站](<resource/agriculture/terrace_farm.md>) | 8 | 8 |
-| V02 | [云泽水产与育种站](<resource/ecology/aquaculture_station.md>) | 8 | 2 |
-| V03 | [绿洲生物工程站](<factory/biology/biosystems_station.md>) | 7 | 3 |
-| E01 | [赫利俄斯燃料供应站](<factory/energy/fuel_depot.md>) | 5 | 1 |
-| E02 | [工业化学品供应站](<factory/chemical/chemical_works.md>) | 6 | 0 |
-| E03 | [净水与环境处理站](<factory/environment/reclamation_station.md>) | 2 | 5 |
-| H01 | [地平线野外科考站](<resource/research/field_station.md>) | 5 | 3 |
-| H02 | [精密电子与测绘中心](<factory/electronics/precision_center.md>) | 6 | 3 |
-| H03 | [虚空相位研究站](<resource/anomaly/phase_station.md>) | 2 | 6 |
-| B01 | [铁壁防务装备站](<factory/defense/defense_arsenal.md>) | 4 | 0 |
-| B02 | [安防设施集成厂](<factory/security/security_works.md>) | 4 | 3 |
-| B03 | [边境驻防补给港](<market/defense/frontier_garrison.md>) | 0 | 11 |
-| R01 | [遗民打捞交换所](<resource/salvage/remnant_exchange.md>) | 3 | 2 |
-| R02 | [旧世珍品商馆](<market/valuables/heritage_gallery.md>) | 3 | 1 |
-| R03 | [远界异常交换站](<resource/anomaly/far_reach_exchange.md>) | 2 | 2 |
+| A01 | [标准建材装配港](<factory/sky_station/standard_assembly.md>) | 8 | 14 |
+| A02 | [通用机电装备厂](<factory/sky_station/modular_equipment.md>) | 8 | 15 |
+| A03 | [飞艇总装与航修港](<factory/sky_station/airship_yard.md>) | 10 | 15 |
+| S01 | [云港民生集配站](<market/sky_station/civic_distribution.md>) | 4 | 11 |
+| S02 | [远航货运枢纽](<market/sky_station/longhaul_port.md>) | 9 | 16 |
+| S03 | [天空城综合市场](<market/sky_station/skycity_market.md>) | 5 | 14 |
+| D01 | [深岩露天矿站](<resource/sky_station/deepcore_mine.md>) | 6 | 14 |
+| D02 | [矿物分选精炼站](<factory/sky_station/mineral_refinery.md>) | 6 | 13 |
+| D03 | [重工材料与矿机厂](<factory/sky_station/heavy_works.md>) | 10 | 13 |
+| V01 | [梯田农林站](<resource/sky_station/terrace_farm.md>) | 11 | 17 |
+| V02 | [云泽水产与育种站](<resource/sky_station/aquaculture_station.md>) | 11 | 10 |
+| V03 | [绿洲生物工程站](<factory/sky_station/biosystems_station.md>) | 8 | 12 |
+| E01 | [赫利俄斯燃料供应站](<factory/sky_station/fuel_depot.md>) | 8 | 10 |
+| E02 | [工业化学品供应站](<factory/sky_station/chemical_works.md>) | 9 | 9 |
+| E03 | [净水与环境处理站](<factory/sky_station/reclamation_station.md>) | 3 | 15 |
+| H01 | [地平线野外科考站](<resource/sky_station/field_station.md>) | 9 | 13 |
+| H02 | [精密电子与测绘中心](<factory/sky_station/precision_center.md>) | 9 | 11 |
+| H03 | [虚空相位研究站](<resource/sky_station/phase_station.md>) | 4 | 16 |
+| B01 | [铁壁防务装备站](<factory/sky_station/defense_arsenal.md>) | 6 | 9 |
+| B02 | [安防设施集成厂](<factory/sky_station/security_works.md>) | 6 | 13 |
+| B03 | [边境驻防补给港](<market/sky_station/frontier_garrison.md>) | 6 | 18 |
+| R01 | [遗民打捞交换所](<resource/sky_station/remnant_exchange.md>) | 6 | 10 |
+| R02 | [旧世珍品商馆](<market/sky_station/heritage_gallery.md>) | 5 | 8 |
+| R03 | [远界异常交换站](<resource/sky_station/far_reach_exchange.md>) | 4 | 9 |
 
-## 生成设计补充
+## 地面小站资源表
 
-[结构生成规则与概率](<../07_贸易点/结构生成规则与概率.md>) · [生成密度与库存校核](<../07_贸易点/生成密度与库存校核.md>)。24 个新结构均采用一个世界结构对应一个贸易点定义，绑定概率 100%；世界出现频率由结构集控制。
+| 编号 | 资源表 | 出售条目 | 收购条目 |
+| --- | --- | ---: | ---: |
+| G01 | [浅层矿务前哨](<resource/ground_station/shallow_mining_outpost.md>) | 4 | 4 |
+| G02 | [林缘采运站](<resource/ground_station/woodland_logging_station.md>) | 3 | 3 |
+| G03 | [独立农圃](<resource/ground_station/independent_farmstead.md>) | 4 | 4 |
+| G04 | [河岸渔站](<resource/ground_station/river_fishing_station.md>) | 3 | 3 |
+| G05 | [地层采样站](<resource/ground_station/stratigraphic_sampling_station.md>) | 2 | 4 |
+| G06 | [遗迹清理营](<resource/ground_station/ruin_clearance_camp.md>) | 2 | 4 |
+| G07 | [野地居民点](<market/ground_station/wilderness_settlement.md>) | 2 | 5 |
+| G08 | [航路巡防哨站](<market/ground_station/route_watchpost.md>) | 1 | 5 |
+| G09 | [路畔货运驿站](<market/ground_station/roadside_freight_inn.md>) | 3 | 4 |
+| G10 | [乡野机修所](<factory/ground_station/rural_repair_shop.md>) | 3 | 4 |
+| G11 | [泉源净水所](<factory/ground_station/spring_water_station.md>) | 2 | 4 |
+| G12 | [林间制材所](<factory/ground_station/woodland_processing_yard.md>) | 3 | 4 |
+| G13 | [野外救护所](<market/ground_station/field_aid_station.md>) | 2 | 5 |
+| G14 | [气象观测哨](<market/ground_station/weather_observation_post.md>) | 2 | 6 |
+| G15 | [旧件回收铺](<market/ground_station/salvage_parts_shop.md>) | 3 | 5 |
+| G16 | [边路施工营](<market/ground_station/wayside_construction_camp.md>) | 2 | 6 |
+
+小站全部收购规则设每日上限；G07、G08 已加入回收出售，使用现有预留设备。首次创建实例时保存目录快照，普通 reload 不替换已存在实例的目录和报价。
+
+## 指令测试资源表
+
+[测试 A](<market/test_station/a.md>)与[测试 B](<market/test_station/b.md>)互为买卖方，合计覆盖 104 种正式商品；每站的出售与收购互斥。出售初始 10000 t、上限 20000 t、日补 10000 t；收购不限额，出售倍率 0.9、收购倍率 1.1。两表不计入上方正式贸易网络的条目数。

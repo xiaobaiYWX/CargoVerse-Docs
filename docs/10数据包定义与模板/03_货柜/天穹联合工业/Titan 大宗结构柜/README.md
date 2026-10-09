@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [AUI Titan 大宗结构柜 L 型](<titan_hd_l.md>) | `cargoverse:aui/titan_hd_l` | 48 | 100 | 150 | 4 | 400 | 已提供正式模板 |
-| [AUI Titan 大宗结构柜 X 型](<titan_hd_x.md>) | `cargoverse:aui/titan_hd_x` | 84 | 175 | 150 | 6 | 700 | 已提供正式模板 |
-| [AUI Titan 大宗结构柜 XL 型](<titan_hd_xl.md>) | `cargoverse:aui/titan_hd_xl` | 144 | 300 | 150 | 8 | 1200 | 已提供正式模板 |
+| [AUI Titan 大宗结构柜 L 型](<titan_hd_l.md>) | `cargoverse:aui/titan_hd_l` | 240 | 100 | 150 | 4 | 400 | 已提供正式模板 |
+| [AUI Titan 大宗结构柜 X 型](<titan_hd_x.md>) | `cargoverse:aui/titan_hd_x` | 420 | 175 | 150 | 6 | 700 | 已提供正式模板 |
+| [AUI Titan 大宗结构柜 XL 型](<titan_hd_xl.md>) | `cargoverse:aui/titan_hd_xl` | 720 | 300 | 150 | 8 | 1200 | 已提供正式模板 |
 
 规划投放节点：大型造船港、建材集散站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

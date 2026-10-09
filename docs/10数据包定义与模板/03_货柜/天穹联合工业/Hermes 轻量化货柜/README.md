@@ -10,9 +10,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [AUI Hermes 轻量化货柜 S 型](<hermes_mc_s.md>) | `cargoverse:aui/hermes_mc_s` | 10 | 22 | 70 | 1 | 100 | 已提供正式模板 |
-| [AUI Hermes 轻量化货柜 M 型](<hermes_mc_m.md>) | `cargoverse:aui/hermes_mc_m` | 20 | 44 | 70 | 2 | 200 | 已提供正式模板 |
-| [AUI Hermes 轻量化货柜 L 型](<hermes_mc_l.md>) | `cargoverse:aui/hermes_mc_l` | 40 | 88 | 70 | 4 | 400 | 已提供正式模板 |
+| [AUI Hermes 轻量化货柜 S 型](<hermes_mc_s.md>) | `cargoverse:aui/hermes_mc_s` | 50 | 22 | 70 | 1 | 100 | 已提供正式模板 |
+| [AUI Hermes 轻量化货柜 M 型](<hermes_mc_m.md>) | `cargoverse:aui/hermes_mc_m` | 100 | 44 | 70 | 2 | 200 | 已提供正式模板 |
+| [AUI Hermes 轻量化货柜 L 型](<hermes_mc_l.md>) | `cargoverse:aui/hermes_mc_l` | 200 | 88 | 70 | 4 | 400 | 已提供正式模板 |
 
 该系列实体材料与加工费已完成设计，新增运行时配方待接入。
 

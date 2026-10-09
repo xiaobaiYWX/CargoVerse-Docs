@@ -1,5 +1,7 @@
 # 默认资源贸易点资源表
 
+> **历史示例：** 本定义已由 A／B 指令测试资源替换，不再作为当前发布配置。见[测试点入口](<../../../07_贸易点/market/测试贸易点A/00_总体说明.md>)。
+
 ## 基本信息
 
 | 项目 | 内容 |
@@ -13,13 +15,13 @@
 
 | 规则 ID | match_mode | 标签 | 创建库存 | 初始量 | 每种货物容量 | 每日补货 |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| `hematite_ore` | `all` | `ingredient.raw_resource.hematite_ore` | 是 | 0t | 160t | 12t |
-| `conifer_logs` | `all` | `ingredient.raw_resource.conifer_logs` | 是 | 0t | 160t | 6t |
-| `greenhouse_fruit` | `all` | `ingredient.agriculture.greenhouse_fruit` | 是 | 0t | 160t | 12t |
+| `hematite_ore` | `all` | `ingredient.raw_resource.hematite_ore` | 是 | 0t | 800t | 60t |
+| `conifer_logs` | `all` | `ingredient.raw_resource.conifer_logs` | 是 | 0t | 800t | 30t |
+| `greenhouse_fruit` | `all` | `ingredient.agriculture.greenhouse_fruit` | 是 | 0t | 800t | 60t |
 
 ## 收购规则
 
-| 规则 ID | match_mode | 标签 | 创建库存 | 初始量 | 每种货物容量 | 每日消耗 | 满库继续收购 |
-| --- | --- | --- | --- | ---: | ---: | ---: | --- |
-| `compound_fertilizer` | `all` | `ingredient.chemical_material.compound_fertilizer` | 是 | 0t | 120t | 6t | 否 |
-| `biomass_briquettes` | `all` | `ingredient.energy_fuel.biomass_briquettes` | 是 | 0t | 120t | 12t | 否 |
+| 规则 ID | match_mode | 标签 |
+| --- | --- | --- |
+| `compound_fertilizer` | `all` | `ingredient.chemical_material.compound_fertilizer` |
+| `biomass_briquettes` | `all` | `ingredient.energy_fuel.biomass_briquettes` |

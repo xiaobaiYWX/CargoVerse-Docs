@@ -12,8 +12,8 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [SPL Courier 轻型配送柜 S 型](<courier_mc_s.md>) | `cargoverse:spl/courier_mc_s` | 10 | 16 | 70 | 1 | 60 | 已提供正式模板 |
-| [SPL Courier 轻型配送柜 M 型](<courier_mc_m.md>) | `cargoverse:spl/courier_mc_m` | 20 | 32 | 70 | 2 | 120 | 已提供正式模板 |
+| [SPL Courier 轻型配送柜 S 型](<courier_mc_s.md>) | `cargoverse:spl/courier_mc_s` | 50 | 16 | 70 | 1 | 60 | 已提供正式模板 |
+| [SPL Courier 轻型配送柜 M 型](<courier_mc_m.md>) | `cargoverse:spl/courier_mc_m` | 100 | 32 | 70 | 2 | 120 | 已提供正式模板 |
 
 规划投放节点：小型物流终端、偏远聚落。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

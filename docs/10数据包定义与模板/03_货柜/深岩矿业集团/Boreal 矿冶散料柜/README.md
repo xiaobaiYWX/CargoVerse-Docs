@@ -12,8 +12,8 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [DMC Boreal 矿冶散料柜 M 型](<boreal_sd_m.md>) | `cargoverse:dmc/boreal_sd_m` | 24 | 44 | 130 | 2 | 180 | 已提供正式模板 |
-| [DMC Boreal 矿冶散料柜 L 型](<boreal_sd_l.md>) | `cargoverse:dmc/boreal_sd_l` | 48 | 88 | 130 | 4 | 360 | 已提供正式模板 |
+| [DMC Boreal 矿冶散料柜 M 型](<boreal_sd_m.md>) | `cargoverse:dmc/boreal_sd_m` | 120 | 44 | 130 | 2 | 180 | 已提供正式模板 |
+| [DMC Boreal 矿冶散料柜 L 型](<boreal_sd_l.md>) | `cargoverse:dmc/boreal_sd_l` | 240 | 88 | 130 | 4 | 360 | 已提供正式模板 |
 
 规划投放节点：矿区选矿站、冶炼基地。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

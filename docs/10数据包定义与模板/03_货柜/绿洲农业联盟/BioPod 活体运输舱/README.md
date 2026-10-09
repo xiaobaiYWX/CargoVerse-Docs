@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [VBS BioPod 活体运输舱 S 型](<biopod_sd_s.md>) | `cargoverse:vbs/biopod_sd_s` | 8 | 30 | 120 | 1 | 120 | 已提供正式模板 |
-| [VBS BioPod 活体运输舱 M 型](<biopod_sd_m.md>) | `cargoverse:vbs/biopod_sd_m` | 16 | 60 | 120 | 2 | 240 | 已提供正式模板 |
-| [VBS BioPod 活体运输舱 L 型](<biopod_sd_l.md>) | `cargoverse:vbs/biopod_sd_l` | 32 | 120 | 120 | 4 | 480 | 已提供正式模板 |
+| [VBS BioPod 活体运输舱 S 型](<biopod_sd_s.md>) | `cargoverse:vbs/biopod_sd_s` | 40 | 30 | 120 | 1 | 120 | 已提供正式模板 |
+| [VBS BioPod 活体运输舱 M 型](<biopod_sd_m.md>) | `cargoverse:vbs/biopod_sd_m` | 80 | 60 | 120 | 2 | 240 | 已提供正式模板 |
+| [VBS BioPod 活体运输舱 L 型](<biopod_sd_l.md>) | `cargoverse:vbs/biopod_sd_l` | 160 | 120 | 120 | 4 | 480 | 已提供正式模板 |
 
 规划投放节点：育种场、水产繁育站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

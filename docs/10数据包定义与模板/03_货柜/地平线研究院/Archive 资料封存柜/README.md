@@ -12,8 +12,8 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [HRI Archive 资料封存柜 S 型](<archive_si_s.md>) | `cargoverse:hri/archive_si_s` | 8 | 30 | 130 | 1 | 200 | 已提供正式模板 |
-| [HRI Archive 资料封存柜 M 型](<archive_si_m.md>) | `cargoverse:hri/archive_si_m` | 16 | 60 | 130 | 2 | 400 | 已提供正式模板 |
+| [HRI Archive 资料封存柜 S 型](<archive_si_s.md>) | `cargoverse:hri/archive_si_s` | 40 | 30 | 130 | 1 | 200 | 已提供正式模板 |
+| [HRI Archive 资料封存柜 M 型](<archive_si_m.md>) | `cargoverse:hri/archive_si_m` | 80 | 60 | 130 | 2 | 400 | 已提供正式模板 |
 
 规划投放节点：地平线研究院资料站、遗迹研究中心。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

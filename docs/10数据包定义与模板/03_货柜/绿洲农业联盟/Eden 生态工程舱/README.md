@@ -12,8 +12,8 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [VBS Eden 生态工程舱 X 型](<eden_hd_x.md>) | `cargoverse:vbs/eden_hd_x` | 56 | 168 | 180 | 6 | 1050 | 已提供正式模板 |
-| [VBS Eden 生态工程舱 XL 型](<eden_hd_xl.md>) | `cargoverse:vbs/eden_hd_xl` | 96 | 288 | 180 | 8 | 1800 | 已提供正式模板 |
+| [VBS Eden 生态工程舱 X 型](<eden_hd_x.md>) | `cargoverse:vbs/eden_hd_x` | 280 | 168 | 180 | 6 | 1050 | 已提供正式模板 |
+| [VBS Eden 生态工程舱 XL 型](<eden_hd_xl.md>) | `cargoverse:vbs/eden_hd_xl` | 480 | 288 | 180 | 8 | 1800 | 已提供正式模板 |
 
 规划投放节点：生态拓殖项目、农业设备基地。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

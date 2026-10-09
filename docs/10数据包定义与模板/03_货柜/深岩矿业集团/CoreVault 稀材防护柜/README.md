@@ -12,8 +12,8 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [DMC CoreVault 稀材防护柜 S 型](<corevault_sd_s.md>) | `cargoverse:dmc/corevault_sd_s` | 8 | 30 | 140 | 1 | 140 | 已提供正式模板 |
-| [DMC CoreVault 稀材防护柜 M 型](<corevault_sd_m.md>) | `cargoverse:dmc/corevault_sd_m` | 16 | 60 | 140 | 2 | 280 | 已提供正式模板 |
+| [DMC CoreVault 稀材防护柜 S 型](<corevault_sd_s.md>) | `cargoverse:dmc/corevault_sd_s` | 40 | 30 | 140 | 1 | 140 | 已提供正式模板 |
+| [DMC CoreVault 稀材防护柜 M 型](<corevault_sd_m.md>) | `cargoverse:dmc/corevault_sd_m` | 80 | 60 | 140 | 2 | 280 | 已提供正式模板 |
 
 规划投放节点：稀材矿场、矿样交接站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

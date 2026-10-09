@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [AUI Nomad 拓殖工程柜 M 型](<nomad_hd_m.md>) | `cargoverse:aui/nomad_hd_m` | 16 | 56 | 160 | 2 | 280 | 已提供正式模板 |
-| [AUI Nomad 拓殖工程柜 L 型](<nomad_hd_l.md>) | `cargoverse:aui/nomad_hd_l` | 32 | 112 | 160 | 4 | 560 | 已提供正式模板 |
-| [AUI Nomad 拓殖工程柜 X 型](<nomad_hd_x.md>) | `cargoverse:aui/nomad_hd_x` | 56 | 196 | 160 | 6 | 980 | 已提供正式模板 |
+| [AUI Nomad 拓殖工程柜 M 型](<nomad_hd_m.md>) | `cargoverse:aui/nomad_hd_m` | 80 | 56 | 160 | 2 | 280 | 已提供正式模板 |
+| [AUI Nomad 拓殖工程柜 L 型](<nomad_hd_l.md>) | `cargoverse:aui/nomad_hd_l` | 160 | 112 | 160 | 4 | 560 | 已提供正式模板 |
+| [AUI Nomad 拓殖工程柜 X 型](<nomad_hd_x.md>) | `cargoverse:aui/nomad_hd_x` | 280 | 196 | 160 | 6 | 980 | 已提供正式模板 |
 
 规划投放节点：拓殖营地、工程集散站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [VBS Harvest 农鲜周转柜 S 型](<harvest_lm_s.md>) | `cargoverse:vbs/harvest_lm_s` | 12 | 24 | 85 | 1 | 90 | 已提供正式模板 |
-| [VBS Harvest 农鲜周转柜 M 型](<harvest_lm_m.md>) | `cargoverse:vbs/harvest_lm_m` | 24 | 48 | 85 | 2 | 180 | 已提供正式模板 |
-| [VBS Harvest 农鲜周转柜 L 型](<harvest_lm_l.md>) | `cargoverse:vbs/harvest_lm_l` | 48 | 96 | 85 | 4 | 360 | 已提供正式模板 |
+| [VBS Harvest 农鲜周转柜 S 型](<harvest_lm_s.md>) | `cargoverse:vbs/harvest_lm_s` | 60 | 24 | 85 | 1 | 90 | 已提供正式模板 |
+| [VBS Harvest 农鲜周转柜 M 型](<harvest_lm_m.md>) | `cargoverse:vbs/harvest_lm_m` | 120 | 48 | 85 | 2 | 180 | 已提供正式模板 |
+| [VBS Harvest 农鲜周转柜 L 型](<harvest_lm_l.md>) | `cargoverse:vbs/harvest_lm_l` | 240 | 96 | 85 | 4 | 360 | 已提供正式模板 |
 
 规划投放节点：农场、农鲜市场。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

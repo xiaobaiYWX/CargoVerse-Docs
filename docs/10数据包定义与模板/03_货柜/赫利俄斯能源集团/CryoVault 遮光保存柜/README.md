@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [HEC CryoVault 遮光保存柜 S 型](<cryovault_sd_s.md>) | `cargoverse:hec/cryovault_sd_s` | 8 | 30 | 140 | 1 | 140 | 已提供正式模板 |
-| [HEC CryoVault 遮光保存柜 M 型](<cryovault_sd_m.md>) | `cargoverse:hec/cryovault_sd_m` | 16 | 60 | 140 | 2 | 280 | 已提供正式模板 |
-| [HEC CryoVault 遮光保存柜 L 型](<cryovault_sd_l.md>) | `cargoverse:hec/cryovault_sd_l` | 32 | 120 | 140 | 4 | 560 | 已提供正式模板 |
+| [HEC CryoVault 遮光保存柜 S 型](<cryovault_sd_s.md>) | `cargoverse:hec/cryovault_sd_s` | 40 | 30 | 140 | 1 | 140 | 已提供正式模板 |
+| [HEC CryoVault 遮光保存柜 M 型](<cryovault_sd_m.md>) | `cargoverse:hec/cryovault_sd_m` | 80 | 60 | 140 | 2 | 280 | 已提供正式模板 |
+| [HEC CryoVault 遮光保存柜 L 型](<cryovault_sd_l.md>) | `cargoverse:hec/cryovault_sd_l` | 160 | 120 | 140 | 4 | 560 | 已提供正式模板 |
 
 规划投放节点：医药集散站、敏感试剂站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

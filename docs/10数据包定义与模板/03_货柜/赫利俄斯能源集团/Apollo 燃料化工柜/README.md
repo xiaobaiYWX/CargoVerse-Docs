@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [HEC Apollo 燃料化工柜 S 型](<apollo_sd_s.md>) | `cargoverse:hec/apollo_sd_s` | 10 | 28 | 130 | 1 | 110 | 已提供正式模板 |
-| [HEC Apollo 燃料化工柜 M 型](<apollo_sd_m.md>) | `cargoverse:hec/apollo_sd_m` | 20 | 56 | 130 | 2 | 220 | 已提供正式模板 |
-| [HEC Apollo 燃料化工柜 L 型](<apollo_sd_l.md>) | `cargoverse:hec/apollo_sd_l` | 40 | 112 | 130 | 4 | 440 | 已提供正式模板 |
+| [HEC Apollo 燃料化工柜 S 型](<apollo_sd_s.md>) | `cargoverse:hec/apollo_sd_s` | 50 | 28 | 130 | 1 | 110 | 已提供正式模板 |
+| [HEC Apollo 燃料化工柜 M 型](<apollo_sd_m.md>) | `cargoverse:hec/apollo_sd_m` | 100 | 56 | 130 | 2 | 220 | 已提供正式模板 |
+| [HEC Apollo 燃料化工柜 L 型](<apollo_sd_l.md>) | `cargoverse:hec/apollo_sd_l` | 200 | 112 | 130 | 4 | 440 | 已提供正式模板 |
 
 规划投放节点：能源补给站、化工厂。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

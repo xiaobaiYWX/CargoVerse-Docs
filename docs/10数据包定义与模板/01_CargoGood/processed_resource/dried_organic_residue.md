@@ -1,0 +1,43 @@
+# 干化有机废料
+
+状态：正式 CargoGood 定义，2026-10-06 回收货物批次。已接入定义和 32×32 透明图标；交易目录随本轮贸易网络发布。
+
+## 定义
+
+| 项目 | 内容 |
+| --- | --- |
+| 资源 ID | `cargoverse:processed_resource/dried_organic_residue` |
+| JSON 文件 | `src/main/resources/data/cargoverse/cargo_goods/processed_resource/dried_organic_residue.json` |
+| Schema 版本 | 1 |
+| CargoClass | `processed_resource` |
+| 显示名称 | 干化有机废料 |
+| UI 图标 | `cargoverse:textures/gui/cargo_goods/processed_resource/dried_organic_residue.png`（32×32 透明 PNG） |
+| 科技等级 | 1 |
+| 标签 | `ingredient.processed_resource.dried_organic_residue` |
+| 结算单位 | `cargoverse:void_byte` |
+
+## 数值
+
+| 项目 | 数值 | 单位 |
+| --- | ---: | --- |
+| 单位质量 | 2 | Kpg/t |
+| 单位基础价值 | 3 | VB/t |
+| 单位许可证经验 | 1 | exp/t |
+| 单位繁荣经验 | 1 | exp/t |
+| 基础完整度 | 200 | 点 |
+
+## 运输要求
+
+无额外词条。货物已完成分拣、去污或封装，属于稳定普通回收料，不引入运行时处理步骤。现有 AUI Atlas S 兼容本分类，基础容量 50 t；t 是数量符号，不是吨。
+
+## 内容定位与投放
+
+已灭活、干燥封装的植物与食品加工残料；不包含活体、感染物或未经处理的厨余。
+
+- 来源：[S03 天空城综合市场](<../../07_贸易点/market/天空城综合市场/00_总体说明.md>)、[V01 梯田农林站](<../../07_贸易点/resource/梯田农林站/00_总体说明.md>)、[V02 云泽水产与育种站](<../../07_贸易点/resource/云泽水产与育种站/00_总体说明.md>)、[B03 边境驻防补给港](<../../07_贸易点/market/边境驻防补给港/00_总体说明.md>)、[G03 独立农圃](<../../07_贸易点/resource/独立农圃/00_总体说明.md>)、[G04 河岸渔站](<../../07_贸易点/resource/河岸渔站/00_总体说明.md>)、[G07 野地居民点](<../../07_贸易点/market/野地居民点/00_总体说明.md>)。
+- 收购方：[V03 绿洲生物工程站](<../../07_贸易点/factory/绿洲生物工程站/00_总体说明.md>)、[E01 赫利俄斯燃料供应站](<../../07_贸易点/factory/赫利俄斯燃料供应站/00_总体说明.md>)。
+- 各来源的库存、日补和价格分别见站点关联资源表；回收收购不触发材料转化或产出。玩家先购入有残值的物料，再运输出售，不采用负价格清运费。
+- 两种经验均采用 1/单位，作为普通回程货物的低成长收益例外，不套用常规 T1 的 4/2。
+- 图标由内置 image_gen 独立生成并最近邻导出，原图及提示保存在美术资产归档。
+
+[CargoGood 目录](<../README.md>) · [贸易网络总览](<../../07_贸易点/设计总览.md>)

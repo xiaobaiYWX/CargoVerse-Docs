@@ -2,7 +2,7 @@
 
 八家制造商页面已收录完整背景、英文名、口号、主要领域与产品特点；游戏内简介使用中英文精简版本。HRI 中文名沿用**地平线研究院**。
 
-世界观设定与数据参数分开维护：本次补充设定不调整容量、质量、耐久、声望或价格倍率。各家对新货物的供需关系见[货物设计口径](<../01_CargoGood/设计口径.md>)。
+八家均已补齐 0～5 级声望、按 CargoClass 区分的供货偏好和逐级签约优惠，并提供中英文称号。制造商只维护空重、特殊设计和设计缺陷；容量及 CargoClass 容量修正归入具体货柜定义。制造商偏好只奖励向所属站点交付相关货物，不改变贸易表买卖清单。
 
 ## 制造商代表色
 
@@ -21,6 +21,14 @@
 
 DMC 的黄黑警戒以作业边缘、设备边界等局部条纹表现；各站必要的安全标线与 H 标识仍按功能设置。REX 不补造统一品牌配色，可保留回收材料原色和局部修补痕迹，具体组合服从建筑用途。规则从概念图延续至 NBT，具体见[制造商归属与特征色](<../07_贸易点/结构搭建说明/结构模板工作流.md#制造商归属与特征色>)。
 
+## 共同数值基准
+
+- 声望等级 0～5 的累计门槛为 **0、100、300、700、1500、3000**，沿用既有 AUI 基准。
+- 每 **100 VB 货物基础价值**贡献 1 点声望，偏好货物按 **1.5 倍**计入，其余按 1 倍；偏好之间不叠加。
+- 签约承运人按当前制造商声望等级获得优惠：0～5 级买入倍率依次为 **1.00、0.99、0.98、0.97、0.95、0.92**，卖出倍率依次为 **1.00、1.01、1.02、1.03、1.05、1.08**。
+- 贸易声望由向有制造商归属的站点交付货物产生，注册声望奖励另由注册定义配置。独立小站不归属任何制造商，也不产生制造商声望或签约优惠。
+- 各家偏好以 CargoClass 大类表示；具体业务绑定和等级称号见各家页面。
+
 ## 空白模板
 
 | 项目 | 内容 |
@@ -28,24 +36,23 @@ DMC 的黄黑警戒以作业边缘、设备边界等局部条纹表现；各站�
 | 资源 ID / 代码 / 名称 |  /  /  |
 | 简介与品牌定位 |  |
 | 代表色／建筑点缀方式 |  |
-| 容量 / 空柜质量 / 耐久倍率 |  /  /  |
-| CargoGood 专属倍率 |  |
+| 空柜质量倍率 |  |
 | 特殊设计 / 设计缺陷 |  /  |
 | 声望等级与门槛 |  |
-| 每点声望价值 / 货物偏好 |  /  |
-| 玩家购买 / 出售倍率 |  /  |
+| 每点声望价值 / CargoClass 偏好 |  /  |
+| 各级玩家购买 / 出售倍率 |  /  |
 
 ## 当前定义
 
 | 制造商 | 代码 | 名称 | 货柜数 |
 | --- | --- | --- | ---: |
-| [cargoverse:aui](aui.md) | `AUI` | 天穹联合工业（`manufacturer.cargoverse.aui`） | 15 |
+| [cargoverse:aui](aui.md) | `AUI` | 天穹联合工业（`manufacturer.cargoverse.aui`） | 16 |
 | [cargoverse:bds](bds.md) | `BDS` | 铁壁防务集团（`manufacturer.cargoverse.bds`） | 5 |
 | [cargoverse:dmc](dmc.md) | `DMC` | 深岩矿业集团（`manufacturer.cargoverse.dmc`） | 7 |
-| [cargoverse:hec](hec.md) | `HEC` | 赫利俄斯能源集团（`manufacturer.cargoverse.hec`） | 6 |
+| [cargoverse:hec](hec.md) | `HEC` | 赫利俄斯能源集团（`manufacturer.cargoverse.hec`） | 11 |
 | [cargoverse:hri](hri.md) | `HRI` | 地平线研究院（`manufacturer.cargoverse.hri`） | 5 |
 | [cargoverse:rex](rex.md) | `REX` | 遗民贸易协会（`manufacturer.cargoverse.rex`） | 3 |
 | [cargoverse:spl](spl.md) | `SPL` | 云港物流集团（`manufacturer.cargoverse.spl`） | 5 |
-| [cargoverse:vbs](vbs.md) | `VBS` | 绿洲农业联盟（`manufacturer.cargoverse.vbs`） | 6 |
+| [cargoverse:vbs](vbs.md) | `VBS` | 绿洲农业联盟（`manufacturer.cargoverse.vbs`） | 8 |
 
 字段规则见[制造商定义](../../01货柜系统/01核心系统/08_制造商定义.md)。

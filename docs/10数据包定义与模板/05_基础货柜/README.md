@@ -6,14 +6,14 @@
 
 | 制造商全称 | 基础货柜 | 规格 | 默认容量 t | 默认空重 Kpg | 默认耐久 | 基础调度点 | 结构 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 天穹联合工业 | [AUI Atlas 标准干货柜 S 型](<aui_basic.md>) | S | 11 | 20 | 100 | 0 | 已有模板 |
-| 云港物流集团 | [SPL Courier 轻型配送柜 S 型](<spl_basic.md>) | S | 10 | 16 | 70 | 0 | 已有模板 |
-| 深岩矿业集团 | [DMC Boreal 矿冶散料柜 M 型](<dmc_basic.md>) | M | 24 | 57.2 | 195 | 0 | 已有模板 |
-| 绿洲农业联盟 | [VBS Harvest 农鲜周转柜 S 型](<oasis_basic.md>) | S | 12 | 24 | 85 | 0 | 正式模板已接入 |
-| 赫利俄斯能源集团 | [HEC Apollo 燃料化工柜 S 型](<hec_basic.md>) | S | 10 | 28 | 130 | 0 | 正式模板已接入 |
-| 地平线研究院 | [HRI Explorer 科考样本舱 S 型](<hri_basic.md>) | S | 6 | 26.4 | 162.5 | 0 | 已有模板 |
-| 铁壁防务集团 | [BDS Sentinel 安防装备柜 S 型](<bds_basic.md>) | S | 8 | 28 | 180 | 0 | 已有模板 |
-| 遗民贸易协会 | [REX Salvage 旧世打捞柜 S 型](<rex_basic.md>) | S | 9 | 22 | 80 | 0 | 已有模板 |
+| 天穹联合工业 | [AUI Atlas 标准干货柜 S 型](<aui_basic.md>) | S | 55 | 20 | 100 | 0 | 已有模板 |
+| 云港物流集团 | [SPL Courier 轻型配送柜 S 型](<spl_basic.md>) | S | 50 | 16 | 70 | 0 | 已有模板 |
+| 深岩矿业集团 | [DMC Boreal 矿冶散料柜 M 型](<dmc_basic.md>) | M | 120 | 57.2 | 195 | 0 | 已有模板 |
+| 绿洲农业联盟 | [VBS Harvest 农鲜周转柜 S 型](<oasis_basic.md>) | S | 60 | 24 | 85 | 0 | 正式模板已接入 |
+| 赫利俄斯能源集团 | [HEC Apollo 燃料化工柜 S 型](<hec_basic.md>) | S | 50 | 28 | 130 | 0 | 正式模板已接入 |
+| 地平线研究院 | [HRI Explorer 科考样本舱 S 型](<hri_basic.md>) | S | 32 | 26.4 | 162.5 | 0 | 已有模板 |
+| 铁壁防务集团 | [BDS Sentinel 安防装备柜 S 型](<bds_basic.md>) | S | 40 | 28 | 180 | 0 | 已有模板 |
+| 遗民贸易协会 | [REX Salvage 旧世打捞柜 S 型](<rex_basic.md>) | S | 45 | 22 | 80 | 0 | 已有模板 |
 
 DMC 沿用 Boreal M 作为矿业起步例外。基础领取无需普通制造的等级与预算门槛，但依然检查资格、唯一权益、生成位置与空间；初始许可统一为 S，不扩大该许可证的普通制造权限。
 

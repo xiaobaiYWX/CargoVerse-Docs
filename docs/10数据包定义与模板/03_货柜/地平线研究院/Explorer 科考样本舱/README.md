@@ -12,9 +12,9 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [HRI Explorer 科考样本舱 S 型](<explorer_si_s.md>) | `cargoverse:hri/explorer_si_s` | 8 | 24 | 125 | 1 | 180 | 已提供正式模板 |
-| [HRI Explorer 科考样本舱 M 型](<explorer_si_m.md>) | `cargoverse:hri/explorer_si_m` | 16 | 48 | 125 | 2 | 360 | 已提供正式模板 |
-| [HRI Explorer 科考样本舱 L 型](<explorer_si_l.md>) | `cargoverse:hri/explorer_si_l` | 32 | 96 | 125 | 4 | 720 | 已提供正式模板 |
+| [HRI Explorer 科考样本舱 S 型](<explorer_si_s.md>) | `cargoverse:hri/explorer_si_s` | 40 | 24 | 125 | 1 | 180 | 已提供正式模板 |
+| [HRI Explorer 科考样本舱 M 型](<explorer_si_m.md>) | `cargoverse:hri/explorer_si_m` | 80 | 48 | 125 | 2 | 360 | 已提供正式模板 |
+| [HRI Explorer 科考样本舱 L 型](<explorer_si_l.md>) | `cargoverse:hri/explorer_si_l` | 160 | 96 | 125 | 4 | 720 | 已提供正式模板 |
 
 规划投放节点：科考前哨、样本交接站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

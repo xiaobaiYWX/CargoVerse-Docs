@@ -13,7 +13,7 @@
 
 | 规则 ID | match_mode | 标签 | 创建库存 | 初始量 | 每种货物容量 | 每日补货 |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| `bagged_wheat` | `all` | `ingredient.agriculture.bagged_wheat` | 是 | 0t | 160t | 6t |
+| `bagged_wheat` | `all` | `ingredient.agriculture.bagged_wheat` | 是 | 0t | 800t | 30t |
 
 ## 收购规则
 

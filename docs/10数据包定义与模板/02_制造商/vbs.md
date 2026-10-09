@@ -33,52 +33,66 @@
 | Schema 版本 | 1 |
 | 代码 | `VBS` |
 | 名称 | 绿洲农业联盟（`manufacturer.cargoverse.vbs`） |
-| 简介 | 面向资源有限的空岛发展水培、生态循环与人工培养技术，提供食品、农业资源和生物技术方案，支持生态维护与环境恢复。（`manufacturer.cargoverse.vbs.description`） |
+| 简介 | 面向资源有限的空岛发展水培、生态循环与人工培养技术，提供食品、农业资源和生物技术方案，支持生态维护与环境恢复。 |
+| 现有货柜定义 | 8 款 |
 
 ## 货柜特性
 
-| 容量倍率 | 空柜质量倍率 | 耐久倍率 |
-| ---: | ---: | ---: |
-|  |  |  |
-
-| CargoGood | 容量倍率 |
-| --- | ---: |
-| `cargoverse:agriculture/bagged_wheat` | 1.25 |
-| `cargoverse:agriculture/cotton_bales` | 1.25 |
-| `cargoverse:agriculture/greenhouse_fruit` | 1.25 |
-| `cargoverse:agriculture/sealed_seed_grain` | 1.25 |
-| `cargoverse:agriculture/hydroponic_leafy_greens` | 1.25 |
-| `cargoverse:livestock/breeding_sheep` | 1.25 |
-| `cargoverse:livestock/breeding_poultry` | 1.25 |
-| `cargoverse:livestock/pollinator_colonies` | 1.25 |
-| `cargoverse:livestock/hatchery_fry` | 1.25 |
+| 空柜质量倍率 |
+| ---: |
+| 1 |
 
 特殊设计：—
 
 设计缺陷：—
 
+制造商层不再提供容量修正；基础容量与 CargoClass 容量倍率由各货柜型号定义。制造商空重倍率、特殊设计和设计缺陷仍与货柜定义共同解析。
+
 ## 声望等级
 
-| 等级 | 所需总声望 | 称号 |
-| ---: | ---: | --- |
-| 0 | 0 | 陌生人员 |
+| 等级 | 所需总声望 | 称号 | 玩家买入倍率 | 玩家卖出倍率 |
+| ---: | ---: | --- | ---: | ---: |
+| 0 | 0 | 陌生人员 | 1.00 | 1.00 |
+| 1 | 100 | 登记承运人 | 0.99 | 1.01 |
+| 2 | 300 | 农业合作承运人 | 0.98 | 1.02 |
+| 3 | 700 | 认证生态承运人 | 0.97 | 1.03 |
+| 4 | 1500 | 绿洲优先伙伴 | 0.95 | 1.05 |
+| 5 | 3000 | 绿洲生态特派员 | 0.92 | 1.08 |
+
+称号具有中英文翻译，键为 `manufacturer.cargoverse.vbs.reputation.<等级>`。门槛为累计声望；价格倍率仅在玩家许可证签发制造商与当前贸易点制造商一致时生效，本次交易跨级后的新倍率从下一笔交易开始使用。
 
 ## 贸易贡献
 
-每 1 点声望所需价值：**100 VB**
+每 100 VB 的货物基础价值贡献 1 点声望；向本制造商所属贸易点交付下列 CargoClass 时使用对应倍率，未列出的大类按 1 倍计入。
 
-| 匹配方式 | 标签 | 优先级 |
+| 偏好大类 | CargoClass | 声望倍率 |
 | --- | --- | ---: |
-| — | — | 1.0 |
+| 农业产品 | `agriculture` | 1.5 |
+| 化工材料 | `chemical_material` | 1.5 |
+| 活体与育种 | `livestock` | 1.5 |
+| 预制结构 | `prefab_structure` | 1.5 |
+| 半成品资源 | `processed_resource` | 1.5 |
 
-## 签约价格修正
+声望 = 交付数量 × CargoGood 基础单价 ÷ 100 × 声望倍率。实际结算价、贸易表价格修正与声望价格优惠不参与该式，计算结果可以保留小数。偏好只改变声望贡献，不赋予贸易点额外收购品类。
 
-| 玩家购买倍率 | 玩家出售倍率 |
-| ---: | ---: |
-| 1 | 1 |
+## 声望价格修正
+
+上表的买入／卖出倍率取代旧的固定签约倍率，并随制造商声望等级提高而改善。仅当玩家许可证签发制造商与当前贸易点制造商均为 `cargoverse:vbs` 时生效，叠加于贸易表等既有价格修正之后，不作用于货柜制造加工费。
+
+## 现有业务绑定
+
+注册定义：`cargoverse:oasis_agriculture`。注册奖励、初始许可证和初始货柜由注册定义及其引用的初始货柜定义维护。
+
+| 正式贸易点 | 贸易点定义 ID |
+| --- | --- |
+| 绿洲生物工程站 | `cargoverse:factory/sky_station/biosystems_station` |
+| 云泽水产与育种站 | `cargoverse:resource/sky_station/aquaculture_station` |
+| 梯田农林站 | `cargoverse:resource/sky_station/terrace_farm` |
+
+测试站不计入本表；独立小站不自动归入任何制造商。各站实际买卖品类与限额以其贸易表为准。
 
 ## 设计说明
 
 农业与生态系统供给方。除粮食、鲜果和育种活体外，突出水培营养液、生态修复菌剂与循环水培舱；设备硬件可从 AUI 采购，VBS 提供生态设计及系统集成。
 
-供需方向为设计提案，见[货物设计口径](<../01_CargoGood/设计口径.md>)。
+本页为已落地的制造商数据；贸易网络商品分工见对应贸易点的定义设计。字段与计算规则见[制造商定义](<../../01货柜系统/01核心系统/08_制造商定义.md>)。

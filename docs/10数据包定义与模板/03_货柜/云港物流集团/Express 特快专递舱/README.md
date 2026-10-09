@@ -10,7 +10,7 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [SPL Express 特快专递舱 S 型](<express_mc_s.md>) | `cargoverse:spl/express_mc_s` | 8 | 18 | 75 | 1 | 90 | 已提供正式模板 |
+| [SPL Express 特快专递舱 S 型](<express_mc_s.md>) | `cargoverse:spl/express_mc_s` | 40 | 18 | 75 | 1 | 90 | 已提供正式模板 |
 
 该系列实体材料与加工费已完成设计，新增运行时配方待接入。
 

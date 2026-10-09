@@ -12,8 +12,8 @@
 
 | 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [BDS Bastion 驻防重装柜 L 型](<bastion_mc_l.md>) | `cargoverse:bds/bastion_mc_l` | 30 | 96 | 220 | 4 | 600 | 已提供正式模板 |
-| [BDS Bastion 驻防重装柜 X 型](<bastion_mc_x.md>) | `cargoverse:bds/bastion_mc_x` | 52 | 168 | 220 | 6 | 1050 | 已提供正式模板 |
+| [BDS Bastion 驻防重装柜 L 型](<bastion_mc_l.md>) | `cargoverse:bds/bastion_mc_l` | 150 | 96 | 220 | 4 | 600 | 已提供正式模板 |
+| [BDS Bastion 驻防重装柜 X 型](<bastion_mc_x.md>) | `cargoverse:bds/bastion_mc_x` | 260 | 168 | 220 | 6 | 1050 | 已提供正式模板 |
 
 规划投放节点：驻防基地、巡逻艇基地。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

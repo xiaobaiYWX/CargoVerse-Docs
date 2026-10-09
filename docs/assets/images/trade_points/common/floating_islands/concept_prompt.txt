@@ -1,0 +1,15 @@
+Use case: stylized-concept
+Asset type: Minecraft Java 1.21.1 build-reference board for six organic floating-island terrain pieces
+Primary request: six DIFFERENT small natural floating islands intended to be overlapped, offset and partially embedded into one another by the builder to form floating islands of any size. They are not standardized tiles and have no matching ports.
+Scene/backdrop: clean neutral light-gray studio background, no sky landscape, buildings or characters.
+Style/medium: crisp countable vanilla Minecraft blocks, naturally eroded voxel terrain, readable grass, soil and rock layers.
+Composition/framing: a 3x2 catalog board, one large three-quarter view and one small top silhouette for each island, all on the same visual scale. Exact labels only: "A LOW MOUND", "B LONG RIDGE", "C CRESCENT", "D FORKED", "E DEEP SPIRE", "F ROCK SHELF".
+A LOW MOUND: roughly 17x9x15, broad irregular walkable grass top, shallow asymmetrical stone underside, useful for filling gaps.
+B LONG RIDGE: roughly 23x12x13, elongated crooked grass plateau, one end wider than the other, several uneven stone fins below.
+C CRESCENT: roughly 19x11x17, curved or C-shaped upper outline with a shallow notch open on one side, lopsided underside.
+D FORKED: roughly 21x13x19, irregular Y-shaped or two-lobed top with one narrow neck, multiple uneven rock roots below.
+E DEEP SPIRE: roughly 15x17x13, compact top but a long off-center tapered stone/deepslate point below, not vertically symmetric.
+F ROCK SHELF: roughly 18x8x22, thin broad shelf with an irregular overhanging ledge and several short underside teeth.
+Shared natural materials: grass blocks, dirt, coarse dirt and rooted dirt near the top; stone, andesite, tuff and sparse cobblestone patches below; deepslate only in the deepest tips. A few exposed moss blocks are acceptable, but no plants or trees.
+Constraints: maximize natural randomness. Every outline, thickness, slope, rock fin and underside tip must differ. No two pieces share the same symmetry or exact dimensions. Top surfaces are usable but not perfectly level or centered. Edges are ragged with local one-to-three-block steps. Rock layers remain attached and structurally continuous. Keep each axis below 25 blocks so pieces remain easy to place and overlap.
+Avoid: standard square grids, identical connection strips, matching sockets, repeated diamond silhouettes, perfect radial symmetry, four-way symmetry, exact mirrored sides, modular labels such as core/edge/corner, complete assembled island, buildings, bridges, water, lava, trees, flowers, ore blocks, caves through the entire island, floating disconnected debris, machinery, text other than the six labels.
