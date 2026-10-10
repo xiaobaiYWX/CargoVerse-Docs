@@ -7,31 +7,31 @@
 | 关联站点 | [G09 路畔货运驿站](<../../../07_贸易点/market/路畔货运驿站/00_总体说明.md>) |
 | 资源 ID | `cargoverse:market/ground_station/roadside_freight_inn` |
 | 发布 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/market/ground_station/roadside_freight_inn.json` |
-| schema_version | 1 |
-| 匹配方式 | 每行唯一 ingredient 标签，selector.match_mode 为 all |
+| schema_version | 2 |
+| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
 | 数量单位 | t 为数量符号；每日按 24000 ticks 计算 |
 | 报价与库存 | 逐商品 price_multiplier；出售有限库存，收购无库存且全部设每日限额 |
 
 ## 出售 sales
 
-全部 `create_inventory: true`；初始量、容量、日补分别对应 initial_amount、capacity_per_good、daily_restock_per_good。当前均为持续补货，不增加一次性遗物来源。
+全部使用有限 `inventory`；初始量、容量、日补分别对应 `initial`、`capacity`、`daily_restock`。当前均为持续补货，不增加一次性遗物来源。
 
-| 规则 ID | 货物 | 标签 | 初始量 | 容量 | 日补 | 价格倍率 |
-| --- | --- | --- | --- | --- | --- | --- |
-| `shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | `ingredient.general_supplies.shelf_stable_rations` | 160 | 320 | 80 | 0.95 |
-| `civilian_lighting_kits` | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | `ingredient.general_supplies.civilian_lighting_kits` | 30 | 60 | 15 | 0.95 |
-| `sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | `ingredient.processed_resource.sorted_packaging_scrap` | 40 | 80 | 20 | 0.5 |
+| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 160 | 320 | 80 | 0.95 |
+| `cargoverse:general_supplies/civilian_lighting_kits` | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | 30 | 60 | 15 | 0.95 |
+| `cargoverse:processed_resource/sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 40 | 80 | 20 | 0.5 |
 
 ## 收购 acquisitions
 
-全部 `daily_limit_enabled: true`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
+全部填写 `daily_limit`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
 
-| 规则 ID | 货物 | 标签 | 每日限额开关 | 每种货物每日上限（t） | 价格倍率 |
-| --- | --- | --- | --- | --- | --- |
-| `bagged_wheat` | [袋装麦粒](<../../../01_CargoGood/agriculture/bagged_wheat.md>) | `ingredient.agriculture.bagged_wheat` | true | 70 | 1 |
-| `potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | `ingredient.general_supplies.potable_water_crates` | true | 100 | 1 |
-| `kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | `ingredient.processed_resource.kiln_dried_planks` | true | 50 | 1 |
-| `durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | `ingredient.general_supplies.durable_workwear` | true | 20 | 1 |
+| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
+| --- | --- | ---: | ---: |
+| `cargoverse:agriculture/bagged_wheat` | [袋装麦粒](<../../../01_CargoGood/agriculture/bagged_wheat.md>) | 70 | 1 |
+| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 100 | 1 |
+| `cargoverse:processed_resource/kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 50 | 1 |
+| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 20 | 1 |
 
 ## 数值依据
 

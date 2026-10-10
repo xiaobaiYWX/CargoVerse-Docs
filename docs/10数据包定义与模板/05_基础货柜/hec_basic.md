@@ -6,8 +6,8 @@ Helios Energy Corporation（HEC）
 
 | 项目 | 内容 |
 | --- | --- |
-| 基础权益 ID | `cargoverse:starter_containers/hec_basic` |
-| 基础定义 JSON | [hec_basic.json](<../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/starter_containers/hec_basic.json>) |
+| 制造商 ID | `cargoverse:hec` |
+| 制造商定义 | [hec.json](<../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/manufacturers/hec.json>) |
 | 货柜定义 | [HEC Apollo 燃料化工柜 S 型](<../03_货柜/赫利俄斯能源集团/Apollo 燃料化工柜/apollo_sd_s.md>) |
 | 完整型号 | `HEC-Apollo-SD-S` |
 | 尺寸等级 | S |
@@ -21,11 +21,10 @@ Helios Energy Corporation（HEC）
 
 每名玩家同时仅有一份当前注册机构的基础货柜权益。货柜通过注册终端领取，带 `starterContainer` 资产标记，不收取制造费用、库存材料或调度点。普通购买／制造的同型号不享受免点。旧存档中带此标记的资产也立即免点，设备快照仍保留当时型号参数。
 
-## 当前 JSON
+## 制造商字段片段
 
 ```json
 {
-  "schema_version": 1,
-  "container_definition": "cargoverse:hec/apollo_sd_s"
+  "starter_container": "cargoverse:hec/apollo_sd_s"
 }
 ```

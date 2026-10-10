@@ -8,20 +8,20 @@
 | --- | --- |
 | 资源 ID | `cargoverse:resource/general/default` |
 | JSON 文件 | `src/main/resources/data/cargoverse/trade_points/resource_tables/resource/general/default.json` |
-| Schema 版本 | 1 |
+| Schema 版本 | 2 |
 | 用途 | 默认资源贸易点的测试交易目录与库存周转 |
 
 ## 出售规则
 
-| 规则 ID | match_mode | 标签 | 创建库存 | 初始量 | 每种货物容量 | 每日补货 |
-| --- | --- | --- | --- | ---: | ---: | ---: |
-| `hematite_ore` | `all` | `ingredient.raw_resource.hematite_ore` | 是 | 0t | 800t | 60t |
-| `conifer_logs` | `all` | `ingredient.raw_resource.conifer_logs` | 是 | 0t | 800t | 30t |
-| `greenhouse_fruit` | `all` | `ingredient.agriculture.greenhouse_fruit` | 是 | 0t | 800t | 60t |
+| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `cargoverse:raw_resource/hematite_ore` | — | 0t | 800t | 60t | 1 |
+| `cargoverse:raw_resource/conifer_logs` | — | 0t | 800t | 30t | 1 |
+| `cargoverse:agriculture/greenhouse_fruit` | — | 0t | 800t | 60t | 1 |
 
 ## 收购规则
 
-| 规则 ID | match_mode | 标签 |
-| --- | --- | --- |
-| `compound_fertilizer` | `all` | `ingredient.chemical_material.compound_fertilizer` |
-| `biomass_briquettes` | `all` | `ingredient.energy_fuel.biomass_briquettes` |
+| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
+| --- | --- | ---: | ---: |
+| `cargoverse:chemical_material/compound_fertilizer` | — | 不限 | 1 |
+| `cargoverse:energy_fuel/biomass_briquettes` | — | 不限 | 1 |

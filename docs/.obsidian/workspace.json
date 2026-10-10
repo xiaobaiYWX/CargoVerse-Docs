@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9b0b3871a4cabe05",
+        "id": "be2fd49e7c9abc56",
         "type": "tabs",
         "children": [
           {
-            "id": "5e8db3a0ea3d6c9c",
+            "id": "b031569a5e8d6df0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10数据包定义与模板/02_制造商/aui.md",
+                "file": "11特殊订单系统/03_终端检查点与存档.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "aui"
+              "title": "03_终端检查点与存档"
             }
           }
         ]
@@ -185,11 +185,29 @@
       "bases:新建数据库": false
     }
   },
-  "active": "5e8db3a0ea3d6c9c",
+  "active": "b031569a5e8d6df0",
   "lastOpenFiles": [
+    "11特殊订单系统/02_任务限制难度与奖励曲线.md",
+    "11特殊订单系统/03_终端检查点与存档.md",
+    "11特殊订单系统/04_数据定义与维护.md",
+    "01货柜系统/01核心系统/04_词条与完整度系统.md",
+    "11特殊订单系统/01_系统架构与订单流程.md",
+    "11特殊订单系统/README.md",
+    "09世界表面UI系统/03_封装仪表组件规范.md",
+    "10数据包定义与模板/13_特殊订单/market/test_station/b_to_a.md",
+    "10数据包定义与模板/13_特殊订单/market/test_station/a_to_b.md",
+    "10数据包定义与模板/13_特殊订单/market/test_station",
+    "10数据包定义与模板/13_特殊订单/README.md",
+    "10数据包定义与模板/13_特殊订单/market",
+    "10数据包定义与模板/13_特殊订单",
+    "11特殊订单系统",
+    "09世界表面UI系统/01_系统架构与接入规范.md",
+    "09世界表面UI系统/04_交互按钮组件规范.md",
+    "10数据包定义与模板/02_制造商/aui.md",
+    "04商店系统/01_商店体系.md",
+    "02贸易点系统/03_资源表定义.md",
     "10数据包定义与模板/02_制造商/dmc.md",
     "10数据包定义与模板/02_制造商/bds.md",
-    "10数据包定义与模板/02_制造商/aui.md",
     "10数据包定义与模板/02_制造商/spl.md",
     "10数据包定义与模板/02_制造商/hec.md",
     "10数据包定义与模板/02_制造商/README.md",
@@ -201,24 +219,10 @@
     "10数据包定义与模板/08_货柜制造台/market/test_station/all_containers.md",
     "10数据包定义与模板/08_货柜制造台/market/test_station",
     "10数据包定义与模板/08_货柜制造台/market",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点B/结构设计/00_结构总览.md",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点B/生成规则/00_生成规则.md",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点B/定义设计/00_贸易点定义.md",
     "10数据包定义与模板/07_贸易点/market/测试贸易点B/结构设计",
     "10数据包定义与模板/07_贸易点/market/测试贸易点B/生成规则",
     "10数据包定义与模板/07_贸易点/market/测试贸易点B/定义设计",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点B/00_总体说明.md",
     "10数据包定义与模板/07_贸易点/market/测试贸易点B",
-    "10数据包定义与模板/06_资源表/market/test_station/a.md",
-    "10数据包定义与模板/06_资源表/market/test_station/b.md",
-    "10数据包定义与模板/06_资源表/market/test_station",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点A/结构设计/00_结构总览.md",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点A/生成规则/00_生成规则.md",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点A/定义设计/00_贸易点定义.md",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点A/生成规则",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点A/结构设计",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点A/00_总体说明.md",
-    "10数据包定义与模板/07_贸易点/market/测试贸易点A/定义设计",
     "10数据包定义与模板/07_贸易点/market/边路施工营/结构设计/assets/structure_preview.png",
     "10数据包定义与模板/07_贸易点/market/旧件回收铺/结构设计/assets/structure_preview.png",
     "10数据包定义与模板/07_贸易点/market/气象观测哨/结构设计/assets/structure_preview.png",
@@ -227,10 +231,6 @@
     "10数据包定义与模板/07_贸易点/factory/泉源净水所/结构设计/assets/structure_preview.png",
     "10数据包定义与模板/07_贸易点/factory/乡野机修所/结构设计/assets/structure_preview.png",
     "10数据包定义与模板/07_贸易点/market/路畔货运驿站/结构设计/assets/structure_preview.png",
-    "10数据包定义与模板/07_贸易点/README.md",
-    "10数据包定义与模板/07_贸易点/resource/林缘采运站/00_总体说明.md",
-    "10数据包定义与模板/07_贸易点/market/边路施工营/00_总体说明.md",
-    "10数据包定义与模板/07_贸易点/market/旧件回收铺/00_总体说明.md",
     "assets/images/trade_points/market/ground_station/wayside_construction_camp/actual/overview_refined.png",
     "assets/images/trade_points/market/ground_station/wayside_construction_camp/actual/rear_refined.png",
     "未命名.canvas"

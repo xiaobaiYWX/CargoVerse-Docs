@@ -13,7 +13,6 @@
 | 显示名称 | 结构钢锭 |
 | UI 图标 | `cargoverse:textures/gui/cargo_goods/refined_resource/structural_steel_ingots.png`（32×32 RGBA PNG） |
 | 科技等级 | 2 |
-| 标签 | `ingredient.refined_resource.structural_steel_ingots`、`structural_metal` |
 | 结算单位 | `cargoverse:void_byte` |
 
 ## 数值
@@ -39,7 +38,7 @@
 - 设计来源：[D03 重工材料与矿机厂](<../../07_贸易点/factory/重工材料与矿机厂/00_总体说明.md>)；主要去处：[A01 标准建材装配港](<../../07_贸易点/factory/标准建材装配港/00_总体说明.md>)。按[资源表版贸易点设计](<../../07_贸易点/设计总览.md>)投放，贸易点与资源表已同步数据包，自然结构已接入。
 - 当前主要来源采用持续周转：初始 200 t、容量 400 t、日补 100 t；主要买方长期不限额收购。按[数量与运力基线](<../数量与运力基线.md>)配置，t 表示货物数量而非吨。
 - 基础估值沿用现值；质量按物流定位取整数，经验按科技层级使用整数计分，完整度与损耗等比调整；详见[整数数值基线](<../整数数值基线.md>)。
-- 货物专属标签仅匹配本货物；资源表、商店或制造台需要其他候选货物时应显式列出。
+- 资源表、商店或制造台均通过完整 CargoGood ID 显式引用本货物。
 
 [返回 CargoGood 目录](../README.md)
 

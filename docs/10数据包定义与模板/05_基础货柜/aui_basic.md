@@ -6,8 +6,8 @@ Aether Union Industries（AUI）
 
 | 项目             | 内容                                                                                                                              |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 基础权益 ID        | `cargoverse:starter_containers/aui_basic`                                                                                       |
-| 基础定义 JSON      | [aui_basic.json](<../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/starter_containers/aui_basic.json>) |
+| 制造商 ID | `cargoverse:aui` |
+| 制造商定义 | [aui.json](<../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/manufacturers/aui.json>) |
 | 货柜定义           | [AUI Atlas 标准干货柜 S 型](<../03_货柜/天穹联合工业/Atlas 标准干货柜/atlas_sd_s.md>)                                                              |
 | 完整型号           | `AUI-Atlas-SD-S`                                                                                                                |
 | 尺寸等级           | S                                                                                                                               |
@@ -21,11 +21,10 @@ Aether Union Industries（AUI）
 
 每名玩家同时仅有一份当前注册机构的基础货柜权益。货柜通过注册终端领取，带 `starterContainer` 资产标记，不收取制造费用、库存材料或调度点。普通购买／制造的同型号不享受免点。旧存档中带此标记的资产也立即免点，设备快照仍保留当时型号参数。
 
-## 当前 JSON
+## 制造商字段片段
 
 ```json
 {
-  "schema_version": 1,
-  "container_definition": "cargoverse:aui/atlas_sd_s"
+  "starter_container": "cargoverse:aui/atlas_sd_s"
 }
 ```

@@ -7,31 +7,31 @@
 | 关联站点 | [G10 乡野机修所](<../../../07_贸易点/factory/乡野机修所/00_总体说明.md>) |
 | 资源 ID | `cargoverse:factory/ground_station/rural_repair_shop` |
 | 发布 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/factory/ground_station/rural_repair_shop.json` |
-| schema_version | 1 |
-| 匹配方式 | 每行唯一 ingredient 标签，selector.match_mode 为 all |
+| schema_version | 2 |
+| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
 | 数量单位 | t 为数量符号；每日按 24000 ticks 计算 |
 | 报价与库存 | 逐商品 price_multiplier；出售有限库存，收购无库存且全部设每日限额 |
 
 ## 出售 sales
 
-全部 `create_inventory: true`；初始量、容量、日补分别对应 initial_amount、capacity_per_good、daily_restock_per_good。当前均为持续补货，不增加一次性遗物来源。
+全部使用有限 `inventory`；初始量、容量、日补分别对应 `initial`、`capacity`、`daily_restock`。当前均为持续补货，不增加一次性遗物来源。
 
-| 规则 ID | 货物 | 标签 | 初始量 | 容量 | 日补 | 价格倍率 |
-| --- | --- | --- | --- | --- | --- | --- |
-| `mining_hand_tools` | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | `ingredient.tools_equipment.mining_hand_tools` | 50 | 100 | 25 | 0.95 |
-| `transmission_gears` | [标准传动齿轮](<../../../01_CargoGood/mechanical_parts/transmission_gears.md>) | `ingredient.mechanical_parts.transmission_gears` | 20 | 40 | 10 | 0.95 |
-| `recyclable_metal_scrap` | [可回收金属废料](<../../../01_CargoGood/processed_resource/recyclable_metal_scrap.md>) | `ingredient.processed_resource.recyclable_metal_scrap` | 30 | 60 | 15 | 0.5 |
+| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `cargoverse:tools_equipment/mining_hand_tools` | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | 50 | 100 | 25 | 0.95 |
+| `cargoverse:mechanical_parts/transmission_gears` | [标准传动齿轮](<../../../01_CargoGood/mechanical_parts/transmission_gears.md>) | 20 | 40 | 10 | 0.95 |
+| `cargoverse:processed_resource/recyclable_metal_scrap` | [可回收金属废料](<../../../01_CargoGood/processed_resource/recyclable_metal_scrap.md>) | 30 | 60 | 15 | 0.5 |
 
 ## 收购 acquisitions
 
-全部 `daily_limit_enabled: true`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
+全部填写 `daily_limit`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
 
-| 规则 ID | 货物 | 标签 | 每日限额开关 | 每种货物每日上限（t） | 价格倍率 |
-| --- | --- | --- | --- | --- | --- |
-| `structural_steel_ingots` | [结构钢锭](<../../../01_CargoGood/refined_resource/structural_steel_ingots.md>) | `ingredient.refined_resource.structural_steel_ingots` | true | 30 | 1 |
-| `industrial_lubricant` | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | `ingredient.chemical_material.industrial_lubricant` | true | 30 | 1 |
-| `shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | `ingredient.general_supplies.shelf_stable_rations` | true | 60 | 1 |
-| `industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | `ingredient.energy_fuel.industrial_energy_cells` | true | 10 | 1 |
+| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
+| --- | --- | ---: | ---: |
+| `cargoverse:refined_resource/structural_steel_ingots` | [结构钢锭](<../../../01_CargoGood/refined_resource/structural_steel_ingots.md>) | 30 | 1 |
+| `cargoverse:chemical_material/industrial_lubricant` | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | 30 | 1 |
+| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 60 | 1 |
+| `cargoverse:energy_fuel/industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 10 | 1 |
 
 ## 数值依据
 

@@ -21,7 +21,7 @@
 
 贸易点的 `manufacturer` 应为 `cargoverse:hri`，其 `modules.registration_point.definitions_pool` 引用本注册点定义。签发机构与注册声望归属来自承载贸易点的制造商。
 
-基础货柜通过资产标记免调度点，满预算或超预算仍可领取；一次只允许一份基础货柜，重复注册不重复发放。注销仍按现有规则回收基础货柜，普通自有货柜保留。
+初始型号由签发制造商定义中的 `starter_container` 确定。基础货柜通过资产标记免调度点，满预算或超预算仍可领取；一次只允许一份基础货柜，重复注册不重复发放。注销仍按现有规则回收基础货柜，普通自有货柜保留。
 
 ## 当前 JSON
 
@@ -32,9 +32,6 @@
   "license_type": "地平线研究院合约特派员",
   "initial_license_level": "S",
   "registration_rewards": {
-    "starter_container": {
-      "definition": "cargoverse:starter_containers/hri_basic"
-    },
     "items": []
   },
   "reputation_rewards": {

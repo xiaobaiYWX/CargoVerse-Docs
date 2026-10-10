@@ -13,7 +13,6 @@
 | 显示名称 | 干化有机废料 |
 | UI 图标 | `cargoverse:textures/gui/cargo_goods/processed_resource/dried_organic_residue.png`（32×32 透明 PNG） |
 | 科技等级 | 1 |
-| 标签 | `ingredient.processed_resource.dried_organic_residue` |
 | 结算单位 | `cargoverse:void_byte` |
 
 ## 数值

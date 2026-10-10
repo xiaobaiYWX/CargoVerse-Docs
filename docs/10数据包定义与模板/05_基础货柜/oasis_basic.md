@@ -6,8 +6,8 @@ Verdant BioSystems（VBS）
 
 | 项目 | 内容 |
 | --- | --- |
-| 基础权益 ID | `cargoverse:starter_containers/oasis_basic` |
-| 基础定义 JSON | [oasis_basic.json](<../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/starter_containers/oasis_basic.json>) |
+| 制造商 ID | `cargoverse:vbs` |
+| 制造商定义 | [vbs.json](<../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/manufacturers/vbs.json>) |
 | 货柜定义 | [VBS Harvest 农鲜周转柜 S 型](<../03_货柜/绿洲农业联盟/Harvest 农鲜周转柜/harvest_lm_s.md>) |
 | 完整型号 | `VBS-Harvest-LM-S` |
 | 尺寸等级 | S |
@@ -21,11 +21,10 @@ Verdant BioSystems（VBS）
 
 每名玩家同时仅有一份当前注册机构的基础货柜权益。货柜通过注册终端领取，带 `starterContainer` 资产标记，不收取制造费用、库存材料或调度点。普通购买／制造的同型号不享受免点。旧存档中带此标记的资产也立即免点，设备快照仍保留当时型号参数。
 
-## 当前 JSON
+## 制造商字段片段
 
 ```json
 {
-  "schema_version": 1,
-  "container_definition": "cargoverse:vbs/harvest_lm_s"
+  "starter_container": "cargoverse:vbs/harvest_lm_s"
 }
 ```

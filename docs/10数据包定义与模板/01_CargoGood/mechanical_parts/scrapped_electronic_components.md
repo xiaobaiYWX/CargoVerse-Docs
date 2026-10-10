@@ -13,7 +13,6 @@
 | 显示名称 | 报废电子组件 |
 | UI 图标 | `cargoverse:textures/gui/cargo_goods/mechanical_parts/scrapped_electronic_components.png`（32×32 透明 PNG） |
 | 科技等级 | 1 |
-| 标签 | `ingredient.mechanical_parts.scrapped_electronic_components` |
 | 结算单位 | `cargoverse:void_byte` |
 
 ## 数值

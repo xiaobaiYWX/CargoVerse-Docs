@@ -13,7 +13,6 @@
 | 显示名称 | 可回收金属废料 |
 | UI 图标 | `cargoverse:textures/gui/cargo_goods/processed_resource/recyclable_metal_scrap.png`（32×32 透明 PNG） |
 | 科技等级 | 1 |
-| 标签 | `ingredient.processed_resource.recyclable_metal_scrap` |
 | 结算单位 | `cargoverse:void_byte` |
 
 ## 数值

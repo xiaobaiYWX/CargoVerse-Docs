@@ -30,11 +30,11 @@
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
 | 容量（t） | 40 | 40 |
-| 空柜目标质量（Kpg） | 30 | 39 |
+| 空柜目标质量（Kpg） | 39 | 39 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
 
-容量倍率属于本货柜型号；未列出的允许分类使用基础容量。空重仍应用制造商倍率。指定分类容量在最终乘算后一次向下取整。目标空重仍受结构中非货柜方块质量下限约束。
+容量、空重、防护与缺陷均由本货柜型号直接定义；未列出的允许分类使用基础容量。指定分类容量在最终乘算后一次向下取整。目标空重仍受结构中非货柜方块质量下限约束。
 
 ## CargoClass 兼容
 
@@ -81,7 +81,7 @@
   "trade_currency": "cargoverse:void_byte",
   "dispatch_points": 1,
   "capacity": 40,
-  "empty_mass": 30,
+  "empty_mass": 39,
   "allowed_cargo_classes": [
     "special_resource",
     "refined_resource",

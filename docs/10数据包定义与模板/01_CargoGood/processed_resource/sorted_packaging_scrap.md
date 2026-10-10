@@ -13,7 +13,6 @@
 | 显示名称 | 分拣包装废料 |
 | UI 图标 | `cargoverse:textures/gui/cargo_goods/processed_resource/sorted_packaging_scrap.png`（32×32 透明 PNG） |
 | 科技等级 | 1 |
-| 标签 | `ingredient.processed_resource.sorted_packaging_scrap` |
 | 结算单位 | `cargoverse:void_byte` |
 
 ## 数值

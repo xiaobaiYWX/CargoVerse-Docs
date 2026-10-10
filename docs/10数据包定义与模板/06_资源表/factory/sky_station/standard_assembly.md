@@ -6,46 +6,46 @@
 | --- | --- |
 | 资源 ID | `cargoverse:factory/sky_station/standard_assembly` |
 | 目标 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/factory/sky_station/standard_assembly.json` |
-| schema_version | 1 |
-| 匹配方式 | 每行独立规则；selector.match_mode 为 all；selector.tags 为该行唯一标签的单元素数组 |
+| schema_version | 2 |
+| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
 | 数量单位 | t 是货物数量；完整贸易日为 24000 ticks |
 | 报价方式 | 每条规则设置 price_multiplier；无站点总倍率 |
 
 ## 出售 sales
 
-全部 create_inventory: true；初始量、容量、日补对应 initial_amount、capacity_per_good、daily_restock_per_good。价格倍率作用于基础价值，整笔结算后取整。
+全部使用有限 `inventory`；初始量、容量、日补对应 `initial`、`capacity`、`daily_restock`。价格倍率作用于基础价值，整笔结算后取整。
 
-| 规则 ID | 货物 | 标签 | 初始量 | 容量 | 日补 | 价格倍率 |
-| --- | --- | --- | ---: | ---: | ---: | ---: |
-| `bagged_cement` | [袋装水泥](<../../../01_CargoGood/construction_material/bagged_cement.md>) | `ingredient.construction_material.bagged_cement` | 800 | 1600 | 400 | 0.95 |
-| `insulation_panels` | [保温板材](<../../../01_CargoGood/construction_material/insulation_panels.md>) | `ingredient.construction_material.insulation_panels` | 200 | 400 | 100 | 0.95 |
-| `structural_steel_beams` | [标准钢梁](<../../../01_CargoGood/construction_material/structural_steel_beams.md>) | `ingredient.construction_material.structural_steel_beams` | 200 | 400 | 100 | 0.95 |
-| `tempered_glass_panels` | [钢化玻璃板](<../../../01_CargoGood/construction_material/tempered_glass_panels.md>) | `ingredient.construction_material.tempered_glass_panels` | 400 | 800 | 200 | 0.95 |
-| `prefab_habitat_pods` | [预制居住舱](<../../../01_CargoGood/prefab_structure/prefab_habitat_pods.md>) | `ingredient.prefab_structure.prefab_habitat_pods` | 200 | 400 | 100 | 0.95 |
-| `greenhouse_frame_modules` | [温室骨架模块](<../../../01_CargoGood/prefab_structure/greenhouse_frame_modules.md>) | `ingredient.prefab_structure.greenhouse_frame_modules` | 200 | 400 | 100 | 0.95 |
-| `civilian_lighting_kits` | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | `ingredient.general_supplies.civilian_lighting_kits` | 100 | 200 | 50 | 0.95 |
-| `sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | `ingredient.processed_resource.sorted_packaging_scrap` | 60 | 120 | 30 | 0.5 |
+| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `cargoverse:construction_material/bagged_cement` | [袋装水泥](<../../../01_CargoGood/construction_material/bagged_cement.md>) | 800 | 1600 | 400 | 0.95 |
+| `cargoverse:construction_material/insulation_panels` | [保温板材](<../../../01_CargoGood/construction_material/insulation_panels.md>) | 200 | 400 | 100 | 0.95 |
+| `cargoverse:construction_material/structural_steel_beams` | [标准钢梁](<../../../01_CargoGood/construction_material/structural_steel_beams.md>) | 200 | 400 | 100 | 0.95 |
+| `cargoverse:construction_material/tempered_glass_panels` | [钢化玻璃板](<../../../01_CargoGood/construction_material/tempered_glass_panels.md>) | 400 | 800 | 200 | 0.95 |
+| `cargoverse:prefab_structure/prefab_habitat_pods` | [预制居住舱](<../../../01_CargoGood/prefab_structure/prefab_habitat_pods.md>) | 200 | 400 | 100 | 0.95 |
+| `cargoverse:prefab_structure/greenhouse_frame_modules` | [温室骨架模块](<../../../01_CargoGood/prefab_structure/greenhouse_frame_modules.md>) | 200 | 400 | 100 | 0.95 |
+| `cargoverse:general_supplies/civilian_lighting_kits` | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | 100 | 200 | 50 | 0.95 |
+| `cargoverse:processed_resource/sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 60 | 120 | 30 | 0.5 |
 
 ## 收购 acquisitions
 
-收购不建库存。true 写入 daily_limit_enabled: true 与 daily_limit_per_good；false 不写限额字段，表示不限额。额度由同一站点实例所有玩家共享，按贸易日重置、不累积；price_multiplier 对该商品独立生效。
+收购不建库存。填写 `daily_limit` 表示启用每日限额；省略时表示不限额。额度由同一站点实例所有玩家共享，按贸易日重置、不累积；`price_multiplier` 对该商品独立生效。
 
-| 规则 ID | 货物 | 标签 | 每日限额开关 | 每种货物每日上限（t） | 价格倍率 |
-| --- | --- | --- | --- | ---: | ---: |
-| `quartz_sand` | [石英原砂](<../../../01_CargoGood/raw_resource/quartz_sand.md>) | `ingredient.raw_resource.quartz_sand` | false | 不限 | 1.1 |
-| `structural_steel_ingots` | [结构钢锭](<../../../01_CargoGood/refined_resource/structural_steel_ingots.md>) | `ingredient.refined_resource.structural_steel_ingots` | false | 不限 | 1.1 |
-| `kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | `ingredient.processed_resource.kiln_dried_planks` | false | 不限 | 1 |
-| `sealing_resin` | [密封树脂](<../../../01_CargoGood/chemical_material/sealing_resin.md>) | `ingredient.chemical_material.sealing_resin` | false | 不限 | 1.1 |
-| `shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | `ingredient.general_supplies.shelf_stable_rations` | false | 不限 | 1 |
-| `potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | `ingredient.general_supplies.potable_water_crates` | false | 不限 | 1 |
-| `first_aid_medicines` | [急救药剂](<../../../01_CargoGood/medical_supply/first_aid_medicines.md>) | `ingredient.medical_supply.first_aid_medicines` | false | 不限 | 1 |
-| `durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | `ingredient.general_supplies.durable_workwear` | false | 不限 | 1 |
-| `transmission_gears` | [标准传动齿轮](<../../../01_CargoGood/mechanical_parts/transmission_gears.md>) | `ingredient.mechanical_parts.transmission_gears` | true | 100 | 1.05 |
-| `industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | `ingredient.energy_fuel.industrial_energy_cells` | true | 100 | 1.05 |
-| `industrial_lubricant` | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | `ingredient.chemical_material.industrial_lubricant` | false | 不限 | 1.05 |
-| `hydraulic_cylinders` | [液压执行缸](<../../../01_CargoGood/mechanical_parts/hydraulic_cylinders.md>) | `ingredient.mechanical_parts.hydraulic_cylinders` | true | 100 | 1.05 |
-| `precision_copper_wire` | [精密铜线](<../../../01_CargoGood/refined_resource/precision_copper_wire.md>) | `ingredient.refined_resource.precision_copper_wire` | true | 100 | 1.05 |
-| `recyclable_metal_scrap` | [可回收金属废料](<../../../01_CargoGood/processed_resource/recyclable_metal_scrap.md>) | `ingredient.processed_resource.recyclable_metal_scrap` | false | 不限 | 1 |
+| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
+| --- | --- | ---: | ---: |
+| `cargoverse:raw_resource/quartz_sand` | [石英原砂](<../../../01_CargoGood/raw_resource/quartz_sand.md>) | 不限 | 1.1 |
+| `cargoverse:refined_resource/structural_steel_ingots` | [结构钢锭](<../../../01_CargoGood/refined_resource/structural_steel_ingots.md>) | 不限 | 1.1 |
+| `cargoverse:processed_resource/kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 不限 | 1 |
+| `cargoverse:chemical_material/sealing_resin` | [密封树脂](<../../../01_CargoGood/chemical_material/sealing_resin.md>) | 不限 | 1.1 |
+| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 不限 | 1 |
+| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 不限 | 1 |
+| `cargoverse:medical_supply/first_aid_medicines` | [急救药剂](<../../../01_CargoGood/medical_supply/first_aid_medicines.md>) | 不限 | 1 |
+| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 不限 | 1 |
+| `cargoverse:mechanical_parts/transmission_gears` | [标准传动齿轮](<../../../01_CargoGood/mechanical_parts/transmission_gears.md>) | 100 | 1.05 |
+| `cargoverse:energy_fuel/industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 100 | 1.05 |
+| `cargoverse:chemical_material/industrial_lubricant` | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | 不限 | 1.05 |
+| `cargoverse:mechanical_parts/hydraulic_cylinders` | [液压执行缸](<../../../01_CargoGood/mechanical_parts/hydraulic_cylinders.md>) | 100 | 1.05 |
+| `cargoverse:refined_resource/precision_copper_wire` | [精密铜线](<../../../01_CargoGood/refined_resource/precision_copper_wire.md>) | 100 | 1.05 |
+| `cargoverse:processed_resource/recyclable_metal_scrap` | [可回收金属废料](<../../../01_CargoGood/processed_resource/recyclable_metal_scrap.md>) | 不限 | 1 |
 
 ## 业务用途与维护
 

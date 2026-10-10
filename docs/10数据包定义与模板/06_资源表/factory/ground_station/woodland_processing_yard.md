@@ -7,31 +7,31 @@
 | 关联站点 | [G12 林间制材所](<../../../07_贸易点/factory/林间制材所/00_总体说明.md>) |
 | 资源 ID | `cargoverse:factory/ground_station/woodland_processing_yard` |
 | 发布 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/factory/ground_station/woodland_processing_yard.json` |
-| schema_version | 1 |
-| 匹配方式 | 每行唯一 ingredient 标签，selector.match_mode 为 all |
+| schema_version | 2 |
+| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
 | 数量单位 | t 为数量符号；每日按 24000 ticks 计算 |
 | 报价与库存 | 逐商品 price_multiplier；出售有限库存，收购无库存且全部设每日限额 |
 
 ## 出售 sales
 
-全部 `create_inventory: true`；初始量、容量、日补分别对应 initial_amount、capacity_per_good、daily_restock_per_good。当前均为持续补货，不增加一次性遗物来源。
+全部使用有限 `inventory`；初始量、容量、日补分别对应 `initial`、`capacity`、`daily_restock`。当前均为持续补货，不增加一次性遗物来源。
 
-| 规则 ID | 货物 | 标签 | 初始量 | 容量 | 日补 | 价格倍率 |
-| --- | --- | --- | --- | --- | --- | --- |
-| `kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | `ingredient.processed_resource.kiln_dried_planks` | 120 | 240 | 60 | 0.95 |
-| `biomass_briquettes` | [压制生物燃料](<../../../01_CargoGood/energy_fuel/biomass_briquettes.md>) | `ingredient.energy_fuel.biomass_briquettes` | 160 | 320 | 80 | 0.95 |
-| `dried_organic_residue` | [干化有机废料](<../../../01_CargoGood/processed_resource/dried_organic_residue.md>) | `ingredient.processed_resource.dried_organic_residue` | 30 | 60 | 15 | 0.5 |
+| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `cargoverse:processed_resource/kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 120 | 240 | 60 | 0.95 |
+| `cargoverse:energy_fuel/biomass_briquettes` | [压制生物燃料](<../../../01_CargoGood/energy_fuel/biomass_briquettes.md>) | 160 | 320 | 80 | 0.95 |
+| `cargoverse:processed_resource/dried_organic_residue` | [干化有机废料](<../../../01_CargoGood/processed_resource/dried_organic_residue.md>) | 30 | 60 | 15 | 0.5 |
 
 ## 收购 acquisitions
 
-全部 `daily_limit_enabled: true`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
+全部填写 `daily_limit`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
 
-| 规则 ID | 货物 | 标签 | 每日限额开关 | 每种货物每日上限（t） | 价格倍率 |
-| --- | --- | --- | --- | --- | --- |
-| `conifer_logs` | [针叶原木](<../../../01_CargoGood/raw_resource/conifer_logs.md>) | `ingredient.raw_resource.conifer_logs` | true | 100 | 1 |
-| `mining_hand_tools` | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | `ingredient.tools_equipment.mining_hand_tools` | true | 30 | 1 |
-| `durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | `ingredient.general_supplies.durable_workwear` | true | 25 | 1 |
-| `potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | `ingredient.general_supplies.potable_water_crates` | true | 80 | 1 |
+| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
+| --- | --- | ---: | ---: |
+| `cargoverse:raw_resource/conifer_logs` | [针叶原木](<../../../01_CargoGood/raw_resource/conifer_logs.md>) | 100 | 1 |
+| `cargoverse:tools_equipment/mining_hand_tools` | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | 30 | 1 |
+| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 25 | 1 |
+| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 80 | 1 |
 
 ## 数值依据
 
