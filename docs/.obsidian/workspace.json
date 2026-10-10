@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "be2fd49e7c9abc56",
+        "id": "b8c828c5a73a6eb4",
         "type": "tabs",
         "children": [
           {
-            "id": "b031569a5e8d6df0",
+            "id": "967fd30e838d2265",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "11特殊订单系统/03_终端检查点与存档.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "03_终端检查点与存档"
+              "title": "新标签页"
             }
           }
         ]
@@ -185,22 +181,10 @@
       "bases:新建数据库": false
     }
   },
-  "active": "b031569a5e8d6df0",
+  "active": "967fd30e838d2265",
   "lastOpenFiles": [
-    "11特殊订单系统/02_任务限制难度与奖励曲线.md",
-    "11特殊订单系统/03_终端检查点与存档.md",
-    "11特殊订单系统/04_数据定义与维护.md",
     "01货柜系统/01核心系统/04_词条与完整度系统.md",
-    "11特殊订单系统/01_系统架构与订单流程.md",
-    "11特殊订单系统/README.md",
     "09世界表面UI系统/03_封装仪表组件规范.md",
-    "10数据包定义与模板/13_特殊订单/market/test_station/b_to_a.md",
-    "10数据包定义与模板/13_特殊订单/market/test_station/a_to_b.md",
-    "10数据包定义与模板/13_特殊订单/market/test_station",
-    "10数据包定义与模板/13_特殊订单/README.md",
-    "10数据包定义与模板/13_特殊订单/market",
-    "10数据包定义与模板/13_特殊订单",
-    "11特殊订单系统",
     "09世界表面UI系统/01_系统架构与接入规范.md",
     "09世界表面UI系统/04_交互按钮组件规范.md",
     "10数据包定义与模板/02_制造商/aui.md",
