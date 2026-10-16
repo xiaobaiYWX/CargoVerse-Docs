@@ -4,6 +4,8 @@
 
 源码、构建配置、问题反馈与版本发布位于 [CargoVerse-NeoForge-1.21.1](https://github.com/xiaobaiYWX/CargoVerse-NeoForge-1.21.1)。
 
+当前导航支持航运手册个人目标与航行引导台独立地图：共用探索资料，目标互不覆盖。引导台空手右键打开地图、手持手册右键复制目标、潜行右键配置 PID；详见[航行引导台](docs/13载具仪表/01_航行引导台与PID控制.md)。
+
 ## 文档入口
 
 - [完整文档中心](docs/README.md)
