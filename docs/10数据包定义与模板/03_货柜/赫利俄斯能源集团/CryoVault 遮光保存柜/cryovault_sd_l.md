@@ -1,5 +1,7 @@
 # HEC CryoVault 遮光保存柜 L 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [赫利俄斯能源集团](<../README.md>) → [CryoVault 遮光保存柜](<README.md>) → L 型
 
@@ -31,7 +33,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 160 | 160 |
+| 容量（个） | 160 | 160 |
 | 空柜目标质量（Kpg） | 120 | 120 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -40,7 +42,13 @@
 
 ## CargoClass 兼容
 
-`chemical_material`、`medical_supply`、`aquatic`、`research_sample`。仅允许上述分类，不支持 none；同一货柜不可混装不同 CargoGood。
+| 分类 | CargoClass |
+| --- | --- |
+| 化工与药剂 | `chemical_material` |
+| 食品与食材 | `food` |
+| 农业物资 | `agriculture` |
+
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -79,9 +87,8 @@
   "empty_mass": 120,
   "allowed_cargo_classes": [
     "chemical_material",
-    "medical_supply",
-    "aquatic",
-    "research_sample"
+    "food",
+    "agriculture"
   ],
   "special_designs": [
     "cargoverse:light_sensitive",

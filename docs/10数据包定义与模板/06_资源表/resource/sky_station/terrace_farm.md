@@ -1,62 +1,56 @@
-# 梯田农林站资源表
+# 梯田农林站 · 实际物品贸易表
 
-> **已接入 · 2026-10-06：** 本页为本站当前出售库存、日补、逐商品报价与每日收购限额的唯一维护表。关联站点：[V01 梯田农林站](<../../../07_贸易点/resource/梯田农林站/00_总体说明.md>)。新增目录仅自动用于新经济实例；已有实例保存资源目录快照。
+> **待落数据 · 2026-10-20 首轮设计。** 本页已替换旧抽象货物方案；运行数据仍为空表，以下商品与数值尚未发布、未经过实机平衡。
 
-| 项目 | 内容 |
-| --- | --- |
-| 资源 ID | `cargoverse:resource/sky_station/terrace_farm` |
-| 目标 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/resource/sky_station/terrace_farm.json` |
-| schema_version | 2 |
-| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
-| 数量单位 | t 是货物数量；完整贸易日为 24000 ticks |
-| 报价方式 | 每条规则设置 price_multiplier；无站点总倍率 |
+编号：**V01**。归属：**绿洲农业联盟（VBS）**。形态：**天空大站**。
 
-## 出售 sales
+资源 ID：`cargoverse:resource/sky_station/terrace_farm`。
 
-全部使用有限 `inventory`；初始量、容量、日补对应 `initial`、`capacity`、`daily_restock`。价格倍率作用于基础价值，整笔结算后取整。
+对应数据路径：`data/cargoverse/trade_points/resource_tables/resource/sky_station/terrace_farm.json`。
 
-| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+## 业务定位
+
+**谷物、林木与农场补给主供。** 供给小麦、甘蔗、原木和种子，同时提供基础面包以增加非城市地区的口粮来源。农业设备、肥料与维护件有明确需求；不包办养殖、水产或生物工程的全部产品。
+
+## 报价口径
+
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／个实际物品**。数量均为实际件数，不是栈数、旧货物数量或现实吨数。
+- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
+- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每件奖励，不属于物品属性，也不根据价格自动推导。
+- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
+- 许可证／繁荣度经验只按自然生成收购目的地和实际成交件数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+
+## 出售目录
+
+| rule_id | 物品 | 单价 VB | 初始件数 | 库存容量 | 每日补货 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `cargoverse:agriculture/bagged_wheat` | [袋装麦粒](<../../../01_CargoGood/agriculture/bagged_wheat.md>) | 600 | 1200 | 300 | 0.95 |
-| `cargoverse:agriculture/cotton_bales` | [纤维棉包](<../../../01_CargoGood/agriculture/cotton_bales.md>) | 800 | 1600 | 400 | 0.95 |
-| `cargoverse:agriculture/greenhouse_fruit` | [温室鲜果](<../../../01_CargoGood/agriculture/greenhouse_fruit.md>) | 400 | 800 | 200 | 0.95 |
-| `cargoverse:agriculture/hydroponic_leafy_greens` | [水培叶菜](<../../../01_CargoGood/agriculture/hydroponic_leafy_greens.md>) | 400 | 800 | 200 | 0.95 |
-| `cargoverse:agriculture/sealed_seed_grain` | [密封种粮](<../../../01_CargoGood/agriculture/sealed_seed_grain.md>) | 400 | 800 | 200 | 0.95 |
-| `cargoverse:processed_resource/industrial_cotton_cloth` | [工业棉布](<../../../01_CargoGood/processed_resource/industrial_cotton_cloth.md>) | 400 | 800 | 200 | 0.95 |
-| `cargoverse:processed_resource/kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 400 | 800 | 200 | 0.9 |
-| `cargoverse:raw_resource/conifer_logs` | [针叶原木](<../../../01_CargoGood/raw_resource/conifer_logs.md>) | 800 | 1600 | 400 | 0.95 |
-| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 200 | 400 | 100 | 0.95 |
-| `cargoverse:processed_resource/sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 60 | 120 | 30 | 0.5 |
-| `cargoverse:processed_resource/dried_organic_residue` | [干化有机废料](<../../../01_CargoGood/processed_resource/dried_organic_residue.md>) | 80 | 160 | 40 | 0.5 |
+| `sell_minecraft_wheat` | 小麦 · `minecraft:wheat` | 3 | 1536 | 4096 | 768 |
+| `sell_minecraft_sugar_cane` | 甘蔗 · `minecraft:sugar_cane` | 3 | 768 | 2048 | 512 |
+| `sell_minecraft_oak_log` | 橡木原木 · `minecraft:oak_log` | 12 | 768 | 2048 | 512 |
+| `sell_minecraft_wheat_seeds` | 小麦种子 · `minecraft:wheat_seeds` | 2 | 256 | 768 | 192 |
+| `sell_minecraft_bread` | 面包 · `minecraft:bread` | 5 | 512 | 1536 | 384 |
+| `sell_minecraft_porkchop` | 生猪排 · `minecraft:porkchop` | 6 | 256 | 768 | 192 |
 
-## 收购 acquisitions
+## 收购目录
 
-收购不建库存。填写 `daily_limit` 表示启用每日限额；省略时表示不限额。额度由同一站点实例所有玩家共享，按贸易日重置、不累积；`price_multiplier` 对该商品独立生效。
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／件 | 繁荣度经验／件 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `buy_minecraft_bone_meal` | 骨粉 · `minecraft:bone_meal` | 5 | 512 | 1 | 1 |
+| `buy_create_tree_fertilizer` | 树木肥料 · `create:tree_fertilizer` | 12 | 128 | 3 | 3 |
+| `buy_create_mechanical_harvester` | 动力收割机 · `create:mechanical_harvester` | 230 | 16 | 6 | 5 |
+| `buy_create_mechanical_plough` | 动力犁 · `create:mechanical_plough` | 170 | 16 | 6 | 5 |
+| `buy_create_shaft` | 传动杆 · `create:shaft` | 12 | 128 | 3 | 3 |
+| `buy_minecraft_dried_kelp` | 干海带 · `minecraft:dried_kelp` | 4 | 256 | 1 | 1 |
+| `buy_create_builders_tea` | 建筑工茶饮 · `create:builders_tea` | 18 | 128 | 3 | 2 |
+| `buy_create_fluid_tank` | 流体储罐 · `create:fluid_tank` | 85 | 32 | 4 | 3 |
+| `buy_minecraft_gravel` | 沙砾 · `minecraft:gravel` | 3 | 256 | 1 | 1 |
 
-| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
-| --- | --- | ---: | ---: |
-| `cargoverse:construction_material/tempered_glass_panels` | [钢化玻璃板](<../../../01_CargoGood/construction_material/tempered_glass_panels.md>) | 不限 | 1.1 |
-| `cargoverse:prefab_structure/greenhouse_frame_modules` | [温室骨架模块](<../../../01_CargoGood/prefab_structure/greenhouse_frame_modules.md>) | 不限 | 1.1 |
-| `cargoverse:livestock/breeding_poultry` | [家禽种群](<../../../01_CargoGood/livestock/breeding_poultry.md>) | 不限 | 1.15 |
-| `cargoverse:livestock/breeding_sheep` | [育成绵羊](<../../../01_CargoGood/livestock/breeding_sheep.md>) | 不限 | 1.15 |
-| `cargoverse:livestock/pollinator_colonies` | [授粉蜂群](<../../../01_CargoGood/livestock/pollinator_colonies.md>) | 不限 | 1.15 |
-| `cargoverse:prefab_structure/closed_loop_hydroponic_modules` | [循环水培舱](<../../../01_CargoGood/prefab_structure/closed_loop_hydroponic_modules.md>) | 200 | 1.15 |
-| `cargoverse:chemical_material/hydroponic_nutrient_solution` | [水培营养液](<../../../01_CargoGood/chemical_material/hydroponic_nutrient_solution.md>) | 不限 | 1.1 |
-| `cargoverse:chemical_material/compound_fertilizer` | [复合肥料](<../../../01_CargoGood/chemical_material/compound_fertilizer.md>) | 不限 | 1.1 |
-| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 不限 | 1 |
-| `cargoverse:medical_supply/first_aid_medicines` | [急救药剂](<../../../01_CargoGood/medical_supply/first_aid_medicines.md>) | 不限 | 1 |
-| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 不限 | 1 |
-| `cargoverse:general_supplies/civilian_lighting_kits` | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | 不限 | 1 |
-| `cargoverse:machinery/industrial_pump_sets` | [工业水泵机组](<../../../01_CargoGood/machinery/industrial_pump_sets.md>) | 100 | 1.05 |
-| `cargoverse:chemical_material/industrial_lubricant` | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | 不限 | 1.05 |
-| `cargoverse:energy_fuel/industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 100 | 1.05 |
-| `cargoverse:tools_equipment/mining_hand_tools` | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | 不限 | 1.05 |
-| `cargoverse:energy_fuel/biomass_briquettes` | [压制生物燃料](<../../../01_CargoGood/energy_fuel/biomass_briquettes.md>) | 不限 | 1.05 |
+## 运输与落地依赖
 
-## 业务用途与维护
+已命中专用配置的运输类别包括：农业物资、食品与食材、物流与仓储、机械设备、机械零件、原料资源。类别只用于货柜兼容，不能代替本页精确报价目录。
 
-农林综合来源，新增自产常温口粮；泵、能源与手工具构成普遍农业设备需求，温室和育种货物保留原重点收购。
+装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定件数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
 
-补货与收购独立运行，不依赖材料转化或邻站库存。5 / 5 / 0 的来源是每实例一次性批次，重复发现同型站会带来另一批库存；普通回收料不会刷新这些批次。
+报价目录在实例创建时保存快照。未来落入 JSON 后，应以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
 
-[本站网络职责与线路](<../../../07_贸易点/resource/梯田农林站/定义设计/02_贸易网络设计.md>) · [正式资源表目录](<../../README.md>) · [资源表目录](<../../README.md>)
+[本站贸易网络](<../../../07_贸易点/resource/梯田农林站/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../07_贸易点/设计总览.md>) · [现行格式与经验资格](<../../../../02贸易点系统/03_资源表定义.md>)

@@ -1,5 +1,7 @@
 # REX Salvage 旧世打捞柜 L 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [遗民贸易协会](<../README.md>) → [Salvage 旧世打捞柜](<README.md>) → L 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 180 | 180 |
+| 容量（个） | 180 | 180 |
 | 空柜目标质量（Kpg） | 88 | 88 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,7 +40,16 @@
 
 ## CargoClass 兼容
 
-`valuables`、`special_resource`、`research_sample`、`electronics`、`anomalous_cargo`。仅允许上述分类，不支持 none；同一货柜不可混装不同 CargoGood。
+| 分类 | CargoClass |
+| --- | --- |
+| 原料资源 | `raw_resource` |
+| 加工材料 | `processed_resource` |
+| 机械零件 | `mechanical_parts` |
+| 红石与控制 | `electronics` |
+| 通用物资 | `general_supplies` |
+| 载具与部件 | `vehicle` |
+
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -76,11 +87,12 @@
   "capacity": 180,
   "empty_mass": 88,
   "allowed_cargo_classes": [
-    "valuables",
-    "special_resource",
-    "research_sample",
+    "raw_resource",
+    "processed_resource",
+    "mechanical_parts",
     "electronics",
-    "anomalous_cargo"
+    "general_supplies",
+    "vehicle"
   ],
   "special_designs": [
     "cargoverse:fragile"

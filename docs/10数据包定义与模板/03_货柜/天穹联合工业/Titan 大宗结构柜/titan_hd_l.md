@@ -1,5 +1,7 @@
 # AUI Titan 大宗结构柜 L 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [天穹联合工业](<../README.md>) → [Titan 大宗结构柜](<README.md>) → L 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 264 | 264 |
+| 容量（个） | 264 | 264 |
 | 空柜目标质量（Kpg） | 100 | 100 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,15 +40,14 @@
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 原始资源 | `raw_resource` | 4 |
-| 半成品资源 | `processed_resource` | 4 |
-| 精加工资源 | `refined_resource` | 4 |
-| 建筑材料 | `construction_material` | 4 |
-| 预制结构 | `prefab_structure` | 6 |
+| 分类 | CargoClass |
+| --- | --- |
+| 原料资源 | `raw_resource` |
+| 加工材料 | `processed_resource` |
+| 建筑构件 | `construction_material` |
+| 物流与仓储 | `logistics_equipment` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -86,9 +87,8 @@
   "allowed_cargo_classes": [
     "raw_resource",
     "processed_resource",
-    "refined_resource",
     "construction_material",
-    "prefab_structure"
+    "logistics_equipment"
   ],
   "special_designs": [],
   "design_defects": [],

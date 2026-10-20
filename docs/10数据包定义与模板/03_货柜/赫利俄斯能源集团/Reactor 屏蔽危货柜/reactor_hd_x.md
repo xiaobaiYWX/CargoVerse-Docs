@@ -1,5 +1,7 @@
 # HEC Reactor 屏蔽危货柜 X 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [赫利俄斯能源集团](<../README.md>) → [Reactor 屏蔽危货柜](<README.md>) → X 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 210 | 210 |
+| 容量（个） | 210 | 210 |
 | 空柜目标质量（Kpg） | 210 | 210 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,7 +40,14 @@
 
 ## CargoClass 兼容
 
-`hazardous_material`。仅允许上述分类，不支持 none；同一货柜不可混装不同 CargoGood。
+| 分类 | CargoClass |
+| --- | --- |
+| 化工与药剂 | `chemical_material` |
+| 燃料与能源 | `energy_fuel` |
+| 原料资源 | `raw_resource` |
+| 加工材料 | `processed_resource` |
+
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -76,7 +85,10 @@
   "capacity": 210,
   "empty_mass": 210,
   "allowed_cargo_classes": [
-    "hazardous_material"
+    "chemical_material",
+    "energy_fuel",
+    "raw_resource",
+    "processed_resource"
   ],
   "special_designs": [
     "cargoverse:radioactive",

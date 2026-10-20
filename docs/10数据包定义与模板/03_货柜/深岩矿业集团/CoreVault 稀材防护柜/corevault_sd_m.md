@@ -1,5 +1,7 @@
 # DMC CoreVault 稀材防护柜 M 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [深岩矿业集团](<../README.md>) → [CoreVault 稀材防护柜](<README.md>) → M 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 80 | 80 |
+| 容量（个） | 80 | 80 |
 | 空柜目标质量（Kpg） | 78 | 78 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,14 +40,13 @@
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 特殊资源 | `special_resource` | 5 |
-| 精加工资源 | `refined_resource` | 4 |
-| 科研样本 | `research_sample` | 4 |
-| 贵重物品 | `valuables` | 4 |
+| 分类 | CargoClass |
+| --- | --- |
+| 原料资源 | `raw_resource` |
+| 加工材料 | `processed_resource` |
+| 化工与药剂 | `chemical_material` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -83,10 +84,9 @@
   "capacity": 80,
   "empty_mass": 78,
   "allowed_cargo_classes": [
-    "special_resource",
-    "refined_resource",
-    "research_sample",
-    "valuables"
+    "raw_resource",
+    "processed_resource",
+    "chemical_material"
   ],
   "special_designs": [
     "cargoverse:fragile",

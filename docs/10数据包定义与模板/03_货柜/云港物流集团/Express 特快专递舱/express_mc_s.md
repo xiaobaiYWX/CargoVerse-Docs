@@ -1,5 +1,7 @@
 # SPL Express 特快专递舱 S 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [云港物流集团](<../README.md>) → [Express 特快专递舱](<README.md>) → S 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 40 | 40 |
+| 容量（个） | 40 | 40 |
 | 空柜目标质量（Kpg） | 18 | 18 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,7 +40,16 @@
 
 ## CargoClass 兼容
 
-`mechanical_parts`、`medical_supply`、`valuables`、`research_sample`、`electronics`。仅允许上述分类，不支持 none；同一货柜不可混装不同 CargoGood。
+| 分类 | CargoClass |
+| --- | --- |
+| 机械零件 | `mechanical_parts` |
+| 化工与药剂 | `chemical_material` |
+| 加工材料 | `processed_resource` |
+| 红石与控制 | `electronics` |
+| 工具与装备 | `tools_equipment` |
+| 通用物资 | `general_supplies` |
+
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -77,10 +88,11 @@
   "empty_mass": 18,
   "allowed_cargo_classes": [
     "mechanical_parts",
-    "medical_supply",
-    "valuables",
-    "research_sample",
-    "electronics"
+    "chemical_material",
+    "processed_resource",
+    "electronics",
+    "tools_equipment",
+    "general_supplies"
   ],
   "special_designs": [],
   "design_defects": [],

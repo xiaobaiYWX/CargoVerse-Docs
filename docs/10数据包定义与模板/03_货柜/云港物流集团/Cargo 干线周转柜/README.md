@@ -1,16 +1,18 @@
 # Cargo 干线周转柜
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 制造商：云港物流集团 / Skyport Logistics
 
 [返回制造商](<../README.md>) · [货柜目录](<../../README.md>)
 
 面向区域集散与干线周转，以较低空重和制造费提高常规干货运输效率。
 
-允许分类：农业产品（`agriculture`）、原始资源（`raw_resource`）、半成品资源（`processed_resource`）、精加工资源（`refined_resource`）、机械零件（`mechanical_parts`）、建筑材料（`construction_material`）、日常通用补给（`general_supplies`）。未列出的分类均不允许。
+允许分类：农业物资（`agriculture`）、食品与食材（`food`）、原料资源（`raw_resource`）、加工材料（`processed_resource`）、机械零件（`mechanical_parts`）、建筑构件（`construction_material`）、物流与仓储（`logistics_equipment`）、通用物资（`general_supplies`）。分类按 2026-10-20 的十四类方案更新，未列出分类不允许。
 
 消除的运输要求：无。设计缺陷：无。所有货物的限时要求继续生效；御寒不代表冷藏或延长保质期。
 
-| 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
+| 货柜定义 | 资源 ID | 基础容量（个） | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [SPL Cargo 干线周转柜 M 型](<cargo_mc_m.md>) | `cargoverse:spl/cargo_mc_m` | 110 | 36 | 90 | 2 | 140 | 已提供正式模板 |
 | [SPL Cargo 干线周转柜 L 型](<cargo_mc_l.md>) | `cargoverse:spl/cargo_mc_l` | 220 | 72 | 90 | 4 | 280 | 已提供正式模板 |

@@ -1,5 +1,7 @@
 # HEC Reclaimer 工业废料柜 M 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [赫利俄斯能源集团](<../README.md>) → [Reclaimer 工业废料柜](<README.md>) → M 型
 
@@ -33,7 +35,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 120 | 120 |
+| 容量（个） | 120 | 120 |
 | 空柜目标质量（Kpg） | 64 | 64 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -42,11 +44,14 @@
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 环境危害材料 | `hazardous_material` | 4 |
+| 分类 | CargoClass |
+| --- | --- |
+| 化工与药剂 | `chemical_material` |
+| 燃料与能源 | `energy_fuel` |
+| 原料资源 | `raw_resource` |
+| 加工材料 | `processed_resource` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -86,7 +91,10 @@
   "capacity": 120,
   "empty_mass": 64,
   "allowed_cargo_classes": [
-    "hazardous_material"
+    "chemical_material",
+    "energy_fuel",
+    "raw_resource",
+    "processed_resource"
   ],
   "special_designs": [
     "cargoverse:keep_upright"

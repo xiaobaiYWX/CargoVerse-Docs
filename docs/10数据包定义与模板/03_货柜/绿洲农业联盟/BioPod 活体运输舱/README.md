@@ -1,20 +1,22 @@
-# BioPod 活体运输舱
+# BioPod 生物物资舱
+
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
 
 制造商：绿洲农业联盟 / Verdant BioSystems
 
 [返回制造商](<../README.md>) · [货柜目录](<../../README.md>)
 
-通过固定与御寒设计承运活体、水产和生物相关货物，适合繁育场及生态设施补给。
+通过固定与御寒设计承运农业物资、食品和药剂物品，不支持活体实体或装有生物的容器。
 
-允许分类：活体生物（`livestock`）、水产生鲜（`aquatic`）、科研样本（`research_sample`）、医疗物资（`medical_supply`）。未列出的分类均不允许。
+允许分类：农业物资（`agriculture`）、食品与食材（`food`）、化工与药剂（`chemical_material`）。分类按 2026-10-20 的十四类方案更新，未列出分类不允许。
 
 消除的运输要求：御寒、勿倒置。设计缺陷：无。所有货物的限时要求继续生效；御寒不代表冷藏或延长保质期。
 
-| 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
+| 货柜定义 | 资源 ID | 基础容量（个） | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [VBS BioPod 活体运输舱 S 型](<biopod_sd_s.md>) | `cargoverse:vbs/biopod_sd_s` | 40 | 30 | 120 | 1 | 120 | 已提供正式模板 |
-| [VBS BioPod 活体运输舱 M 型](<biopod_sd_m.md>) | `cargoverse:vbs/biopod_sd_m` | 80 | 60 | 120 | 2 | 240 | 已提供正式模板 |
-| [VBS BioPod 活体运输舱 L 型](<biopod_sd_l.md>) | `cargoverse:vbs/biopod_sd_l` | 160 | 120 | 120 | 4 | 480 | 已提供正式模板 |
+| [VBS BioPod 生物物资舱 S 型](<biopod_sd_s.md>) | `cargoverse:vbs/biopod_sd_s` | 40 | 30 | 120 | 1 | 120 | 已提供正式模板 |
+| [VBS BioPod 生物物资舱 M 型](<biopod_sd_m.md>) | `cargoverse:vbs/biopod_sd_m` | 80 | 60 | 120 | 2 | 240 | 已提供正式模板 |
+| [VBS BioPod 生物物资舱 L 型](<biopod_sd_l.md>) | `cargoverse:vbs/biopod_sd_l` | 160 | 120 | 120 | 4 | 480 | 已提供正式模板 |
 
 规划投放节点：育种场、水产繁育站。材料与加工费采用 v2 实体物品设计，具体投放状态见各型号页。
 

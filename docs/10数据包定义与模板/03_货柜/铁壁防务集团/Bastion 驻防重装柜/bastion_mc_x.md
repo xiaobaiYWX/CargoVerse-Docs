@@ -1,5 +1,7 @@
 # BDS Bastion 驻防重装柜 X 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [铁壁防务集团](<../README.md>) → [Bastion 驻防重装柜](<README.md>) → X 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 260 | 260 |
+| 容量（个） | 260 | 260 |
 | 空柜目标质量（Kpg） | 168 | 168 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,14 +40,15 @@
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 武器护甲 | `weapon_armor` | 4 |
-| 完整载具 | `vehicle` | 4 |
-| 日常通用补给 | `general_supplies` | 4 |
-| 机械零件 | `mechanical_parts` | 5 |
+| 分类 | CargoClass |
+| --- | --- |
+| 工具与装备 | `tools_equipment` |
+| 载具与部件 | `vehicle` |
+| 通用物资 | `general_supplies` |
+| 机械零件 | `mechanical_parts` |
+| 物流与仓储 | `logistics_equipment` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -83,10 +86,11 @@
   "capacity": 260,
   "empty_mass": 168,
   "allowed_cargo_classes": [
-    "weapon_armor",
+    "tools_equipment",
     "vehicle",
     "general_supplies",
-    "mechanical_parts"
+    "mechanical_parts",
+    "logistics_equipment"
   ],
   "special_designs": [
     "cargoverse:fragile",

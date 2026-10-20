@@ -67,6 +67,6 @@ A、B 共用 `cargoverse:market/test_station/all_containers`，覆盖全部 60 �
 
 实体材料的唯一运行定义为 `trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json`，对应正式设计见[制造配方总表](<../../制造配方与投放总表.md>)。该目录只供测试，两站各显示完整 60 款，不计入正式站点的 93 条配方统计。
 
-增加正式商品或货柜配方后，在模组工程运行 `node tools/generate-test-trade-points.cjs` 更新测试资源与本文档；`--check` 只检查是否同步。生成器不会修改正式站点、原始模板或自然结构集。
+增加货柜型号或配方后，同步维护本目录 JSON 与本文档，并运行制造资源回归检查；调整测试商品则维护两站 schema 3 资源表与对应文档。旧抽象货物测试站生成器已移除，不再从 `cargo_goods` 重建目录，也不自动改写正式站点、原始模板或自然结构集。
 
 [测试 A](<../../../07_贸易点/market/测试贸易点A/00_总体说明.md>) · [测试 B](<../../../07_贸易点/market/测试贸易点B/00_总体说明.md>)

@@ -1,5 +1,7 @@
 # AUI Vulcan 精密工业柜 X 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [天穹联合工业](<../README.md>) → [Vulcan 精密工业柜](<README.md>) → X 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 308 | 308 |
+| 容量（个） | 308 | 308 |
 | 空柜目标质量（Kpg） | 182 | 182 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,16 +40,17 @@
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 机械设备 | `machinery` | 4 |
-| 机械零件 | `mechanical_parts` | 5 |
-| 电子设备 | `electronics` | 6 |
-| 精加工资源 | `refined_resource` | 4 |
-| 工具器械 | `tools_equipment` | 4 |
-| 完整载具 | `vehicle` | 4 |
+| 分类 | CargoClass |
+| --- | --- |
+| 机械设备 | `machinery` |
+| 机械零件 | `mechanical_parts` |
+| 红石与控制 | `electronics` |
+| 加工材料 | `processed_resource` |
+| 工具与装备 | `tools_equipment` |
+| 载具与部件 | `vehicle` |
+| 物流与仓储 | `logistics_equipment` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -88,9 +91,10 @@
     "machinery",
     "mechanical_parts",
     "electronics",
-    "refined_resource",
+    "processed_resource",
     "tools_equipment",
-    "vehicle"
+    "vehicle",
+    "logistics_equipment"
   ],
   "special_designs": [
     "cargoverse:fragile",

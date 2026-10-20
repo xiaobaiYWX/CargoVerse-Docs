@@ -1,53 +1,53 @@
-# 安防设施集成厂资源表
+# 安防设施集成厂 · 实际物品贸易表
 
-> **已接入 · 2026-10-06：** 本页为本站当前出售库存、日补、逐商品报价与每日收购限额的唯一维护表。关联站点：[B02 安防设施集成厂](<../../../07_贸易点/factory/安防设施集成厂/00_总体说明.md>)。新增目录仅自动用于新经济实例；已有实例保存资源目录快照。
+> **待落数据 · 2026-10-20 首轮设计。** 本页已替换旧抽象货物方案；运行数据仍为空表，以下商品与数值尚未发布、未经过实机平衡。
 
-| 项目 | 内容 |
-| --- | --- |
-| 资源 ID | `cargoverse:factory/sky_station/security_works` |
-| 目标 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/factory/sky_station/security_works.json` |
-| schema_version | 2 |
-| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
-| 数量单位 | t 是货物数量；完整贸易日为 24000 ticks |
-| 报价方式 | 每条规则设置 price_multiplier；无站点总倍率 |
+编号：**B02**。归属：**铁壁防务集团（BDS）**。形态：**天空大站**。
 
-## 出售 sales
+资源 ID：`cargoverse:factory/sky_station/security_works`。
 
-全部使用有限 `inventory`；初始量、容量、日补对应 `initial`、`capacity`、`daily_restock`。价格倍率作用于基础价值，整笔结算后取整。
+对应数据路径：`data/cargoverse/trade_points/resource_tables/factory/sky_station/security_works.json`。
 
-| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+## 业务定位
+
+**安防构件、探测与红石照明。** 出售原版铁门、观察者与红石灯，以及激光传感器；工业原料和控制元件构成输入需求。安防业务通过具体构件表达，不复制 B01 的武器目录。
+
+## 报价口径
+
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／个实际物品**。数量均为实际件数，不是栈数、旧货物数量或现实吨数。
+- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
+- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每件奖励，不属于物品属性，也不根据价格自动推导。
+- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
+- 许可证／繁荣度经验只按自然生成收购目的地和实际成交件数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+
+## 出售目录
+
+| rule_id | 物品 | 单价 VB | 初始件数 | 库存容量 | 每日补货 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `cargoverse:electronics/perimeter_security_systems` | [周界警戒系统](<../../../01_CargoGood/electronics/perimeter_security_systems.md>) | 200 | 400 | 100 | 0.95 |
-| `cargoverse:prefab_structure/prefab_defensive_positions` | [预制防御工事](<../../../01_CargoGood/prefab_structure/prefab_defensive_positions.md>) | 200 | 400 | 100 | 0.95 |
-| `cargoverse:vehicle/light_patrol_boats` | [轻型巡逻艇](<../../../01_CargoGood/vehicle/light_patrol_boats.md>) | 200 | 400 | 100 | 0.95 |
-| `cargoverse:hazardous_material/contaminated_adsorbent` | [污染吸附剂](<../../../01_CargoGood/hazardous_material/contaminated_adsorbent.md>) | 800 | 1600 | 400 | 0.5 |
-| `cargoverse:processed_resource/sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 60 | 120 | 30 | 0.5 |
-| `cargoverse:mechanical_parts/scrapped_electronic_components` | [报废电子组件](<../../../01_CargoGood/mechanical_parts/scrapped_electronic_components.md>) | 40 | 80 | 20 | 0.5 |
+| `sell_minecraft_redstone_lamp` | 红石灯 · `minecraft:redstone_lamp` | 45 | 256 | 768 | 192 |
+| `sell_minecraft_iron_door` | 铁门 · `minecraft:iron_door` | 40 | 256 | 768 | 192 |
+| `sell_minecraft_observer` | 侦测器 · `minecraft:observer` | 70 | 256 | 768 | 192 |
+| `sell_minecraft_iron_bars` | 铁栏杆 · `minecraft:iron_bars` | 13 | 256 | 768 | 192 |
+| `sell_simulated_laser_sensor` | 激光传感器 · `simulated:laser_sensor` | 210 | 24 | 64 | 12 |
 
-## 收购 acquisitions
+## 收购目录
 
-收购不建库存。填写 `daily_limit` 表示启用每日限额；省略时表示不限额。额度由同一站点实例所有玩家共享，按贸易日重置、不累积；`price_multiplier` 对该商品独立生效。
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／件 | 繁荣度经验／件 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `buy_minecraft_redstone` | 红石粉 · `minecraft:redstone` | 10 | 256 | 3 | 3 |
+| `buy_minecraft_glass` | 玻璃 · `minecraft:glass` | 10 | 256 | 2 | 2 |
+| `buy_create_electron_tube` | 电子管 · `create:electron_tube` | 60 | 64 | 5 | 4 |
+| `buy_create_iron_sheet` | 铁板 · `create:iron_sheet` | 20 | 256 | 4 | 3 |
+| `buy_create_polished_rose_quartz` | 磨制玫瑰石英 · `create:polished_rose_quartz` | 32 | 128 | 4 | 3 |
+| `buy_minecraft_paper` | 纸 · `minecraft:paper` | 6 | 128 | 2 | 2 |
+| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 256 | 2 | 2 |
 
-| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
-| --- | --- | ---: | ---: |
-| `cargoverse:energy_fuel/industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 不限 | 1.1 |
-| `cargoverse:electronics/communication_relays` | [通信中继器](<../../../01_CargoGood/electronics/communication_relays.md>) | 不限 | 1.1 |
-| `cargoverse:refined_resource/optical_glass_blanks` | [光学玻璃坯](<../../../01_CargoGood/refined_resource/optical_glass_blanks.md>) | 不限 | 1.1 |
-| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 不限 | 1 |
-| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 不限 | 1 |
-| `cargoverse:medical_supply/first_aid_medicines` | [急救药剂](<../../../01_CargoGood/medical_supply/first_aid_medicines.md>) | 不限 | 1 |
-| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 不限 | 1 |
-| `cargoverse:refined_resource/structural_steel_ingots` | [结构钢锭](<../../../01_CargoGood/refined_resource/structural_steel_ingots.md>) | 不限 | 1.05 |
-| `cargoverse:mechanical_parts/transmission_gears` | [标准传动齿轮](<../../../01_CargoGood/mechanical_parts/transmission_gears.md>) | 100 | 1.05 |
-| `cargoverse:chemical_material/industrial_lubricant` | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | 不限 | 1.05 |
-| `cargoverse:mechanical_parts/hydraulic_cylinders` | [液压执行缸](<../../../01_CargoGood/mechanical_parts/hydraulic_cylinders.md>) | 100 | 1.05 |
-| `cargoverse:electronics/industrial_sensors` | [工业传感器](<../../../01_CargoGood/electronics/industrial_sensors.md>) | 100 | 1.05 |
-| `cargoverse:processed_resource/recyclable_metal_scrap` | [可回收金属废料](<../../../01_CargoGood/processed_resource/recyclable_metal_scrap.md>) | 不限 | 1 |
+## 运输与落地依赖
 
-## 业务用途与维护
+已命中专用配置的运输类别包括：建筑构件、红石与控制、食品与食材、加工材料。类别只用于货柜兼容，不能代替本页精确报价目录。
 
-安防系统主供兼普通金属回收买方，扩大安装维护耗材收购；警戒系统可以供应商馆，主需求仍在驻防港。
+装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定件数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
 
-补货与收购独立运行，不依赖材料转化或邻站库存。5 / 5 / 0 的来源是每实例一次性批次，重复发现同型站会带来另一批库存；普通回收料不会刷新这些批次。
+报价目录在实例创建时保存快照。未来落入 JSON 后，应以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
 
-[本站网络职责与线路](<../../../07_贸易点/factory/安防设施集成厂/定义设计/02_贸易网络设计.md>) · [正式资源表目录](<../../README.md>) · [资源表目录](<../../README.md>)
+[本站贸易网络](<../../../07_贸易点/factory/安防设施集成厂/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../07_贸易点/设计总览.md>) · [现行格式与经验资格](<../../../../02贸易点系统/03_资源表定义.md>)

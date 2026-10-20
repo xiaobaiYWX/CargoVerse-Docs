@@ -1,49 +1,59 @@
-# 云港民生集配站资源表
+# 云港民生集配站 · 实际物品贸易表
 
-> **已接入 · 2026-10-06：** 本页为本站当前出售库存、日补、逐商品报价与每日收购限额的唯一维护表。关联站点：[S01 云港民生集配站](<../../../07_贸易点/market/云港民生集配站/00_总体说明.md>)。新增目录仅自动用于新经济实例；已有实例保存资源目录快照。
+> **待落数据 · 2026-10-20 首轮设计。** 本页已替换旧抽象货物方案；运行数据仍为空表，以下商品与数值尚未发布、未经过实机平衡。
 
-| 项目 | 内容 |
-| --- | --- |
-| 资源 ID | `cargoverse:market/sky_station/civic_distribution` |
-| 目标 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/market/sky_station/civic_distribution.json` |
-| schema_version | 2 |
-| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
-| 数量单位 | t 是货物数量；完整贸易日为 24000 ticks |
-| 报价方式 | 每条规则设置 price_multiplier；无站点总倍率 |
+编号：**S01**。归属：**云港物流集团（SPL）**。形态：**天空大站**。
 
-## 出售 sales
+资源 ID：`cargoverse:market/sky_station/civic_distribution`。
 
-全部使用有限 `inventory`；初始量、容量、日补对应 `initial`、`capacity`、`daily_restock`。价格倍率作用于基础价值，整笔结算后取整。
+对应数据路径：`data/cargoverse/trade_points/resource_tables/market/sky_station/civic_distribution.json`。
 
-| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+## 业务定位
+
+**农产集购与常温生活补给主供。** 将居民常用面包、烤马铃薯、纸、火把和空瓶作为广覆盖货源，同时收购作物、鲜鱼、鲜肉与包装用品。Create 面粉作为真实中间产品出售，食品加工可由玩家工厂承接，不建立站内材料转化。
+
+## 报价口径
+
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／个实际物品**。数量均为实际件数，不是栈数、旧货物数量或现实吨数。
+- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
+- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每件奖励，不属于物品属性，也不根据价格自动推导。
+- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
+- 许可证／繁荣度经验只按自然生成收购目的地和实际成交件数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+
+## 出售目录
+
+| rule_id | 物品 | 单价 VB | 初始件数 | 库存容量 | 每日补货 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 800 | 1600 | 400 | 0.9 |
-| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 200 | 400 | 100 | 0.9 |
-| `cargoverse:general_supplies/civilian_lighting_kits` | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | 200 | 400 | 100 | 0.9 |
-| `cargoverse:tools_equipment/mining_hand_tools` | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | 100 | 200 | 50 | 1 |
+| `sell_minecraft_bread` | 面包 · `minecraft:bread` | 5 | 1024 | 3072 | 768 |
+| `sell_minecraft_baked_potato` | 烤马铃薯 · `minecraft:baked_potato` | 4 | 768 | 2048 | 512 |
+| `sell_minecraft_paper` | 纸 · `minecraft:paper` | 5 | 768 | 2048 | 512 |
+| `sell_minecraft_torch` | 火把 · `minecraft:torch` | 3 | 768 | 2048 | 512 |
+| `sell_minecraft_glass_bottle` | 玻璃瓶 · `minecraft:glass_bottle` | 3 | 256 | 768 | 192 |
+| `sell_create_wheat_flour` | 小麦面粉 · `create:wheat_flour` | 6 | 768 | 2048 | 512 |
 
-## 收购 acquisitions
+## 收购目录
 
-收购不建库存。填写 `daily_limit` 表示启用每日限额；省略时表示不限额。额度由同一站点实例所有玩家共享，按贸易日重置、不累积；`price_multiplier` 对该商品独立生效。
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／件 | 繁荣度经验／件 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `buy_minecraft_wheat` | 小麦 · `minecraft:wheat` | 4 | 0（不限） | 1 | 1 |
+| `buy_minecraft_carrot` | 胡萝卜 · `minecraft:carrot` | 4 | 512 | 1 | 1 |
+| `buy_minecraft_potato` | 马铃薯 · `minecraft:potato` | 3 | 512 | 1 | 1 |
+| `buy_minecraft_cod` | 生鳕鱼 · `minecraft:cod` | 6 | 256 | 3 | 3 |
+| `buy_minecraft_porkchop` | 生猪排 · `minecraft:porkchop` | 8 | 128 | 3 | 3 |
+| `buy_create_cardboard` | 纸板 · `create:cardboard` | 5 | 256 | 1 | 1 |
+| `buy_minecraft_barrel` | 木桶 · `minecraft:barrel` | 45 | 64 | 3 | 3 |
+| `buy_minecraft_coal` | 煤炭 · `minecraft:coal` | 9 | 256 | 2 | 2 |
+| `buy_create_andesite_funnel` | 安山漏斗 · `create:andesite_funnel` | 32 | 32 | 4 | 3 |
+| `buy_minecraft_ink_sac` | 墨囊 · `minecraft:ink_sac` | 8 | 128 | 2 | 2 |
 
-| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
-| --- | --- | ---: | ---: |
-| `cargoverse:prefab_structure/prefab_habitat_pods` | [预制居住舱](<../../../01_CargoGood/prefab_structure/prefab_habitat_pods.md>) | 不限 | 1.1 |
-| `cargoverse:agriculture/bagged_wheat` | [袋装麦粒](<../../../01_CargoGood/agriculture/bagged_wheat.md>) | 不限 | 1.1 |
-| `cargoverse:processed_resource/industrial_cotton_cloth` | [工业棉布](<../../../01_CargoGood/processed_resource/industrial_cotton_cloth.md>) | 不限 | 1.1 |
-| `cargoverse:energy_fuel/biomass_briquettes` | [压制生物燃料](<../../../01_CargoGood/energy_fuel/biomass_briquettes.md>) | 不限 | 1.1 |
-| `cargoverse:special_resource/glowstone_luminant` | [萤石发光粉](<../../../01_CargoGood/special_resource/glowstone_luminant.md>) | 不限 | 1.1 |
-| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 不限 | 1 |
-| `cargoverse:medical_supply/first_aid_medicines` | [急救药剂](<../../../01_CargoGood/medical_supply/first_aid_medicines.md>) | 不限 | 1 |
-| `cargoverse:processed_resource/kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 不限 | 1 |
-| `cargoverse:mechanical_parts/standard_container_couplings` | [标准货柜接口总成](<../../../01_CargoGood/mechanical_parts/standard_container_couplings.md>) | 100 | 1.05 |
-| `cargoverse:energy_fuel/industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 100 | 1.05 |
-| `cargoverse:processed_resource/sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 不限 | 1 |
+## 运输与落地依赖
 
-## 业务用途与维护
+已命中专用配置的运输类别包括：农业物资、燃料与能源、食品与食材、物流与仓储、加工材料。类别只用于货柜兼容，不能代替本页精确报价目录。
 
-保持日用品主供，承接麦粒、棉布与生活物资；增加劳动工具和包装回收，服务周边工厂、乡间和居民点。
+装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定件数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
 
-补货与收购独立运行，不依赖材料转化或邻站库存。5 / 5 / 0 的来源是每实例一次性批次，重复发现同型站会带来另一批库存；普通回收料不会刷新这些批次。
+**运输属性待补：** 玻璃瓶（`minecraft:glass_bottle`）、墨囊（`minecraft:ink_sac`）、火把（`minecraft:torch`）。当前这些物品使用通用默认配置，并非不能装柜，但分类与质量尚未按用途专门确认；不能把默认轻量当作已平衡结果。
 
-[本站网络职责与线路](<../../../07_贸易点/market/云港民生集配站/定义设计/02_贸易网络设计.md>) · [正式资源表目录](<../../README.md>) · [资源表目录](<../../README.md>)
+报价目录在实例创建时保存快照。未来落入 JSON 后，应以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
+
+[本站贸易网络](<../../../07_贸易点/market/云港民生集配站/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../07_贸易点/设计总览.md>) · [现行格式与经验资格](<../../../../02贸易点系统/03_资源表定义.md>)

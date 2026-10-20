@@ -1,16 +1,18 @@
 # Vulcan 精密工业柜
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 制造商：天穹联合工业 / Aether Union Industries
 
 [返回制造商](<../README.md>) · [货柜目录](<../../README.md>)
 
 承运工业成套设备、精密部件与载具，使用缓冲和防潮设计保护易损工业货物。
 
-允许分类：机械设备（`machinery`）、机械零件（`mechanical_parts`）、电子设备（`electronics`）、精加工资源（`refined_resource`）、工具器械（`tools_equipment`）、完整载具（`vehicle`）。未列出的分类均不允许。
+允许分类：机械设备（`machinery`）、机械零件（`mechanical_parts`）、红石与控制（`electronics`）、加工材料（`processed_resource`）、工具与装备（`tools_equipment`）、载具与部件（`vehicle`）、物流与仓储（`logistics_equipment`）。分类按 2026-10-20 的十四类方案更新，未列出分类不允许。
 
 消除的运输要求：易碎、防潮。设计缺陷：无。所有货物的限时要求继续生效；御寒不代表冷藏或延长保质期。
 
-| 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
+| 货柜定义 | 资源 ID | 基础容量（个） | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [AUI Vulcan 精密工业柜 M 型](<vulcan_sd_m.md>) | `cargoverse:aui/vulcan_sd_m` | 80 | 52 | 140 | 2 | 240 | 已提供正式模板 |
 | [AUI Vulcan 精密工业柜 L 型](<vulcan_sd_l.md>) | `cargoverse:aui/vulcan_sd_l` | 160 | 104 | 140 | 4 | 480 | 已提供正式模板 |

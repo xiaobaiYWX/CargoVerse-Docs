@@ -1,9 +1,11 @@
-# VBS BioPod 活体运输舱 L 型
+# VBS BioPod 生物物资舱 L 型
+
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
 
 
-[绿洲农业联盟](<../README.md>) → [BioPod 活体运输舱](<README.md>) → L 型
+[绿洲农业联盟](<../README.md>) → [BioPod 生物物资舱](<README.md>) → L 型
 
-通过固定与御寒设计承运活体、水产和生物相关货物，适合繁育场及生态设施补给。
+通过固定与御寒设计承运农业物资、食品和药剂物品，不支持活体实体或装有生物的容器。
 
 ## 定义
 
@@ -13,7 +15,7 @@
 | 资源 ID | `cargoverse:vbs/biopod_sd_l` |
 | 定义文件 | [biopod_sd_l.json](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/vbs/biopod_sd_l.json>) |
 | 制造商 | 绿洲农业联盟 / Verdant BioSystems（`cargoverse:vbs`） |
-| 系列全称 | BioPod 活体运输舱 |
+| 系列全称 | BioPod 生物物资舱 |
 | 尺寸等级 | L |
 | 调度点 | 4 |
 | 结算单位 | `cargoverse:void_byte` |
@@ -33,25 +35,24 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 160 | 160 |
+| 容量（个） | 160 | 160 |
 | 空柜目标质量（Kpg） | 120 | 120 |
 
-| 容量修正分类 | CargoClass | 倍率 | 实际容量（t） |
+| 容量修正分类 | CargoClass | 倍率 | 实际容量（个） |
 | --- | --- | ---: | ---: |
-| 活体与育种 | `livestock` | 1.25 | 200 |
+| 食品与食材 | `food` | 1.25 | 200 |
 
 容量、空重、防护与缺陷均由本货柜型号直接定义；未列出的允许分类使用基础容量。指定分类容量在最终乘算后一次向下取整。目标空重仍受结构中非货柜方块质量下限约束。
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 活体生物 | `livestock` | 4 |
-| 水产生鲜 | `aquatic` | 4 |
-| 科研样本 | `research_sample` | 4 |
-| 医疗物资 | `medical_supply` | 4 |
+| 分类 | CargoClass |
+| --- | --- |
+| 农业物资 | `agriculture` |
+| 食品与食材 | `food` |
+| 化工与药剂 | `chemical_material` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -81,18 +82,17 @@
   "schema_version": 1,
   "template": "cargoverse:cargo/vbs/biopod/vbs_biopod_sd_l",
   "manufacturer": "cargoverse:vbs",
-  "display_name": "VBS BioPod 活体运输舱 L 型",
-  "description": "§lVBS BioPod 活体运输舱 L 型\n§r§7通过固定与御寒设计承运活体、水产和生物相关货物，适合繁育场及生态设施补给。\n§r§l制造商：绿洲农业联盟 / Verdant BioSystems\n§r§l系列：BioPod 活体运输舱",
+  "display_name": "VBS BioPod 生物物资舱 L 型",
+  "description": "§lVBS BioPod 生物物资舱 L 型\n§r§7通过固定与御寒设计承运农业物资、食品和药剂物品，不支持活体实体或装有生物的容器。\n§r§l制造商：绿洲农业联盟 / Verdant BioSystems\n§r§l系列：BioPod 生物物资舱",
   "size_class": "L",
   "trade_currency": "cargoverse:void_byte",
   "dispatch_points": 4,
   "capacity": 160,
   "empty_mass": 120,
   "allowed_cargo_classes": [
-    "livestock",
-    "aquatic",
-    "research_sample",
-    "medical_supply"
+    "agriculture",
+    "food",
+    "chemical_material"
   ],
   "special_designs": [
     "cargoverse:cold_proof",
@@ -103,7 +103,7 @@
     "series.vbs.biopod"
   ],
   "cargo_class_capacity_modifiers": {
-    "livestock": 1.25
+    "food": 1.25
   }
 }
 ```

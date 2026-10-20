@@ -1,52 +1,57 @@
-# 路畔货运驿站资源表
+# 路畔货运驿站 · 实际物品贸易表
 
-> **已接入（2026-10-07）：** 完整整站 NBT、贸易点定义、资源表、结构绑定与自然生成配置已发布；设备静态核对通过，地形、货柜装卸与营业流程仍待实机验收。
+> **待落数据 · 2026-10-20 首轮设计。** 本页已替换旧抽象货物方案；运行数据仍为空表，以下商品与数值尚未发布、未经过实机平衡。
 
-| 项目 | 设计内容 |
-| --- | --- |
-| 关联站点 | [G09 路畔货运驿站](<../../../07_贸易点/market/路畔货运驿站/00_总体说明.md>) |
-| 资源 ID | `cargoverse:market/ground_station/roadside_freight_inn` |
-| 发布 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/market/ground_station/roadside_freight_inn.json` |
-| schema_version | 2 |
-| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
-| 数量单位 | t 为数量符号；每日按 24000 ticks 计算 |
-| 报价与库存 | 逐商品 price_multiplier；出售有限库存，收购无库存且全部设每日限额 |
+编号：**G09**。归属：**独立经营（无制造商）**。形态：**地面小站**。
 
-## 出售 sales
+资源 ID：`cargoverse:market/ground_station/roadside_freight_inn`。
 
-全部使用有限 `inventory`；初始量、容量、日补分别对应 `initial`、`capacity`、`daily_restock`。当前均为持续补货，不增加一次性遗物来源。
+对应数据路径：`data/cargoverse/trade_points/resource_tables/market/ground_station/roadside_freight_inn.json`。
 
-| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+## 业务定位
+
+**地方口粮与旅途补给经销。** 独立驿站增加远离城市时的口粮来源，兼售钓具和照明。收购包装、导航和补给耗材；不扩大为微型全品类港口。
+
+## 报价口径
+
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／个实际物品**。数量均为实际件数，不是栈数、旧货物数量或现实吨数。
+- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
+- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每件奖励，不属于物品属性，也不根据价格自动推导。
+- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
+- 许可证／繁荣度经验只按自然生成收购目的地和实际成交件数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+
+## 出售目录
+
+| rule_id | 物品 | 单价 VB | 初始件数 | 库存容量 | 每日补货 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 160 | 320 | 80 | 0.95 |
-| `cargoverse:general_supplies/civilian_lighting_kits` | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | 30 | 60 | 15 | 0.95 |
-| `cargoverse:processed_resource/sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 40 | 80 | 20 | 0.5 |
+| `sell_minecraft_bread` | 面包 · `minecraft:bread` | 5 | 256 | 768 | 192 |
+| `sell_minecraft_baked_potato` | 烤马铃薯 · `minecraft:baked_potato` | 4 | 96 | 256 | 64 |
+| `sell_minecraft_fishing_rod` | 钓鱼竿 · `minecraft:fishing_rod` | 24 | 8 | 24 | 4 |
+| `sell_minecraft_torch` | 火把 · `minecraft:torch` | 3 | 96 | 256 | 64 |
 
-## 收购 acquisitions
+## 收购目录
 
-全部填写 `daily_limit`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／件 | 繁荣度经验／件 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `buy_minecraft_paper` | 纸 · `minecraft:paper` | 6 | 64 | 2 | 2 |
+| `buy_minecraft_barrel` | 木桶 · `minecraft:barrel` | 45 | 8 | 3 | 3 |
+| `buy_create_belt_connector` | 传送带 · `create:belt_connector` | 30 | 16 | 3 | 3 |
+| `buy_minecraft_compass` | 指南针 · `minecraft:compass` | 90 | 4 | 4 | 3 |
+| `buy_minecraft_honey_bottle` | 蜂蜜瓶 · `minecraft:honey_bottle` | 16 | 32 | 3 | 2 |
+| `buy_minecraft_leather` | 皮革 · `minecraft:leather` | 14 | 32 | 3 | 3 |
+| `buy_minecraft_cooked_beef` | 牛排 · `minecraft:cooked_beef` | 15 | 64 | 3 | 2 |
+| `buy_aeronautics_white_envelope` | 气球蒙皮 · `aeronautics:white_envelope` | 38 | 16 | 4 | 3 |
 
-| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
-| --- | --- | ---: | ---: |
-| `cargoverse:agriculture/bagged_wheat` | [袋装麦粒](<../../../01_CargoGood/agriculture/bagged_wheat.md>) | 70 | 1 |
-| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 100 | 1 |
-| `cargoverse:processed_resource/kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 50 | 1 |
-| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 20 | 1 |
+## 运输与落地依赖
 
-## 数值依据
+已命中专用配置的运输类别包括：食品与食材、物流与仓储、加工材料、工具与装备、载具与部件。类别只用于货柜兼容，不能代替本页精确报价目录。
 
-| 方向 | 货物 | 数量的业务依据 |
-| --- | --- | --- |
-| 出售 | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 短途经销主货；日补约一至两柜，低于 S01 的主供量 |
-| 出售 | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | 仓棚及野外营地用灯具，不配置整套电子产品 |
-| 出售 | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 拆包与旅舍仓储产生的清洁包装 |
-| 收购 | [袋装麦粒](<../../../01_CargoGood/agriculture/bagged_wheat.md>) | 驿站厨房与附近旅客配给 |
-| 收购 | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 住宿、厨房和日常饮水 |
-| 收购 | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 货架、木箱与雨棚维修 |
-| 收购 | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 驿站搬运人员换装 |
+装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定件数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
 
-普通来源初始两日量、容量四日量，让初见站点有可装运库存，持续补货仍受本站用途约束。生活和低价原料按整柜或数柜组织，专业设备使用小批替换额度，不为了装满 S 柜而夸大每日仪器需求。
+**运输属性待补：** 指南针（`minecraft:compass`）、火把（`minecraft:torch`）。当前这些物品使用通用默认配置，并非不能装柜，但分类与质量尚未按用途专门确认；不能把默认轻量当作已平衡结果。
 
-数量与价格为待实机平衡设计。新增站点数量会叠加区域供给和共享额度，不以单站看似很小就忽略总量；结算取整、签约修正、防护损耗和实际航程仍需验证。
+本站不增加货柜制造、注册或领柜功能；所有收购条目设正数限额。设备采购额度通常低于一柜，属于地方更新需求。
 
-[站点总览](<../../../07_贸易点/market/路畔货运驿站/00_总体说明.md>) · [资源表目录](<../../README.md>) · [贸易点目录](<../../../07_贸易点/README.md>)
+报价目录在实例创建时保存快照。未来落入 JSON 后，应以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
+
+[本站贸易网络](<../../../07_贸易点/market/路畔货运驿站/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../07_贸易点/设计总览.md>) · [现行格式与经验资格](<../../../../02贸易点系统/03_资源表定义.md>)

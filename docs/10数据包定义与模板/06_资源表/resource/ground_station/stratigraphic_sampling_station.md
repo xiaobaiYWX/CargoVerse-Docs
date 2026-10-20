@@ -1,40 +1,53 @@
-# 地层采样站资源表
+# 地层采样站 · 实际物品贸易表
 
-> **已接入 · 2026-10-06：** 本页为本站当前出售库存、日补、逐商品报价与每日收购限额的唯一维护表。关联站点：[G05 地层采样站](<../../../07_贸易点/resource/地层采样站/00_总体说明.md>)。新增目录仅自动用于新经济实例；已有实例保存资源目录快照。
+> **待落数据 · 2026-10-20 首轮设计。** 本页已替换旧抽象货物方案；运行数据仍为空表，以下商品与数值尚未发布、未经过实机平衡。
 
-| 项目 | 内容 |
-| --- | --- |
-| 资源 ID | `cargoverse:resource/ground_station/stratigraphic_sampling_station` |
-| 目标 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/resource/ground_station/stratigraphic_sampling_station.json` |
-| schema_version | 2 |
-| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
-| 数量单位 | t 是货物数量；完整贸易日为 24000 ticks |
-| 报价方式 | 每条规则设置 price_multiplier；无站点总倍率 |
+编号：**G05**。归属：**地平线研究院（HRI）**。形态：**地面小站**。
 
-## 出售 sales
+资源 ID：`cargoverse:resource/ground_station/stratigraphic_sampling_station`。
 
-全部使用有限 `inventory`；初始量、容量、日补对应 `initial`、`capacity`、`daily_restock`。价格倍率作用于基础价值，整笔结算后取整。
+对应数据路径：`data/cargoverse/trade_points/resource_tables/resource/ground_station/stratigraphic_sampling_station.json`。
 
-| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+## 业务定位
+
+**地层矿物样本与调查耗材。** HRI 派驻采样队提供安山岩、方解石和燧石；采购便携观测与少量钻探设备，物资规模小于天空科研站。
+
+## 报价口径
+
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／个实际物品**。数量均为实际件数，不是栈数、旧货物数量或现实吨数。
+- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
+- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每件奖励，不属于物品属性，也不根据价格自动推导。
+- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
+- 许可证／繁荣度经验只按自然生成收购目的地和实际成交件数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+
+## 出售目录
+
+| rule_id | 物品 | 单价 VB | 初始件数 | 库存容量 | 每日补货 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `cargoverse:research_sample/stratigraphic_core_samples` | [地层岩芯](<../../../01_CargoGood/research_sample/stratigraphic_core_samples.md>) | 40 | 80 | 20 | 0.95 |
-| `cargoverse:processed_resource/sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 20 | 40 | 10 | 0.5 |
+| `sell_minecraft_andesite` | 安山岩 · `minecraft:andesite` | 5 | 192 | 512 | 128 |
+| `sell_minecraft_calcite` | 方解石 · `minecraft:calcite` | 6 | 96 | 256 | 64 |
+| `sell_minecraft_flint` | 燧石 · `minecraft:flint` | 2 | 32 | 96 | 16 |
 
-## 收购 acquisitions
+## 收购目录
 
-收购不建库存。填写 `daily_limit` 表示启用每日限额；省略时表示不限额。额度由同一站点实例所有玩家共享，按贸易日重置、不累积；`price_multiplier` 对该商品独立生效。
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／件 | 繁荣度经验／件 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `buy_create_mechanical_drill` | 动力钻头 · `create:mechanical_drill` | 230 | 2 | 6 | 5 |
+| `buy_minecraft_paper` | 纸 · `minecraft:paper` | 6 | 128 | 2 | 2 |
+| `buy_minecraft_lantern` | 灯笼 · `minecraft:lantern` | 18 | 16 | 3 | 2 |
+| `buy_minecraft_spyglass` | 望远镜 · `minecraft:spyglass` | 100 | 2 | 5 | 4 |
+| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 64 | 2 | 2 |
 
-| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
-| --- | --- | ---: | ---: |
-| `cargoverse:tools_equipment/field_sampling_kits` | [野外采样器](<../../../01_CargoGood/tools_equipment/field_sampling_kits.md>) | 30 | 1 |
-| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 60 | 1 |
-| `cargoverse:medical_supply/first_aid_medicines` | [急救药剂](<../../../01_CargoGood/medical_supply/first_aid_medicines.md>) | 40 | 1 |
-| `cargoverse:energy_fuel/industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 20 | 1 |
+## 运输与落地依赖
 
-## 业务用途与维护
+已命中专用配置的运输类别包括：食品与食材、机械设备、加工材料、原料资源。类别只用于货柜兼容，不能代替本页精确报价目录。
 
-岩芯与野外研究补给，增加少量设备电池；不生产高级仪器或异常样本。
+装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定件数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
 
-补货与收购独立运行，不依赖材料转化或邻站库存。5 / 5 / 0 的来源是每实例一次性批次，重复发现同型站会带来另一批库存；普通回收料不会刷新这些批次。
+**运输属性待补：** 灯笼（`minecraft:lantern`）、望远镜（`minecraft:spyglass`）。当前这些物品使用通用默认配置，并非不能装柜，但分类与质量尚未按用途专门确认；不能把默认轻量当作已平衡结果。
 
-[本站网络职责与线路](<../../../07_贸易点/resource/地层采样站/定义设计/02_贸易网络设计.md>) · [正式资源表目录](<../../README.md>) · [资源表目录](<../../README.md>)
+本站不增加货柜制造、注册或领柜功能；所有收购条目设正数限额。设备采购额度通常低于一柜，属于地方更新需求。
+
+报价目录在实例创建时保存快照。未来落入 JSON 后，应以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
+
+[本站贸易网络](<../../../07_贸易点/resource/地层采样站/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../07_贸易点/设计总览.md>) · [现行格式与经验资格](<../../../../02贸易点系统/03_资源表定义.md>)

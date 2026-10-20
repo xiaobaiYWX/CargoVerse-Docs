@@ -1,5 +1,7 @@
 # VBS Eden 生态工程舱 XL 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [绿洲农业联盟](<../README.md>) → [Eden 生态工程舱](<README.md>) → XL 型
 
@@ -29,24 +31,26 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 480 | 480 |
+| 容量（个） | 480 | 480 |
 | 空柜目标质量（Kpg） | 288 | 288 |
 
-| 容量修正分类 | CargoClass | 倍率 | 实际容量（t） |
+| 容量修正分类 | CargoClass | 倍率 | 实际容量（个） |
 | --- | --- | ---: | ---: |
-| 活体与育种 | `livestock` | 1.25 | 600 |
+| 农业物资 | `agriculture` | 1.25 | 600 |
 
 容量、空重、防护与缺陷均由本货柜型号直接定义；未列出的允许分类使用基础容量。指定分类容量在最终乘算后一次向下取整。目标空重仍受结构中非货柜方块质量下限约束。
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 预制结构 | `prefab_structure` | 6 |
-| 活体生物 | `livestock` | 4 |
-| 机械设备 | `machinery` | 4 |
+| 分类 | CargoClass |
+| --- | --- |
+| 建筑构件 | `construction_material` |
+| 农业物资 | `agriculture` |
+| 食品与食材 | `food` |
+| 机械设备 | `machinery` |
+| 物流与仓储 | `logistics_equipment` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -84,9 +88,11 @@
   "capacity": 480,
   "empty_mass": 288,
   "allowed_cargo_classes": [
-    "prefab_structure",
-    "livestock",
-    "machinery"
+    "construction_material",
+    "agriculture",
+    "food",
+    "machinery",
+    "logistics_equipment"
   ],
   "special_designs": [
     "cargoverse:fragile",
@@ -98,7 +104,7 @@
     "series.vbs.eden"
   ],
   "cargo_class_capacity_modifiers": {
-    "livestock": 1.25
+    "agriculture": 1.25
   }
 }
 ```

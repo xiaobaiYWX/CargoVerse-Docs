@@ -1,5 +1,7 @@
 # AUI Nomad 拓殖工程柜 L 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [天穹联合工业](<../README.md>) → [Nomad 拓殖工程柜](<README.md>) → L 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 176 | 176 |
+| 容量（个） | 176 | 176 |
 | 空柜目标质量（Kpg） | 112 | 112 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,14 +40,14 @@
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 预制结构 | `prefab_structure` | 6 |
-| 建筑材料 | `construction_material` | 4 |
-| 机械设备 | `machinery` | 4 |
-| 日常通用补给 | `general_supplies` | 4 |
+| 分类 | CargoClass |
+| --- | --- |
+| 建筑构件 | `construction_material` |
+| 机械设备 | `machinery` |
+| 物流与仓储 | `logistics_equipment` |
+| 通用物资 | `general_supplies` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -83,9 +85,9 @@
   "capacity": 176,
   "empty_mass": 112,
   "allowed_cargo_classes": [
-    "prefab_structure",
     "construction_material",
     "machinery",
+    "logistics_equipment",
     "general_supplies"
   ],
   "special_designs": [

@@ -1,52 +1,54 @@
-# 林间制材所资源表
+# 林间制材所 · 实际物品贸易表
 
-> **已接入（2026-10-07）：** 完整整站 NBT、贸易点定义、资源表、结构绑定与自然生成配置已发布；设备静态核对通过，地形、货柜装卸与营业流程仍待实机验收。
+> **待落数据 · 2026-10-20 首轮设计。** 本页已替换旧抽象货物方案；运行数据仍为空表，以下商品与数值尚未发布、未经过实机平衡。
 
-| 项目 | 设计内容 |
-| --- | --- |
-| 关联站点 | [G12 林间制材所](<../../../07_贸易点/factory/林间制材所/00_总体说明.md>) |
-| 资源 ID | `cargoverse:factory/ground_station/woodland_processing_yard` |
-| 发布 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/factory/ground_station/woodland_processing_yard.json` |
-| schema_version | 2 |
-| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
-| 数量单位 | t 为数量符号；每日按 24000 ticks 计算 |
-| 报价与库存 | 逐商品 price_multiplier；出售有限库存，收购无库存且全部设每日限额 |
+编号：**G12**。归属：**独立经营（无制造商）**。形态：**地面小站**。
 
-## 出售 sales
+资源 ID：`cargoverse:factory/ground_station/woodland_processing_yard`。
 
-全部使用有限 `inventory`；初始量、容量、日补分别对应 `initial`、`capacity`、`daily_restock`。当前均为持续补货，不增加一次性遗物来源。
+对应数据路径：`data/cargoverse/trade_points/resource_tables/factory/ground_station/woodland_processing_yard.json`。
 
-| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+## 业务定位
+
+**地方木材加工与包装材料。** 独立制材作坊向建筑、燃料和物流业供应木板、木炭和纸板；采购原木、伐木工具及少量锯切设备，形成小站间可持续短途线路。
+
+## 报价口径
+
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／个实际物品**。数量均为实际件数，不是栈数、旧货物数量或现实吨数。
+- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
+- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每件奖励，不属于物品属性，也不根据价格自动推导。
+- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
+- 许可证／繁荣度经验只按自然生成收购目的地和实际成交件数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+
+## 出售目录
+
+| rule_id | 物品 | 单价 VB | 初始件数 | 库存容量 | 每日补货 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `cargoverse:processed_resource/kiln_dried_planks` | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 120 | 240 | 60 | 0.95 |
-| `cargoverse:energy_fuel/biomass_briquettes` | [压制生物燃料](<../../../01_CargoGood/energy_fuel/biomass_briquettes.md>) | 160 | 320 | 80 | 0.95 |
-| `cargoverse:processed_resource/dried_organic_residue` | [干化有机废料](<../../../01_CargoGood/processed_resource/dried_organic_residue.md>) | 30 | 60 | 15 | 0.5 |
+| `sell_minecraft_oak_planks` | 橡木木板 · `minecraft:oak_planks` | 3 | 256 | 768 | 192 |
+| `sell_minecraft_spruce_planks` | 云杉木板 · `minecraft:spruce_planks` | 3 | 256 | 768 | 192 |
+| `sell_minecraft_charcoal` | 木炭 · `minecraft:charcoal` | 5 | 192 | 512 | 128 |
+| `sell_create_cardboard` | 纸板 · `create:cardboard` | 4 | 96 | 256 | 64 |
+| `sell_minecraft_barrel` | 木桶 · `minecraft:barrel` | 35 | 8 | 24 | 4 |
 
-## 收购 acquisitions
+## 收购目录
 
-全部填写 `daily_limit`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／件 | 繁荣度经验／件 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `buy_minecraft_oak_log` | 橡木原木 · `minecraft:oak_log` | 14 | 256 | 3 | 3 |
+| `buy_minecraft_spruce_log` | 云杉原木 · `minecraft:spruce_log` | 14 | 256 | 3 | 3 |
+| `buy_minecraft_iron_axe` | 铁斧 · `minecraft:iron_axe` | 115 | 4 | 5 | 4 |
+| `buy_create_mechanical_saw` | 动力锯 · `create:mechanical_saw` | 230 | 2 | 6 | 5 |
+| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 64 | 2 | 2 |
+| `buy_create_belt_connector` | 传送带 · `create:belt_connector` | 30 | 16 | 3 | 3 |
 
-| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
-| --- | --- | ---: | ---: |
-| `cargoverse:raw_resource/conifer_logs` | [针叶原木](<../../../01_CargoGood/raw_resource/conifer_logs.md>) | 100 | 1 |
-| `cargoverse:tools_equipment/mining_hand_tools` | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | 30 | 1 |
-| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 25 | 1 |
-| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 80 | 1 |
+## 运输与落地依赖
 
-## 数值依据
+已命中专用配置的运输类别包括：建筑构件、燃料与能源、食品与食材、物流与仓储、机械设备、加工材料、原料资源、工具与装备。类别只用于货柜兼容，不能代替本页精确报价目录。
 
-| 方向 | 货物 | 数量的业务依据 |
-| --- | --- | --- |
-| 出售 | [烘干木板](<../../../01_CargoGood/processed_resource/kiln_dried_planks.md>) | 维修木板主货，连接居民、驿站与施工点 |
-| 出售 | [压制生物燃料](<../../../01_CargoGood/energy_fuel/biomass_briquettes.md>) | 林业剩余物形成的普通燃料来源 |
-| 出售 | [干化有机废料](<../../../01_CargoGood/processed_resource/dried_organic_residue.md>) | 干燥封装的植物残料，排除未经处理的腐败物 |
-| 收购 | [针叶原木](<../../../01_CargoGood/raw_resource/conifer_logs.md>) | 与 G02 等采运来源形成短途交付 |
-| 收购 | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | 通用手工具用于搬运、切分与维护 |
-| 收购 | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 作业人员劳保 |
-| 收购 | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 值守和日常作业补给 |
+装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定件数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
 
-普通来源初始两日量、容量四日量，让初见站点有可装运库存，持续补货仍受本站用途约束。生活和低价原料按整柜或数柜组织，专业设备使用小批替换额度，不为了装满 S 柜而夸大每日仪器需求。
+本站不增加货柜制造、注册或领柜功能；所有收购条目设正数限额。设备采购额度通常低于一柜，属于地方更新需求。
 
-数量与价格为待实机平衡设计。新增站点数量会叠加区域供给和共享额度，不以单站看似很小就忽略总量；结算取整、签约修正、防护损耗和实际航程仍需验证。
+报价目录在实例创建时保存快照。未来落入 JSON 后，应以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
 
-[站点总览](<../../../07_贸易点/factory/林间制材所/00_总体说明.md>) · [资源表目录](<../../README.md>) · [贸易点目录](<../../../07_贸易点/README.md>)
+[本站贸易网络](<../../../07_贸易点/factory/林间制材所/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../07_贸易点/设计总览.md>) · [现行格式与经验资格](<../../../../02贸易点系统/03_资源表定义.md>)

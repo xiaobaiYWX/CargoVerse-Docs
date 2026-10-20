@@ -1,5 +1,7 @@
 # SPL Cargo 干线周转柜 M 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [云港物流集团](<../README.md>) → [Cargo 干线周转柜](<README.md>) → M 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 110 | 110 |
+| 容量（个） | 110 | 110 |
 | 空柜目标质量（Kpg） | 36 | 36 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,17 +40,18 @@
 
 ## CargoClass 兼容
 
-| 分类 | CargoClass | 当前 CargoGood 数 |
-| --- | --- | --- |
-| 农业产品 | `agriculture` | 5 |
-| 原始资源 | `raw_resource` | 4 |
-| 半成品资源 | `processed_resource` | 4 |
-| 精加工资源 | `refined_resource` | 4 |
-| 机械零件 | `mechanical_parts` | 5 |
-| 建筑材料 | `construction_material` | 4 |
-| 日常通用补给 | `general_supplies` | 4 |
+| 分类 | CargoClass |
+| --- | --- |
+| 农业物资 | `agriculture` |
+| 食品与食材 | `food` |
+| 原料资源 | `raw_resource` |
+| 加工材料 | `processed_resource` |
+| 机械零件 | `mechanical_parts` |
+| 建筑构件 | `construction_material` |
+| 物流与仓储 | `logistics_equipment` |
+| 通用物资 | `general_supplies` |
 
-仅允许上表分类，`none` 与其他未列出分类均不可装载。同一允许分类下的货物均可选择，但不能混装不同 CargoGood。
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -87,11 +90,12 @@
   "empty_mass": 36,
   "allowed_cargo_classes": [
     "agriculture",
+    "food",
     "raw_resource",
     "processed_resource",
-    "refined_resource",
     "mechanical_parts",
     "construction_material",
+    "logistics_equipment",
     "general_supplies"
   ],
   "special_designs": [],

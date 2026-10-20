@@ -1,53 +1,55 @@
-# 矿物分选精炼站资源表
+# 矿物分选精炼站 · 实际物品贸易表
 
-> **已接入 · 2026-10-06：** 本页为本站当前出售库存、日补、逐商品报价与每日收购限额的唯一维护表。关联站点：[D02 矿物分选精炼站](<../../../07_贸易点/factory/矿物分选精炼站/00_总体说明.md>)。新增目录仅自动用于新经济实例；已有实例保存资源目录快照。
+> **待落数据 · 2026-10-20 首轮设计。** 本页已替换旧抽象货物方案；运行数据仍为空表，以下商品与数值尚未发布、未经过实机平衡。
 
-| 项目 | 内容 |
-| --- | --- |
-| 资源 ID | `cargoverse:factory/sky_station/mineral_refinery` |
-| 目标 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/factory/sky_station/mineral_refinery.json` |
-| schema_version | 2 |
-| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
-| 数量单位 | t 是货物数量；完整贸易日为 24000 ticks |
-| 报价方式 | 每条规则设置 price_multiplier；无站点总倍率 |
+编号：**D02**。归属：**深岩矿业集团（DMC）**。形态：**天空大站**。
 
-## 出售 sales
+资源 ID：`cargoverse:factory/sky_station/mineral_refinery`。
 
-全部使用有限 `inventory`；初始量、容量、日补对应 `initial`、`capacity`、`daily_restock`。价格倍率作用于基础价值，整笔结算后取整。
+对应数据路径：`data/cargoverse/trade_points/resource_tables/factory/sky_station/mineral_refinery.json`。
 
-| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+## 业务定位
+
+**金属冶炼与基础合金供应。** 主要收购粗铁、粗铜、粗锌及燃料，出售铁铜锌锭、黄铜锭和安山合金。矿物与锭的报价是独立区域供需，不承诺站内真实生产，也不规定玩家必须从矿站取得原料。
+
+## 报价口径
+
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／个实际物品**。数量均为实际件数，不是栈数、旧货物数量或现实吨数。
+- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
+- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每件奖励，不属于物品属性，也不根据价格自动推导。
+- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
+- 许可证／繁荣度经验只按自然生成收购目的地和实际成交件数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+
+## 出售目录
+
+| rule_id | 物品 | 单价 VB | 初始件数 | 库存容量 | 每日补货 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `cargoverse:processed_resource/iron_concentrate` | [铁精矿](<../../../01_CargoGood/processed_resource/iron_concentrate.md>) | 400 | 800 | 200 | 0.95 |
-| `cargoverse:processed_resource/copper_concentrate` | [铜精矿](<../../../01_CargoGood/processed_resource/copper_concentrate.md>) | 400 | 800 | 200 | 0.95 |
-| `cargoverse:hazardous_material/heavy_metal_filter_cake` | [重金属滤渣](<../../../01_CargoGood/hazardous_material/heavy_metal_filter_cake.md>) | 800 | 1600 | 400 | 0.5 |
-| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 200 | 400 | 100 | 0.95 |
-| `cargoverse:processed_resource/sorted_packaging_scrap` | [分拣包装废料](<../../../01_CargoGood/processed_resource/sorted_packaging_scrap.md>) | 60 | 120 | 30 | 0.5 |
-| `cargoverse:processed_resource/recyclable_metal_scrap` | [可回收金属废料](<../../../01_CargoGood/processed_resource/recyclable_metal_scrap.md>) | 60 | 120 | 30 | 0.5 |
+| `sell_minecraft_iron_ingot` | 铁锭 · `minecraft:iron_ingot` | 12 | 1024 | 3072 | 512 |
+| `sell_minecraft_copper_ingot` | 铜锭 · `minecraft:copper_ingot` | 8 | 1024 | 3072 | 512 |
+| `sell_create_zinc_ingot` | 锌锭 · `create:zinc_ingot` | 12 | 768 | 2048 | 512 |
+| `sell_create_brass_ingot` | 黄铜锭 · `create:brass_ingot` | 22 | 256 | 768 | 192 |
+| `sell_create_andesite_alloy` | 安山合金 · `create:andesite_alloy` | 13 | 768 | 2048 | 512 |
 
-## 收购 acquisitions
+## 收购目录
 
-收购不建库存。填写 `daily_limit` 表示启用每日限额；省略时表示不限额。额度由同一站点实例所有玩家共享，按贸易日重置、不累积；`price_multiplier` 对该商品独立生效。
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／件 | 繁荣度经验／件 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `buy_minecraft_raw_iron` | 粗铁 · `minecraft:raw_iron` | 10 | 0（不限） | 2 | 2 |
+| `buy_minecraft_raw_copper` | 粗铜 · `minecraft:raw_copper` | 6 | 0（不限） | 1 | 1 |
+| `buy_create_raw_zinc` | 粗锌 · `create:raw_zinc` | 9 | 0（不限） | 2 | 2 |
+| `buy_minecraft_coal` | 煤炭 · `minecraft:coal` | 9 | 0（不限） | 2 | 2 |
+| `buy_minecraft_sand` | 沙子 · `minecraft:sand` | 4 | 512 | 1 | 1 |
+| `buy_create_shaft` | 传动杆 · `create:shaft` | 12 | 128 | 3 | 3 |
+| `buy_create_mechanical_press` | 动力冲压机 · `create:mechanical_press` | 215 | 16 | 6 | 5 |
+| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 256 | 2 | 2 |
+| `buy_create_blaze_cake` | 烈焰蛋糕 · `create:blaze_cake` | 125 | 64 | 5 | 4 |
 
-| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
-| --- | --- | ---: | ---: |
-| `cargoverse:raw_resource/hematite_ore` | [赤铁原矿](<../../../01_CargoGood/raw_resource/hematite_ore.md>) | 不限 | 1.1 |
-| `cargoverse:raw_resource/copper_ore` | [含铜原矿](<../../../01_CargoGood/raw_resource/copper_ore.md>) | 不限 | 1.1 |
-| `cargoverse:energy_fuel/coke_fuel` | [煤焦燃料](<../../../01_CargoGood/energy_fuel/coke_fuel.md>) | 不限 | 1.1 |
-| `cargoverse:general_supplies/potable_water_crates` | [净水补给箱](<../../../01_CargoGood/general_supplies/potable_water_crates.md>) | 不限 | 1 |
-| `cargoverse:medical_supply/first_aid_medicines` | [急救药剂](<../../../01_CargoGood/medical_supply/first_aid_medicines.md>) | 不限 | 1 |
-| `cargoverse:general_supplies/durable_workwear` | [耐用工装](<../../../01_CargoGood/general_supplies/durable_workwear.md>) | 不限 | 1 |
-| `cargoverse:general_supplies/civilian_lighting_kits` | [民用照明器具](<../../../01_CargoGood/general_supplies/civilian_lighting_kits.md>) | 不限 | 1 |
-| `cargoverse:chemical_material/industrial_lubricant` | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | 不限 | 1.05 |
-| `cargoverse:energy_fuel/industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 100 | 1.05 |
-| `cargoverse:mechanical_parts/transmission_gears` | [标准传动齿轮](<../../../01_CargoGood/mechanical_parts/transmission_gears.md>) | 100 | 1.05 |
-| `cargoverse:electronics/industrial_sensors` | [工业传感器](<../../../01_CargoGood/electronics/industrial_sensors.md>) | 100 | 1.05 |
-| `cargoverse:machinery/industrial_pump_sets` | [工业水泵机组](<../../../01_CargoGood/machinery/industrial_pump_sets.md>) | 100 | 1.05 |
-| `cargoverse:refined_resource/structural_steel_ingots` | [结构钢锭](<../../../01_CargoGood/refined_resource/structural_steel_ingots.md>) | 不限 | 1.05 |
+## 运输与落地依赖
 
-## 业务用途与维护
+已命中专用配置的运输类别包括：燃料与能源、食品与食材、机械设备、机械零件、加工材料、原料资源。类别只用于货柜兼容，不能代替本页精确报价目录。
 
-保持原矿到精矿的贸易背景，接收泵、齿轮与传感器等维护物资；为恶地和岩质丘陵矿场经销口粮，补齐当地生活补给来源。普通边角料与专用危废分开出售，收购不触发实际精炼。
+装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定件数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
 
-补货与收购独立运行，不依赖材料转化或邻站库存。5 / 5 / 0 的来源是每实例一次性批次，重复发现同型站会带来另一批库存；普通回收料不会刷新这些批次。
+报价目录在实例创建时保存快照。未来落入 JSON 后，应以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
 
-[本站网络职责与线路](<../../../07_贸易点/factory/矿物分选精炼站/定义设计/02_贸易网络设计.md>) · [正式资源表目录](<../../README.md>) · [资源表目录](<../../README.md>)
+[本站贸易网络](<../../../07_贸易点/factory/矿物分选精炼站/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../07_贸易点/设计总览.md>) · [现行格式与经验资格](<../../../../02贸易点系统/03_资源表定义.md>)

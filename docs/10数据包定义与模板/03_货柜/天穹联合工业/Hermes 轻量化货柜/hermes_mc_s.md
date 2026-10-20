@@ -1,5 +1,7 @@
 # AUI Hermes 轻量化货柜 S 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [天穹联合工业](<../README.md>) → [Hermes 轻量化货柜](<README.md>) → S 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 55 | 55 |
+| 容量（个） | 55 | 55 |
 | 空柜目标质量（Kpg） | 22 | 22 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,7 +40,20 @@
 
 ## CargoClass 兼容
 
-`agriculture`、`raw_resource`、`processed_resource`、`weapon_armor`、`mechanical_parts`、`electronics`、`general_supplies`、`medical_supply`、`valuables`、`research_sample`。仅允许上述分类，不支持 none；同一货柜不可混装不同 CargoGood。
+| 分类 | CargoClass |
+| --- | --- |
+| 农业物资 | `agriculture` |
+| 食品与食材 | `food` |
+| 原料资源 | `raw_resource` |
+| 加工材料 | `processed_resource` |
+| 工具与装备 | `tools_equipment` |
+| 机械零件 | `mechanical_parts` |
+| 红石与控制 | `electronics` |
+| 通用物资 | `general_supplies` |
+| 化工与药剂 | `chemical_material` |
+| 物流与仓储 | `logistics_equipment` |
+
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -77,15 +92,15 @@
   "empty_mass": 22,
   "allowed_cargo_classes": [
     "agriculture",
+    "food",
     "raw_resource",
     "processed_resource",
-    "weapon_armor",
+    "tools_equipment",
     "mechanical_parts",
     "electronics",
     "general_supplies",
-    "medical_supply",
-    "valuables",
-    "research_sample"
+    "chemical_material",
+    "logistics_equipment"
   ],
   "special_designs": [],
   "design_defects": [],

@@ -1,52 +1,53 @@
-# 乡野机修所资源表
+# 乡野机修所 · 实际物品贸易表
 
-> **已接入（2026-10-07）：** 完整整站 NBT、贸易点定义、资源表、结构绑定与自然生成配置已发布；设备静态核对通过，地形、货柜装卸与营业流程仍待实机验收。
+> **待落数据 · 2026-10-20 首轮设计。** 本页已替换旧抽象货物方案；运行数据仍为空表，以下商品与数值尚未发布、未经过实机平衡。
 
-| 项目 | 设计内容 |
-| --- | --- |
-| 关联站点 | [G10 乡野机修所](<../../../07_贸易点/factory/乡野机修所/00_总体说明.md>) |
-| 资源 ID | `cargoverse:factory/ground_station/rural_repair_shop` |
-| 发布 JSON | `src/main/resources/data/cargoverse/trade_points/resource_tables/factory/ground_station/rural_repair_shop.json` |
-| schema_version | 2 |
-| 引用方式 | 每行直接填写一个 CargoGood 完整 ID |
-| 数量单位 | t 为数量符号；每日按 24000 ticks 计算 |
-| 报价与库存 | 逐商品 price_multiplier；出售有限库存，收购无库存且全部设每日限额 |
+编号：**G10**。归属：**独立经营（无制造商）**。形态：**地面小站**。
 
-## 出售 sales
+资源 ID：`cargoverse:factory/ground_station/rural_repair_shop`。
 
-全部使用有限 `inventory`；初始量、容量、日补分别对应 `initial`、`capacity`、`daily_restock`。当前均为持续补货，不增加一次性遗物来源。
+对应数据路径：`data/cargoverse/trade_points/resource_tables/factory/ground_station/rural_repair_shop.json`。
 
-| CargoGood ID | 货物 | 初始量 | 容量 | 日补 | 价格倍率 |
+## 业务定位
+
+**轻型维修耗材与传动备件。** 独立作坊提供新扳手、砂纸与通用轴齿轮，收购金属板、合金和齿轮箱。当前精确变体报价不能表达任意损坏工具收购，因此不承诺修复或拆解服务。
+
+## 报价口径
+
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／个实际物品**。数量均为实际件数，不是栈数、旧货物数量或现实吨数。
+- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
+- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每件奖励，不属于物品属性，也不根据价格自动推导。
+- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
+- 许可证／繁荣度经验只按自然生成收购目的地和实际成交件数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+
+## 出售目录
+
+| rule_id | 物品 | 单价 VB | 初始件数 | 库存容量 | 每日补货 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `cargoverse:tools_equipment/mining_hand_tools` | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | 50 | 100 | 25 | 0.95 |
-| `cargoverse:mechanical_parts/transmission_gears` | [标准传动齿轮](<../../../01_CargoGood/mechanical_parts/transmission_gears.md>) | 20 | 40 | 10 | 0.95 |
-| `cargoverse:processed_resource/recyclable_metal_scrap` | [可回收金属废料](<../../../01_CargoGood/processed_resource/recyclable_metal_scrap.md>) | 30 | 60 | 15 | 0.5 |
+| `sell_create_wrench` | 扳手 · `create:wrench` | 75 | 8 | 24 | 4 |
+| `sell_create_sand_paper` | 砂纸 · `create:sand_paper` | 5 | 96 | 256 | 64 |
+| `sell_create_cogwheel` | 齿轮 · `create:cogwheel` | 15 | 96 | 256 | 64 |
+| `sell_create_shaft` | 传动杆 · `create:shaft` | 11 | 96 | 256 | 64 |
 
-## 收购 acquisitions
+## 收购目录
 
-全部填写 `daily_limit`，额度由同一实例的所有玩家按每种货物共享，跨日恢复但不累计。不创建收购库存、不扣除材料来驱动出售。
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／件 | 繁荣度经验／件 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `buy_minecraft_iron_ingot` | 铁锭 · `minecraft:iron_ingot` | 15 | 64 | 3 | 3 |
+| `buy_create_andesite_alloy` | 安山合金 · `create:andesite_alloy` | 16 | 64 | 3 | 3 |
+| `buy_create_iron_sheet` | 铁板 · `create:iron_sheet` | 20 | 32 | 4 | 3 |
+| `buy_create_gearbox` | 十字齿轮箱 · `create:gearbox` | 75 | 8 | 4 | 4 |
+| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 64 | 2 | 2 |
+| `buy_minecraft_coal` | 煤炭 · `minecraft:coal` | 9 | 64 | 2 | 2 |
 
-| CargoGood ID | 货物 | 每日限额 | 价格倍率 |
-| --- | --- | ---: | ---: |
-| `cargoverse:refined_resource/structural_steel_ingots` | [结构钢锭](<../../../01_CargoGood/refined_resource/structural_steel_ingots.md>) | 30 | 1 |
-| `cargoverse:chemical_material/industrial_lubricant` | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | 30 | 1 |
-| `cargoverse:general_supplies/shelf_stable_rations` | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 60 | 1 |
-| `cargoverse:energy_fuel/industrial_energy_cells` | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 10 | 1 |
+## 运输与落地依赖
 
-## 数值依据
+已命中专用配置的运输类别包括：燃料与能源、食品与食材、机械零件、加工材料、工具与装备。类别只用于货柜兼容，不能代替本页精确报价目录。
 
-| 方向 | 货物 | 数量的业务依据 |
-| --- | --- | --- |
-| 出售 | [矿务手工具](<../../../01_CargoGood/tools_equipment/mining_hand_tools.md>) | 工具整修与本地备件周转，服务 G01、G02 和制材作业 |
-| 出售 | [标准传动齿轮](<../../../01_CargoGood/mechanical_parts/transmission_gears.md>) | 小批标准传动件，不形成完整机器货架 |
-| 出售 | [可回收金属废料](<../../../01_CargoGood/processed_resource/recyclable_metal_scrap.md>) | 经除油分拣的维修边角料 |
-| 收购 | [结构钢锭](<../../../01_CargoGood/refined_resource/structural_steel_ingots.md>) | 工具与通用金属件的维修用料 |
-| 收购 | [工业润滑油](<../../../01_CargoGood/chemical_material/industrial_lubricant.md>) | 台架、轴承和工器具保养 |
-| 收购 | [长效口粮](<../../../01_CargoGood/general_supplies/shelf_stable_rations.md>) | 作业人员日常补给 |
-| 收购 | [工业蓄能电池](<../../../01_CargoGood/energy_fuel/industrial_energy_cells.md>) | 台式机具电源替换，设备需求故意小于生活用品 |
+装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定件数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
 
-普通来源初始两日量、容量四日量，让初见站点有可装运库存，持续补货仍受本站用途约束。生活和低价原料按整柜或数柜组织，专业设备使用小批替换额度，不为了装满 S 柜而夸大每日仪器需求。
+本站不增加货柜制造、注册或领柜功能；所有收购条目设正数限额。设备采购额度通常低于一柜，属于地方更新需求。
 
-数量与价格为待实机平衡设计。新增站点数量会叠加区域供给和共享额度，不以单站看似很小就忽略总量；结算取整、签约修正、防护损耗和实际航程仍需验证。
+报价目录在实例创建时保存快照。未来落入 JSON 后，应以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
 
-[站点总览](<../../../07_贸易点/factory/乡野机修所/00_总体说明.md>) · [资源表目录](<../../README.md>) · [贸易点目录](<../../../07_贸易点/README.md>)
+[本站贸易网络](<../../../07_贸易点/factory/乡野机修所/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../07_贸易点/设计总览.md>) · [现行格式与经验资格](<../../../../02贸易点系统/03_资源表定义.md>)

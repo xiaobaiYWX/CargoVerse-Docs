@@ -1,16 +1,18 @@
 # Nomad 拓殖工程柜
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 制造商：天穹联合工业 / Aether Union Industries
 
 [返回制造商](<../README.md>) · [货柜目录](<../../README.md>)
 
 承运拓殖设施、工程建材与部署物资，采用缓冲、防潮与固定设计，适合中小型工程交付。
 
-允许分类：预制结构（`prefab_structure`）、建筑材料（`construction_material`）、机械设备（`machinery`）、日常通用补给（`general_supplies`）。未列出的分类均不允许。
+允许分类：建筑构件（`construction_material`）、机械设备（`machinery`）、物流与仓储（`logistics_equipment`）、通用物资（`general_supplies`）。分类按 2026-10-20 的十四类方案更新，未列出分类不允许。
 
 消除的运输要求：易碎、防潮、勿倒置。设计缺陷：无。所有货物的限时要求继续生效；御寒不代表冷藏或延长保质期。
 
-| 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
+| 货柜定义 | 资源 ID | 基础容量（个） | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [AUI Nomad 拓殖工程柜 M 型](<nomad_hd_m.md>) | `cargoverse:aui/nomad_hd_m` | 80 | 56 | 160 | 2 | 280 | 已提供正式模板 |
 | [AUI Nomad 拓殖工程柜 L 型](<nomad_hd_l.md>) | `cargoverse:aui/nomad_hd_l` | 160 | 112 | 160 | 4 | 560 | 已提供正式模板 |

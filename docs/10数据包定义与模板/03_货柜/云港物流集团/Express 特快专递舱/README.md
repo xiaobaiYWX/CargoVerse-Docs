@@ -1,14 +1,16 @@
 # Express 特快专递舱
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 制造商：云港物流集团
 
 [返回制造商](<../README.md>)
 
-该系列恢复原有规格及结构，继续承担急件与精密小件交接站的运输。许可分类：`mechanical_parts`、`medical_supply`、`valuables`、`research_sample`、`electronics`；未列出的分类不允许。
+该系列恢复原有规格及结构，继续承担急件与精密小件交接站的运输。许可分类：`mechanical_parts`、`chemical_material`、`processed_resource`、`electronics`、`tools_equipment`、`general_supplies`；未列出的分类不允许。
 
 运输防护：无；不额外附加设计缺陷。所有货物原有运输要求继续生效；系列名称不赋予额外速度或装卸加成。
 
-| 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
+| 货柜定义 | 资源 ID | 基础容量（个） | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [SPL Express 特快专递舱 S 型](<express_mc_s.md>) | `cargoverse:spl/express_mc_s` | 40 | 18 | 75 | 1 | 90 | 已提供正式模板 |
 

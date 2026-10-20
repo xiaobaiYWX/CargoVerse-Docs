@@ -1,2 +1,5 @@
 ### Local Codex work directories ###
 .codex-*/
+
+### Local Obsidian session ###
+docs/.obsidian/workspace.json

@@ -1,16 +1,18 @@
 # Titan 大宗结构柜
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 制造商：天穹联合工业 / Aether Union Industries
 
 [返回制造商](<../README.md>) · [货柜目录](<../../README.md>)
 
 面向金属、钢梁和结构模块的大宗运输，以较高装载容量承接大型工程货流。
 
-允许分类：原始资源（`raw_resource`）、半成品资源（`processed_resource`）、精加工资源（`refined_resource`）、建筑材料（`construction_material`）、预制结构（`prefab_structure`）。未列出的分类均不允许。
+允许分类：原料资源（`raw_resource`）、加工材料（`processed_resource`）、建筑构件（`construction_material`）、物流与仓储（`logistics_equipment`）。分类按 2026-10-20 的十四类方案更新，未列出分类不允许。
 
 消除的运输要求：无。设计缺陷：无。所有货物的限时要求继续生效；御寒不代表冷藏或延长保质期。
 
-| 货柜定义 | 资源 ID | 基础容量 t | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
+| 货柜定义 | 资源 ID | 基础容量（个） | 基础空重 Kpg | 基础耐久 | 调度点 | v2 加工费 VB | 结构状态 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [AUI Titan 大宗结构柜 L 型](<titan_hd_l.md>) | `cargoverse:aui/titan_hd_l` | 240 | 100 | 150 | 4 | 400 | 已提供正式模板 |
 | [AUI Titan 大宗结构柜 X 型](<titan_hd_x.md>) | `cargoverse:aui/titan_hd_x` | 420 | 175 | 150 | 6 | 700 | 已提供正式模板 |

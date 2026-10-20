@@ -1,5 +1,7 @@
 # HRI Explorer 科考样本舱 L 型
 
+> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
+
 
 [地平线研究院](<../README.md>) → [Explorer 科考样本舱](<README.md>) → L 型
 
@@ -29,7 +31,7 @@
 
 | 指标 | 定义基础值 | 实际值 |
 | --- | ---: | ---: |
-| 容量（t） | 128 | 128 |
+| 容量（个） | 128 | 128 |
 | 空柜目标质量（Kpg） | 105.6 | 105.6 |
 
 未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
@@ -38,7 +40,16 @@
 
 ## CargoClass 兼容
 
-`research_sample`、`tools_equipment`、`medical_supply`、`special_resource`。仅允许上述分类，不支持 none；同一货柜不可混装不同 CargoGood。
+| 分类 | CargoClass |
+| --- | --- |
+| 原料资源 | `raw_resource` |
+| 加工材料 | `processed_resource` |
+| 工具与装备 | `tools_equipment` |
+| 化工与药剂 | `chemical_material` |
+| 红石与控制 | `electronics` |
+| 通用物资 | `general_supplies` |
+
+仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
 
 ## 防护与运输要求
 
@@ -76,10 +87,12 @@
   "capacity": 128,
   "empty_mass": 105.6,
   "allowed_cargo_classes": [
-    "research_sample",
+    "raw_resource",
+    "processed_resource",
     "tools_equipment",
-    "medical_supply",
-    "special_resource"
+    "chemical_material",
+    "electronics",
+    "general_supplies"
   ],
   "special_designs": [
     "cargoverse:fragile",
