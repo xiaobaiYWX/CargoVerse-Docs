@@ -6,7 +6,7 @@
 
 ![DMC 二层控制平台统一概念图](<../../../../assets/images/trade_points/common/container_manufacturing/dmc/open_yard_01/concept.png>)
 
-使用内置图片生成功能生成一张主透视与俯视统一的参考板，[原始提示词](<../../../../assets/images/trade_points/common/container_manufacturing/dmc/open_yard_01/concept_prompt.txt>)随资产归档。依据图中的平场、首层框架、二层控制室和右侧外梯搭建，忽略无法落实的细碎影像细节。
+使用内置图片生成功能生成一张主透视与俯视统一的参考板，[原始提示词](<../../../../assets/images/trade_points/common/container_manufacturing/dmc/open_yard_01/concept_prompt.txt>)与当前资产一起保存。依据图中的平场、首层框架、二层控制室和右侧外梯搭建，忽略无法落实的细碎影像细节。
 
 实际结构将右侧楼梯落实为**两格通行净宽、两侧各一列护栏**，水平占地为 **32×31 格**。这比初始提示中的 31 格宽增加一格，仍处于 32×32 的附属结构范围内；楼梯、护栏和控制室均退出 24×24 的生产场上空。
 

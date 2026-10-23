@@ -6,7 +6,7 @@
 
 ![HEC 货柜制造场统一参考图](<../../../../assets/images/trade_points/common/container_manufacturing/hec/open_yard_01/concept.png>)
 
-本版使用图片生成功能制作一张完整参考板，主视图与俯视图共同表达同一附件；随后按生产面、柱跨与设备预留落实方块结构。参考图见上，[生成提示词](<../../../../assets/images/trade_points/common/container_manufacturing/hec/open_yard_01/concept_prompt.txt>)随图归档。
+本版使用图片生成功能制作一张完整参考板，主视图与俯视图共同表达同一附件；随后按生产面、柱跨与设备预留落实方块结构。参考图见上，[生成提示词](<../../../../assets/images/trade_points/common/container_manufacturing/hec/open_yard_01/concept_prompt.txt>)与当前图片一起保存。
 
 后侧采用平顶防护棚，左跨向前后完全开敞，右跨以灰色实体墙、连续玻璃观察带和红色墙带围合操作位置。棚外右后角设置独立台基、阶梯状挡墙与两座排气造型立柱。中央保留完整露天生产面，外围设低护栏、短灯柱和人员通道，正面预留六格接合口。
 

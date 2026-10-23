@@ -6,7 +6,7 @@
 
 ![VBS 绿植高台参考图](<../../../../assets/images/trade_points/common/container_manufacturing/vbs/open_yard_01/concept.png>)
 
-参考图由内置图片生成功能制作，[提示词](<../../../../assets/images/trade_points/common/container_manufacturing/vbs/open_yard_01/concept_prompt.txt>)随资产归档。建筑内容收敛为连续柱梁、单层高架平台和一部侧梯；后部只有六格深，平台上方完全开放。尺寸以实际柱跨、通道和坐标落实，不依赖图中标注判断容量。
+参考图由内置图片生成功能制作，[提示词](<../../../../assets/images/trade_points/common/container_manufacturing/vbs/open_yard_01/concept_prompt.txt>)与当前资产一起保存。建筑内容收敛为连续柱梁、单层高架平台和一部侧梯；后部只有六格深，平台上方完全开放。尺寸以实际柱跨、通道和坐标落实，不依赖图中标注判断容量。
 
 ![VBS 绿植高台实际 NBT](<../../../../assets/images/trade_points/common/container_manufacturing/vbs/open_yard_01/actual.png>)
 

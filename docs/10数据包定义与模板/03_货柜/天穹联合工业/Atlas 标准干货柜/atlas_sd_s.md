@@ -1,79 +1,80 @@
 # AUI Atlas 标准干货柜 S 型
 
-> 分类同步说明（2026-10-20）：本页兼容类别已更新为十四类方案。其他型号/投放规划可能保留历史设计，完整运行时定义以项目 JSON 为准；本轮不重平衡容量、质量或制造价格。
-
+> **【已实现】实际物品货柜，已采用最终结构。**
 
 [天穹联合工业](<../README.md>) → [Atlas 标准干货柜](<README.md>) → S 型
 
-面向跨行业基础运输，提供广泛的干货兼容性、可靠防护与标准化维护。
+## 职责与使用边界
+
+普通干货的成本与容量基准。与 Courier、Salvage 直接竞争；不用专用保护扩大准入。
+
+- 目标形态：独立固体 solid。
+- 当前 JSON 承载：独立固体 solid。
+- 当前生效保护：无专用保护。
+- 完整目标保护：基本围护与固定；无专用保护。
+- 使用边界：颗粒与粉末物品同样属于独立固体；不接直接泵入的液体、气体或实际活体。
+- 典型内容：石料与石砖、木板、工具、瓶装物品；敏感货物保留风险。仅为例子，同形态同条件的物品不因行业或制造商被排除。
+- 当前阶段：本期物品，可制造。
+
+保护外观不等于程序效果。遮光、温控、生态维持和放射性屏蔽等未列入“当前生效保护”的部分只能作为后续结构预留，不能标成已经实装。
 
 ## 定义
 
 | 项目 | 内容 |
 | --- | --- |
-| 完整型号 | `AUI-Atlas-SD-S` |
 | 资源 ID | `cargoverse:aui/atlas_sd_s` |
 | 定义文件 | [atlas_sd_s.json](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/aui/atlas_sd_s.json>) |
-| 制造商 | 天穹联合工业 / Aether Union Industries（`cargoverse:aui`） |
-| 系列全称 | Atlas 标准干货柜 |
+| 制造商 | 天穹联合工业（`cargoverse:aui`） |
+| 系列 | Atlas 标准干货柜 |
 | 尺寸等级 | S |
-| 调度点 | 1 |
+| 普通调度点 | 1 |
 | 结算单位 | `cargoverse:void_byte` |
 | 标签 | `series.aui.atlas` |
 
-## 结构模板
-
-**正式模板已提供。** 当前引用：`cargoverse:cargo/aui/atlas/aui_atlas_sd_s`。结构文件存在，尚未在本轮重新验证游戏内碰撞、接口与实际质量。
-
-[当前 NBT 文件](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_s.nbt>) · [缺失模板总表](<../../缺失结构模板.md>)
-
 ## 数值
 
-| 指标 | 定义基础值 | 实际值 |
-| --- | ---: | ---: |
-| 容量（个） | 55 | 55 |
-| 空柜目标质量（Kpg） | 20 | 20 |
-
-未配置 CargoClass 容量修正，所有允许分类均使用基础容量。
-
-容量、空重、防护与缺陷均由本货柜型号直接定义；未列出的允许分类使用基础容量。指定分类容量在最终乘算后一次向下取整。目标空重仍受结构中非货柜方块质量下限约束。
-
-## CargoClass 兼容
-
-| 分类 | CargoClass |
+| 指标 | 当前定义值 |
 | --- | --- |
-| 农业物资 | `agriculture` |
-| 食品与食材 | `food` |
-| 原料资源 | `raw_resource` |
-| 加工材料 | `processed_resource` |
-| 机械零件 | `mechanical_parts` |
-| 建筑构件 | `construction_material` |
-| 物流与仓储 | `logistics_equipment` |
-| 通用物资 | `general_supplies` |
-| 工具与装备 | `tools_equipment` |
+| 容量 | 50 个实际物品 |
+| 空柜目标质量 | 20 Kpg |
+| 分类容量修正 | 无，使用定义容量 |
 
-仅允许上述类别，不支持 none；一柜只装一种精确物品变体。首批物品标签与运输参数已配置；未覆盖物品使用默认运输规则，不代表全部物品已经归类或平衡。
+空重为配置目标，实际基础质量取模板结构质量与配置空重的较大值；载货质量另算。型号 ID 的后缀不替代实际尺寸或接口。
 
-## 防护与运输要求
+## CargoClass 兼容与保护
 
-消除：无。
+允许：独立固体（solid）。
 
-设计缺陷：无。未被消除的货物运输要求继续生效；所有型号保留 `time_limit`。御寒不代表恒温冷藏，防潮不代表抗腐蚀。
+当前生效保护：无。
+
+设计缺陷：无。未实现的目标保护不产生程序效果；准入与完整组件校验仍独立执行。
+
+## 结构模板
+
+| 项目 | 实际配置 |
+| --- | --- |
+| 定义 | [cargoverse:aui/atlas_sd_s](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/aui/atlas_sd_s.json>) |
+| 名称／规格 | AUI Atlas 标准干货柜 S 型／S |
+| 结构 ID | `cargoverse:cargo/aui/atlas/aui_atlas_sd_s` |
+| NBT | [项目结构文件](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_s.nbt>) |
+| 包络 X×Y×Z | 7×3×5 |
+| 实际接口 | 标准对接接口×2 |
+| 运行标记 | 分类 2、质量 1、词条 10（0～4 齐全） |
 
 ## 制造与投放
 
-| 项目 | v2 实体材料设计 |
-| --- | --- |
-| 加工费 | 80 VB |
-| 实体材料 | 铁锭 ×16、橡木木板 ×8、玻璃 ×4、红石 ×2 |
-| 最低许可证 | S |
-| 最低繁荣等级 | 0 |
-| 材料最少占格 | 4 格，按每种物品 64 堆叠 |
-| 当前配方状态 | 默认测试点已实装；新增站点目录待接入 |
+材料来自操作玩家物品栏，资金使用 VB；不扣贸易点仓库物品。同型号的各站实际配置如下，测试目录不等于正式投放。
 
-正式提供节点：[A01 标准建材装配港](<../../../07_贸易点/factory/标准建材装配港/定义设计/01_货柜制造台定义.md>)（固定专业工坊）。同型号跨站使用同一实体配方、加工费和门槛；玩家背包供料，不扣贸易点库存。普通资产按当前型号占用调度点，基础领取独立处理。
+| 制造目录 | 许可 | 最低繁荣 | 加工费 VB | 物品材料 |
+| --- | --- | ---: | ---: | --- |
+| [正式：factory/sky_station/standard_assembly](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/factory/sky_station/standard_assembly.json>) | S | 0 | 80 | `minecraft:iron_ingot`×16、`minecraft:oak_planks`×8、`minecraft:glass`×4、`minecraft:redstone`×2 |
+| [测试：market/test_station/all_containers](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>) | S | 0 | 80 | `minecraft:iron_ingot`×16、`minecraft:oak_planks`×8、`minecraft:glass`×4、`minecraft:redstone`×2 |
 
-[统一配方与定价依据](<../../../08_货柜制造台/制造配方与投放总表.md>)。当前 Atlas S 材料、80 VB 与繁荣 0 均保持实装值。
+[统一制造与投放索引](<../../../08_货柜制造台/制造配方与投放总表.md>)。
+
+## 基础运输权益
+
+本型号对应[制造商初始基础货柜权益](<../../../05_基础货柜/aui_basic.md>)。通过基础权益领取的资产免调度点；普通制造的同型号仍使用 1 点，不修改型号定义。
 
 ## 当前 JSON
 
@@ -83,31 +84,26 @@
   "template": "cargoverse:cargo/aui/atlas/aui_atlas_sd_s",
   "manufacturer": "cargoverse:aui",
   "display_name": "AUI Atlas 标准干货柜 S 型",
-  "description": "§lAUI Atlas 标准干货柜 S 型\n§r§7面向跨行业基础运输，提供广泛的干货兼容性、可靠防护与标准化维护。\n§r§l制造商：天穹联合工业 / Aether Union Industries\n§r§l系列：Atlas 标准干货柜",
+  "description": "实际物品运输货柜；承载形态与运输保护以本定义为准。",
   "size_class": "S",
   "trade_currency": "cargoverse:void_byte",
   "dispatch_points": 1,
-  "capacity": 55,
+  "capacity": 50,
   "empty_mass": 20,
   "allowed_cargo_classes": [
-    "agriculture",
-    "food",
-    "raw_resource",
-    "processed_resource",
-    "mechanical_parts",
-    "construction_material",
-    "logistics_equipment",
-    "general_supplies",
-    "tools_equipment"
+    "solid"
   ],
   "special_designs": [],
   "design_defects": [],
   "tags": [
     "series.aui.atlas"
-  ]
+  ],
+  "cargo_class_capacity_modifiers": {}
 }
 ```
 
-## 基础运输权益
+## 验证边界
 
-本型号同时作为天穹联合工业的[初始基础货柜](<../../../05_基础货柜/aui_basic.md>)。注册终端领取的基础资产占 **0 调度点**；普通购买／制造的同型号仍占 1 点。型号 JSON 中的 `dispatch_points` 保持普通版本成本，豁免依据资产标记。
+实际结构与型号参数以当前定义和模板为准；静态校验不代替碰撞、对接、Sable 装配及满载运输实测。已有物理货柜不因文档调整或重载自动换壳。
+
+[返回系列](<README.md>) · [返回制造商](<../README.md>)

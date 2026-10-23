@@ -1,21 +1,12 @@
-# 铁壁防务集团
+# 铁壁防务集团 · 现行货柜产品线
 
-Bastion Defense Systems（BDS）
+Bastion Defense Systems（BDS）。更新：2026-10-21。下列是现行主系列。
 
-[返回货柜目录](<../README.md>)
+| 系列 | 规格 | 当前阶段 |
+| --- | --- | --- |
+| [Fortress 超规格固定柜](<Fortress 超规格固定柜/README.md>) | XL | 本期物品，可制造 |
+| [Sentinel 装备防护柜](<Sentinel 装备防护柜/README.md>) | S／M／L／X | 本期物品，可制造 |
 
-本厂商当前容量与空重倍率均为 1。
+每个系列目录包含 README 和各规格独立型号页；未实现系列在页面开头标记，当前能力与目标设计分开维护。
 
-| 系列全称 | 现役规格 | 货柜数 | 缺失正式模板 |
-| --- | --- | --- | --- |
-| [Sentinel 安防装备柜](<Sentinel 安防装备柜/README.md>) | S／M | 2 | 0 |
-| [Bastion 驻防重装柜](<Bastion 驻防重装柜/README.md>) | L／X | 2 | 0 |
-| [Fortress 工事运输堡](<Fortress 工事运输堡/README.md>) | XL | 1 | 0 |
-
-## 命名与初始运输
-
-制造商代码：`BDS`。深灰、军绿色与装甲板；加强边框、防护结构与简明军用标识。
-
-基础货柜：[BDS Sentinel 安防装备柜 S 型](<../../05_基础货柜/bds_basic.md>)，S 级，基础领取占用 **0 调度点**。
-
-[统一命名规则](<../命名规则.md>)
+[模板分配总表](<../模板重分配与搭建清单.md>) · [全部制造商](<../README.md>)

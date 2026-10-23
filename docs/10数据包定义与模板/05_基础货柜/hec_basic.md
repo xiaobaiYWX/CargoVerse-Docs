@@ -1,30 +1,17 @@
 # 赫利俄斯能源集团基础货柜
 
-Helios Energy Corporation（HEC）
+更新：2026-10-21。
 
-[返回基础货柜目录](<README.md>)
-
-| 项目 | 内容 |
+| 项目 | 当前值 |
 | --- | --- |
-| 制造商 ID | `cargoverse:hec` |
-| 制造商定义 | [hec.json](<../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/manufacturers/hec.json>) |
-| 货柜定义 | [HEC Apollo 燃料化工柜 S 型](<../03_货柜/赫利俄斯能源集团/Apollo 燃料化工柜/apollo_sd_s.md>) |
-| 完整型号 | `HEC-Apollo-SD-S` |
-| 尺寸等级 | S |
-| 领取占用调度点 | **0**（仅基础货柜资产） |
-| 默认容量 / 空重 / 耐久 | 50 / 28 / 130（t / Kpg / 点） |
-| 普通同型号调度点 | 1 |
-| 起步用途 | 燃料与化工小批补给 |
-| 注册点 | [赫利俄斯能源集团](<../10_注册点/hec_energy.md>) |
-| 投放状态 | 已通过全部同制造商空港贸易点提供 |
-| 结构状态 | 正式模板已接入 |
+| 型号与职责 | [HEC Apollo 封装敏感品柜 M 型](<../03_货柜/赫利俄斯能源集团/Apollo 封装敏感品柜/README.md>) |
+| 稳定定义 ID | `cargoverse:hec/apollo_sd_s` |
+| 规格 | M |
+| 容量 | 110 件 |
+| 空重目标 | 60 Kpg |
+| 权益／普通调度点 | 0／2 |
+| 实际模板 | `cargoverse:cargo/hec/reactor/hec_reactor_hd_m` |
 
-每名玩家同时仅有一份当前注册机构的基础货柜权益。货柜通过注册终端领取，带 `starterContainer` 资产标记，不收取制造费用、库存材料或调度点。普通购买／制造的同型号不享受免点。旧存档中带此标记的资产也立即免点，设备快照仍保留当时型号参数。
+领取仍检查注册资格、唯一权益、位置与空间；不扩展普通制造许可。没有本体耐久；已有资产不随定义更新自动换壳。
 
-## 制造商字段片段
-
-```json
-{
-  "starter_container": "cargoverse:hec/apollo_sd_s"
-}
-```
+[基础目录](<README.md>)

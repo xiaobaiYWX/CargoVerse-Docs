@@ -1,72 +1,18 @@
 # 测试全型号货柜制造目录
 
-A、B 共用 `cargoverse:market/test_station/all_containers`，覆盖全部 60 个 cargo_containers 定义。逐型号的材料、加工费、许可证和繁荣门槛完整取自正式天空站配方，重复型号须完全一致才允许合并。测试点初始繁荣为满级，材料、资金、许可证、调度点与净空校验正常执行。
+更新：2026-10-23。A／B 指令测试站共用 `cargoverse:market/test_station/all_containers`，当前覆盖 **49 款：45 款固体、4 款液体**。两站同时提供以下四款液体柜，不参与商品买卖的 A／B 分组。
 
-| 货柜定义 | 配方 ID | 许可证 | 最低繁荣 | 加工费（VB） |
-| --- | --- | --- | --- | --- |
-| `cargoverse:aui/atlas_sd_l` | `aui_atlas_sd_l` | L | 2 | 320 |
-| `cargoverse:aui/atlas_sd_m` | `aui_atlas_sd_m` | M | 1 | 160 |
-| `cargoverse:aui/atlas_sd_s` | `aui_atlas_sd_s` | S | 0 | 80 |
-| `cargoverse:aui/atlas_sd_x` | `aui_atlas_sd_x` | X | 3 | 560 |
-| `cargoverse:aui/hermes_mc_l` | `aui_hermes_mc_l` | L | 2 | 400 |
-| `cargoverse:aui/hermes_mc_m` | `aui_hermes_mc_m` | M | 1 | 200 |
-| `cargoverse:aui/hermes_mc_s` | `aui_hermes_mc_s` | S | 0 | 100 |
-| `cargoverse:aui/nomad_hd_l` | `aui_nomad_hd_l` | L | 2 | 560 |
-| `cargoverse:aui/nomad_hd_m` | `aui_nomad_hd_m` | M | 0 | 280 |
-| `cargoverse:aui/nomad_hd_x` | `aui_nomad_hd_x` | X | 3 | 980 |
-| `cargoverse:aui/titan_hd_l` | `aui_titan_hd_l` | L | 2 | 400 |
-| `cargoverse:aui/titan_hd_x` | `aui_titan_hd_x` | X | 3 | 700 |
-| `cargoverse:aui/titan_hd_xl` | `aui_titan_hd_xl` | XL | 4 | 1200 |
-| `cargoverse:aui/vulcan_sd_l` | `aui_vulcan_sd_l` | L | 2 | 480 |
-| `cargoverse:aui/vulcan_sd_m` | `aui_vulcan_sd_m` | M | 0 | 240 |
-| `cargoverse:aui/vulcan_sd_x` | `aui_vulcan_sd_x` | X | 3 | 840 |
-| `cargoverse:bds/bastion_mc_l` | `bds_bastion_mc_l` | L | 2 | 600 |
-| `cargoverse:bds/bastion_mc_x` | `bds_bastion_mc_x` | X | 3 | 1050 |
-| `cargoverse:bds/fortress_hd_xl` | `bds_fortress_hd_xl` | XL | 4 | 2280 |
-| `cargoverse:bds/sentinel_mc_m` | `bds_sentinel_mc_m` | M | 1 | 280 |
-| `cargoverse:bds/sentinel_mc_s` | `bds_sentinel_mc_s` | S | 0 | 140 |
-| `cargoverse:dmc/boreal_sd_l` | `dmc_boreal_sd_l` | L | 2 | 360 |
-| `cargoverse:dmc/boreal_sd_m` | `dmc_boreal_sd_m` | M | 0 | 180 |
-| `cargoverse:dmc/corevault_sd_m` | `dmc_corevault_sd_m` | M | 1 | 280 |
-| `cargoverse:dmc/corevault_sd_s` | `dmc_corevault_sd_s` | S | 0 | 140 |
-| `cargoverse:dmc/titanhaul_hd_l` | `dmc_titanhaul_hd_l` | L | 2 | 560 |
-| `cargoverse:dmc/titanhaul_hd_x` | `dmc_titanhaul_hd_x` | X | 3 | 980 |
-| `cargoverse:dmc/titanhaul_hd_xl` | `dmc_titanhaul_hd_xl` | XL | 4 | 1680 |
-| `cargoverse:hec/apollo_sd_l` | `hec_apollo_sd_l` | L | 2 | 440 |
-| `cargoverse:hec/apollo_sd_m` | `hec_apollo_sd_m` | M | 1 | 220 |
-| `cargoverse:hec/apollo_sd_s` | `hec_apollo_sd_s` | S | 0 | 110 |
-| `cargoverse:hec/cryovault_sd_l` | `hec_cryovault_sd_l` | L | 2 | 560 |
-| `cargoverse:hec/cryovault_sd_m` | `hec_cryovault_sd_m` | M | 1 | 280 |
-| `cargoverse:hec/cryovault_sd_s` | `hec_cryovault_sd_s` | S | 0 | 140 |
-| `cargoverse:hec/reactor_hd_l` | `hec_reactor_hd_l` | L | 2 | 800 |
-| `cargoverse:hec/reactor_hd_m` | `hec_reactor_hd_m` | M | 0 | 400 |
-| `cargoverse:hec/reactor_hd_x` | `hec_reactor_hd_x` | X | 3 | 1400 |
-| `cargoverse:hec/reclaimer_sd_l` | `hec_reclaimer_sd_l` | L | 2 | 360 |
-| `cargoverse:hec/reclaimer_sd_m` | `hec_reclaimer_sd_m` | M | 0 | 180 |
-| `cargoverse:hri/archive_si_m` | `hri_archive_si_m` | M | 1 | 400 |
-| `cargoverse:hri/archive_si_s` | `hri_archive_si_s` | S | 0 | 200 |
-| `cargoverse:hri/explorer_si_l` | `hri_explorer_si_l` | L | 2 | 720 |
-| `cargoverse:hri/explorer_si_m` | `hri_explorer_si_m` | M | 1 | 360 |
-| `cargoverse:hri/explorer_si_s` | `hri_explorer_si_s` | S | 0 | 180 |
-| `cargoverse:rex/salvage_lm_l` | `rex_salvage_lm_l` | L | 2 | 280 |
-| `cargoverse:rex/salvage_lm_m` | `rex_salvage_lm_m` | M | 1 | 140 |
-| `cargoverse:rex/salvage_lm_s` | `rex_salvage_lm_s` | S | 0 | 70 |
-| `cargoverse:spl/cargo_mc_l` | `spl_cargo_mc_l` | L | 2 | 280 |
-| `cargoverse:spl/cargo_mc_m` | `spl_cargo_mc_m` | M | 1 | 140 |
-| `cargoverse:spl/courier_mc_m` | `spl_courier_mc_m` | M | 1 | 120 |
-| `cargoverse:spl/courier_mc_s` | `spl_courier_mc_s` | S | 0 | 60 |
-| `cargoverse:spl/express_mc_s` | `spl_express_mc_s` | S | 0 | 90 |
-| `cargoverse:vbs/biopod_sd_l` | `vbs_biopod_sd_l` | L | 2 | 480 |
-| `cargoverse:vbs/biopod_sd_m` | `vbs_biopod_sd_m` | M | 1 | 240 |
-| `cargoverse:vbs/biopod_sd_s` | `vbs_biopod_sd_s` | S | 0 | 120 |
-| `cargoverse:vbs/eden_hd_x` | `vbs_eden_hd_x` | X | 3 | 1050 |
-| `cargoverse:vbs/eden_hd_xl` | `vbs_eden_hd_xl` | XL | 4 | 1800 |
-| `cargoverse:vbs/harvest_lm_l` | `vbs_harvest_lm_l` | L | 2 | 360 |
-| `cargoverse:vbs/harvest_lm_m` | `vbs_harvest_lm_m` | M | 1 | 180 |
-| `cargoverse:vbs/harvest_lm_s` | `vbs_harvest_lm_s` | S | 0 | 90 |
+运行文件：[all_containers.json](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>)。完整配方见[制造配方与投放总表](<../../制造配方与投放总表.md>)；此处仅汇总液体测试范围。
 
-实体材料的唯一运行定义为 `trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json`，对应正式设计见[制造配方总表](<../../制造配方与投放总表.md>)。该目录只供测试，两站各显示完整 60 款，不计入正式站点的 93 条配方统计。
+| 制造商与系列 | 型号 | 定义 ID | 容量 | 空重 Kpg | 调度点 | 许可／最低繁荣度 |
+| --- | --- | --- | ---: | ---: | ---: | --- |
+| HRI Crucible 衬层液体罐柜 L 型 | L | `cargoverse:hri/crucible_si_l` | 240000 mB | 170 | 4 | L／2 |
+| HRI Crucible 衬层液体罐柜 M 型 | M | `cargoverse:hri/crucible_si_m` | 120000 mB | 80 | 2 | M／1 |
+| SPL Cistern 标准液体罐柜 L 型 | L | `cargoverse:spl/cistern_sd_l` | 240000 mB | 140 | 4 | L／2 |
+| SPL Cistern 标准液体罐柜 M 型 | M | `cargoverse:spl/cistern_sd_m` | 120000 mB | 65 | 2 | M／1 |
 
-增加货柜型号或配方后，同步维护本目录 JSON 与本文档，并运行制造资源回归检查；调整测试商品则维护两站 schema 3 资源表与对应文档。旧抽象货物测试站生成器已移除，不再从 `cargo_goods` 重建目录，也不自动改写正式站点、原始模板或自然结构集。
+当前 M 型测试配方为铁锭 32、橡木木板 16、玻璃 8、红石 4，加工费 160 VB；L 型为上述材料各两倍，加工费 320 VB。正常检查许可、材料、加工费和调度能力；测试站初始繁荣度 5 已满足两种配方门槛。
 
-[测试 A](<../../../07_贸易点/market/测试贸易点A/00_总体说明.md>) · [测试 B](<../../../07_贸易点/market/测试贸易点B/00_总体说明.md>)
+四款均使用同规格 AUI Atlas 占位结构，容量定义 1 对应 1000 mB。Crucible 当前没有已生效的衬层／耐腐蚀保护，不因系列名称自动具备能力。制造出的液体柜仅承载液体；“液体”不限制可配置的运输词条。
+
+本目录已与源码及 build/resources/main 中的构建资源核对一致。尚未在本轮进入游戏进行制造操作；运行中的世界须使用最新资源后验证。自然站配方与气体／生物占位型号不因测试目录开放而自动投放。

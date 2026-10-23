@@ -6,7 +6,7 @@
 
 ![HRI 双标高货柜制造场概念图](<../../../../assets/images/trade_points/common/container_manufacturing/hri/open_yard_01/concept.png>)
 
-使用内置图片生成功能制作一张统一参考板，包含主透视与同一结构的俯视图；[生成提示词](<../../../../assets/images/trade_points/common/container_manufacturing/hri/open_yard_01/concept_prompt.txt>)与资产一同归档。根据图中的生产场、挡墙、平台和楼梯关系落实模板，不把局部噪点扩展成额外建筑。
+使用内置图片生成功能制作一张统一参考板，包含主透视与同一结构的俯视图；[生成提示词](<../../../../assets/images/trade_points/common/container_manufacturing/hri/open_yard_01/concept_prompt.txt>)与当前资产一起保存。根据图中的生产场、挡墙、平台和楼梯关系落实模板，不把局部噪点扩展成额外建筑。
 
 中央为完整平整的露天生产场，两侧步道及后部服务台**高出两格**。正面货柜接口与生产地面平齐，人员通过左侧入口或后方三格宽短梯进入高台。生产场相对高台下沉，不需要在正面货柜通路中跨越台阶。
 

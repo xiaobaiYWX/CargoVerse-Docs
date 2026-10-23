@@ -1,30 +1,17 @@
 # 绿洲农业联盟基础货柜
 
-Verdant BioSystems（VBS）
+更新：2026-10-21。
 
-[返回基础货柜目录](<README.md>)
-
-| 项目 | 内容 |
+| 项目 | 当前值 |
 | --- | --- |
-| 制造商 ID | `cargoverse:vbs` |
-| 制造商定义 | [vbs.json](<../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/manufacturers/vbs.json>) |
-| 货柜定义 | [VBS Harvest 农鲜周转柜 S 型](<../03_货柜/绿洲农业联盟/Harvest 农鲜周转柜/harvest_lm_s.md>) |
-| 完整型号 | `VBS-Harvest-LM-S` |
-| 尺寸等级 | S |
-| 领取占用调度点 | **0**（仅基础货柜资产） |
-| 默认容量 / 空重 / 耐久 | 60 / 24 / 85（t / Kpg / 点） |
-| 普通同型号调度点 | 1 |
-| 起步用途 | 农业与农鲜周转 |
-| 注册点 | [绿洲农业联盟](<../10_注册点/oasis_agriculture.md>) |
-| 投放状态 | 已通过全部同制造商空港贸易点及默认资源贸易点提供 |
-| 结构状态 | 正式模板已接入 |
+| 型号与职责 | [VBS Harvest 围护周转柜 S 型](<../03_货柜/绿洲农业联盟/Harvest 围护周转柜/README.md>) |
+| 稳定定义 ID | `cargoverse:vbs/harvest_lm_s` |
+| 规格 | S |
+| 容量 | 60 件 |
+| 空重目标 | 26 Kpg |
+| 权益／普通调度点 | 0／1 |
+| 实际模板 | `cargoverse:cargo/vbs/harvest/vbs_harvest_lm_s` |
 
-每名玩家同时仅有一份当前注册机构的基础货柜权益。货柜通过注册终端领取，带 `starterContainer` 资产标记，不收取制造费用、库存材料或调度点。普通购买／制造的同型号不享受免点。旧存档中带此标记的资产也立即免点，设备快照仍保留当时型号参数。
+领取仍检查注册资格、唯一权益、位置与空间；不扩展普通制造许可。没有本体耐久；已有资产不随定义更新自动换壳。
 
-## 制造商字段片段
-
-```json
-{
-  "starter_container": "cargoverse:vbs/harvest_lm_s"
-}
-```
+[基础目录](<README.md>)

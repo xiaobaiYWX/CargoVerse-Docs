@@ -1,23 +1,14 @@
-# 天穹联合工业
+# 天穹联合工业 · 现行货柜产品线
 
-Aether Union Industries（AUI）
+Aether Union Industries（AUI）。更新：2026-10-21。下列是现行主系列。
 
-[返回货柜目录](<../README.md>)
+| 系列 | 规格 | 当前阶段 |
+| --- | --- | --- |
+| [Atlas 标准干货柜](<Atlas 标准干货柜/README.md>) | S／M／L／X | 本期物品，可制造 |
+| [Hermes 轻量干货柜](<Hermes 轻量干货柜/README.md>) | S／M／L | 本期物品，可制造 |
+| [Titan 重型框架柜](<Titan 重型框架柜/README.md>) | L／X／XL | 本期物品，可制造 |
+| [Vulcan 精密固定柜](<Vulcan 精密固定柜/README.md>) | M／L／X | 本期物品，可制造 |
 
-天穹联合工业：容量 ×1.1，空重不变。
+每个系列目录包含 README 和各规格独立型号页；未实现系列在页面开头标记，当前能力与目标设计分开维护。
 
-| 系列全称 | 现役规格 | 货柜数 | 缺失正式模板 |
-| --- | --- | --- | --- |
-| [Atlas 标准干货柜](<Atlas 标准干货柜/README.md>) | S／M／L／X | 4 | 0 |
-| [Nomad 拓殖工程柜](<Nomad 拓殖工程柜/README.md>) | M／L／X | 3 | 0 |
-| [Titan 大宗结构柜](<Titan 大宗结构柜/README.md>) | L／X／XL | 3 | 0 |
-| [Vulcan 精密工业柜](<Vulcan 精密工业柜/README.md>) | M／L／X | 3 | 0 |
-| [Hermes 轻量化货柜](<Hermes 轻量化货柜/README.md>) | S／M／L | 3 | 0 |
-
-## 命名与初始运输
-
-制造商代码：`AUI`。灰白柜体、蓝色编号、标准工业条纹；外形规整，接口与检修位置清晰。
-
-基础货柜：[AUI Atlas 标准干货柜 S 型](<../../05_基础货柜/aui_basic.md>)，S 级，基础领取占用 **0 调度点**。
-
-[统一命名规则](<../命名规则.md>)
+[模板分配总表](<../模板重分配与搭建清单.md>) · [全部制造商](<../README.md>)
