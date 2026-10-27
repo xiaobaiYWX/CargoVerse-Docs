@@ -10,9 +10,9 @@
 
 - 目标形态：独立固体 solid。
 - 当前 JSON 承载：独立固体 solid。
-- 当前生效保护：防震 V、防潮 D、定向固定 O。
-- 完整目标保护：防震、防潮、定向固定。
-- 使用边界：无温控、无遮光；不支持未封装颗粒或粉末。
+- 当前数值能力〔候选〕：围护 1、密封 1、缓冲 3；隔热、调温、遮光、承压均为 0。
+- 能力方向：缓冲与液态水隔离，不提供无限防震或旧定向固定效果。
+- 使用边界：同属 solid 的颗粒／粉末不按用途拒装；围护 2 需求仍有缺口。
 - 典型内容：精密机构、传感器、玻璃与护目镜。仅为例子，同形态同条件的物品不因行业或制造商被排除。
 - 当前阶段：本期物品，可制造。
 
@@ -45,7 +45,7 @@
 
 允许：独立固体（solid）。
 
-当前生效保护：`cargoverse:fragile`、`cargoverse:moisture_proof`、`cargoverse:keep_upright`。
+当前七项能力：围护 1、密封 1、缓冲 3、隔热 0、调温 0、遮光 0、承压 0。JSON 中暂留的 special_designs 仅是待清理资料，既不执行免疫，也不删除玻璃固有易碎特性。
 
 设计缺陷：无。未实现的目标保护不产生程序效果；准入与完整组件校验仍独立执行。
 
@@ -99,7 +99,16 @@
   "tags": [
     "series.aui.vulcan"
   ],
-  "cargo_class_capacity_modifiers": {}
+  "cargo_class_capacity_modifiers": {},
+  "transport_capabilities": {
+    "containment_level": 1,
+    "sealing_level": 1,
+    "cushioning_level": 3,
+    "insulation_level": 0,
+    "thermal_control_level": 0,
+    "light_blocking_level": 0,
+    "pressure_resistance_level": 0
+  }
 }
 ```
 

@@ -10,7 +10,7 @@ SPL 扩展常规液体物流。提供低投入的普通液体罐，与 HRI 衬�
 
 - 目标形态：liquid 液体。
 - 当前 JSON 承载：仅 liquid 液体。
-- 当前生效保护：无专用保护。
+- 当前数值能力：密封 1〔液密〕，其余六项为 0；由定义显式声明。
 - 完整目标保护：液密、防冻结（目标）。
 - 使用边界：当前按液体介质准入，尚无接触材料白名单或腐蚀判定；不保证气密、耐压或耐腐蚀，后续材料限制另行实现。
 - 典型内容：水及后续明确的普通非腐蚀液体。仅为例子，同形态同条件的物品不因行业或制造商被排除。
@@ -45,7 +45,7 @@ SPL 扩展常规液体物流。提供低投入的普通液体罐，与 HRI 衬�
 
 只允许液体，不装固体、气体或活体；完整组件变体不可混装。
 
-当前生效保护：无。
+当前数值能力：密封 1〔液密〕，其余六项为 0。密封是否实际有效还取决于运输屏障状态；不额外授予气密、调温或承压能力。
 
 设计缺陷：无。未实现的目标保护不产生程序效果；准入与完整组件校验仍独立执行。
 
@@ -85,6 +85,15 @@ SPL 扩展常规液体物流。提供低投入的普通液体罐，与 HRI 衬�
     "liquid"
   ],
   "cargo_class_capacity_modifiers": {},
+  "transport_capabilities": {
+    "containment_level": 0,
+    "sealing_level": 1,
+    "cushioning_level": 0,
+    "insulation_level": 0,
+    "thermal_control_level": 0,
+    "light_blocking_level": 0,
+    "pressure_resistance_level": 0
+  },
   "special_designs": [],
   "design_defects": [],
   "tags": [

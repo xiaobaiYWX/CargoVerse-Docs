@@ -10,7 +10,7 @@
 
 - 目标形态：独立固体 solid。
 - 当前 JSON 承载：独立固体 solid。
-- 当前生效保护：无专用保护。
+- 当前数值能力〔候选〕：围护 1；其余六项为 0。
 - 完整目标保护：基本围护与固定；无专用保护。
 - 使用边界：颗粒与粉末物品同样属于独立固体；不接直接泵入的液体、气体或实际活体。
 - 典型内容：石料与石砖、木板、工具、瓶装物品；敏感货物保留风险。仅为例子，同形态同条件的物品不因行业或制造商被排除。
@@ -45,7 +45,7 @@
 
 允许：独立固体（solid）。
 
-当前生效保护：无。
+当前七项能力：围护 1、密封 0、缓冲 0、隔热 0、调温 0、遮光 0、承压 0。数值尺度仍待实机平衡，不能凭外观授予额外能力。
 
 设计缺陷：无。未实现的目标保护不产生程序效果；准入与完整组件校验仍独立执行。
 
@@ -98,7 +98,16 @@
   "tags": [
     "series.aui.atlas"
   ],
-  "cargo_class_capacity_modifiers": {}
+  "cargo_class_capacity_modifiers": {},
+  "transport_capabilities": {
+    "containment_level": 1,
+    "sealing_level": 0,
+    "cushioning_level": 0,
+    "insulation_level": 0,
+    "thermal_control_level": 0,
+    "light_blocking_level": 0,
+    "pressure_resistance_level": 0
+  }
 }
 ```
 
