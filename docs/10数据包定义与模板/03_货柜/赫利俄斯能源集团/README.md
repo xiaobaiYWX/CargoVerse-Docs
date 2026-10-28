@@ -5,7 +5,7 @@ Helios Energy Corporation（HEC）。更新：2026-10-21。下列是现行主系
 | 系列 | 规格 | 当前阶段 |
 | --- | --- | --- |
 | [Apollo 封装敏感品柜](<Apollo 封装敏感品柜/README.md>) | M／L／X | 本期物品，可制造 |
-| [Boreas 压力气体柜](<Boreas 压力气体柜/README.md>) | M／L | 后续专项，未制造 |
+| [Boreas 压力气体柜](<Boreas 压力气体柜/README.md>) | M／L | 已接气体运输与测试制造，占位结构 |
 | [CryoVault 冷冻保存柜](<CryoVault 冷冻保存柜/README.md>) | S／M／L | 后续专项，未制造 |
 | [Reactor 屏蔽封装柜](<Reactor 屏蔽封装柜/README.md>) | M／L／X | 需求确认后推进，未制造 |
 
