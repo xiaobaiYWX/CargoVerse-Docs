@@ -26,7 +26,7 @@
 | [X](<silo_sd_x.md>) | `cargoverse:dmc/silo_sd_x` | 重型连接点×4 | 550 | 285 | 6 |
 | [XL](<silo_sd_xl.md>) | `cargoverse:dmc/silo_sd_xl` | 重型连接点×4 | 915 | 475 | 8 |
 
-规格按 size_class 显式配置，不按模板体积推导。Silo 采用独立的 silo_sd_l／silo_sd_x／silo_sd_xl，原未落地的 silo_sd_m 已取消。ID 中的接口代号不替代实际模型中的接口。容量按件，质量为目标空重，实际结构质量构成下限。
+规格按 size_class 显式配置，不按模板体积推导。Silo 采用独立的 silo_sd_l／silo_sd_x／silo_sd_xl，原未落地的 silo_sd_m 已取消。ID 中的接口代号不替代实际模型中的接口。容量按物品组，质量为目标空重，实际结构质量构成下限。
 
 ## 使用与验证边界
 

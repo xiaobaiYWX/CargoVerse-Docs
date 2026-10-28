@@ -26,7 +26,7 @@ HEC 基础柜及封装易燃内容运输；支持普通整件品，以额外保�
 | [L](<apollo_sd_m.md>) | `cargoverse:hec/apollo_sd_m` | 重型连接点×4 | 275 | 130 | 4 |
 | [X](<apollo_sd_l.md>) | `cargoverse:hec/apollo_sd_l` | 重型连接点×4 | 550 | 245 | 6 |
 
-规格按 size_class 显式配置，不按模板体积推导。Apollo 旧文件名保留 sd_s／sd_m／sd_l，实际对应 M／L／X；初始权益仍引用 apollo_sd_s，但发放 Apollo M。ID 中的接口代号不替代实际模型中的接口。容量按件，质量为目标空重，实际结构质量构成下限。
+规格按 size_class 显式配置，不按模板体积推导。Apollo 旧文件名保留 sd_s／sd_m／sd_l，实际对应 M／L／X；初始权益仍引用 apollo_sd_s，但发放 Apollo M。ID 中的接口代号不替代实际模型中的接口。容量按物品组，质量为目标空重，实际结构质量构成下限。
 
 ## 使用与验证边界
 
