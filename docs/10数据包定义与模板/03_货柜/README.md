@@ -33,7 +33,7 @@
 | [DMC CoreVault 小批固体防护柜](<深岩矿业集团/CoreVault 小批固体防护柜/README.md>) | 独立固体 solid。 | 防震 V、防潮 D | S／M | 本期物品，可制造 |
 | [DMC Silo 密闭粉料柜](<深岩矿业集团/Silo 密闭粉料柜/README.md>) | 独立固体 solid。 | 防潮 D | L／X／XL | 本期物品，可制造 |
 | [VBS Aquarium 水生活物舱](<绿洲农业联盟/Aquarium 水生活物舱/README.md>) | living 活物（明确水生适配范围）。 | 无专用保护 | M／L | 后续专项，未制造 |
-| [VBS BioPod 陆生活物舱](<绿洲农业联盟/BioPod 陆生活物舱/README.md>) | living 活物（明确陆生适配范围）。 | 无专用保护 | S／M／L | 后续专项，未制造 |
+| [VBS BioPod 陆生活物舱](<绿洲农业联盟/BioPod 陆生活物舱/README.md>) | living 活物（明确陆生适配范围）。 | 无专用保护 | S／M／L | BioPod装卸验证，正式制造待定 |
 | [VBS Eden 大宗保鲜柜](<绿洲农业联盟/Eden 大宗保鲜柜/README.md>) | 独立固体 solid。 | 防震 V、防潮 D | X／XL | 后续专项，未制造 |
 | [VBS Harvest 围护周转柜](<绿洲农业联盟/Harvest 围护周转柜/README.md>) | 独立固体 solid。 | 防潮 D | S／M／L | 本期物品，可制造 |
 | [HEC Apollo 封装敏感品柜](<赫利俄斯能源集团/Apollo 封装敏感品柜/README.md>) | 独立固体 solid。 | 防潮 D、定向固定 O、易燃保护 I | M／L／X | 本期物品，可制造 |

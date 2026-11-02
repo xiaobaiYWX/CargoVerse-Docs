@@ -5,7 +5,7 @@ Verdant BioSystems（VBS）。更新：2026-10-21。下列是现行主系列。
 | 系列 | 规格 | 当前阶段 |
 | --- | --- | --- |
 | [Aquarium 水生活物舱](<Aquarium 水生活物舱/README.md>) | M／L | 后续专项，未制造 |
-| [BioPod 陆生活物舱](<BioPod 陆生活物舱/README.md>) | S／M／L | 后续专项，未制造 |
+| [BioPod 陆生活物舱](<BioPod 陆生活物舱/README.md>) | S／M／L | 基础装卸验证，正式制造待定 |
 | [Eden 大宗保鲜柜](<Eden 大宗保鲜柜/README.md>) | X／XL | 后续专项，未制造 |
 | [Harvest 围护周转柜](<Harvest 围护周转柜/README.md>) | S／M／L | 本期物品，可制造 |
 
