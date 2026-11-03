@@ -1,58 +1,40 @@
-# VBS BioPod 陆生活物舱 L 型
+# VBS BioPod 陆生运输舱 L 型
 
-> **【验证内容】已接入陆生装卸，使用AUI占位模板；无正式制造配方，最终平衡与专用模板仍待确定。**
+可在测试站制造，装卸验证型号。更新于 2026-11-03。
 
-[绿洲农业联盟](<../README.md>) → [BioPod 陆生活物舱](<README.md>) → L 型
+[系列目录](README.md) · [制造商目录](../README.md)
 
-## 职责与使用边界
+## 定义与承载
 
-活体容量采用总舱位与每物种舱位消耗，只数没有独立上限，字节预算用于后台保护，一柜同种、逐只保存，幼体按成年占用。运输货损对所有存活个体统一扣生命，死亡无任何掉落；详见[生物运输设计](../../../../设计草案/生物运输设计.md)。本系列使用首轮验证舱位和land环境；见[生物运输](../../../../01货柜系统/01核心系统/17_生物运输.md)。
-
-陆生活物的通风、空间与防逃逸舱；保留 S/M/L，按已确认的空间与准入规则配置，最终容量和环境参数待定。
-
-- 目标形态：living 活物（明确陆生适配范围）。
-- 当前 JSON 承载：living；容量与living_chamber同时生效。
-- 当前生效保护：无专用保护。
-- 完整目标保护：防逃逸、通风、环境保温（目标）。
-- 使用边界：不默认适合水生生物、所有实体或大体型；不作为普通干货柜。
-- 典型内容：后续明确清单中的陆生小型与中型动物，按物种舱位消耗与所需运量选 S/M/L。仅为例子，通过准入且满足同等环境条件的生物不因行业或制造商被排除。
-- 当前阶段：装卸验证；正式制造待定。
-
-保护外观不等于程序效果。遮光、温控、生态维持和放射性屏蔽等未列入“当前生效保护”的部分只能作为后续结构预留，不能标成已经实装。
-
-## 定义
-
-| 项目 | 内容 |
+| 项目 | 当前值 |
 | --- | --- |
 | 资源 ID | `cargoverse:vbs/biopod_sd_l` |
-| 定义文件 | [biopod_sd_l.json](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/vbs/biopod_sd_l.json>) |
-| 制造商 | 绿洲农业联盟（`cargoverse:vbs`） |
-| 系列 | BioPod 陆生活物舱 |
-| 尺寸等级 | L |
-| 普通调度点 | 4 |
-| 结算单位 | `cargoverse:void_byte` |
-| 标签 | `series.vbs.biopod`、`validation_content` |
+| 介质 | living |
+| 尺寸 | L |
+| 容量 | 64 舱位 |
+| 定义空重 | 30 Kpg |
+| 调度点 | 4 |
+| 标签 | series.vbs.biopod、validation_content |
 
-## 数值
+实际空重取结构质量与配置空重的较大值，载荷质量另计。固体按冻结组大小计量，流体一桶为 1000 mB，生物按物种舱位确定可装只数。
 
-| 指标 | 当前定义值 |
+## 当前保护能力
+
+| 能力 | 参数 |
 | --- | --- |
-| 容量 | 64 舱位（验证值） |
-| 空柜目标质量 | 150 Kpg |
-| 分类容量修正 | 无，使用定义容量 |
+| 围护 | `level=1` |
+| 密封 | `level=2` |
+| 缓冲衬垫 | `level=1`，`velocity_change_bonus=2` |
+| 真空隔层 | `level=1`，`exchange_time_seconds=240` |
+| 主动调温 | `level=1`，`target_min=5`，`target_max=45`，`rate_per_second=0.3`，`supported_modes=["cooling", "heating"]` |
+| 压力调节 | `level=1`，`target_min=0.5`，`target_max=1.5`，`rate_per_second=0.02`，`supported_modes=["pressurizing", "depressurizing"]` |
+| 遮光结构 | `level=1`，`reduction=15` |
 
-空重为配置目标，实际基础质量取模板结构质量与配置空重的较大值；载货质量另算。型号 ID 的后缀不替代实际尺寸或接口。
+完整运输条件随货物冻结，保护能力影响对应的围护、密封或内部环境求值。设备初始按需自动工作，实际降温与调压需要时间。
 
-## CargoClass 兼容与保护
-
-仅允许living活体；不能装入普通物品或Fluid。
-
-当前生效保护：无。
-
-设计缺陷：无。未实现的目标保护不产生程序效果；准入与完整组件校验仍独立执行。
+生活环境与原生数据预算见下方当前 JSON。
 
 ## 结构模板
-
 | 项目 | 当前事实／制作目标 |
 | --- | --- |
 | 定义 | [cargoverse:vbs/biopod_sd_l](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/vbs/biopod_sd_l.json>) |
@@ -66,25 +48,27 @@
 
 只读结构检查：包络 11×6×7；标准对接接口×6；质量占位 2 个；分类占位 2 个；警示占位 10 个（槽号 0／1／2／3／4）；实体 0 个。这不是碰撞、实际质量、密封性或 Sable 连接验收。
 
-## 制造与投放
+## 制造配方与投放
 
-当前无制造配方，不能把占位结构当作已开放产品。材料、费用、许可证和投放需在专项设计完成后明确，不从旧版成本或规格自动推导。
-
-[统一制造与投放索引](<../../../08_货柜制造台/制造配方与投放总表.md>)。
+| 目录 | 许可证 | 繁荣等级 | 加工费 VB | 实体材料 |
+| --- | --- | ---: | ---: | --- |
+| [all_containers](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>) | L | 2 | 640 | minecraft:iron_ingot × 64、minecraft:glass × 16、minecraft:blue_ice × 4、create:fluid_pipe × 4、minecraft:white_wool × 8、minecraft:hay_block × 8 |
 
 ## 当前 JSON
+
+[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/vbs/biopod_sd_l.json>)
 
 ```json
 {
   "schema_version": 1,
   "template": "cargoverse:cargo/aui/atlas/aui_atlas_sd_l",
   "manufacturer": "cargoverse:vbs",
-  "display_name": "VBS BioPod 陆生活物舱 L 型",
+  "display_name": "VBS BioPod 陆生运输舱 L 型",
   "description": "陆生活物舱，当前使用同规格AUI占位结构；舱位与材料为首轮验证参数。",
   "size_class": "L",
   "trade_currency": "cargoverse:void_byte",
   "dispatch_points": 4,
-  "empty_mass": 150,
+  "empty_mass": 30,
   "allowed_cargo_classes": [
     "living"
   ],
@@ -100,12 +84,50 @@
     "environment": "land",
     "max_entity_bytes": 65536,
     "max_total_bytes": 1048576
+  },
+  "abilities": {
+    "cargoverse:containment": {
+      "level": 1
+    },
+    "cargoverse:sealing": {
+      "level": 2
+    },
+    "cargoverse:cushioning": {
+      "level": 1,
+      "velocity_change_bonus": 2
+    },
+    "cargoverse:vacuum_insulation": {
+      "level": 1,
+      "exchange_time_seconds": 240
+    },
+    "cargoverse:thermal_control": {
+      "level": 1,
+      "target_min": 5,
+      "target_max": 45,
+      "rate_per_second": 0.3,
+      "supported_modes": [
+        "cooling",
+        "heating"
+      ]
+    },
+    "cargoverse:pressure_control": {
+      "level": 1,
+      "target_min": 0.5,
+      "target_max": 1.5,
+      "rate_per_second": 0.02,
+      "supported_modes": [
+        "pressurizing",
+        "depressurizing"
+      ]
+    },
+    "cargoverse:light_blocking": {
+      "level": 1,
+      "reduction": 15
+    }
   }
 }
 ```
 
-## 验证边界
+## 实机验收
 
-占位结构可加载不表示目标能力可用；专用模板、容量、保护、装卸和实机验证必须分别完成。已有物理货柜不因文档调整或重载自动换壳。
-
-[返回系列](<README.md>) · [返回制造商](<../README.md>)
+模板装配、满载起吊、对接及持续航程需在游戏中核验。当前数值以数据包配置为准。

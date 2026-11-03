@@ -1,56 +1,36 @@
-# HEC Apollo 封装敏感品柜 X 型
+# HEC Apollo 温稳封装柜 X 型
 
-> **【已实现】实际物品货柜，已采用最终结构。**
+可制造。更新于 2026-11-03。
 
-[赫利俄斯能源集团](<../README.md>) → [Apollo 封装敏感品柜](<README.md>) → X 型
+[系列目录](README.md) · [制造商目录](../README.md)
 
-## 职责与使用边界
+## 定义与承载
 
-HEC 基础柜及封装易燃内容运输；支持普通整件品，以额外保护换空重与投入，不是裸液体罐。
-
-- 目标形态：独立固体 solid。
-- 当前 JSON 承载：独立固体 solid。
-- 当前生效保护：防潮 D、定向固定 O、易燃保护 I。
-- 完整目标保护：防潮、定向固定、易燃保护。
-- 使用边界：不等于防爆、液体罐或抗所有腐蚀；无温控。
-- 典型内容：封装试剂、药瓶、可燃固体，也可装普通工具和木料。仅为例子，同形态同条件的物品不因行业或制造商被排除。
-- 当前阶段：本期物品，可制造。
-
-保护外观不等于程序效果。遮光、温控、生态维持和放射性屏蔽等未列入“当前生效保护”的部分只能作为后续结构预留，不能标成已经实装。
-
-## 定义
-
-| 项目 | 内容 |
+| 项目 | 当前值 |
 | --- | --- |
 | 资源 ID | `cargoverse:hec/apollo_sd_l` |
-| 定义文件 | [apollo_sd_l.json](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/apollo_sd_l.json>) |
-| 制造商 | 赫利俄斯能源集团（`cargoverse:hec`） |
-| 系列 | Apollo 封装敏感品柜 |
-| 尺寸等级 | X |
-| 普通调度点 | 6 |
-| 结算单位 | `cargoverse:void_byte` |
-| 标签 | `series.hec.apollo` |
+| 介质 | solid |
+| 尺寸 | X |
+| 容量 | 550 组 |
+| 定义空重 | 245 Kpg |
+| 调度点 | 6 |
+| 标签 | series.hec.apollo |
 
-## 数值
+实际空重取结构质量与配置空重的较大值，载荷质量另计。固体按冻结组大小计量，流体一桶为 1000 mB，生物按物种舱位确定可装只数。
 
-| 指标 | 当前定义值 |
+## 当前保护能力
+
+| 能力 | 参数 |
 | --- | --- |
-| 容量 | 550 个实际物品 |
-| 空柜目标质量 | 245 Kpg |
-| 分类容量修正 | 无，使用定义容量 |
+| 围护 | `level=2` |
+| 密封 | `level=2` |
+| 真空隔层 | `level=1`，`exchange_time_seconds=240` |
+| 主动调温 | `level=2`，`target_min=0`，`target_max=60`，`rate_per_second=0.3`，`supported_modes=["cooling", "heating"]` |
+| 遮光结构 | `level=1`，`reduction=15` |
 
-空重为配置目标，实际基础质量取模板结构质量与配置空重的较大值；载货质量另算。型号 ID 的后缀不替代实际尺寸或接口。
-
-## CargoClass 兼容与保护
-
-允许：独立固体（solid）。
-
-当前生效保护：`cargoverse:moisture_proof`、`cargoverse:keep_upright`、`cargoverse:flammable`。
-
-设计缺陷：无。未实现的目标保护不产生程序效果；准入与完整组件校验仍独立执行。
+完整运输条件随货物冻结，保护能力影响对应的围护、密封或内部环境求值。设备初始按需自动工作，实际降温与调压需要时间。
 
 ## 结构模板
-
 | 项目 | 实际配置 |
 | --- | --- |
 | 定义 | [cargoverse:hec/apollo_sd_l](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/apollo_sd_l.json>) |
@@ -61,25 +41,23 @@ HEC 基础柜及封装易燃内容运输；支持普通整件品，以额外保�
 | 实际接口 | 重型连接点×4 |
 | 运行标记 | 分类 6、质量 4、词条 10（0～4 齐全） |
 
-## 制造与投放
+## 制造配方与投放
 
-材料来自操作玩家物品栏，资金使用 VB；不扣贸易点仓库物品。同型号的各站实际配置如下，测试目录不等于正式投放。
-
-| 制造目录 | 许可 | 最低繁荣 | 加工费 VB | 物品材料 |
+| 目录 | 许可证 | 繁荣等级 | 加工费 VB | 实体材料 |
 | --- | --- | ---: | ---: | --- |
-| [正式：factory/sky_station/chemical_works](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/factory/sky_station/chemical_works.json>) | X | 2 | 440 | `minecraft:iron_ingot`×64、`minecraft:copper_ingot`×32、`minecraft:glass`×16、`minecraft:redstone`×8 |
-| [测试：market/test_station/all_containers](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>) | X | 2 | 440 | `minecraft:iron_ingot`×64、`minecraft:copper_ingot`×32、`minecraft:glass`×16、`minecraft:redstone`×8 |
-
-[统一制造与投放索引](<../../../08_货柜制造台/制造配方与投放总表.md>)。
+| [chemical_works](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/factory/sky_station/chemical_works.json>) | X | 2 | 510 | minecraft:iron_ingot × 64、minecraft:copper_ingot × 32、minecraft:glass × 16、minecraft:redstone × 8、minecraft:blue_ice × 7 |
+| [all_containers](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>) | X | 2 | 510 | minecraft:iron_ingot × 64、minecraft:copper_ingot × 32、minecraft:glass × 16、minecraft:redstone × 8、minecraft:blue_ice × 7 |
 
 ## 当前 JSON
+
+[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/apollo_sd_l.json>)
 
 ```json
 {
   "schema_version": 1,
   "template": "cargoverse:cargo/hec/reactor/hec_reactor_hd_x",
   "manufacturer": "cargoverse:hec",
-  "display_name": "HEC Apollo 封装敏感品柜 X 型",
+  "display_name": "HEC Apollo 温稳封装柜 X 型",
   "description": "实际物品运输货柜；承载形态与运输保护以本定义为准。",
   "size_class": "X",
   "trade_currency": "cargoverse:void_byte",
@@ -89,21 +67,41 @@ HEC 基础柜及封装易燃内容运输；支持普通整件品，以额外保�
   "allowed_cargo_classes": [
     "solid"
   ],
-  "special_designs": [
-    "cargoverse:moisture_proof",
-    "cargoverse:keep_upright",
-    "cargoverse:flammable"
-  ],
+  "special_designs": [],
   "design_defects": [],
   "tags": [
     "series.hec.apollo"
   ],
-  "cargo_class_capacity_modifiers": {}
+  "cargo_class_capacity_modifiers": {},
+  "abilities": {
+    "cargoverse:containment": {
+      "level": 2
+    },
+    "cargoverse:sealing": {
+      "level": 2
+    },
+    "cargoverse:vacuum_insulation": {
+      "level": 1,
+      "exchange_time_seconds": 240
+    },
+    "cargoverse:thermal_control": {
+      "level": 2,
+      "target_min": 0,
+      "target_max": 60,
+      "rate_per_second": 0.3,
+      "supported_modes": [
+        "cooling",
+        "heating"
+      ]
+    },
+    "cargoverse:light_blocking": {
+      "level": 1,
+      "reduction": 15
+    }
+  }
 }
 ```
 
-## 验证边界
+## 实机验收
 
-实际结构与型号参数以当前定义和模板为准；静态校验不代替碰撞、对接、Sable 装配及满载运输实测。已有物理货柜不因文档调整或重载自动换壳。
-
-[返回系列](<README.md>) · [返回制造商](<../README.md>)
+模板装配、满载起吊、对接及持续航程需在游戏中核验。当前数值以数据包配置为准。
