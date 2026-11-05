@@ -1,6 +1,6 @@
 # 测试贸易点 B · 报价表
 
-本站出售 78 种，收购 80 种。另一站提供反向报价。物品按组、流体按桶结算。两站共用 54 款货柜制造目录。
+本站出售 78 种，收购 79 种。另一站提供反向报价。物品按组、流体按桶结算。两站共用 54 款货柜制造目录。
 
 指令测试站的收购按测试站身份结算。自然目的地的经验奖励须在自然站验证。
 
@@ -166,7 +166,6 @@
 | aeronautics:propeller_bearing | 195 | 0／6／4 |
 | aeronautics:wooden_propeller | 125 | 0／5／4 |
 | simulated:rope_connector | 50 | 0／4／3 |
-| cargoverse:magma_gas | 6 | 0／1／1 |
 | minecraft:water | 5 | 0／1／1 |
 | minecraft:milk | 10 | 0／1／1 |
 | create:chocolate | 26 | 0／1／1 |
