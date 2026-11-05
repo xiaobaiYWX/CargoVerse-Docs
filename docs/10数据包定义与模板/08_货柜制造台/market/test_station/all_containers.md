@@ -1,18 +1,62 @@
-# 测试全型号货柜制造目录
+# A／B测试贸易点蓝图目录
 
-更新：2026-10-23。A／B 指令测试站共用 `cargoverse:market/test_station/all_containers`，当前覆盖 **49 款：45 款固体、4 款液体**。两站同时提供以下四款液体柜，不参与商品买卖的 A／B 分组。
+A／B 指令测试站共用`cargoverse:market/test_station/all_containers`，当前覆盖54款可制造货柜。大型终端按此表收取打印费；材料不在打印阶段扣除。货柜结构、容量、质量与能力见[现行货柜定义](../../../03_货柜/README.md)，材料见[独立制造配方](../../../15_货柜制造配方/README.md)。
 
-运行文件：[all_containers.json](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>)。完整配方见[制造配方与投放总表](<../../制造配方与投放总表.md>)；此处仅汇总液体测试范围。
+单方块蓝图测试工具不使用此表；它自动枚举全部有效制造配方，供创造玩家或管理员免费领取。
 
-| 制造商与系列 | 型号 | 定义 ID | 容量 | 空重 Kpg | 调度点 | 许可／最低繁荣度 |
-| --- | --- | --- | ---: | ---: | ---: | --- |
-| HRI Crucible 衬层液体罐柜 L 型 | L | `cargoverse:hri/crucible_si_l` | 240000 mB | 170 | 4 | L／2 |
-| HRI Crucible 衬层液体罐柜 M 型 | M | `cargoverse:hri/crucible_si_m` | 120000 mB | 80 | 2 | M／1 |
-| SPL Cistern 标准液体罐柜 L 型 | L | `cargoverse:spl/cistern_sd_l` | 240000 mB | 140 | 4 | L／2 |
-| SPL Cistern 标准液体罐柜 M 型 | M | `cargoverse:spl/cistern_sd_m` | 120000 mB | 65 | 2 | M／1 |
-
-当前 M 型测试配方为铁锭 32、橡木木板 16、玻璃 8、红石 4，加工费 160 VB；L 型为上述材料各两倍，加工费 320 VB。正常检查许可、材料、加工费和调度能力；测试站初始繁荣度 5 已满足两种配方门槛。
-
-四款均使用同规格 AUI Atlas 占位结构，容量定义 1 对应 1000 mB。Crucible 当前没有已生效的衬层／耐腐蚀保护，不因系列名称自动具备能力。制造出的液体柜仅承载液体；“液体”不限制可配置的运输词条。
-
-本目录已与源码及 build/resources/main 中的构建资源核对一致。尚未在本轮进入游戏进行制造操作；运行中的世界须使用最新资源后验证。自然站配方与气体／生物占位型号不因测试目录开放而自动投放。
+| 货柜定义 | 打印许可 | 最低繁荣 | 打印费 VB |
+| --- | --- | ---: | ---: |
+| `cargoverse:aui/atlas_sd_l` | L | 2 | 320 |
+| `cargoverse:aui/atlas_sd_m` | M | 1 | 160 |
+| `cargoverse:aui/atlas_sd_s` | S | 0 | 80 |
+| `cargoverse:aui/atlas_sd_x` | X | 3 | 560 |
+| `cargoverse:aui/hermes_mc_l` | L | 2 | 440 |
+| `cargoverse:aui/hermes_mc_m` | M | 1 | 220 |
+| `cargoverse:aui/hermes_mc_s` | S | 0 | 110 |
+| `cargoverse:aui/titan_hd_l` | L | 2 | 400 |
+| `cargoverse:aui/titan_hd_x` | X | 3 | 700 |
+| `cargoverse:aui/titan_hd_xl` | XL | 4 | 1200 |
+| `cargoverse:aui/vulcan_sd_l` | L | 2 | 560 |
+| `cargoverse:aui/vulcan_sd_m` | M | 0 | 280 |
+| `cargoverse:aui/vulcan_sd_x` | X | 3 | 980 |
+| `cargoverse:bds/bastion_mc_l` | L | 2 | 680 |
+| `cargoverse:bds/bastion_mc_x` | X | 3 | 1190 |
+| `cargoverse:bds/fortress_hd_xl` | XL | 4 | 2520 |
+| `cargoverse:bds/sentinel_mc_m` | M | 1 | 320 |
+| `cargoverse:bds/sentinel_mc_s` | S | 0 | 160 |
+| `cargoverse:dmc/boreal_sd_l` | L | 2 | 400 |
+| `cargoverse:dmc/boreal_sd_m` | M | 0 | 200 |
+| `cargoverse:dmc/corevault_sd_m` | M | 1 | 300 |
+| `cargoverse:dmc/corevault_sd_s` | S | 0 | 150 |
+| `cargoverse:dmc/silo_sd_l` | L | 2 | 320 |
+| `cargoverse:dmc/silo_sd_x` | X | 3 | 980 |
+| `cargoverse:dmc/silo_sd_xl` | XL | 4 | 1680 |
+| `cargoverse:dmc/titanhaul_hd_x` | X | 3 | 1050 |
+| `cargoverse:dmc/titanhaul_hd_xl` | XL | 4 | 1800 |
+| `cargoverse:hec/apollo_sd_l` | X | 2 | 510 |
+| `cargoverse:hec/apollo_sd_m` | L | 1 | 260 |
+| `cargoverse:hec/apollo_sd_s` | M | 0 | 130 |
+| `cargoverse:hec/boreas_hd_l` | L | 2 | 400 |
+| `cargoverse:hec/boreas_hd_m` | M | 1 | 200 |
+| `cargoverse:hri/crucible_si_l` | L | 2 | 440 |
+| `cargoverse:hri/crucible_si_m` | M | 1 | 220 |
+| `cargoverse:hri/explorer_si_l` | L | 2 | 920 |
+| `cargoverse:hri/explorer_si_m` | M | 1 | 460 |
+| `cargoverse:hri/explorer_si_s` | S | 0 | 230 |
+| `cargoverse:rex/reliquary_lm_m` | M | 1 | 200 |
+| `cargoverse:rex/reliquary_lm_s` | S | 0 | 100 |
+| `cargoverse:rex/salvage_lm_l` | L | 2 | 320 |
+| `cargoverse:rex/salvage_lm_m` | M | 1 | 160 |
+| `cargoverse:rex/salvage_lm_s` | S | 0 | 80 |
+| `cargoverse:spl/cargo_mc_l` | L | 2 | 280 |
+| `cargoverse:spl/cistern_sd_l` | L | 2 | 360 |
+| `cargoverse:spl/cistern_sd_m` | M | 1 | 180 |
+| `cargoverse:spl/courier_mc_m` | M | 1 | 120 |
+| `cargoverse:spl/courier_mc_s` | S | 0 | 60 |
+| `cargoverse:spl/express_mc_s` | S | 0 | 110 |
+| `cargoverse:vbs/biopod_sd_l` | L | 2 | 640 |
+| `cargoverse:vbs/biopod_sd_m` | M | 1 | 320 |
+| `cargoverse:vbs/biopod_sd_s` | S | 0 | 160 |
+| `cargoverse:vbs/harvest_lm_l` | L | 2 | 400 |
+| `cargoverse:vbs/harvest_lm_m` | M | 1 | 200 |
+| `cargoverse:vbs/harvest_lm_s` | S | 0 | 100 |
