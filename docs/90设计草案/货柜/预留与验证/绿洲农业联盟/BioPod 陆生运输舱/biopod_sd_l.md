@@ -1,4 +1,4 @@
-# VBS BioPod 陆生运输舱 L 型
+# VBS BioPod 生物运输舱 L 型
 
 > **非正式内容：测试验证，非正式；不列入正式型号与制作缺失数。** 核对：2026-11-06。
 
@@ -34,7 +34,7 @@
 
 完整运输条件随货物冻结，保护能力影响对应的围护、密封或内部环境求值。设备初始按需自动工作，实际降温与调压需要时间。
 
-生活环境与原生数据预算见下方当前 JSON。
+通用生物准入与原生数据预算见下方当前 JSON。
 
 ## 结构模板
 
@@ -57,7 +57,7 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 
 | 目录 | 许可证 | 繁荣等级 | 加工费 VB | 实体材料 |
 | --- | --- | ---: | ---: | --- |
-| [all_containers](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>) | L | 2 | 640 | minecraft:iron_ingot × 64、minecraft:glass × 16、minecraft:blue_ice × 4、create:fluid_pipe × 4、minecraft:white_wool × 8、minecraft:hay_block × 8 |
+| [独立制造配方](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_manufacturing_recipes/vbs/biopod_sd_l.json>) | L | 2 | 640 | minecraft:iron_ingot × 64、minecraft:glass × 16、minecraft:blue_ice × 4、create:fluid_pipe × 4、minecraft:white_wool × 8、minecraft:hay_block × 8 |
 
 ## 当前配置摘录
 
@@ -68,7 +68,7 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
   "schema_version": 1,
   "template": "cargoverse:cargo/aui/atlas/aui_atlas_sd_l",
   "manufacturer": "cargoverse:vbs",
-  "display_name": "VBS BioPod 陆生运输舱 L 型",
+  "display_name": "VBS BioPod 生物运输舱 L 型",
   "size_class": "L",
   "trade_currency": "cargoverse:void_byte",
   "dispatch_points": 4,
@@ -85,7 +85,6 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
   "cargo_class_capacity_modifiers": {},
   "capacity": 64,
   "living_chamber": {
-    "environment": "land",
     "max_entity_bytes": 65536,
     "max_total_bytes": 1048576
   },
