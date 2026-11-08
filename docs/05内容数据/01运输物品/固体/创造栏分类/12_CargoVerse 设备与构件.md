@@ -1,6 +1,6 @@
 # CargoVerse 设备与构件
 
-更新：2026-11-07。本页 141 个显式属性 ID；这是查阅分组，不是运行时运输分类。
+更新：2026-11-09。本页 143 个显式属性 ID；这是查阅分组，不是运行时运输分类。
 
 ## 专项细化重点
 
@@ -12,6 +12,8 @@
 
 | 物品／ID | 默认组大小 | 每组 Kpg | 准入 | 当前运输条件及参数 | 归类／获取说明 | 属性 |
 | --- | ---: | ---: | --- | --- | --- | --- |
+| 货柜蓝图 · `cargoverse:cargo_blueprint` | 1 | 0.1 | standard | `keep_dry` `{"max_humidity":70,"preferred_target":50,"loss":{"grace_ticks":2400,"interval_ticks":9600,"amount":1}}` | 玩家蓝图；与空白／已写入组件共用物品属性 | [JSON](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargoverse_item_properties/solid/cargo_blueprint.json>) |
+| 货柜搭建器 · `cargoverse:cargo_builder` | 64 | 5 | standard | 无 | 固定施工设备 | [JSON](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargoverse_item_properties/solid/cargo_builder.json>) |
 | 黑色货柜方块 · `cargoverse:cargo_block_black` | 64 | 1.5 | standard | 无 | 项目模组分组；获取渠道须分别核对合成、交易、掉落与设备产出 | [JSON](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargoverse_item_properties/solid/cargo_block_black.json>) |
 | 蓝色货柜方块 · `cargoverse:cargo_block_blue` | 64 | 1.5 | standard | 无 | 项目模组分组；获取渠道须分别核对合成、交易、掉落与设备产出 | [JSON](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargoverse_item_properties/solid/cargo_block_blue.json>) |
 | 棕色货柜方块 · `cargoverse:cargo_block_brown` | 64 | 1.5 | standard | 无 | 项目模组分组；获取渠道须分别核对合成、交易、掉落与设备产出 | [JSON](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargoverse_item_properties/solid/cargo_block_brown.json>) |
