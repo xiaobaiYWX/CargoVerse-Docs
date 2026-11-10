@@ -1,6 +1,6 @@
 # A／B测试贸易点蓝图目录
 
-A／B 指令测试站共用`cargoverse:market/test_station/all_containers`，当前覆盖62款可制造货柜。大型终端按此表收取打印费；材料不在打印阶段扣除。货柜结构、容量、质量与能力见[现行货柜定义](<../../../../02货柜/README.md>)，材料见[独立制造配方](<../../../../../04数据规范/货柜/02_制造配方.md>)。
+A／B 指令测试站共用`cargoverse:market/test_station/all_containers`，当前覆盖63款可制造货柜。大型终端按此表收取打印费；材料不在打印阶段扣除。货柜结构、容量、质量与能力见[现行货柜定义](<../../../../02货柜/README.md>)，材料见[独立制造配方](<../../../../../04数据规范/货柜/02_制造配方.md>)。
 
 单方块蓝图测试工具不使用此表；它自动枚举全部有效制造配方，供创造玩家或管理员免费领取。
 
@@ -38,6 +38,7 @@ A／B 指令测试站共用`cargoverse:market/test_station/all_containers`，当
 | `cargoverse:hec/apollo_sd_s` | M | 0 | 130 |
 | `cargoverse:hec/boreas_hd_l` | L | 2 | 400 |
 | `cargoverse:hec/boreas_hd_m` | M | 1 | 200 |
+| `cargoverse:hec/boreas_hd_s` | S | 0 | 100 |
 | `cargoverse:hri/crucible_si_l` | L | 2 | 440 |
 | `cargoverse:hri/crucible_si_m` | M | 1 | 220 |
 | `cargoverse:hri/explorer_si_l` | L | 2 | 920 |

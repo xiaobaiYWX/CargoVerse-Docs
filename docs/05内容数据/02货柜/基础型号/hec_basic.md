@@ -1,6 +1,9 @@
 # 赫利俄斯能源集团基础货柜
 
-> **模板核对（2026-11-06）：同系列同规格 NBT 已有／引用错误。** 当前引用 `cargoverse:cargo/hec/reactor/hec_reactor_hd_m`，真实系列 hec/reactor；同系列同规格模板 `cargoverse:cargo/hec/apollo/hec_apollo_sd_m`。
+> **当前状态：基础型，可制造。模板：已绑定指定模板。**
+> 制作安排：装配、对接与满载运输待实机验证。更新：2026-11-09。
+
+> **模板核对（2026-11-09）：已按指定分配绑定 Reactor HD-M，无缺失。**
 
 更新：2026-11-05。
 

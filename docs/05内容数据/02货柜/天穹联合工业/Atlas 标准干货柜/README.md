@@ -26,9 +26,9 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 
 | 文件／资源 ID | 接口 | 规格 | 当前引用情况 |
 | --- | --- | --- | --- |
-| [cargoverse:cargo/aui/atlas/aui_atlas_sd_l](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_l.nbt>) | SD | L | `cargoverse:aui/atlas_sd_l`、`cargoverse:aui/nomad_hd_l`、`cargoverse:dmc/titanhaul_hd_l`、`cargoverse:hec/boreas_hd_l`、`cargoverse:hec/cryovault_sd_l`、`cargoverse:hec/reactor_hd_l`、`cargoverse:hec/reclaimer_sd_l`、`cargoverse:hri/crucible_si_l`、`cargoverse:spl/cistern_sd_l`、`cargoverse:vbs/biopod_sd_l` |
-| [cargoverse:cargo/aui/atlas/aui_atlas_sd_m](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_m.nbt>) | SD | M | `cargoverse:aui/atlas_sd_m`、`cargoverse:aui/nomad_hd_m`、`cargoverse:hec/boreas_hd_m`、`cargoverse:hec/cryovault_sd_m`、`cargoverse:hec/reactor_hd_m`、`cargoverse:hec/reclaimer_sd_m`、`cargoverse:hri/archive_si_m`、`cargoverse:hri/crucible_si_m`、`cargoverse:spl/cargo_mc_m`、`cargoverse:spl/cistern_sd_m`、`cargoverse:vbs/biopod_sd_m` |
-| [cargoverse:cargo/aui/atlas/aui_atlas_sd_s](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_s.nbt>) | SD | S | `cargoverse:aui/atlas_sd_s`、`cargoverse:aui/starter_atlas_sd_s`、`cargoverse:hec/cryovault_sd_s`、`cargoverse:hri/archive_si_s`、`cargoverse:vbs/biopod_sd_s` |
+| [cargoverse:cargo/aui/atlas/aui_atlas_sd_l](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_l.nbt>) | SD | L | `cargoverse:aui/atlas_sd_l`、`cargoverse:aui/nomad_hd_l`、`cargoverse:dmc/titanhaul_hd_l`、`cargoverse:hec/boreas_hd_l`、`cargoverse:hec/cryovault_sd_l`、`cargoverse:hec/reactor_hd_l`、`cargoverse:hec/reclaimer_sd_l`、`cargoverse:hri/crucible_si_l`、`cargoverse:spl/cistern_sd_l` |
+| [cargoverse:cargo/aui/atlas/aui_atlas_sd_m](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_m.nbt>) | SD | M | `cargoverse:aui/atlas_sd_m`、`cargoverse:aui/nomad_hd_m`、`cargoverse:hec/boreas_hd_m`、`cargoverse:hec/cryovault_sd_m`、`cargoverse:hec/reactor_hd_m`、`cargoverse:hec/reclaimer_sd_m`、`cargoverse:hri/archive_si_m`、`cargoverse:hri/crucible_si_m`、`cargoverse:spl/cargo_mc_m`、`cargoverse:spl/cistern_sd_m` |
+| [cargoverse:cargo/aui/atlas/aui_atlas_sd_s](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_s.nbt>) | SD | S | `cargoverse:aui/atlas_sd_s`、`cargoverse:aui/starter_atlas_sd_s`、`cargoverse:hec/cryovault_sd_s`、`cargoverse:hri/archive_si_s` |
 | [cargoverse:cargo/aui/atlas/aui_atlas_sd_x](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_x.nbt>) | SD | X | `cargoverse:aui/atlas_sd_x`、`cargoverse:aui/nomad_hd_x`、`cargoverse:hec/reactor_hd_x`、`cargoverse:vbs/eden_hd_x` |
 | [cargoverse:cargo/aui/atlas/aui_atlas_sd_xl](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_xl.nbt>) | SD | XL | `cargoverse:vbs/eden_hd_xl` |
 
@@ -36,6 +36,18 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 
 `cargoverse:aui/starter_atlas_sd_s`，实际 S 型：**同系列同规格／已绑定**。当前模板 `cargoverse:cargo/aui/atlas/aui_atlas_sd_s`；同系列目标 `cargoverse:cargo/aui/atlas/aui_atlas_sd_s`。基础变体不增加系列或缺失规格计数。
 
-预留、关闭、测试型号不列入本页正式规格；参见[非正式内容](<../../../../90设计草案/货柜/预留与验证/README.md>)。
+本系列全部定义及未完成工作见下方状态表；关闭记录不属于当前制作任务。
 
 [制造商产品线](../README.md) · [正式目录](../../README.md)
+
+## 状态与制作安排
+
+同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
+
+| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
+| --- | --- | --- | --- | --- |
+| [cargoverse:aui/atlas_sd_l](<atlas_sd_l.md>) | L | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:aui/atlas_sd_m](<atlas_sd_m.md>) | M | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:aui/atlas_sd_s](<atlas_sd_s.md>) | S | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:aui/atlas_sd_x](<atlas_sd_x.md>) | X | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:aui/starter_atlas_sd_s](<../../基础型号/aui_basic.md>) | S | 基础型，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |

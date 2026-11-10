@@ -34,6 +34,21 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 
 `cargoverse:vbs/starter_harvest_lm_s`，实际 S 型：**同系列同规格／已绑定**。当前模板 `cargoverse:cargo/vbs/harvest/vbs_harvest_lm_s`；同系列目标 `cargoverse:cargo/vbs/harvest/vbs_harvest_lm_s`。基础变体不增加系列或缺失规格计数。
 
-预留、关闭、测试型号不列入本页正式规格；参见[非正式内容](<../../../../90设计草案/货柜/预留与验证/README.md>)。
+本系列全部定义及未完成工作见下方状态表；关闭记录不属于当前制作任务。
 
 [制造商产品线](../README.md) · [正式目录](../../README.md)
+
+## 状态与制作安排
+
+同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
+
+| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
+| --- | --- | --- | --- | --- |
+| [cargoverse:vbs/eden_hd_x](<eden_hd_x.md>) | X | 暂不开放，制造关闭 | 缺本系列模板 | 关闭记录；不下达补建任务 |
+| [cargoverse:vbs/eden_hd_xl](<eden_hd_xl.md>) | XL | 暂不开放，制造关闭 | 缺本系列模板 | 关闭记录；不下达补建任务 |
+| [cargoverse:vbs/harvest_lm_l](<harvest_lm_l.md>) | L | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:vbs/harvest_lm_m](<harvest_lm_m.md>) | M | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:vbs/harvest_lm_s](<harvest_lm_s.md>) | S | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:vbs/starter_harvest_lm_s](<../../基础型号/vbs_basic.md>) | S | 基础型，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+
+X／XL 以 eden_hd_x／eden_hd_xl 保留关闭定义，当前容量为 480／800 组。720／1200 组仅为未采用的大容量候选，不能用于当前制造或验收。是否重启及自有模板制作须先确定；现阶段不下达补建任务。

@@ -1,6 +1,9 @@
 # HEC Apollo 温稳封装柜 L 型
 
-> 正式型号；**同系列同规格 NBT 已有／引用错误**。 核对：2026-11-06。
+> **当前状态：已配置，可制造。模板：已绑定指定模板。**
+> 制作安排：装配、对接与满载运输待实机验证。更新：2026-11-09。
+
+> 正式型号；**指定模板已绑定，无缺失**。核对：2026-11-09。
 
 可制造。更新于 2026-11-03。
 
@@ -34,20 +37,13 @@
 
 ## 结构模板
 
+按 2026-11-09 明确指定的资产分配：Boreas 使用历史 Apollo SD 的 S／M／L 模板；Apollo 使用 Reactor HD 的 M／L／X 模板。保留 NBT 原文件名和既有定义 ID，这两组映射属于已确认绑定，不再列为模板缺失或引用错误。
+
 | 核验项 | 结果 |
 | --- | --- |
-| 当前定义的设计系列 | `series.hec.apollo` |
 | 当前运行引用 | `cargoverse:cargo/hec/reactor/hec_reactor_hd_l` |
-| NBT 命名的真实归属 | HEC / reactor / HD / L |
-| 系列及规格是否匹配 | **否，不能作为该型号同系列模板** |
-| 同系列同规格 NBT | [cargoverse:cargo/hec/apollo/hec_apollo_sd_l](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/hec/apollo/hec_apollo_sd_l.nbt>) |
-| 制作安排 | 不需补建此规格；需纠正引用并核对接口 |
-
-NBT 的制造商、系列、接口和规格以目录及文件名为准；不同系列不能通过改显示名、改标签或历史合并而互相借用。缺失数按正式产品需要的系列＋规格统计，不把未规划规格算作缺失。
-
-本轮未改 JSON 或 NBT。旧系列模板仍属于其文件名中的系列，不视为本系列资产。
-
-[本系列正式规格](<README.md>)
+| 实际接口与规格 | HD / L |
+| 模板文件 | 已存在，无需补建 |
 
 ## 制造配方与投放
 
@@ -59,7 +55,7 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 
 ## 当前配置摘录
 
-[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/apollo_sd_m.json>)。以下摘录省略旧 description 文案；产品定位以本页为准，运行字段保持工程现状。
+[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/apollo_sd_m.json>)。以下为现行完整定义。
 
 ```json
 {
@@ -67,6 +63,7 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
   "template": "cargoverse:cargo/hec/reactor/hec_reactor_hd_l",
   "manufacturer": "cargoverse:hec",
   "display_name": "HEC Apollo 温稳封装柜 L 型",
+  "description": "实际物品运输货柜；承载形态与运输保护以本定义为准。",
   "size_class": "L",
   "trade_currency": "cargoverse:void_byte",
   "dispatch_points": 4,
@@ -75,8 +72,6 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
   "allowed_cargo_classes": [
     "solid"
   ],
-  "special_designs": [],
-  "design_defects": [],
   "tags": [
     "series.hec.apollo"
   ],
@@ -113,3 +108,5 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 ## 实机验收
 
 模板装配、满载起吊、对接及持续航程需在游戏中核验。当前数值以数据包配置为准。
+
+[系列目录](<README.md>) · [制造商目录](<../README.md>)

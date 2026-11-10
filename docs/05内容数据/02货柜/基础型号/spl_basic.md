@@ -1,5 +1,8 @@
 # 云港物流集团基础货柜
 
+> **当前状态：基础型，可制造。模板：已有本系列模板，引用待调整。**
+> 制作安排：按本型号页面补建或纠正引用。更新：2026-11-09。
+
 > **模板核对（2026-11-06）：同系列同规格 NBT 已有／引用错误。** 当前引用 `cargoverse:cargo/spl/cargo/spl_cargo_mc_s`，真实系列 spl/cargo；同系列同规格模板 `cargoverse:cargo/spl/courier/spl_courier_mc_s`。
 
 更新：2026-11-05。

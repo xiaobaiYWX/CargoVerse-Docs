@@ -33,6 +33,20 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 
 `cargoverse:spl/starter_courier_mc_s`，实际 S 型：**同系列同规格 NBT 已有／引用错误**。当前模板 `cargoverse:cargo/spl/cargo/spl_cargo_mc_s`；同系列目标 `cargoverse:cargo/spl/courier/spl_courier_mc_s`。基础变体不增加系列或缺失规格计数。
 
-预留、关闭、测试型号不列入本页正式规格；参见[非正式内容](<../../../../90设计草案/货柜/预留与验证/README.md>)。
+本系列全部定义及未完成工作见下方状态表；关闭记录不属于当前制作任务。
 
 [制造商产品线](../README.md) · [正式目录](../../README.md)
+
+## 状态与制作安排
+
+同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
+
+| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
+| --- | --- | --- | --- | --- |
+| [cargoverse:spl/cargo_mc_l](<cargo_mc_l.md>) | L | 已配置，可制造 | 缺本系列模板 | 按本型号页面补建或纠正引用 |
+| [cargoverse:spl/cargo_mc_m](<cargo_mc_m.md>) | M | 暂不开放，制造关闭 | 已有本系列模板，引用待调整 | 关闭记录；不下达补建任务 |
+| [cargoverse:spl/courier_mc_m](<courier_mc_m.md>) | M | 已配置，可制造 | 已有本系列模板，引用待调整 | 按本型号页面补建或纠正引用 |
+| [cargoverse:spl/courier_mc_s](<courier_mc_s.md>) | S | 已配置，可制造 | 已有本系列模板，引用待调整 | 按本型号页面补建或纠正引用 |
+| [cargoverse:spl/starter_courier_mc_s](<../../基础型号/spl_basic.md>) | S | 基础型，可制造 | 已有本系列模板，引用待调整 | 按本型号页面补建或纠正引用 |
+
+旧 cargo_mc_m 定义继续关闭；当前生产使用 courier_mc 系列定义。

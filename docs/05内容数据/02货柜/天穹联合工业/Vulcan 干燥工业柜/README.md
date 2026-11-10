@@ -30,6 +30,21 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 | [cargoverse:cargo/aui/vulcan/aui_vulcan_sd_m](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/vulcan/aui_vulcan_sd_m.nbt>) | SD | M | `cargoverse:aui/vulcan_sd_m` |
 | [cargoverse:cargo/aui/vulcan/aui_vulcan_sd_x](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/vulcan/aui_vulcan_sd_x.nbt>) | SD | X | `cargoverse:aui/vulcan_sd_x` |
 
-预留、关闭、测试型号不列入本页正式规格；参见[非正式内容](<../../../../90设计草案/货柜/预留与验证/README.md>)。
+本系列全部定义及未完成工作见下方状态表；关闭记录不属于当前制作任务。
 
 [制造商产品线](../README.md) · [正式目录](../../README.md)
+
+## 状态与制作安排
+
+同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
+
+| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
+| --- | --- | --- | --- | --- |
+| [cargoverse:aui/nomad_hd_l](<nomad_hd_l.md>) | L | 暂不开放，制造关闭 | 已有本系列模板，引用待调整 | 关闭记录；不下达补建任务 |
+| [cargoverse:aui/nomad_hd_m](<nomad_hd_m.md>) | M | 暂不开放，制造关闭 | 已有本系列模板，引用待调整 | 关闭记录；不下达补建任务 |
+| [cargoverse:aui/nomad_hd_x](<nomad_hd_x.md>) | X | 暂不开放，制造关闭 | 已有本系列模板，引用待调整 | 关闭记录；不下达补建任务 |
+| [cargoverse:aui/vulcan_sd_l](<vulcan_sd_l.md>) | L | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:aui/vulcan_sd_m](<vulcan_sd_m.md>) | M | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:aui/vulcan_sd_x](<vulcan_sd_x.md>) | X | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+
+旧 nomad_hd_m／l／x 定义继续关闭；当前生产使用 vulcan_sd 系列定义。

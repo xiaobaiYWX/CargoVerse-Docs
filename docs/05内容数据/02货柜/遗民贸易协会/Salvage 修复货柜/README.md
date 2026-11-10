@@ -34,6 +34,17 @@ NBT 的制造商、系列、接口和规格以目录及文件名为准；不同�
 
 `cargoverse:rex/starter_salvage_lm_s`，实际 S 型：**同系列同规格／已绑定**。当前模板 `cargoverse:cargo/rex/salvage/rex_salvage_lm_s`；同系列目标 `cargoverse:cargo/rex/salvage/rex_salvage_lm_s`。基础变体不增加系列或缺失规格计数。
 
-预留、关闭、测试型号不列入本页正式规格；参见[非正式内容](<../../../../90设计草案/货柜/预留与验证/README.md>)。
+本系列全部定义及未完成工作见下方状态表；关闭记录不属于当前制作任务。
 
 [制造商产品线](../README.md) · [正式目录](../../README.md)
+
+## 状态与制作安排
+
+同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
+
+| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
+| --- | --- | --- | --- | --- |
+| [cargoverse:rex/salvage_lm_l](<salvage_lm_l.md>) | L | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:rex/salvage_lm_m](<salvage_lm_m.md>) | M | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:rex/salvage_lm_s](<salvage_lm_s.md>) | S | 已配置，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+| [cargoverse:rex/starter_salvage_lm_s](<../../基础型号/rex_basic.md>) | S | 基础型，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |

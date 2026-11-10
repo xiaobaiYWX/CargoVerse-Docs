@@ -1,5 +1,8 @@
 # 地平线研究院基础货柜
 
+> **当前状态：基础型，可制造。模板：本系列模板已绑定。**
+> 制作安排：装配、对接与满载运输待实机验证。更新：2026-11-09。
+
 > **模板核对（2026-11-06）：同系列同规格／已绑定。** 当前引用 `cargoverse:cargo/hri/explorer/hri_explorer_si_s`，真实系列 hri/explorer；同系列同规格模板 `cargoverse:cargo/hri/explorer/hri_explorer_si_s`。
 
 更新：2026-11-05。
