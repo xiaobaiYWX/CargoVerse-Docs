@@ -1,7 +1,7 @@
 # AUI Atlas 标准干货柜 M 型
 
 > **当前状态：已配置，可制造。模板：本系列模板已绑定。**
-> 制作安排：装配、对接与满载运输待实机验证。更新：2026-11-09。
+> 制作安排：需制作G2新版模板；以本页G2新版结构模板章节为准。
 
 > 正式型号；**同系列同规格／已绑定**。 核对：2026-11-06。
 
@@ -33,22 +33,25 @@
 
 完整运输条件随货物冻结，保护能力影响对应的围护、密封或内部环境求值。设备初始按需自动工作，实际降温与调压需要时间。
 
-## 结构模板
+## G2新版结构模板
 
-| 核验项 | 结果 |
+**新系列代号：`atlas_g2`；状态：需制作G2新版模板。** 更新：2026-11-12。
+
+| 项目 | 路径／约定 |
 | --- | --- |
-| 当前定义的设计系列 | `series.aui.atlas` |
-| 当前运行引用 | `cargoverse:cargo/aui/atlas/aui_atlas_sd_m` |
-| NBT 命名的真实归属 | AUI / atlas / SD / M |
-| 系列及规格是否匹配 | 是 |
-| 同系列同规格 NBT | [cargoverse:cargo/aui/atlas/aui_atlas_sd_m](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/structure/cargo/aui/atlas/aui_atlas_sd_m.nbt>) |
-| 制作安排 | 不需补建此规格；已绑定 |
+| 新版模板资源 ID | `cargoverse:cargo/aui/atlas_g2/aui_atlas_g2_sd_m` |
+| 游戏导出相对路径 | `generated/cargoverse/structures/cargo/aui/atlas_g2/aui_atlas_g2_sd_m.nbt` |
+| 工程目标相对路径 | `data/cargoverse/structure/cargo/aui/atlas_g2/aui_atlas_g2_sd_m.nbt` |
+| 规格／接口代号 | M／SD |
+| 当前运行模板（旧版参考） | `cargoverse:cargo/aui/atlas/aui_atlas_sd_m` |
+| 稳定货柜定义 ID | `cargoverse:aui/atlas_sd_m`（保留） |
 
-NBT 的制造商、系列、接口和规格以目录及文件名为准；不同系列不能通过改显示名、改标签或历史合并而互相借用。缺失数按正式产品需要的系列＋规格统计，不把未规划规格算作缺失。
+新版均尚未制作或接入。**后续搭建只按本节G2路径命名；旧路径仅用于核对当前运行状态，不再作为补建任务。** 本轮不指定长宽高、轨距或接口坐标，需在标准化尺寸表确认后搭建；接口代号目前沿系列既定命名保留，不代表几何标准已完成。
 
-本轮未改 JSON 或 NBT。旧系列模板仍属于其文件名中的系列，不视为本系列资产。
+完成新模板后逐型号核对标记、归属、对接与结构质量，再切换运行 `template`；缺失模板型号须同时完成验收及制造开放。基础变体共用普通型号同规格G2模板。关闭兼容定义不自动启用。
 
-[本系列正式规格](<README.md>)
+[本系列目录](<README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
+
 
 ## 制造配方与投放
 

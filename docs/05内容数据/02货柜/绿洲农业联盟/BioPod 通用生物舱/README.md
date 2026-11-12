@@ -1,25 +1,25 @@
-# BioPod 通用生物舱
+# VBS BioPod 通用生物舱
 
-更新于 2026-11-09。全部已支持物种使用 living 介质与统一生物舱室，个体数量由舱位和原生数据预算确定。
+更新：2026-11-12。**新版模板系列代号：`biopod_g2`。**
 
-以较轻空重和较多舱位承担常规生物运输。本系列 S／M／L 模板已绑定，沿现有验证投放渠道使用。
+新版制作以本页G2路径为准，旧运行模板与现行数值在逐型号页保留。G2尚未接入，不代表当前制造已关闭。
 
-| 型号 | 舱位 | 配置空重 Kpg | 缓冲增量 | 结构状态 |
-| --- | ---: | ---: | ---: | --- |
-| [S](<biopod_sd_s.md>) | 16 | 6 | +2 | 本系列模板已绑定 |
-| [M](<biopod_sd_m.md>) | 32 | 14 | +2 | 本系列模板已绑定 |
-| [L](<biopod_sd_l.md>) | 64 | 30 | +2 | 本系列模板已绑定 |
+## 系列定位
 
-[制造商目录](<../README.md>)
+通用生物大宗运输，基础缓冲+2、调温稳压与遮光；所有已准入物种共用。
 
-## 状态与制作安排
+## G2规格与逐型号映射
 
-同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
+| 定义详情 | 实际规格 | 新版模板资源 ID | 制作安排 |
+| --- | --- | --- | --- |
+| [cargoverse:vbs/biopod_sd_s](<biopod_sd_s.md>) | S | `cargoverse:cargo/vbs/biopod_g2/vbs_biopod_g2_sd_s` | **待制作** |
+| [cargoverse:vbs/biopod_sd_m](<biopod_sd_m.md>) | M | `cargoverse:cargo/vbs/biopod_g2/vbs_biopod_g2_sd_m` | **待制作** |
+| [cargoverse:vbs/biopod_sd_l](<biopod_sd_l.md>) | L | `cargoverse:cargo/vbs/biopod_g2/vbs_biopod_g2_sd_l` | **待制作** |
+| [cargoverse:vbs/biopod_sd_x](<biopod_sd_x.md>) | X | `cargoverse:cargo/vbs/biopod_g2/vbs_biopod_g2_sd_x` | **待制作** |
+| [cargoverse:vbs/biopod_sd_xl](<biopod_sd_xl.md>) | XL | `cargoverse:cargo/vbs/biopod_g2/vbs_biopod_g2_sd_xl` | **待制作** |
 
-| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
-| --- | --- | --- | --- | --- |
-| [cargoverse:vbs/biopod_sd_l](<biopod_sd_l.md>) | L | 待实运验证，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
-| [cargoverse:vbs/biopod_sd_m](<biopod_sd_m.md>) | M | 待实运验证，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
-| [cargoverse:vbs/biopod_sd_s](<biopod_sd_s.md>) | S | 待实运验证，可制造 | 本系列模板已绑定 | 装配、对接与满载运输待实机验证 |
+未列出的规格未规划。关闭记录不因为分配新代号而加入制作清单；相同目标路径只制作一份。接口命名暂沿既定系列，统一尺寸、接口位置和净空仍须另行确定。
 
-S／M／L 自有模板已绑定，保留 validation_content 状态和现有验证投放。继续验收真实航程、满载起吊、舱位与原生数据预算，不需再制作水生专柜。
+生物采用统一舱室；BioPod强调容量与较轻空重，Aquarium以同档75%舱位和较高空重换取加强缓冲。单只65536字节、整柜1048576字节预算保持现值；具体数值见各型号页。
+
+[制造商目录](../README.md) · [新版系列代号总览](../../新版模板系列代号.md)

@@ -1,33 +1,25 @@
 # HEC Boreas 温控液罐
 
-正式产品线。核对：2026-11-09。**本系列已规划规格均有指定模板，无缺失。**
+更新：2026-11-12。**新版模板系列代号：`boreas_g2`。**
 
-按 2026-11-09 明确指定的资产分配：Boreas 使用历史 Apollo SD 的 S／M／L 模板；Apollo 使用 Reactor HD 的 M／L／X 模板。保留 NBT 原文件名和既有定义 ID，这两组映射属于已确认绑定，不再列为模板缺失或引用错误。
+新版制作以本页G2路径为准，旧运行模板与现行数值在逐型号页保留。G2尚未接入，不代表当前制造已关闭。
 
-## 产品定位
+## 系列定位
 
-温敏工业液体运输，密封2、隔热480秒、主动调温 −20～80 TU、速率0.6 TU/s、遮光15；不提供主动稳压。
+温敏流体大宗运输，保留密封2、隔热480秒、双向调温−20～80TU及遮光15。
 
-## 正式规格与模板
+## G2规格与逐型号映射
 
-| 规格 | 定义 | 指定模板 | 状态 |
+| 定义详情 | 实际规格 | 新版模板资源 ID | 制作安排 |
 | --- | --- | --- | --- |
-| S | [HEC Boreas 温控液罐 S 型](<boreas_hd_s.md>) | `cargoverse:cargo/hec/apollo/hec_apollo_sd_s` | 已绑定，无缺失 |
-| M | [HEC Boreas 温控液罐 M 型](<boreas_hd_m.md>) | `cargoverse:cargo/hec/apollo/hec_apollo_sd_m` | 已绑定，无缺失 |
-| L | [HEC Boreas 温控液罐 L 型](<boreas_hd_l.md>) | `cargoverse:cargo/hec/apollo/hec_apollo_sd_l` | 已绑定，无缺失 |
+| [cargoverse:hec/boreas_hd_s](<boreas_hd_s.md>) | S | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_sd_s` | **待制作** |
+| [cargoverse:hec/boreas_hd_m](<boreas_hd_m.md>) | M | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_sd_m` | **待制作** |
+| [cargoverse:hec/boreas_hd_l](<boreas_hd_l.md>) | L | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_sd_l` | **待制作** |
+| [cargoverse:hec/boreas_hd_x](<boreas_hd_x.md>) | X | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_sd_x` | **待制作** |
+| [cargoverse:hec/boreas_hd_xl](<boreas_hd_xl.md>) | XL | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_sd_xl` | **待制作** |
 
-Boreas 保留 `boreas_hd_*` 定义 ID；实际模板接口为 SD，不由历史 ID 后缀推断接口。S／M／L 容量分别为 60／120／240 桶，定义空重为 45／90／190 Kpg。
+未列出的规格未规划。关闭记录不因为分配新代号而加入制作清单；相同目标路径只制作一份。接口命名暂沿既定系列，统一尺寸、接口位置和净空仍须另行确定。
 
-未列出的规格尚未规划，不计缺失。
+Boreas旧版使用Apollo SD资产；新版回归boreas_g2自身系列，不再新增apollo命名的液罐模板。
 
-[制造商产品线](../README.md) · [正式目录](../../README.md)
-
-## 状态与制作安排
-
-同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
-
-| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
-| --- | --- | --- | --- | --- |
-| [cargoverse:hec/boreas_hd_l](<boreas_hd_l.md>) | L | 已配置，可制造 | 已绑定指定模板 | 装配、对接与满载运输待实机验证 |
-| [cargoverse:hec/boreas_hd_m](<boreas_hd_m.md>) | M | 已配置，可制造 | 已绑定指定模板 | 装配、对接与满载运输待实机验证 |
-| [cargoverse:hec/boreas_hd_s](<boreas_hd_s.md>) | S | 已配置，可制造 | 已绑定指定模板 | 装配、对接与满载运输待实机验证 |
+[制造商目录](../README.md) · [新版系列代号总览](../../新版模板系列代号.md)

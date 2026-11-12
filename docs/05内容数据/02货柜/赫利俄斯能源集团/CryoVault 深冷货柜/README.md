@@ -1,25 +1,23 @@
 # CryoVault 深冷货柜
 
+更新：2026-11-12。**新版模板系列代号：`cryovault_g2`。**
+
+新版制作以本页G2路径为准，旧运行模板与现行数值在逐型号页保留。G2尚未接入，不代表当前制造已关闭。
+
+## 系列定位
+
 **规划型号，当前制造关闭；在正式文档中统一维护。** 更新：2026-11-06。
 
-| 定义 | 状态 | 当前 NBT 归属 | 同系列模板核对 |
+## G2规格与逐型号映射
+
+| 定义详情 | 实际规格 | 新版模板资源 ID | 制作安排 |
 | --- | --- | --- | --- |
-| [HEC CryoVault 深冷货柜 L 型](<cryovault_sd_l.md>) | 关闭／兼容／预留，非正式 | AUI / atlas / SD / L | 同系列同规格 NBT 已有／引用错误 |
-| [HEC CryoVault 深冷货柜 M 型](<cryovault_sd_m.md>) | 关闭／兼容／预留，非正式 | AUI / atlas / SD / M | 同系列同规格 NBT 已有／引用错误 |
-| [HEC CryoVault 深冷货柜 S 型](<cryovault_sd_s.md>) | 关闭／兼容／预留，非正式 | AUI / atlas / SD / S | 同系列同规格 NBT 已有／引用错误 |
+| [cargoverse:hec/cryovault_sd_s](<cryovault_sd_s.md>) | S | `cargoverse:cargo/hec/cryovault_g2/hec_cryovault_g2_sd_s` | 预留，不制作 |
+| [cargoverse:hec/cryovault_sd_m](<cryovault_sd_m.md>) | M | `cargoverse:cargo/hec/cryovault_g2/hec_cryovault_g2_sd_m` | 预留，不制作 |
+| [cargoverse:hec/cryovault_sd_l](<cryovault_sd_l.md>) | L | `cargoverse:cargo/hec/cryovault_g2/hec_cryovault_g2_sd_l` | 预留，不制作 |
 
-此处“同系列”按当前定义标签对照 NBT 实际命名，只记录现状；不把其他名称的 NBT 改归属，也不创建正式补建任务。
+未列出的规格未规划。关闭记录不因为分配新代号而加入制作清单；相同目标路径只制作一份。接口命名暂沿既定系列，统一尺寸、接口位置和净空仍须另行确定。
 
-[型号状态总览](<../../型号状态与制作安排.md>)
+CryoVault S／M／L仍未开放，旧自有模板虽存在但未接入；G2代号仅预留，重新启用须单独核定材料、投放与平衡。
 
-## 状态与制作安排
-
-同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
-
-| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
-| --- | --- | --- | --- | --- |
-| [cargoverse:hec/cryovault_sd_l](<cryovault_sd_l.md>) | L | 暂不开放，制造关闭 | 已有本系列模板，引用待调整 | 关闭记录；不下达补建任务 |
-| [cargoverse:hec/cryovault_sd_m](<cryovault_sd_m.md>) | M | 暂不开放，制造关闭 | 已有本系列模板，引用待调整 | 关闭记录；不下达补建任务 |
-| [cargoverse:hec/cryovault_sd_s](<cryovault_sd_s.md>) | S | 暂不开放，制造关闭 | 已有本系列模板，引用待调整 | 关闭记录；不下达补建任务 |
-
-定位为普通冰和长期冷藏食品的深冷运输候选。目前 S／M／L 数据关闭；本系列 NBT 已存在，但运行引用仍为 Atlas，重新开放前应接入自有模板并核定制造材料、投放与实运平衡。
+[制造商目录](../README.md) · [新版系列代号总览](../../新版模板系列代号.md)

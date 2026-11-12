@@ -1,23 +1,24 @@
-# Aquarium 加强缓冲生物舱
+# VBS Aquarium 加强缓冲生物舱
 
-更新于 2026-11-09。全部已支持物种使用 living 介质与统一生物舱室，个体数量由舱位和原生数据预算确定。
+更新：2026-11-12。**新版模板系列代号：`aquarium_g2`。**
 
-以加强缓冲保护冲击敏感生物，同尺寸舱位为 BioPod 的 75%。M／L 本系列模板缺失，制造仍关闭。
+新版制作以本页G2路径为准，旧运行模板与现行数值在逐型号页保留。G2尚未接入，不代表当前制造已关闭。
 
-| 型号 | 舱位 | 配置空重 Kpg | 缓冲增量 | 结构状态 |
-| --- | ---: | ---: | ---: | --- |
-| [M](<aquarium_sd_m.md>) | 24 | 17 | +5 | **本系列模板缺失** |
-| [L](<aquarium_sd_l.md>) | 48 | 36 | +5 | **本系列模板缺失** |
+## 系列定位
 
-[制造商目录](<../README.md>)
+敏感生物加强缓冲运输；以BioPod同档75%舱位和较高空重换取缓冲+5。
 
-## 状态与制作安排
+## G2规格与逐型号映射
 
-同一系列的可用、待验证、待模板及关闭型号均在本页维护。型号是否能制造以工程标签为准。
+| 定义详情 | 实际规格 | 新版模板资源 ID | 制作安排 |
+| --- | --- | --- | --- |
+| [cargoverse:vbs/aquarium_sd_m](<aquarium_sd_m.md>) | M | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_sd_m` | **待制作** |
+| [cargoverse:vbs/aquarium_sd_l](<aquarium_sd_l.md>) | L | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_sd_l` | **待制作** |
+| [cargoverse:vbs/aquarium_sd_x](<aquarium_sd_x.md>) | X | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_sd_x` | **待制作** |
+| [cargoverse:vbs/aquarium_sd_xl](<aquarium_sd_xl.md>) | XL | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_sd_xl` | **待制作** |
 
-| 定义 | 规格 | 当前状态 | 模板状态 | 制作安排 |
-| --- | --- | --- | --- | --- |
-| [cargoverse:vbs/aquarium_sd_l](<aquarium_sd_l.md>) | L | 待模板，制造关闭 | 缺本系列模板 | 先补模板，再验证与投放 |
-| [cargoverse:vbs/aquarium_sd_m](<aquarium_sd_m.md>) | M | 待模板，制造关闭 | 缺本系列模板 | 先补模板，再验证与投放 |
+未列出的规格未规划。关闭记录不因为分配新代号而加入制作清单；相同目标路径只制作一份。接口命名暂沿既定系列，统一尺寸、接口位置和净空仍须另行确定。
 
-M／L 数据与配方已配置，24／48 舱位、17／36 Kpg、缓冲增量 +5；本系列 NBT 缺失，保持禁止制造。模板补齐后再验证与投放。全部已支持生物共用该柜型，不设置陆生／水生门禁。
+生物采用统一舱室；BioPod强调容量与较轻空重，Aquarium以同档75%舱位和较高空重换取加强缓冲。单只65536字节、整柜1048576字节预算保持现值；具体数值见各型号页。
+
+[制造商目录](../README.md) · [新版系列代号总览](../../新版模板系列代号.md)
