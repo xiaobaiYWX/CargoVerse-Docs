@@ -2,7 +2,6 @@
 
 更新：2026-11-12。**新版模板系列代号：`aquarium_g2`。**
 
-新版制作以本页G2路径为准，旧运行模板与现行数值在逐型号页保留。G2尚未接入，不代表当前制造已关闭。
 
 ## 系列定位
 
@@ -12,12 +11,11 @@
 
 | 定义详情 | 实际规格 | 新版模板资源 ID | 制作安排 |
 | --- | --- | --- | --- |
-| [cargoverse:vbs/aquarium_sd_m](<aquarium_sd_m.md>) | M | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_sd_m` | **待制作** |
-| [cargoverse:vbs/aquarium_sd_l](<aquarium_sd_l.md>) | L | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_sd_l` | **待制作** |
-| [cargoverse:vbs/aquarium_sd_x](<aquarium_sd_x.md>) | X | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_sd_x` | **待制作** |
-| [cargoverse:vbs/aquarium_sd_xl](<aquarium_sd_xl.md>) | XL | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_sd_xl` | **待制作** |
+| [cargoverse:vbs/aquarium_sd_m](<aquarium_sd_m.md>) | M | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_m` | **已接入** |
+| [cargoverse:vbs/aquarium_sd_l](<aquarium_sd_l.md>) | L | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_l` | **已接入** |
+| [cargoverse:vbs/aquarium_sd_x](<aquarium_sd_x.md>) | X | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_x` | **已接入** |
+| [cargoverse:vbs/aquarium_sd_xl](<aquarium_sd_xl.md>) | XL | `cargoverse:cargo/vbs/aquarium_g2/vbs_aquarium_g2_xl` | **已接入** |
 
-未列出的规格未规划。关闭记录不因为分配新代号而加入制作清单；相同目标路径只制作一份。接口命名暂沿既定系列，统一尺寸、接口位置和净空仍须另行确定。
 
 生物采用统一舱室；BioPod强调容量与较轻空重，Aquarium以同档75%舱位和较高空重换取加强缓冲。单只65536字节、整柜1048576字节预算保持现值；具体数值见各型号页。
 

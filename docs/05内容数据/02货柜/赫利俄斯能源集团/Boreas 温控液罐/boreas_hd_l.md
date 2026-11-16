@@ -1,11 +1,6 @@
 # HEC Boreas 温控液罐 L 型
 
-> **当前状态：已配置，可制造。模板：已绑定指定模板。**
-> 制作安排：需制作G2新版模板；以本页G2新版结构模板章节为准。
-
-> 正式型号；**指定旧版模板已绑定；G2待制作**。核对：2026-11-09。
-
-可制造。更新于 2026-11-03。
+**G2 模板已接入。可制造。**
 
 [系列目录](README.md) · [制造商目录](../README.md)
 
@@ -36,20 +31,19 @@
 
 ## G2新版结构模板
 
-**新系列代号：`boreas_g2`；状态：需制作G2新版模板。** 更新：2026-11-12。
+**新系列代号：`boreas_g2`；状态：已绑定 G2 模板。** 更新：2026-11-16。
 
 | 项目 | 路径／约定 |
 | --- | --- |
-| 新版模板资源 ID | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_sd_l` |
-| 游戏导出相对路径 | `generated/cargoverse/structures/cargo/hec/boreas_g2/hec_boreas_g2_sd_l.nbt` |
-| 工程目标相对路径 | `data/cargoverse/structure/cargo/hec/boreas_g2/hec_boreas_g2_sd_l.nbt` |
-| 规格／接口代号 | L／SD |
-| 当前运行模板（旧版参考） | `cargoverse:cargo/hec/apollo/hec_apollo_sd_l` |
+| 新版模板资源 ID | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_l` |
+| 游戏导出相对路径 | `generated/cargoverse/structures/cargo/g2/hec/boreas/boreas_l.nbt` |
+| 工程目标相对路径 | `data/cargoverse/structure/cargo/hec/boreas_g2/hec_boreas_g2_l.nbt` |
+| 规格 | L |
 | 稳定货柜定义 ID | `cargoverse:hec/boreas_hd_l`（保留） |
 
-新版均尚未制作或接入。**后续搭建只按本节G2路径命名；旧路径仅用于核对当前运行状态，不再作为补建任务。** 本轮不指定长宽高、轨距或接口坐标，需在标准化尺寸表确认后搭建；接口代号目前沿系列既定命名保留，不代表几何标准已完成。
+结构尺寸（X×Y×Z）为 12×5×5 格。
 
-完成新模板后逐型号核对标记、归属、对接与结构质量，再切换运行 `template`；缺失模板型号须同时完成验收及制造开放。基础变体共用普通型号同规格G2模板。关闭兼容定义不自动启用。
+已核对质量标记和标准对接口。实际空重与满载起吊待实机验证。
 
 [本系列目录](<README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
 
@@ -63,54 +57,9 @@
 
 ## 当前配置摘录
 
-[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/boreas_hd_l.json>)。以下为现行完整定义。
+[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/boreas_hd_l.json>)。
 
-```json
-{
-  "schema_version": 1,
-  "manufacturer": "cargoverse:hec",
-  "trade_currency": "cargoverse:void_byte",
-  "template": "cargoverse:cargo/hec/apollo/hec_apollo_sd_l",
-  "display_name": "HEC Boreas 温控液罐 L 型",
-  "description": "温敏工业液体运输柜，提供密封、隔热、主动调温与遮光保护。",
-  "size_class": "L",
-  "dispatch_points": 4,
-  "empty_mass": 190,
-  "allowed_cargo_classes": [
-    "liquid"
-  ],
-  "cargo_class_capacity_modifiers": {},
-  "tags": [
-    "series.hec.boreas"
-  ],
-  "capacity": 240,
-  "abilities": {
-    "cargoverse:sealing": {
-      "level": 2
-    },
-    "cargoverse:vacuum_insulation": {
-      "level": 2,
-      "exchange_time_seconds": 480
-    },
-    "cargoverse:thermal_control": {
-      "level": 3,
-      "target_min": -20,
-      "target_max": 80,
-      "rate_per_second": 0.6,
-      "supported_modes": [
-        "cooling",
-        "heating"
-      ]
-    },
-    "cargoverse:light_blocking": {
-      "level": 1,
-      "reduction": 15
-    }
-  }
-}
-```
 
-发布副本已清除历史 Owner／放置者归属；方块布局及接口保持原样。
 
 ## 实机验收
 

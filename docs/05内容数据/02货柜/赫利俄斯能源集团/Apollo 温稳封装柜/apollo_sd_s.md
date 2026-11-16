@@ -1,11 +1,6 @@
 # HEC Apollo 温稳封装柜 M 型
 
-> **当前状态：已配置，可制造。模板：已绑定指定模板。**
-> 制作安排：需制作G2新版模板；以本页G2新版结构模板章节为准。
-
-> 正式型号；**指定旧版模板已绑定；G2待制作**。核对：2026-11-09。
-
-可制造。更新于 2026-11-03。
+**G2 模板已接入。可制造。**
 
 [系列目录](README.md) · [制造商目录](../README.md)
 
@@ -37,20 +32,19 @@
 
 ## G2新版结构模板
 
-**新系列代号：`apollo_g2`；状态：需制作G2新版模板。** 更新：2026-11-12。
+**新系列代号：`apollo_g2`；状态：已绑定 G2 模板。** 更新：2026-11-16。
 
 | 项目 | 路径／约定 |
 | --- | --- |
-| 新版模板资源 ID | `cargoverse:cargo/hec/apollo_g2/hec_apollo_g2_hd_m` |
-| 游戏导出相对路径 | `generated/cargoverse/structures/cargo/hec/apollo_g2/hec_apollo_g2_hd_m.nbt` |
-| 工程目标相对路径 | `data/cargoverse/structure/cargo/hec/apollo_g2/hec_apollo_g2_hd_m.nbt` |
-| 规格／接口代号 | M／HD |
-| 当前运行模板（旧版参考） | `cargoverse:cargo/hec/reactor/hec_reactor_hd_m` |
+| 新版模板资源 ID | `cargoverse:cargo/hec/apollo_g2/hec_apollo_g2_m` |
+| 游戏导出相对路径 | `generated/cargoverse/structures/cargo/g2/hec/apollo/apollo_m.nbt` |
+| 工程目标相对路径 | `data/cargoverse/structure/cargo/hec/apollo_g2/hec_apollo_g2_m.nbt` |
+| 规格 | M |
 | 稳定货柜定义 ID | `cargoverse:hec/apollo_sd_s`（保留） |
 
-新版均尚未制作或接入。**后续搭建只按本节G2路径命名；旧路径仅用于核对当前运行状态，不再作为补建任务。** 本轮不指定长宽高、轨距或接口坐标，需在标准化尺寸表确认后搭建；接口代号目前沿系列既定命名保留，不代表几何标准已完成。
+结构尺寸（X×Y×Z）为 8×5×5 格。
 
-完成新模板后逐型号核对标记、归属、对接与结构质量，再切换运行 `template`；缺失模板型号须同时完成验收及制造开放。基础变体共用普通型号同规格G2模板。关闭兼容定义不自动启用。
+已核对质量标记和标准对接口。实际空重与满载起吊待实机验证。
 
 [本系列目录](<README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
 
@@ -64,60 +58,11 @@
 | [fuel_depot](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/factory/sky_station/fuel_depot.json>) | M | 0 | 130 | minecraft:iron_ingot × 16、minecraft:copper_ingot × 8、minecraft:glass × 4、minecraft:redstone × 2、minecraft:blue_ice × 2 |
 | [all_containers](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>) | M | 0 | 130 | minecraft:iron_ingot × 16、minecraft:copper_ingot × 8、minecraft:glass × 4、minecraft:redstone × 2、minecraft:blue_ice × 2 |
 
-## 基础运输权益
-本型号对应[制造商初始基础货柜权益](<../../基础型号/hec_basic.md>)。通过基础权益领取的资产免调度点；普通制造的同型号仍使用 2 点，不修改型号定义。
 
 ## 当前配置摘录
 
-[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/apollo_sd_s.json>)。以下为现行完整定义。
+[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/apollo_sd_s.json>)。
 
-```json
-{
-  "schema_version": 1,
-  "template": "cargoverse:cargo/hec/reactor/hec_reactor_hd_m",
-  "manufacturer": "cargoverse:hec",
-  "display_name": "HEC Apollo 温稳封装柜 M 型",
-  "description": "实际物品运输货柜；承载形态与运输保护以本定义为准。",
-  "size_class": "M",
-  "trade_currency": "cargoverse:void_byte",
-  "dispatch_points": 2,
-  "capacity": 110,
-  "empty_mass": 60,
-  "allowed_cargo_classes": [
-    "solid"
-  ],
-  "tags": [
-    "series.hec.apollo"
-  ],
-  "cargo_class_capacity_modifiers": {},
-  "abilities": {
-    "cargoverse:containment": {
-      "level": 2
-    },
-    "cargoverse:sealing": {
-      "level": 2
-    },
-    "cargoverse:vacuum_insulation": {
-      "level": 1,
-      "exchange_time_seconds": 240
-    },
-    "cargoverse:thermal_control": {
-      "level": 2,
-      "target_min": 0,
-      "target_max": 60,
-      "rate_per_second": 0.3,
-      "supported_modes": [
-        "cooling",
-        "heating"
-      ]
-    },
-    "cargoverse:light_blocking": {
-      "level": 1,
-      "reduction": 15
-    }
-  }
-}
-```
 
 ## 实机验收
 

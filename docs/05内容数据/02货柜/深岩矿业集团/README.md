@@ -1,13 +1,9 @@
-# 深岩矿业集团 · 货柜产品线
+# 深岩矿业集团 · 货柜制作目录
 
-更新：2026-11-12。已配置及未完成型号统一维护；文档位置不表示已开放制造。逐系列、逐型号查看模板和制作状态。
+| 系列 | G2 系列代号 | 确定制作规格 | 独立模板数 |
+| --- | --- | --- | ---: |
+| [Boreal 矿料重载柜](<Boreal 矿料重载柜/README.md>) | `boreal_g2` | M／L／X／XL | 4 |
+| [CoreVault 干燥精矿柜](<CoreVault 干燥精矿柜/README.md>) | `corevault_g2` | S／M | 2 |
+| [Silo 密闭粉料柜](<Silo 密闭粉料柜/README.md>) | `silo_g2` | L／X／XL | 3 |
 
-| 系列 | 新模板代号 | 可制造规格（含待验证） | 未开放／待模板定义 | 制作入口 |
-| --- | --- | --- | --- | --- |
-| Boreal 矿料重载柜 | `boreal_g2` | L／M／X／XL | titanhaul_hd_l | [系列与逐型号状态](<Boreal 矿料重载柜/README.md>) |
-| CoreVault 干燥精矿柜 | `corevault_g2` | M／S | 无 | [系列与逐型号状态](<CoreVault 干燥精矿柜/README.md>) |
-| Silo 密闭粉料柜 | `silo_g2` | L／X／XL | 无 | [系列与逐型号状态](<Silo 密闭粉料柜/README.md>) |
-
-[货柜总目录](<../README.md>) · [基础型号](<../基础型号/README.md>)
-
-新版结构制作只按各系列G2代号；当前模板引用保持到对应新版验收。详见[新系列代号总览](../新版模板系列代号.md)。
+[货柜总目录](../README.md)

@@ -1,11 +1,6 @@
 # BDS Fortress 重型防护柜 XL 型
 
-> **当前状态：已配置，可制造。模板：本系列模板已绑定。**
-> 制作安排：需制作G2新版模板；以本页G2新版结构模板章节为准。
-
-> 正式型号；**同系列同规格／已绑定**。 核对：2026-11-06。
-
-可制造。更新于 2026-11-03。
+**G2 模板已接入。可制造。**
 
 [系列目录](README.md) · [制造商目录](../README.md)
 
@@ -37,20 +32,19 @@
 
 ## G2新版结构模板
 
-**新系列代号：`fortress_g2`；状态：需制作G2新版模板。** 更新：2026-11-12。
+**新系列代号：`fortress_g2`；状态：已绑定 G2 模板。** 更新：2026-11-16。
 
 | 项目 | 路径／约定 |
 | --- | --- |
-| 新版模板资源 ID | `cargoverse:cargo/bds/fortress_g2/bds_fortress_g2_hd_xl` |
-| 游戏导出相对路径 | `generated/cargoverse/structures/cargo/bds/fortress_g2/bds_fortress_g2_hd_xl.nbt` |
-| 工程目标相对路径 | `data/cargoverse/structure/cargo/bds/fortress_g2/bds_fortress_g2_hd_xl.nbt` |
-| 规格／接口代号 | XL／HD |
-| 当前运行模板（旧版参考） | `cargoverse:cargo/bds/fortress/bds_fortress_hd_xl` |
+| 新版模板资源 ID | `cargoverse:cargo/bds/fortress_g2/bds_fortress_g2_xl` |
+| 游戏导出相对路径 | `generated/cargoverse/structures/cargo/g2/bds/fortress/fortress_xl.nbt` |
+| 工程目标相对路径 | `data/cargoverse/structure/cargo/bds/fortress_g2/bds_fortress_g2_xl.nbt` |
+| 规格 | XL |
 | 稳定货柜定义 ID | `cargoverse:bds/fortress_hd_xl`（保留） |
 
-新版均尚未制作或接入。**后续搭建只按本节G2路径命名；旧路径仅用于核对当前运行状态，不再作为补建任务。** 本轮不指定长宽高、轨距或接口坐标，需在标准化尺寸表确认后搭建；接口代号目前沿系列既定命名保留，不代表几何标准已完成。
+结构尺寸（X×Y×Z）为 24×9×10 格。
 
-完成新模板后逐型号核对标记、归属、对接与结构质量，再切换运行 `template`；缺失模板型号须同时完成验收及制造开放。基础变体共用普通型号同规格G2模板。关闭兼容定义不自动启用。
+已核对质量标记和标准对接口。实际空重与满载起吊待实机验证。
 
 [本系列目录](<README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
 
@@ -64,49 +58,8 @@
 
 ## 当前配置摘录
 
-[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/bds/fortress_hd_xl.json>)。以下摘录省略旧 description 文案；产品定位以本页为准，运行字段保持工程现状。
+[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/bds/fortress_hd_xl.json>)。
 
-```json
-{
-  "schema_version": 1,
-  "template": "cargoverse:cargo/bds/fortress/bds_fortress_hd_xl",
-  "manufacturer": "cargoverse:bds",
-  "display_name": "BDS Fortress 重型防护柜 XL 型",
-  "size_class": "XL",
-  "trade_currency": "cargoverse:void_byte",
-  "dispatch_points": 8,
-  "capacity": 1200,
-  "empty_mass": 555,
-  "allowed_cargo_classes": [
-    "solid"
-  ],
-  "special_designs": [],
-  "design_defects": [],
-  "tags": [
-    "series.bds.fortress"
-  ],
-  "cargo_class_capacity_modifiers": {},
-  "abilities": {
-    "cargoverse:containment": {
-      "level": 2
-    },
-    "cargoverse:sealing": {
-      "level": 2
-    },
-    "cargoverse:cushioning": {
-      "level": 3,
-      "velocity_change_bonus": 8
-    },
-    "cargoverse:orientation_control": {
-      "level": 1
-    },
-    "cargoverse:light_blocking": {
-      "level": 1,
-      "reduction": 15
-    }
-  }
-}
-```
 
 ## 实机验收
 
