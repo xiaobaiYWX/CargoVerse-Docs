@@ -23,16 +23,16 @@
 | 能力 | 参数 |
 | --- | --- |
 | 围护 | `level=1` |
-| 密封 | `level=2` |
+| 密封 | `level=1` |
 | 缓冲衬垫 | `level=2`，`velocity_change_bonus=5` |
 | 朝向保持 | `level=1` |
-| 湿度控制 | `level=1`，`target_min=20`，`target_max=60`，`rate_per_second=1`，`supported_modes=["dehumidifying"]` |
-| 真空隔层 | `level=1`，`exchange_time_seconds=240` |
-| 主动调温 | `level=2`，`target_min=0`，`target_max=60`，`rate_per_second=0.3`，`supported_modes=["cooling", "heating"]` |
-| 压力调节 | `level=1`，`target_min=0.5`，`target_max=1.5`，`rate_per_second=0.02`，`supported_modes=["pressurizing", "depressurizing"]` |
+| 真空隔层 | `level=1` |
+| 主动调温 | `level=2` |
+| 气压调节 | `level=1` |
 | 遮光结构 | `level=1`，`reduction=15` |
+| 防水柜体 | 启用 |
 
-完整运输条件随货物冻结，保护能力影响对应的围护、密封或内部环境求值。设备初始按需自动工作，实际降温与调压需要时间。
+装载时冻结货柜能力。各能力对应的适用条件和参数见[货柜能力](<../../../../04数据规范/货柜/能力/README.md>)。
 
 ## G2新版结构模板
 

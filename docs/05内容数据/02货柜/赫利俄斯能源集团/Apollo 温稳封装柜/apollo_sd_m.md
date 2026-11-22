@@ -22,13 +22,13 @@
 
 | 能力 | 参数 |
 | --- | --- |
-| 围护 | `level=2` |
-| 密封 | `level=2` |
-| 真空隔层 | `level=1`，`exchange_time_seconds=240` |
-| 主动调温 | `level=2`，`target_min=0`，`target_max=60`，`rate_per_second=0.3`，`supported_modes=["cooling", "heating"]` |
+| 围护 | `level=1` |
+| 密封 | `level=1` |
+| 真空隔层 | `level=1` |
+| 主动调温 | `level=2` |
 | 遮光结构 | `level=1`，`reduction=15` |
 
-完整运输条件随货物冻结，保护能力影响对应的围护、密封或内部环境求值。设备初始按需自动工作，实际降温与调压需要时间。
+装载时冻结货柜能力。各能力对应的适用条件和参数见[货柜能力](<../../../../04数据规范/货柜/能力/README.md>)。
 
 ## G2新版结构模板
 
