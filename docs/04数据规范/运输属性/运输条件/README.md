@@ -7,8 +7,8 @@
 | [易碎品](01_易碎品.md) | `cargoverse:fragile` | 相邻速度采样差超过耐受 | 缓冲衬垫 |
 | [保持正放](02_保持正放.md) | `cargoverse:keep_upright` | 承载面倾角超过上限 | 朝向保持 |
 | [保持干燥](03_保持干燥.md) | `cargoverse:keep_dry` | 货柜所在地降雨或柜体浸水 | 防水柜体 |
-| [保温运输](04_易腐坏.md) | `cargoverse:warm_transport` | 运输时限耗尽 | 主动调温 |
-| [冷冻运输](05_冷冻运输.md) | `cargoverse:frozen_transport` | 运输时限耗尽 | 主动调温 |
+| [保温运输](04_易腐坏.md) | `cargoverse:warm_transport` | 持续缺少主动调温时产生货损 | 主动调温 |
+| [冷冻运输](05_冷冻运输.md) | `cargoverse:frozen_transport` | 持续缺少主动调温时产生货损 | 主动调温 |
 | [低温敏感](06_低温敏感.md) | `cargoverse:cold_sensitive` | 群系气候低于下限 | 真空隔层 |
 | [高温敏感](07_高温敏感.md) | `cargoverse:heat_sensitive` | 群系气候高于上限 | 真空隔层 |
 | [避光储存](08_避光储存.md) | `cargoverse:light_sensitive` | 有效光照高于上限 | 遮光结构 |
