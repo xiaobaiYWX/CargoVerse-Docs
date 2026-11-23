@@ -1,4 +1,4 @@
-# CargoVerse 文档
+# CargoVerse（万物在途）文档
 
 CargoVerse NeoForge 1.21.1 的玩法、系统规则、组件使用、数据规范、内容设计与制作维护资料。
 
