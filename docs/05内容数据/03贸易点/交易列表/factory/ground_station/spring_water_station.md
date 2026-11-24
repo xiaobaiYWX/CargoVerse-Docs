@@ -14,30 +14,30 @@
 
 ## 报价口径
 
-- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／组**。库存、补货、限额及经验均按完整组计。
+- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／份**。库存、补货、限额及许可证经验均按份配置，物品每组为一份，活体每只为一份。
 - 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
-- 以下为基准报价，不含行情与签约修正。经验是本站收购条目的每组奖励，不属于物品属性，也不根据价格自动推导。
+- 以下为基准报价。成交会应用行情与签约修正。许可证经验由当地收购条目按份配置。
 - 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
-- 许可证／繁荣度经验只按自然生成收购目的地和实际成交组数计算；玩家工厂或玩家仓库来源同样按本地收购配置奖励。玩家目的地、手动普通目的地及出发购买不奖励。
+- 许可证经验按向自然生成目的地实际交付的份数和当地收购配置结算，适用于任意货源。繁荣度与制造商交付声望由独立物资供应结算。
 
 ## 出售目录
 
-| rule_id | 物品 | 单价 VB | 初始组数 | 库存容量 | 每日补货 |
-| --- | --- | ---: | ---: | ---: | ---: |
-| `sell_minecraft_glass_bottle` | 玻璃瓶 · `minecraft:glass_bottle` | 3 | 96 | 256 | 64 |
-| `sell_minecraft_dried_kelp` | 干海带 · `minecraft:dried_kelp` | 3 | 192 | 512 | 128 |
-| `sell_minecraft_clay_ball` | 黏土球 · `minecraft:clay_ball` | 3 | 192 | 512 | 128 |
+| rule_id | 物品 | 单价 VB | 初始库存 | 库存容量 | 每日补货 | 最低繁荣度 |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| `sell_minecraft_glass_bottle` | 玻璃瓶 · `minecraft:glass_bottle` | 3 | 96 | 256 | 64 | 0 |
+| `sell_minecraft_dried_kelp` | 干海带 · `minecraft:dried_kelp` | 3 | 192 | 512 | 128 | 0 |
+| `sell_minecraft_clay_ball` | 黏土球 · `minecraft:clay_ball` | 3 | 192 | 512 | 128 | 1 |
 
 ## 收购目录
 
-| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／组 | 繁荣度经验／组 |
+| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／份 | 最低繁荣度 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `buy_minecraft_charcoal` | 木炭 · `minecraft:charcoal` | 8 | 128 | 2 | 2 |
-| `buy_minecraft_sand` | 沙子 · `minecraft:sand` | 4 | 128 | 1 | 1 |
-| `buy_create_fluid_pipe` | 流体管道 · `create:fluid_pipe` | 12 | 32 | 3 | 3 |
+| `buy_minecraft_charcoal` | 木炭 · `minecraft:charcoal` | 8 | 128 | 2 | 0 |
+| `buy_minecraft_sand` | 沙子 · `minecraft:sand` | 4 | 128 | 1 | 0 |
+| `buy_create_fluid_pipe` | 流体管道 · `create:fluid_pipe` | 12 | 32 | 3 | 1 |
 | `buy_create_mechanical_pump` | 动力泵 · `create:mechanical_pump` | 110 | 2 | 5 | 4 |
-| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 64 | 2 | 2 |
-| `buy_create_filter` | 列表过滤器 · `create:filter` | 30 | 8 | 3 | 3 |
+| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 64 | 2 | 0 |
+| `buy_create_filter` | 列表过滤器 · `create:filter` | 30 | 8 | 3 | 2 |
 
 ## 运输与落地依赖
 
@@ -48,6 +48,6 @@
 
 本站不增加货柜制造、注册或领柜功能；所有收购条目设正数限额。设备采购额度通常低于一柜，属于地方更新需求。
 
-报价目录在实例创建时保存快照。以新建经济实例验收；普通 reload 不会替换旧实例的空目录。
+报价目录在实例创建时保存快照。以新建经济实例验收；普通 reload 保留旧实例的报价快照。
 
 [本站贸易网络](<../../../站点/factory/泉源净水所/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../站点/设计总览.md>) · [现行格式与经验资格](<../../../../../04数据规范/贸易点/03_资源表定义.md>)
