@@ -1,57 +1,38 @@
 # 远航货运枢纽 · 实际物品贸易表
 
-> 已接入内置数据包。以新建贸易点实例验收。
+2026-11-25 同步。物品报价、库存、补货和额度按组，流体按桶、生物按只。以新建站点实例验收，既有站点保留报价快照。
 
-编号：**S02**。归属：**云港物流集团（SPL）**。形态：**天空大站**。
+## 出售
 
-资源 ID：`cargoverse:market/sky_station/longhaul_port`。
+| 商品 | VB／份 | 初始库存 | 库存容量 | 每日补货 | 繁荣度 |
+| --- | --- | --- | --- | --- | --- |
+| `create:item_vault` | 80 | 2 | 4 | 1 | 4 |
+| `create:belt_connector` | 24 | 2 | 4 | 1 | 0 |
+| `create:andesite_funnel` | 25 | 2 | 4 | 1 | 1 |
+| `create:fluid_tank` | 70 | 2 | 4 | 1 | 2 |
+| `create:chute` | 20 | 2 | 4 | 1 | 0 |
+| `create:filter` | 24 | 2 | 4 | 1 | 0 |
 
-对应数据路径：`data/cargoverse/trade_points/resource_tables/market/sky_station/longhaul_port.json`。
+## 收购
 
-## 业务定位
+| 商品 | VB／份 | 每日额度 | 经验／份 | 繁荣度 |
+| --- | --- | --- | --- | --- |
+| `create:cardboard` | 5 | 64 | 1 | 0 |
+| `minecraft:barrel` | 45 | 64 | 2 | 2 |
+| `aeronautics:propeller_bearing` | 195 | 24 | 2 | 3 |
+| `simulated:docking_connector` | 195 | 24 | 2 | 4 |
+| `create:cogwheel` | 17 | 64 | 2 | 0 |
+| `minecraft:coal` | 9 | 64 | 2 | 0 |
+| `minecraft:bread` | 6 | 64 | 2 | 0 |
+| `minecraft:paper` | 6 | 64 | 2 | 0 |
+| `aeronautics:white_envelope` | 38 | 64 | 2 | 1 |
+| `aeronautics:andesite_propeller` | 220 | 16 | 2 | 5 |
+| `cargoverse:standard_fasteners` | 20 | 不限 | 1 | 0 |
+| `cargoverse:processed_produce` | 20 | 不限 | 1 | 0 |
+| `cargoverse:textile_bundle` | 20 | 不限 | 1 | 0 |
+| `cargoverse:refined_desiccant` | 44 | 不限 | 3 | 0 |
+| `cargoverse:containment_panels` | 52 | 1024 | 1 | 2 |
+| `cargoverse:cushioning_module` | 52 | 1024 | 1 | 2 |
+| `cargoverse:industrial_sealant` | 20 | 不限 | 1 | 0 |
 
-**仓储、转运与港口设备供应。** 集中供应 Create 保险库、漏斗、传送带、储罐和过滤器，让货运赚得的资金可直接用于物流设施。采购包装、系泊推进部件与日常补给，保持港口配套需求而非全商品交易中心。
-
-## 报价口径
-
-- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／份**。库存、补货、限额及许可证经验均按份配置，物品每组为一份，活体每只为一份。
-- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
-- 以下为基准报价。成交会应用行情与签约修正。许可证经验由当地收购条目按份配置。
-- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
-- 许可证经验按向自然生成目的地实际交付的份数和当地收购配置结算，适用于任意货源。繁荣度与制造商交付声望由独立物资供应结算。
-
-## 出售目录
-
-| rule_id | 物品 | 单价 VB | 初始库存 | 库存容量 | 每日补货 | 最低繁荣度 |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
-| `sell_create_item_vault` | 物品保险库 · `create:item_vault` | 80 | 256 | 768 | 192 | 4 |
-| `sell_create_belt_connector` | 传送带 · `create:belt_connector` | 24 | 256 | 768 | 192 | 0 |
-| `sell_create_andesite_funnel` | 安山漏斗 · `create:andesite_funnel` | 25 | 256 | 768 | 192 | 1 |
-| `sell_create_fluid_tank` | 流体储罐 · `create:fluid_tank` | 70 | 256 | 768 | 192 | 2 |
-| `sell_create_chute` | 溜槽 · `create:chute` | 20 | 256 | 768 | 192 | 0 |
-| `sell_create_filter` | 列表过滤器 · `create:filter` | 24 | 256 | 768 | 192 | 0 |
-
-## 收购目录
-
-| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／份 | 最低繁荣度 |
-| --- | --- | ---: | ---: | ---: | ---: |
-| `buy_create_cardboard` | 纸板 · `create:cardboard` | 5 | 512 | 1 | 0 |
-| `buy_minecraft_barrel` | 木桶 · `minecraft:barrel` | 45 | 128 | 3 | 2 |
-| `buy_aeronautics_propeller_bearing` | 螺旋桨轴承 · `aeronautics:propeller_bearing` | 195 | 24 | 6 | 3 |
-| `buy_simulated_docking_connector` | 对接连接器 · `simulated:docking_connector` | 195 | 24 | 6 | 4 |
-| `buy_create_cogwheel` | 齿轮 · `create:cogwheel` | 17 | 256 | 3 | 0 |
-| `buy_minecraft_coal` | 煤炭 · `minecraft:coal` | 9 | 512 | 2 | 0 |
-| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 512 | 2 | 0 |
-| `buy_minecraft_paper` | 纸 · `minecraft:paper` | 6 | 256 | 2 | 0 |
-| `buy_aeronautics_white_envelope` | 气球蒙皮 · `aeronautics:white_envelope` | 38 | 128 | 4 | 1 |
-| `buy_aeronautics_andesite_propeller` | 安山螺旋桨 · `aeronautics:andesite_propeller` | 220 | 16 | 6 | 5 |
-
-## 运输与落地依赖
-
-货柜兼容按当前 solid／liquid／living 交付形态及保护需求判断；本站用途描述不产生额外分类。运输属性以[正式逐物品清单](<../../../../01运输物品/固体/README.md>)为准，不在每个报价设计中复制分类快照。
-
-装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定组数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
-
-报价目录在实例创建时保存快照。以新建经济实例验收；普通 reload 保留旧实例的报价快照。
-
-[本站贸易网络](<../../../站点/market/远航货运枢纽/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../站点/设计总览.md>) · [现行格式与经验资格](<../../../../../04数据规范/贸易点/03_资源表定义.md>)
+[工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/market/sky_station/longhaul_port.json>)

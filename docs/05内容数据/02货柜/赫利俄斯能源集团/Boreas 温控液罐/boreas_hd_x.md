@@ -1,22 +1,28 @@
 # HEC Boreas 温控液罐 X 型
 
-**G2 模板已接入。可制造。**
+2026-11-25 同步。G2 模板已接入，可制造。实际结构质量、满载起吊和航程需实测。
 
-## 定位与承载
+## 定义与承载
 
-温敏流体大宗运输，提供一级密封、二级真空隔层、三级主动调温与遮光。X／XL提高单柜容量及每调度点运量，保护能力不随规格自动升级。
-
-| 项目 | 当前定义 |
+| 项目 | 配置 |
 | --- | --- |
-| 资源 ID | `cargoverse:hec/boreas_hd_x` |
-| 规格／许可 | X／X |
+| 定义 ID | `cargoverse:hec/boreas_hd_x` |
+| 规格 | X |
 | 介质 | liquid |
-| 容量 | 480 桶 |
+| 容量 | 512 桶 |
 | 定义空重 | 355 Kpg |
 | 调度点 | 6 |
-| 每调度点容量 | 80.00 桶 |
 
-实际空重受结构质量下限约束，实际空重需装配后测量。容量不是质量。
+液体按桶、生物按舱位计量。生物只数受物种占用舱位与原生数据预算约束。
+
+## 保护能力
+
+| 能力 | ID | 参数 |
+| --- | --- | --- |
+| 密封 | `cargoverse:sealing` | level=1 |
+| 主动调温 | `cargoverse:thermal_control` | level=1 |
+| 真空隔层 | `cargoverse:vacuum_insulation` | level=1 |
+| 遮光结构 | `cargoverse:light_blocking` | level=1，reduction=15 |
 
 ## G2新版结构模板
 
@@ -37,32 +43,6 @@
 [本系列目录](<README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
 
 
-## 当前保护能力
+## 制造与查阅
 
-| 能力 | 参数 |
-| --- | --- |
-| 密封 | `level=1` |
-| 真空隔层 | `level=2` |
-| 主动调温 | `level=3` |
-| 遮光结构 | `level=1`，`reduction=15` |
-
-装载时冻结货柜能力。各能力对应的适用条件和参数见[货柜能力](<../../../../04数据规范/货柜/能力/README.md>)。
-
-## 制造配方与投放
-
-| 项目 | 数值／安排 |
-| --- | --- |
-| 蓝图打印费 | 800 VB |
-| 理想制造时间 | 40 秒（800 tick） |
-| 实体材料 | minecraft:iron_ingot × 128、minecraft:oak_planks × 64、minecraft:glass × 32、minecraft:redstone × 16、minecraft:blue_ice × 8、create:fluid_tank × 8 |
-| 拟投放 | fuel_depot；X最低繁荣3、XL最低繁荣4 |
-| 当前投放 | A／B 测试贸易点 |
-
-配方按同系列L型成本的X两倍、XL三点五倍起步；实际材料、许可与费用均已落入独立配方。A／B 测试目录已开放此配方。
-
-## 当前配置
-
-[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/boreas_hd_x.json>) · [制造配方](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_manufacturing_recipes/hec/boreas_hd_x.json>)
-
-
-[系列目录](README.md) · [制造商目录](../README.md)
+[现行定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/boreas_hd_x.json>) · [制造配方](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_manufacturing_recipes/hec/boreas_hd_x.json>) · [系列目录](README.md)

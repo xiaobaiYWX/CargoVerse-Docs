@@ -1,27 +1,5 @@
-# 深岩矿业集团基础货柜
+# DMC Boreal 矿料重载柜 M 型（基础型）
 
-## G2 共用模板
+定义 `cargoverse:dmc/starter_boreal_sd_m`。容量 16384 件，定义空重 65 Kpg，调度点0。与同系列同规格普通型号共用G2模板和保护能力。
 
-当前绑定 `cargoverse:cargo/dmc/boreal_g2/dmc_boreal_g2_m`，与普通型号共用同一份结构。
-
-[本系列目录](<../../深岩矿业集团/Boreal 矿料重载柜/README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
-
-> **当前状态：基础型，可制造。模板：本系列模板已绑定。**
-> 制作安排：沿普通型号共用，不重复制作；以本页G2新版结构模板章节为准。
-
-
-更新：2026-11-05。
-
-| 项目 | 当前值 |
-| --- | --- |
-| 型号与职责 | [DMC Boreal 封闭散料柜 M 型](<../../深岩矿业集团/Boreal 矿料重载柜/README.md>) |
-| 稳定定义 ID | `cargoverse:dmc/starter_boreal_sd_m` |
-| 规格 | M |
-| 容量 | 150 U |
-| 空重目标 | 65 Kpg |
-| 制造后调度点 | 0 |
-| 实际模板 | `cargoverse:cargo/dmc/boreal_g2/dmc_boreal_g2_m` |
-
-普通型号的独立基础变体，声明`starter`标签。蓝图可在已投放此型号的打印机免费重复打印；材料和许可要求沿用普通配方。制造后不占调度点，每名玩家同时只能拥有一个基础柜，施工中即占名额，注销许可证不重置。
-
-[基础目录](<README.md>)
+模板 `cargoverse:cargo/dmc/boreal_g2/dmc_boreal_g2_m`。

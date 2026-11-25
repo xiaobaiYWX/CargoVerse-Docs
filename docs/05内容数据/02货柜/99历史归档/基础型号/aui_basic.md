@@ -1,27 +1,5 @@
-# 天穹联合工业基础货柜
+# AUI Atlas 标准干货柜 S 型（基础型）
 
-## G2 共用模板
+定义 `cargoverse:aui/starter_atlas_sd_s`。容量 4096 件，定义空重 20 Kpg，调度点0。与同系列同规格普通型号共用G2模板和保护能力。
 
-当前绑定 `cargoverse:cargo/aui/atlas_g2/aui_atlas_g2_s`，与普通型号共用同一份结构。
-
-[本系列目录](<../../天穹联合工业/Atlas 标准干货柜/README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
-
-> **当前状态：基础型，可制造。模板：本系列模板已绑定。**
-> 制作安排：沿普通型号共用，不重复制作；以本页G2新版结构模板章节为准。
-
-
-更新：2026-11-05。
-
-| 项目 | 当前值 |
-| --- | --- |
-| 型号与职责 | [AUI Atlas 标准干货柜 S 型](<../../天穹联合工业/Atlas 标准干货柜/README.md>) |
-| 稳定定义 ID | `cargoverse:aui/starter_atlas_sd_s` |
-| 规格 | S |
-| 容量 | 50 U |
-| 空重目标 | 20 Kpg |
-| 制造后调度点 | 0 |
-| 实际模板 | `cargoverse:cargo/aui/atlas_g2/aui_atlas_g2_s` |
-
-普通型号的独立基础变体，声明`starter`标签。蓝图可在已投放此型号的打印机免费重复打印；材料和许可要求沿用普通配方。制造后不占调度点，每名玩家同时只能拥有一个基础柜，施工中即占名额，注销许可证不重置。
-
-[基础目录](<README.md>)
+模板 `cargoverse:cargo/aui/atlas_g2/aui_atlas_g2_s`。

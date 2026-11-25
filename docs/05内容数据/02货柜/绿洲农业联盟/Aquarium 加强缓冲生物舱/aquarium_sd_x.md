@@ -1,22 +1,30 @@
 # VBS Aquarium 加强缓冲生物舱 X 型
 
-**G2 模板已接入。可制造。**
+2026-11-25 同步。G2 模板已接入，可制造。实际结构质量、满载起吊和航程需实测。
 
-## 定位与承载
+## 定义与承载
 
-敏感生物加强缓冲运输；以BioPod同档75%舱位和较高空重换取缓冲+5。X／XL提高单柜容量及每调度点运量，保护能力不随规格自动升级。
-
-| 项目 | 当前定义 |
+| 项目 | 配置 |
 | --- | --- |
-| 资源 ID | `cargoverse:vbs/aquarium_sd_x` |
-| 规格／许可 | X／X |
+| 定义 ID | `cargoverse:vbs/aquarium_sd_x` |
+| 规格 | X |
 | 介质 | living |
-| 容量 | 96 舱位 |
+| 容量 | 64 舱位 |
 | 定义空重 | 66 Kpg |
 | 调度点 | 6 |
-| 每调度点容量 | 16.00 舱位 |
 
-实际空重受结构质量下限约束，实际空重需装配后测量。容量不是质量。
+液体按桶、生物按舱位计量。生物只数受物种占用舱位与原生数据预算约束。
+
+## 保护能力
+
+| 能力 | ID | 参数 |
+| --- | --- | --- |
+| 密封 | `cargoverse:sealing` | level=1 |
+| 缓冲衬垫 | `cargoverse:cushioning` | level=2，velocity_change_bonus=5 |
+| 主动调温 | `cargoverse:thermal_control` | level=1 |
+| 真空隔层 | `cargoverse:vacuum_insulation` | level=1 |
+| 气压调节 | `cargoverse:pressure_control` | level=1 |
+| 遮光结构 | `cargoverse:light_blocking` | level=1，reduction=15 |
 
 ## G2新版结构模板
 
@@ -37,38 +45,6 @@
 [本系列目录](<README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
 
 
-## 生物数据边界
+## 制造与查阅
 
-单只原生数据预算仍为65536字节，整柜仍为1048576字节；不随X／XL舱位自动提高。可装数量同时受物种舱位和原生数据字节限制，复杂NBT个体可能先达到数据上限。满柜只数不能由舱位数直接推定，也不区分陆生与水生柜。
-
-## 当前保护能力
-
-| 能力 | 参数 |
-| --- | --- |
-| 密封 | `level=1` |
-| 缓冲衬垫 | `level=2`，`velocity_change_bonus=5` |
-| 真空隔层 | `level=1` |
-| 主动调温 | `level=1` |
-| 气压调节 | `level=1` |
-| 遮光结构 | `level=1`，`reduction=15` |
-
-装载时冻结货柜能力。各能力对应的适用条件和参数见[货柜能力](<../../../../04数据规范/货柜/能力/README.md>)。
-
-## 制造配方与投放
-
-| 项目 | 数值／安排 |
-| --- | --- |
-| 蓝图打印费 | 1680 VB |
-| 理想制造时间 | 40 秒（800 tick） |
-| 实体材料 | minecraft:iron_ingot × 128、minecraft:glass × 64、minecraft:blue_ice × 8、create:fluid_pipe × 16、create:fluid_tank × 8、minecraft:white_wool × 16 |
-| 拟投放 | biosystems_station（建议，尚未投放）；X最低繁荣3、XL最低繁荣4 |
-| 当前投放 | A／B 测试贸易点 |
-
-配方按同系列L型成本的X两倍、XL三点五倍起步；实际材料、许可与费用均已落入独立配方。A／B 测试目录已开放此配方。
-
-## 当前配置
-
-[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/vbs/aquarium_sd_x.json>) · [制造配方](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_manufacturing_recipes/vbs/aquarium_sd_x.json>)
-
-
-[系列目录](README.md) · [制造商目录](../README.md)
+[现行定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/vbs/aquarium_sd_x.json>) · [制造配方](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_manufacturing_recipes/vbs/aquarium_sd_x.json>) · [系列目录](README.md)

@@ -1,30 +1,25 @@
 # SPL Cistern 常规液罐 M 型
 
-**G2 模板已接入。可制造。**
-
-[系列目录](README.md) · [制造商目录](../README.md)
+2026-11-25 同步。G2 模板已接入，可制造。实际结构质量、满载起吊和航程需实测。
 
 ## 定义与承载
 
-| 项目 | 当前值 |
+| 项目 | 配置 |
 | --- | --- |
-| 资源 ID | `cargoverse:spl/cistern_sd_m` |
+| 定义 ID | `cargoverse:spl/cistern_sd_m` |
+| 规格 | M |
 | 介质 | liquid |
-| 尺寸 | M |
-| 容量 | 120 桶 |
+| 容量 | 128 桶 |
 | 定义空重 | 65 Kpg |
 | 调度点 | 2 |
-| 标签 | series.spl.cistern |
 
-实际空重取结构质量与配置空重的较大值，载荷质量另计。固体按冻结组大小计量，流体一桶为 1000 mB，生物按物种舱位确定可装只数。
+液体按桶、生物按舱位计量。生物只数受物种占用舱位与原生数据预算约束。
 
-## 当前保护能力
+## 保护能力
 
-| 能力 | 参数 |
-| --- | --- |
-| 密封 | `level=1` |
-
-装载时冻结运输条件和货柜能力。各能力的适用条件和参数见[货柜能力](<../../../../04数据规范/货柜/能力/README.md>)。
+| 能力 | ID | 参数 |
+| --- | --- | --- |
+| 密封 | `cargoverse:sealing` | level=1 |
 
 ## G2新版结构模板
 
@@ -45,20 +40,6 @@
 [本系列目录](<README.md>) · [全系列新版代号](<../../新版模板系列代号.md>)
 
 
-## 制造配方与投放
+## 制造与查阅
 
-| 目录 | 许可证 | 繁荣等级 | 加工费 VB | 实体材料 |
-| --- | --- | ---: | ---: | --- |
-| [biosystems_station](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/factory/sky_station/biosystems_station.json>) | M | 1 | 180 | minecraft:iron_ingot × 32、minecraft:oak_planks × 16、minecraft:glass × 8、minecraft:redstone × 4、create:fluid_tank × 2 |
-| [all_containers](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/cargo_manufacturing_platform_definitions/market/test_station/all_containers.json>) | M | 1 | 180 | minecraft:iron_ingot × 32、minecraft:oak_planks × 16、minecraft:glass × 8、minecraft:redstone × 4、create:fluid_tank × 2 |
-
-## 当前配置摘录
-
-[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/spl/cistern_sd_m.json>)。
-
-
-## 实机验收
-
-模板装配、满载起吊、对接及持续航程需在游戏中核验。当前数值以数据包配置为准。
-
-[系列目录](<README.md>) · [制造商目录](<../README.md>)
+[现行定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/spl/cistern_sd_m.json>) · [制造配方](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_manufacturing_recipes/spl/cistern_sd_m.json>) · [系列目录](README.md)

@@ -1,54 +1,36 @@
 # 云泽水产与育种站 · 实际物品贸易表
 
-> 已接入内置数据包。以新建贸易点实例验收。
+2026-11-25 同步。物品报价、库存、补货和额度按组，流体按桶、生物按只。以新建站点实例验收，既有站点保留报价快照。
 
-编号：**V02**。归属：**绿洲农业联盟（VBS）**。形态：**天空大站**。
+## 出售
 
-资源 ID：`cargoverse:resource/sky_station/aquaculture_station`。
+| 商品 | VB／份 | 初始库存 | 库存容量 | 每日补货 | 繁荣度 |
+| --- | --- | --- | --- | --- | --- |
+| `minecraft:cod` | 5 | 2 | 4 | 1 | 0 |
+| `minecraft:salmon` | 7 | 2 | 4 | 1 | 3 |
+| `minecraft:kelp` | 2 | 2 | 4 | 1 | 0 |
+| `minecraft:bone` | 3 | 2 | 4 | 1 | 0 |
+| `minecraft:ink_sac` | 6 | 2 | 4 | 1 | 1 |
+| `cargoverse:processed_produce` | 16 | 2048 | 4096 | 1024 | 0 |
+| `cargoverse:frozen_spawn_culture` | 32 | 2048 | 4096 | 1024 | 0 |
 
-对应数据路径：`data/cargoverse/trade_points/resource_tables/resource/sky_station/aquaculture_station.json`。
+## 收购
 
-## 业务定位
+| 商品 | VB／份 | 每日额度 | 经验／份 | 繁荣度 |
+| --- | --- | --- | --- | --- |
+| `minecraft:wheat_seeds` | 3 | 64 | 1 | 0 |
+| `minecraft:carrot` | 4 | 64 | 1 | 0 |
+| `create:mechanical_pump` | 110 | 24 | 2 | 4 |
+| `create:fluid_pipe` | 12 | 64 | 2 | 1 |
+| `minecraft:glass` | 10 | 64 | 2 | 0 |
+| `create:builders_tea` | 18 | 64 | 2 | 2 |
+| `minecraft:bread` | 6 | 64 | 2 | 0 |
+| `cargoverse:standard_fasteners` | 20 | 不限 | 1 | 0 |
+| `cargoverse:textile_bundle` | 20 | 不限 | 1 | 0 |
+| `cargoverse:sealing_joints` | 52 | 1024 | 1 | 2 |
+| `cargoverse:cushioning_module` | 52 | 1024 | 1 | 2 |
+| `cargoverse:thermal_control_unit` | 60 | 1024 | 3 | 2 |
+| `cargoverse:life_support_module` | 60 | 1024 | 3 | 2 |
+| `cargoverse:nutrient_solution` | 44 | 不限 | 3 | 0 |
 
-**鲜鱼、海藻与水产副产物来源。** 鲜鱼面向城市与补给港，海藻、骨头和墨囊提供材料分流。采购泵、管、玻璃与饲育物资；运输仍是物品，不引入活鱼实体或储罐流体交易。
-
-## 报价口径
-
-- 使用现行 `schema_version: 3`；价格为本站 `unit_price`，单位为 **VB／份**。库存、补货、限额及许可证经验均按份配置，物品每组为一份，活体每只为一份。
-- 全部条目使用精确物品 ID，省略 `components`，只匹配默认完整状态；工具为全新默认状态，设备无嵌套库存。不接受标签通配或任意耐久、附魔、命名变体。
-- 以下为基准报价。成交会应用行情与签约修正。许可证经验由当地收购条目按份配置。
-- 所有出售条目都有有限 `stock`。收购列的 `0（不限）` 对应 `daily_limit: 0`；其余数值为同一站点实例所有玩家共享的每贸易日额度。
-- 许可证经验按向自然生成目的地实际交付的份数和当地收购配置结算，适用于任意货源。繁荣度与制造商交付声望由独立物资供应结算。
-
-## 出售目录
-
-| rule_id | 物品 | 单价 VB | 初始库存 | 库存容量 | 每日补货 | 最低繁荣度 |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
-| `sell_minecraft_cod` | 生鳕鱼 · `minecraft:cod` | 5 | 384 | 1024 | 256 | 0 |
-| `sell_minecraft_salmon` | 生鲑鱼 · `minecraft:salmon` | 7 | 192 | 512 | 128 | 3 |
-| `sell_minecraft_kelp` | 海带 · `minecraft:kelp` | 2 | 768 | 2048 | 512 | 0 |
-| `sell_minecraft_bone` | 骨头 · `minecraft:bone` | 3 | 256 | 768 | 192 | 0 |
-| `sell_minecraft_ink_sac` | 墨囊 · `minecraft:ink_sac` | 6 | 256 | 768 | 192 | 1 |
-
-## 收购目录
-
-| rule_id | 物品 | 单价 VB | 每日限额 | 许可证经验／份 | 最低繁荣度 |
-| --- | --- | ---: | ---: | ---: | ---: |
-| `buy_minecraft_wheat_seeds` | 小麦种子 · `minecraft:wheat_seeds` | 3 | 256 | 1 | 0 |
-| `buy_minecraft_carrot` | 胡萝卜 · `minecraft:carrot` | 4 | 256 | 1 | 0 |
-| `buy_create_mechanical_pump` | 动力泵 · `create:mechanical_pump` | 110 | 24 | 5 | 4 |
-| `buy_create_fluid_pipe` | 流体管道 · `create:fluid_pipe` | 12 | 256 | 3 | 1 |
-| `buy_minecraft_glass` | 玻璃 · `minecraft:glass` | 10 | 256 | 2 | 0 |
-| `buy_create_builders_tea` | 建筑工茶饮 · `create:builders_tea` | 18 | 128 | 3 | 2 |
-| `buy_minecraft_bread` | 面包 · `minecraft:bread` | 6 | 256 | 2 | 0 |
-
-## 运输与落地依赖
-
-货柜兼容按当前 solid／liquid／living 交付形态及保护需求判断；本站用途描述不产生额外分类。运输属性以[正式逐物品清单](<../../../../01运输物品/固体/README.md>)为准，不在每个报价设计中复制分类快照。
-
-装柜前仍需按实际物品配置选择货柜与保护设计；本页不修改质量、固定组数损耗、冷链或易碎判定。不同货物未必能共用一个返程货柜。
-
-
-报价目录在实例创建时保存快照。以新建经济实例验收；普通 reload 保留旧实例的报价快照。
-
-[本站贸易网络](<../../../站点/resource/云泽水产与育种站/定义设计/02_贸易网络设计.md>) · [总体设计](<../../../站点/设计总览.md>) · [现行格式与经验资格](<../../../../../04数据规范/贸易点/03_资源表定义.md>)
+[工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/resource/sky_station/aquaculture_station.json>)
