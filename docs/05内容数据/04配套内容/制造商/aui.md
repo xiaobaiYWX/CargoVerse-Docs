@@ -40,7 +40,7 @@ AUI与深岩矿业、赫利俄斯能源和地平线研究院保持紧密合作�
 | 代码 | `AUI` |
 | 名称 | 天穹联合工业（`manufacturer.cargoverse.aui`） |
 | 简介 | 声望页正文见下方“声望页介绍”，由本地化键 `manufacturer.cargoverse.aui.description` 提供。 |
-| 现有货柜定义 | 16 款 |
+| 正式货柜产品线 | [系列与型号](../../02货柜/天穹联合工业/README.md) |
 
 ## 声望页介绍
 
@@ -75,9 +75,7 @@ AUI与深岩矿业、赫利俄斯能源和地平线研究院保持紧密合作�
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |
-| 飞艇总装与航修港 | `cargoverse:factory/sky_station/airship_yard` |
-| 通用机电装备厂 | `cargoverse:factory/sky_station/modular_equipment` |
-| 标准建材装配港 | `cargoverse:factory/sky_station/standard_assembly` |
+| 天穹工业贸易港 | `cargoverse:factory/sky_station/airship_yard` |
 
 测试站不计入本表；独立小站不自动归入任何制造商。各站实际买卖品类与限额以其贸易表为准。
 

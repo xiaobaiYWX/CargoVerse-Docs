@@ -40,7 +40,7 @@
 | 代码 | `DMC` |
 | 名称 | 深岩矿业集团（`manufacturer.cargoverse.dmc`） |
 | 简介 | 声望页正文见下方“声望页介绍”，由本地化键 `manufacturer.cargoverse.dmc.description` 提供。 |
-| 现有货柜定义 | 7 款 |
+| 正式货柜产品线 | [系列与型号](../../02货柜/深岩矿业集团/README.md) |
 
 ## 声望页介绍
 
@@ -75,9 +75,7 @@
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |
-| 重工材料与矿机厂 | `cargoverse:factory/sky_station/heavy_works` |
-| 矿物分选精炼站 | `cargoverse:factory/sky_station/mineral_refinery` |
-| 深岩露天矿站 | `cargoverse:resource/sky_station/deepcore_mine` |
+| 深岩矿业贸易港 | `cargoverse:factory/sky_station/heavy_works` |
 
 测试站不计入本表；独立小站不自动归入任何制造商。各站实际买卖品类与限额以其贸易表为准。
 

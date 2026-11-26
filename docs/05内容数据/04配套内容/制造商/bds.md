@@ -40,7 +40,7 @@
 | 代码 | `BDS` |
 | 名称 | 铁壁防务集团（`manufacturer.cargoverse.bds`） |
 | 简介 | 声望页正文见下方“声望页介绍”，由本地化键 `manufacturer.cargoverse.bds.description` 提供。 |
-| 现有货柜定义 | 5 款 |
+| 正式货柜产品线 | [系列与型号](../../02货柜/铁壁防务集团/README.md) |
 
 ## 声望页介绍
 
@@ -75,10 +75,8 @@
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |
-| 铁壁防务装备站 | `cargoverse:factory/sky_station/defense_arsenal` |
-| 安防设施集成厂 | `cargoverse:factory/sky_station/security_works` |
+| 铁壁防务贸易港 | `cargoverse:factory/sky_station/defense_arsenal` |
 | 航路巡防哨站 | `cargoverse:market/ground_station/route_watchpost` |
-| 边境驻防补给港 | `cargoverse:market/sky_station/frontier_garrison` |
 
 测试站不计入本表；独立小站不自动归入任何制造商。各站实际买卖品类与限额以其贸易表为准。
 

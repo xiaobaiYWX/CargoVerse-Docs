@@ -35,7 +35,7 @@
 
 ## 当前配置
 
-[工程定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/vbs/starter_harvest_lm_s.json>)
+旧工程定义：`cargoverse:vbs/starter_harvest_lm_s`（已退出；下方配置仅为历史快照）。
 
 ```json
 {

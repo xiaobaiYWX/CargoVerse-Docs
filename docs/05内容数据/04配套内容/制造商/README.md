@@ -17,7 +17,7 @@
 
 设计文档区分**确定幕后事实**与**未证实传闻**：REX与HRI的秘密合作、REX资助黑市是前者，VBS技术来源是后者。公开声望页通过设备、货单、人物态度留下线索，不替玩家揭晓全部关系。个人批注来自不同岗位，可以偏颇、自嘲或抱怨，不作为能力、数值或新功能承诺。现实及其他作品的参考仅用于把握创作方向，不写进游戏内设定。
 
-八家制造商均配置了 0～5 级声望的中英文称号与签约价格修正。货柜容量、空重、能力与缺陷由具体货柜定义维护。
+八家制造商均配置了 0～5 级声望的中英文称号与签约价格修正。货柜容量、空重与能力由具体货柜定义维护。
 
 ## 制造商代表色
 
@@ -49,15 +49,15 @@ DMC 的黄黑警戒以作业边缘、设备边界等局部条纹表现；各站�
 
 ## 当前定义
 
-| 制造商 | 代码 | 名称 | 货柜数 |
-| --- | --- | --- | ---: |
-| [cargoverse:aui](aui.md) | `AUI` | 天穹联合工业（`manufacturer.cargoverse.aui`） | 16 |
-| [cargoverse:bds](bds.md) | `BDS` | 铁壁防务集团（`manufacturer.cargoverse.bds`） | 5 |
-| [cargoverse:dmc](dmc.md) | `DMC` | 深岩矿业集团（`manufacturer.cargoverse.dmc`） | 7 |
-| [cargoverse:hec](hec.md) | `HEC` | 赫利俄斯能源集团（`manufacturer.cargoverse.hec`） | 11 |
-| [cargoverse:hri](hri.md) | `HRI` | 地平线研究院（`manufacturer.cargoverse.hri`） | 5 |
-| [cargoverse:rex](rex.md) | `REX` | 遗民贸易协会（`manufacturer.cargoverse.rex`） | 3 |
-| [cargoverse:spl](spl.md) | `SPL` | 云港物流集团（`manufacturer.cargoverse.spl`） | 5 |
-| [cargoverse:vbs](vbs.md) | `VBS` | 绿洲农业联盟（`manufacturer.cargoverse.vbs`） | 8 |
+| 制造商 | 代码 | 名称 | 产品线 |
+| --- | --- | --- | --- |
+| [cargoverse:aui](aui.md) | `AUI` | 天穹联合工业（`manufacturer.cargoverse.aui`） | [正式型号](../../02货柜/天穹联合工业/README.md) |
+| [cargoverse:bds](bds.md) | `BDS` | 铁壁防务集团（`manufacturer.cargoverse.bds`） | [正式型号](../../02货柜/铁壁防务集团/README.md) |
+| [cargoverse:dmc](dmc.md) | `DMC` | 深岩矿业集团（`manufacturer.cargoverse.dmc`） | [正式型号](../../02货柜/深岩矿业集团/README.md) |
+| [cargoverse:hec](hec.md) | `HEC` | 赫利俄斯能源集团（`manufacturer.cargoverse.hec`） | [正式型号](../../02货柜/赫利俄斯能源集团/README.md) |
+| [cargoverse:hri](hri.md) | `HRI` | 地平线研究院（`manufacturer.cargoverse.hri`） | [正式型号](../../02货柜/地平线研究院/README.md) |
+| [cargoverse:rex](rex.md) | `REX` | 遗民贸易协会（`manufacturer.cargoverse.rex`） | [正式型号](../../02货柜/遗民贸易协会/README.md) |
+| [cargoverse:spl](spl.md) | `SPL` | 云港物流集团（`manufacturer.cargoverse.spl`） | [正式型号](../../02货柜/云港物流集团/README.md) |
+| [cargoverse:vbs](vbs.md) | `VBS` | 绿洲农业联盟（`manufacturer.cargoverse.vbs`） | [正式型号](../../02货柜/绿洲农业联盟/README.md) |
 
 字段规则见[制造商定义](<../../../04数据规范/配套定义/01_制造商.md>)。

@@ -1,50 +1,40 @@
 # 自然贸易点货物交易表
 
-40 个自然站及 A／B 测试站已按专用物资、大宗建材和有限生存补给同步。自然站共 224 条出售、551 条收购。A／B 测试覆盖195种精确商品身份。逐站清单为当前数据投影。
+当前为8个制造商天空主站、16个地面小站及A／B指令测试站。天空建筑变体共用主站资源表，每个生成实例独立保存库存与额度。自然站共221条出售、389条收购；详细参数只在各站表维护。
 
-先读[贸易网络与定价设计](<../站点/设计总览.md>)，再查看各站表。字段语义见[现行报价与运输经验规则](<../../../04数据规范/贸易点/03_资源表定义.md>)。各站用途及线路直接维护在本站 `定义设计/02_贸易网络设计.md`，不另建集中商品参数表。
+先读[贸易网络与定价设计](../站点/设计总览.md)，字段语义见[资源表定义](../../../04数据规范/贸易点/03_资源表定义.md)。
 
-- [乡野机修所资源表](factory/ground_station/rural_repair_shop.md)
-- [云泽水产与育种站资源表](resource/sky_station/aquaculture_station.md)
-- [云港民生集配站资源表](market/sky_station/civic_distribution.md)
-- [净水与环境处理站资源表](factory/sky_station/reclamation_station.md)
-- [地层采样站资源表](resource/ground_station/stratigraphic_sampling_station.md)
-- [地平线野外科考站资源表](resource/sky_station/field_station.md)
-- [天空城综合市场资源表](market/sky_station/skycity_market.md)
-- [安防设施集成厂资源表](factory/sky_station/security_works.md)
-- [工业化学品供应站资源表](factory/sky_station/chemical_works.md)
-- [旧世珍品商馆资源表](market/sky_station/heritage_gallery.md)
-- [旧件回收铺资源表](market/ground_station/salvage_parts_shop.md)
-- [林缘采运站资源表](resource/ground_station/woodland_logging_station.md)
-- [林间制材所资源表](factory/ground_station/woodland_processing_yard.md)
-- [标准建材装配港资源表](factory/sky_station/standard_assembly.md)
-- [梯田农林站资源表](resource/sky_station/terrace_farm.md)
-- [气象观测哨资源表](market/ground_station/weather_observation_post.md)
-- [河岸渔站资源表](resource/ground_station/river_fishing_station.md)
-- [泉源净水所资源表](factory/ground_station/spring_water_station.md)
-- [浅层矿务前哨资源表](resource/ground_station/shallow_mining_outpost.md)
-- [测试贸易点 A · 资源表](market/test_station/a.md)
-- [测试贸易点 B · 资源表](market/test_station/b.md)
-- [深岩露天矿站资源表](resource/sky_station/deepcore_mine.md)
-- [独立农圃资源表](resource/ground_station/independent_farmstead.md)
-- [矿物分选精炼站资源表](factory/sky_station/mineral_refinery.md)
-- [精密电子与测绘中心资源表](factory/sky_station/precision_center.md)
-- [绿洲生物工程站资源表](factory/sky_station/biosystems_station.md)
-- [航路巡防哨站资源表](market/ground_station/route_watchpost.md)
-- [虚空相位研究站资源表](resource/sky_station/phase_station.md)
-- [赫利俄斯燃料供应站资源表](factory/sky_station/fuel_depot.md)
-- [路畔货运驿站资源表](market/ground_station/roadside_freight_inn.md)
-- [边境驻防补给港资源表](market/sky_station/frontier_garrison.md)
-- [边路施工营资源表](market/ground_station/wayside_construction_camp.md)
-- [远界异常交换站资源表](resource/sky_station/far_reach_exchange.md)
-- [远航货运枢纽资源表](market/sky_station/longhaul_port.md)
-- [通用机电装备厂资源表](factory/sky_station/modular_equipment.md)
-- [遗民打捞交换所资源表](resource/sky_station/remnant_exchange.md)
-- [遗迹清理营资源表](resource/ground_station/ruin_clearance_camp.md)
-- [重工材料与矿机厂资源表](factory/sky_station/heavy_works.md)
-- [野地居民点资源表](market/ground_station/wilderness_settlement.md)
-- [野外救护所资源表](market/ground_station/field_aid_station.md)
-- [铁壁防务装备站资源表](factory/sky_station/defense_arsenal.md)
-- [飞艇总装与航修港资源表](factory/sky_station/airship_yard.md)
+## 天空主站
 
-[实际物品与运输配置](<../../../04数据规范/运输属性/01_固体物品.md>)
+- [天穹工业贸易港](factory/sky_station/airship_yard.md)
+- [绿洲农业贸易港](factory/sky_station/biosystems_station.md)
+- [赫利俄斯能源贸易港](factory/sky_station/chemical_works.md)
+- [铁壁防务贸易港](factory/sky_station/defense_arsenal.md)
+- [深岩矿业贸易港](factory/sky_station/heavy_works.md)
+- [地平线科研贸易港](factory/sky_station/precision_center.md)
+- [云港综合贸易港](market/sky_station/skycity_market.md)
+- [遗民遗产贸易港](resource/sky_station/remnant_exchange.md)
+
+## 地面小站
+
+- [乡野机修所](factory/ground_station/rural_repair_shop.md)
+- [泉源净水所](factory/ground_station/spring_water_station.md)
+- [林间制材所](factory/ground_station/woodland_processing_yard.md)
+- [野外救护所](market/ground_station/field_aid_station.md)
+- [路畔货运驿站](market/ground_station/roadside_freight_inn.md)
+- [航路巡防哨站](market/ground_station/route_watchpost.md)
+- [旧件回收铺](market/ground_station/salvage_parts_shop.md)
+- [边路施工营](market/ground_station/wayside_construction_camp.md)
+- [气象观测哨](market/ground_station/weather_observation_post.md)
+- [野地居民点](market/ground_station/wilderness_settlement.md)
+- [独立农圃](resource/ground_station/independent_farmstead.md)
+- [河岸渔站](resource/ground_station/river_fishing_station.md)
+- [遗迹清理营](resource/ground_station/ruin_clearance_camp.md)
+- [浅层矿务前哨](resource/ground_station/shallow_mining_outpost.md)
+- [地层采样站](resource/ground_station/stratigraphic_sampling_station.md)
+- [林缘采运站](resource/ground_station/woodland_logging_station.md)
+
+## 指令测试站
+
+- [测试贸易点 A](market/test_station/a.md)
+- [测试贸易点 B](market/test_station/b.md)

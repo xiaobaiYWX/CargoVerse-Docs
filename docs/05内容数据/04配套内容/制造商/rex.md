@@ -41,7 +41,7 @@ REX同时承担大量遗迹打捞工作，珍贵样本与数据经由隐蔽渠�
 | 代码 | `REX` |
 | 名称 | 遗民贸易协会（`manufacturer.cargoverse.rex`） |
 | 简介 | 声望页正文见下方“声望页介绍”，由本地化键 `manufacturer.cargoverse.rex.description` 提供。 |
-| 现有货柜定义 | 3 款 |
+| 正式货柜产品线 | [系列与型号](../../02货柜/遗民贸易协会/README.md) |
 
 ## 声望页介绍
 
@@ -76,10 +76,8 @@ REX同时承担大量遗迹打捞工作，珍贵样本与数据经由隐蔽渠�
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |
-| 旧世珍品商馆 | `cargoverse:market/sky_station/heritage_gallery` |
 | 遗迹清理营 | `cargoverse:resource/ground_station/ruin_clearance_camp` |
-| 远界异常交换站 | `cargoverse:resource/sky_station/far_reach_exchange` |
-| 遗民打捞交换所 | `cargoverse:resource/sky_station/remnant_exchange` |
+| 遗民遗产贸易港 | `cargoverse:resource/sky_station/remnant_exchange` |
 
 测试站不计入本表；独立小站不自动归入任何制造商。各站实际买卖品类与限额以其贸易表为准。
 

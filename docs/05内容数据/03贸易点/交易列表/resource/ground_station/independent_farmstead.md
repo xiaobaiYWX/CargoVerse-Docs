@@ -26,5 +26,6 @@
 | `cargoverse:warm_fermentation_culture` | 44 | 256 | 3 | 2 |
 | `cargoverse:seedling_tray` | 44 | 256 | 3 | 1 |
 | `cargoverse:cushioning_module` | 52 | 64 | 1 | 0 |
+| `cargoverse:nutrient_solution` | 44 | 256 | 3 | 2 |
 
 [工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/resource/ground_station/independent_farmstead.json>)

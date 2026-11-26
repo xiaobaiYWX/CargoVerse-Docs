@@ -41,7 +41,7 @@ HRI持续从各地收集矿物、生物、液体和遗迹样本。大量精细�
 | 代码 | `HRI` |
 | 名称 | 地平线研究院（`manufacturer.cargoverse.hri`） |
 | 简介 | 声望页正文见下方“声望页介绍”，由本地化键 `manufacturer.cargoverse.hri.description` 提供。 |
-| 现有货柜定义 | 5 款 |
+| 正式货柜产品线 | [系列与型号](../../02货柜/地平线研究院/README.md) |
 
 ## 声望页介绍
 
@@ -76,11 +76,9 @@ HRI持续从各地收集矿物、生物、液体和遗迹样本。大量精细�
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |
-| 精密电子与测绘中心 | `cargoverse:factory/sky_station/precision_center` |
+| 地平线科研贸易港 | `cargoverse:factory/sky_station/precision_center` |
 | 气象观测哨 | `cargoverse:market/ground_station/weather_observation_post` |
 | 地层采样站 | `cargoverse:resource/ground_station/stratigraphic_sampling_station` |
-| 地平线野外科考站 | `cargoverse:resource/sky_station/field_station` |
-| 虚空相位研究站 | `cargoverse:resource/sky_station/phase_station` |
 
 测试站不计入本表；独立小站不自动归入任何制造商。各站实际买卖品类与限额以其贸易表为准。
 

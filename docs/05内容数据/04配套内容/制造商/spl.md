@@ -40,7 +40,7 @@ SPL不主动过问包裹里是什么，也不追究客户为什么寄出它。�
 | 代码 | `SPL` |
 | 名称 | 云港物流集团（`manufacturer.cargoverse.spl`） |
 | 简介 | 声望页正文见下方“声望页介绍”，由本地化键 `manufacturer.cargoverse.spl.description` 提供。 |
-| 现有货柜定义 | 5 款 |
+| 正式货柜产品线 | [系列与型号](../../02货柜/云港物流集团/README.md) |
 
 ## 声望页介绍
 
@@ -75,9 +75,7 @@ SPL不主动过问包裹里是什么，也不追究客户为什么寄出它。�
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |
-| 云港民生集配站 | `cargoverse:market/sky_station/civic_distribution` |
-| 远航货运枢纽 | `cargoverse:market/sky_station/longhaul_port` |
-| 天空城综合市场 | `cargoverse:market/sky_station/skycity_market` |
+| 云港综合贸易港 | `cargoverse:market/sky_station/skycity_market` |
 
 测试站不计入本表；独立小站不自动归入任何制造商。各站实际买卖品类与限额以其贸易表为准。
 

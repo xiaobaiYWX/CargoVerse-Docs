@@ -40,7 +40,7 @@ HEC的特点应体现在安全规程与环境漠视并存。运输罐上的检�
 | 代码 | `HEC` |
 | 名称 | 赫利俄斯能源集团（`manufacturer.cargoverse.hec`） |
 | 简介 | 声望页正文见下方“声望页介绍”，由本地化键 `manufacturer.cargoverse.hec.description` 提供。 |
-| 现有货柜定义 | 11 款 |
+| 正式货柜产品线 | [系列与型号](../../02货柜/赫利俄斯能源集团/README.md) |
 
 ## 声望页介绍
 
@@ -75,9 +75,7 @@ HEC的特点应体现在安全规程与环境漠视并存。运输罐上的检�
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |
-| 工业化学品供应站 | `cargoverse:factory/sky_station/chemical_works` |
-| 赫利俄斯燃料供应站 | `cargoverse:factory/sky_station/fuel_depot` |
-| 净水与环境处理站 | `cargoverse:factory/sky_station/reclamation_station` |
+| 赫利俄斯能源贸易港 | `cargoverse:factory/sky_station/chemical_works` |
 
 测试站不计入本表；独立小站不自动归入任何制造商。各站实际买卖品类与限额以其贸易表为准。
 
