@@ -71,7 +71,7 @@ icon: minecraft:chest
 默认图片不需要参数；确有需要时追加：
 
 ```markdown
-![绑定工具](cargoverse:textures/handbook/linker.png){width=48 max_height=48}
+![贸易图标](cargoverse:textures/gui/player_shipping_profile/encyclopedia/trading.png){width=48 max_height=48}
 ```
 
 - 只支持 `width`、`max_height` 两个正整数参数，可仅写一个，禁止重复键。
