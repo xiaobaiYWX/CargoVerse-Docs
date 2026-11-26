@@ -7,3 +7,9 @@
 | [Harvest 保鲜货柜](<Harvest 保鲜货柜/README.md>) | `harvest_g2` | S／M／L | 3 |
 
 [货柜总目录](../README.md)
+
+## 专用初始系列
+
+| 系列 | 规格 | 模板状态 |
+| --- | --- | --- |
+| [Seedbox 田园货柜](<Seedbox 田园货柜/README.md>) | S | 已接入／无能力 |

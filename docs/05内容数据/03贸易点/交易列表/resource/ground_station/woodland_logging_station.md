@@ -22,7 +22,7 @@
 | `cargoverse:standard_fasteners` | 20 | 256 | 1 | 0 |
 | `cargoverse:processed_produce` | 20 | 256 | 1 | 0 |
 | `cargoverse:textile_bundle` | 20 | 256 | 1 | 0 |
-| `cargoverse:seedling_tray` | 44 | 256 | 3 | 0 |
-| `cargoverse:cushioning_module` | 52 | 64 | 1 | 2 |
+| `cargoverse:seedling_tray` | 44 | 256 | 3 | 1 |
+| `cargoverse:cushioning_module` | 52 | 64 | 1 | 0 |
 
 [工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/resource/ground_station/woodland_logging_station.json>)

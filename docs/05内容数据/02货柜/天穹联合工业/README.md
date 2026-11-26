@@ -8,3 +8,9 @@
 | [Vulcan 干燥工业柜](<Vulcan 干燥工业柜/README.md>) | `vulcan_g2` | M／L／X | 3 |
 
 [货柜总目录](../README.md)
+
+## 专用初始系列
+
+| 系列 | 规格 | 模板状态 |
+| --- | --- | --- |
+| [Origin 启航货柜](<Origin 启航货柜/README.md>) | S | 已接入／无能力 |

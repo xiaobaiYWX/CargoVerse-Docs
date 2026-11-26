@@ -9,7 +9,7 @@
 | `minecraft:glass_bottle` | 3 | 1 | 2 | 1 | 0 |
 | `minecraft:dried_kelp` | 3 | 1 | 2 | 1 | 0 |
 | `minecraft:clay_ball` | 3 | 1 | 2 | 1 | 1 |
-| `cargoverse:sealing_joints` | 48 | 32 | 64 | 16 | 2 |
+| `cargoverse:sealing_joints` | 48 | 32 | 64 | 16 | 0 |
 
 ## 收购
 
@@ -25,7 +25,7 @@
 | `cargoverse:standard_fasteners` | 20 | 256 | 1 | 0 |
 | `cargoverse:processed_produce` | 20 | 256 | 1 | 0 |
 | `cargoverse:textile_bundle` | 20 | 256 | 1 | 0 |
-| `cargoverse:cushioning_module` | 52 | 64 | 1 | 2 |
-| `cargoverse:hydraulic_oil` | 44 | 256 | 3 | 0 |
+| `cargoverse:cushioning_module` | 52 | 64 | 1 | 0 |
+| `cargoverse:hydraulic_oil` | 44 | 256 | 3 | 2 |
 
 [工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/factory/ground_station/spring_water_station.json>)

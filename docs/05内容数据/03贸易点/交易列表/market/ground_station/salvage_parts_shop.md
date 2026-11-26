@@ -9,7 +9,7 @@
 | `minecraft:iron_nugget` | 1 | 1 | 2 | 1 | 0 |
 | `minecraft:copper_ingot` | 7 | 1 | 2 | 1 | 1 |
 | `minecraft:flint` | 2 | 1 | 2 | 1 | 0 |
-| `cargoverse:cushioning_module` | 48 | 32 | 64 | 16 | 2 |
+| `cargoverse:cushioning_module` | 48 | 32 | 64 | 16 | 0 |
 
 ## 收购
 

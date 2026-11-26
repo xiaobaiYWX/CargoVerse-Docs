@@ -9,7 +9,7 @@
 | `minecraft:cobblestone` | 1 | 1 | 2 | 1 | 0 |
 | `minecraft:gravel` | 1 | 1 | 2 | 1 | 0 |
 | `minecraft:brick` | 2 | 64 | 256 | 64 | 1 |
-| `cargoverse:containment_panels` | 48 | 32 | 64 | 16 | 2 |
+| `cargoverse:containment_panels` | 48 | 32 | 64 | 16 | 0 |
 
 ## 收购
 
@@ -30,6 +30,6 @@
 | `cargoverse:standard_fasteners` | 20 | 256 | 1 | 0 |
 | `cargoverse:processed_produce` | 20 | 256 | 1 | 0 |
 | `cargoverse:textile_bundle` | 20 | 256 | 1 | 0 |
-| `cargoverse:cushioning_module` | 52 | 64 | 1 | 2 |
+| `cargoverse:cushioning_module` | 52 | 64 | 1 | 0 |
 
 [工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/market/ground_station/wayside_construction_camp.json>)

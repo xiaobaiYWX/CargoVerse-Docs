@@ -73,7 +73,7 @@ SPL 生产的货柜并不追求极限性能，而是强调快速周转、低维�
 
 ## 现有业务绑定
 
-注册定义：`cargoverse:spl_logistics`。注册奖励和初始许可证由注册定义维护；初始货柜在本制造商 JSON 中直接配置：`"starter_container": "cargoverse:spl/courier_mc_s"`。
+注册定义：`cargoverse:spl_logistics`。初始许可证由注册定义维护；成功注册仅赠送本制造商已打印的初始货柜蓝图，不赠物资、货币或声望。初始货柜在本制造商 JSON 中直接配置：`"starter_container": "cargoverse:spl/parcel_s"`。
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |

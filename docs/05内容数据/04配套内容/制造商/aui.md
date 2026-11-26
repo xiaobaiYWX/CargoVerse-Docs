@@ -70,7 +70,7 @@ AUI 坚信标准化是推动文明发展的关键，因此其产品以高度兼�
 
 ## 现有业务绑定
 
-注册定义：`cargoverse:aui_industry`。注册奖励和初始许可证由注册定义维护；初始货柜在本制造商 JSON 中直接配置：`"starter_container": "cargoverse:aui/atlas_sd_s"`。
+注册定义：`cargoverse:aui_industry`。初始许可证由注册定义维护；成功注册仅赠送本制造商已打印的初始货柜蓝图，不赠物资、货币或声望。初始货柜在本制造商 JSON 中直接配置：`"starter_container": "cargoverse:aui/origin_s"`。
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |

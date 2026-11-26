@@ -1,29 +1,24 @@
 # 绿洲农业联盟注册点
 
-[返回注册点目录](<README.md>)
+[返回注册点目录](README.md)
 
 | 项目 | 内容 |
 | --- | --- |
 | 资源 ID | `cargoverse:oasis_agriculture` |
 | JSON 文件 | [oasis_agriculture.json](<../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/trade_points_subfunctions/registration_point_definitions/oasis_agriculture.json>) |
-| 终端翻牌名称 | 绿洲农业联盟 |
+| 终端名称 | 绿洲农业联盟 |
 | 许可证类型 | 绿洲农业联盟合约特派员 |
 | 初始许可证等级 | S |
-| 基础货柜 | [VBS Harvest 农鲜周转柜 S 型](<../../02货柜/99历史归档/基础型号/oasis_basic.md>) |
-| 注册声望 | 50 |
-| 投放状态 | 已绑定全部同制造商空港贸易点及默认资源贸易点 |
+| 附赠蓝图 | VBS Seedbox 田园货柜 S型，`cargoverse:vbs/seedbox_s` |
+| 其他注册奖励 | 无物资、货币或声望 |
 
-## 物品奖励
+## 绑定与获取
 
-| 物品 | 数量 |
-| --- | --- |
-| `minecraft:wheat_seeds` | 32 |
+贸易点的 `manufacturer` 为 `cargoverse:vbs`，`modules.registration_point.definitions_pool` 引用本注册点。赠图依据制造商 `starter_container` 查找独立制造配方，不要求配方 ID 与货柜 ID 相同。
 
-## 绑定与权益
+每次成功注册直接给予一张已打印蓝图，不消耗空白蓝图。背包满时掉落在玩家身边。已持有效许可证时重复点击不会赠图；注销后重新注册可以再次领取。初始型号不在任何打印目录中提供。
 
-贸易点的 `manufacturer` 应为 `cargoverse:vbs`，其 `modules.registration_point.definitions_pool` 引用本注册点定义。签发机构与注册声望归属来自承载贸易点的制造商。
-
-初始型号由签发制造商定义中的 `starter_container` 确定。基础货柜通过资产标记免调度点，满预算或超预算仍可领取；一次只允许一份基础货柜，重复注册不重复发放。注销仍按现有规则回收基础货柜，普通自有货柜保留。
+制造仍消耗铁锭16件、标准紧固件箱4件、工业构件箱2件。八家初始柜共享每人一个名额，在建、已建、失效或待删除资产均占位。注销不删除初始货柜；只有取消施工或实际删除资产才释放名额。型号与能力见[初始货柜系列](../../02货柜/初始货柜系列.md)。
 
 ## 当前 JSON
 
@@ -32,17 +27,6 @@
   "schema_version": 1,
   "display_name": "绿洲农业联盟",
   "license_type": "绿洲农业联盟合约特派员",
-  "initial_license_level": "S",
-  "registration_rewards": {
-    "items": [
-      {
-        "item": "minecraft:wheat_seeds",
-        "count": 32
-      }
-    ]
-  },
-  "reputation_rewards": {
-    "reputation_rewards": 50
-  }
+  "initial_license_level": "S"
 }
 ```

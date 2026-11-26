@@ -9,7 +9,7 @@
 | `minecraft:cod` | 4 | 1 | 2 | 1 | 0 |
 | `minecraft:salmon` | 6 | 1 | 2 | 1 | 1 |
 | `minecraft:ink_sac` | 5 | 1 | 2 | 1 | 0 |
-| `cargoverse:frozen_spawn_culture` | 32 | 128 | 256 | 64 | 0 |
+| `cargoverse:frozen_spawn_culture` | 32 | 128 | 256 | 64 | 2 |
 
 ## 收购
 
@@ -23,6 +23,6 @@
 | `cargoverse:standard_fasteners` | 20 | 256 | 1 | 0 |
 | `cargoverse:processed_produce` | 20 | 256 | 1 | 0 |
 | `cargoverse:textile_bundle` | 20 | 256 | 1 | 0 |
-| `cargoverse:cushioning_module` | 52 | 64 | 1 | 2 |
+| `cargoverse:cushioning_module` | 52 | 64 | 1 | 0 |
 
 [工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/resource/ground_station/river_fishing_station.json>)

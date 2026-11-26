@@ -68,7 +68,7 @@ DMC 的设备通常以厚重、耐用和极强承载能力著称。其生产的�
 
 ## 现有业务绑定
 
-注册定义：`cargoverse:dmc_mining`。注册奖励和初始许可证由注册定义维护；初始货柜在本制造商 JSON 中直接配置：`"starter_container": "cargoverse:dmc/boreal_sd_m"`。
+注册定义：`cargoverse:dmc_mining`。初始许可证由注册定义维护；成功注册仅赠送本制造商已打印的初始货柜蓝图，不赠物资、货币或声望。初始货柜在本制造商 JSON 中直接配置：`"starter_container": "cargoverse:dmc/pitbox_s"`。
 
 | 正式贸易点 | 贸易点定义 ID |
 | --- | --- |

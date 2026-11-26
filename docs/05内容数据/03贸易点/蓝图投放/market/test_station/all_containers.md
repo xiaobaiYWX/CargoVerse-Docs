@@ -1,8 +1,8 @@
 # A／B测试贸易点蓝图目录
 
-A／B 指令测试站共用`cargoverse:market/test_station/all_containers`，当前覆盖73款可制造货柜。大型终端按此表收取打印费；材料不在打印阶段扣除。货柜结构、容量、质量与能力见[现行货柜定义](<../../../../02货柜/README.md>)，材料见[独立制造配方](<../../../../../04数据规范/货柜/02_制造配方.md>)。
+A／B 指令测试站共用`cargoverse:market/test_station/all_containers`，当前覆盖65款普通货柜，8款初始货柜改由注册赠图。大型终端按此表收取打印费；材料不在打印阶段扣除。货柜结构、容量、质量与能力见[现行货柜定义](<../../../../02货柜/README.md>)，材料见[独立制造配方](<../../../../../04数据规范/货柜/02_制造配方.md>)。
 
-单方块蓝图测试工具不使用此表；它自动枚举全部有效制造配方，供创造玩家或管理员免费领取。
+单方块蓝图测试工具不使用此表；它自动枚举全部有效普通制造配方（排除初始型号），供创造玩家或管理员免费领取。
 
 | 货柜定义 | 打印许可 | 制造商声望要求 | 打印费 VB（配方投影） |
 | --- | --- | ---: | ---: |
@@ -61,14 +61,6 @@ A／B 指令测试站共用`cargoverse:market/test_station/all_containers`，当
 | `cargoverse:vbs/harvest_lm_l` | L | cargoverse:vbs ≥ 2级 | 400 |
 | `cargoverse:vbs/harvest_lm_m` | M | cargoverse:vbs ≥ 1级 | 200 |
 | `cargoverse:vbs/harvest_lm_s` | S | cargoverse:vbs ≥ 0级 | 100 |
-| `cargoverse:aui/starter_atlas_sd_s` | S | cargoverse:aui ≥ 0级 | 0 |
-| `cargoverse:bds/starter_sentinel_mc_s` | S | cargoverse:bds ≥ 0级 | 0 |
-| `cargoverse:dmc/starter_boreal_sd_m` | M | cargoverse:dmc ≥ 0级 | 0 |
-| `cargoverse:hec/starter_apollo_sd_s` | M | cargoverse:hec ≥ 0级 | 0 |
-| `cargoverse:hri/starter_explorer_si_s` | S | cargoverse:hri ≥ 0级 | 0 |
-| `cargoverse:rex/starter_salvage_lm_s` | S | cargoverse:rex ≥ 0级 | 0 |
-| `cargoverse:spl/starter_courier_mc_s` | S | cargoverse:spl ≥ 0级 | 0 |
-| `cargoverse:vbs/starter_harvest_lm_s` | S | cargoverse:vbs ≥ 0级 | 0 |
 | `cargoverse:hec/boreas_hd_x` | X | cargoverse:hec ≥ 3级 | 800 |
 | `cargoverse:hec/boreas_hd_xl` | XL | cargoverse:hec ≥ 4级 | 1400 |
 | `cargoverse:spl/cistern_sd_x` | X | cargoverse:spl ≥ 3级 | 720 |

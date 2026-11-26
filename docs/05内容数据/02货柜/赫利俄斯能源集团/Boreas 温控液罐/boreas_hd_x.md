@@ -46,3 +46,21 @@
 ## 制造与查阅
 
 [现行定义](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_containers/hec/boreas_hd_x.json>) · [制造配方](<../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/cargo_manufacturing_recipes/hec/boreas_hd_x.json>) · [系列目录](README.md)
+
+## 现行制造材料
+
+三层材料已于2026-11-26写入运行配方。制造按单件消耗，不按组；各规格按S基准×1／2／4／8／16。
+
+| 层次 | 材料 | 件数 | 作用 |
+| --- | --- | --- | --- |
+| 主材料 | 铜锭（`minecraft:copper_ingot`） | 256 | 主体壳体与骨架 |
+| 辅材料 | 标准紧固件箱（`cargoverse:standard_fasteners`） | 64 | 连接、安装与结构支承 |
+| 辅材料 | 密封接头组（`cargoverse:sealing_joints`） | 32 | 罐体管口、密闭连接 |
+| 特殊材料 | 调温机组（`cargoverse:thermal_control_unit`） | 8 | 专项保护组件 |
+| 特殊材料 | 高纯陶瓷粉（`cargoverse:high_purity_ceramic_powder`） | 16 | 专项保护组件 |
+
+主体材料由介质确定，不因保护能力改换。基础封闭壳体提供的围护、防雨和遮光不重复收费。
+
+许可、声望、蓝图费沿用当前配方。基础权益型按实际尺寸与能力使用同样用料，不用廉价配方制造同能力成品。制造商差异通过已提供能力和实际组件体现，不添加无功能的品牌材料。
+
+[现行材料规则](<../../../03贸易点/蓝图投放/制造配方与投放总表.md>) · [产业物资与生产路线](<../../../01运输物品/04_产业物资.md>)

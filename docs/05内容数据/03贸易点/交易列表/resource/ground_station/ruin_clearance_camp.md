@@ -24,7 +24,7 @@
 | `cargoverse:standard_fasteners` | 20 | 256 | 1 | 0 |
 | `cargoverse:processed_produce` | 20 | 256 | 1 | 0 |
 | `cargoverse:textile_bundle` | 20 | 256 | 1 | 0 |
-| `cargoverse:survey_film` | 44 | 256 | 3 | 0 |
-| `cargoverse:cushioning_module` | 52 | 64 | 1 | 2 |
+| `cargoverse:survey_film` | 44 | 256 | 3 | 2 |
+| `cargoverse:cushioning_module` | 52 | 64 | 1 | 0 |
 
 [工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/resource/ground_station/ruin_clearance_camp.json>)

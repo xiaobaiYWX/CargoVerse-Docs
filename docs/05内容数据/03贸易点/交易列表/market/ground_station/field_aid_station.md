@@ -9,7 +9,7 @@
 | `minecraft:honey_bottle` | 12 | 1 | 2 | 1 | 1 |
 | `minecraft:sugar` | 4 | 1 | 2 | 1 | 0 |
 | `minecraft:white_wool` | 7 | 1 | 2 | 1 | 0 |
-| `cargoverse:life_support_module` | 48 | 32 | 64 | 16 | 2 |
+| `cargoverse:life_support_module` | 48 | 32 | 64 | 16 | 3 |
 
 ## 收购
 
@@ -26,6 +26,6 @@
 | `cargoverse:standard_fasteners` | 20 | 256 | 1 | 0 |
 | `cargoverse:processed_produce` | 20 | 256 | 1 | 0 |
 | `cargoverse:textile_bundle` | 20 | 256 | 1 | 0 |
-| `cargoverse:cushioning_module` | 52 | 64 | 1 | 2 |
+| `cargoverse:cushioning_module` | 52 | 64 | 1 | 0 |
 
 [工程定义](<../../../../../../../CargoVerse-NeoForge-1.21.1/src/main/resources/data/cargoverse/trade_points/resource_tables/market/ground_station/field_aid_station.json>)
