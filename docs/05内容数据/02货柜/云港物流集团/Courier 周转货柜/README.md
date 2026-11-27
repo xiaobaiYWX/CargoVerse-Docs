@@ -1,19 +1,19 @@
 # SPL Courier 周转货柜
 
-更新：2026-11-12。**新版模板系列代号：`courier_g2`。**
+统一系列代号：`courier`。普通产品系列，使用 `courier_g2` 模板。各规格按同一个系列命名，不按运行定义中的旧别名拆分产品线。
 
+## 规格与现行参数
 
-## 系列定位
+| 型号 | 容量 | 定义空重 Kpg | 调度 | 蓝图费 VB | 许可／声望 | 模板状态 |
+| --- | --- | ---: | ---: | ---: | --- | --- |
+| [courier_s](courier_s.md) | 4096 件 | 16 | 1 | 60 | S／0 | 已接入，无缺失 |
+| [courier_m](courier_m.md) | 8192 件 | 36 | 2 | 120 | M／1 | 已接入，无缺失 |
+| [courier_l](courier_l.md) | 16384 件 | 90 | 4 | 280 | L／2 | 已接入，无缺失 |
 
-本系列提供围护。容量、空重与调度点见各型号页。
+## 保护与制作
 
-## G2规格与逐型号映射
+围护结构。各型号的能力完整参数、制造材料、投放渠道、模板路径与结构尺寸直接维护在上方型号页。实际空重仍受结构质量下限约束。
 
-| 定义详情 | 实际规格 | 新版模板资源 ID | 制作安排 |
-| --- | --- | --- | --- |
-| [cargoverse:spl/courier_mc_s](<courier_mc_s.md>) | S | `cargoverse:cargo/spl/courier_g2/spl_courier_g2_s` | **已接入** |
-| [cargoverse:spl/courier_mc_m](<courier_mc_m.md>) | M | `cargoverse:cargo/spl/courier_g2/spl_courier_g2_m` | **已接入** |
-| [cargoverse:spl/cargo_mc_l](<cargo_mc_l.md>) | L | `cargoverse:cargo/spl/courier_g2/spl_courier_g2_l` | **已接入** |
+本页只列正式型号，未开放规格与未使用模板统一留在[历史归档](../../99历史归档/README.md)。运行资源尚存的旧别名只在各型号页“运行资源对应”中查阅，不用作新的文档文件名。
 
-
-[制造商目录](../README.md) · [新版系列代号总览](../../新版模板系列代号.md)
+[制造商目录](../README.md) · [命名约定](<../../README.md#型号与模板命名>)

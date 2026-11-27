@@ -1,15 +1,12 @@
-# 绿洲农业联盟 · 货柜制作目录
+# 绿洲农业联盟 · 货柜产品线
 
-| 系列 | G2 系列代号 | 确定制作规格 | 独立模板数 |
-| --- | --- | --- | ---: |
-| [Aquarium 加强缓冲生物舱](<Aquarium 加强缓冲生物舱/README.md>) | `aquarium_g2` | M／L／X／XL | 4 |
-| [BioPod 通用生物舱](<BioPod 通用生物舱/README.md>) | `biopod_g2` | S／M／L／X／XL | 5 |
-| [Harvest 保鲜货柜](<Harvest 保鲜货柜/README.md>) | `harvest_g2` | S／M／L | 3 |
+系列和型号使用统一代号，不含接口缩写；各型号页直接列出参数、材料、制造门槛及模板状态。
+
+| 系列 | 代号 | 正式规格 | 模板状态 |
+| --- | --- | --- | --- |
+| [Aquarium 加强缓冲生物舱](Aquarium 加强缓冲生物舱/README.md) | `aquarium` | M／L／X／XL | 正式型号均已接入 |
+| [BioPod 通用生物舱](BioPod 通用生物舱/README.md) | `biopod` | S／M／L／X／XL | 正式型号均已接入 |
+| [Harvest 保鲜货柜](Harvest 保鲜货柜/README.md) | `harvest` | S／M／L | 正式型号均已接入 |
+| [Seedbox 田园货柜](Seedbox 田园货柜/README.md) | `seedbox` | S | 正式型号均已接入；初始系列 |
 
 [货柜总目录](../README.md)
-
-## 专用初始系列
-
-| 系列 | 规格 | 模板状态 |
-| --- | --- | --- |
-| [Seedbox 田园货柜](<Seedbox 田园货柜/README.md>) | S | 已接入／无能力 |

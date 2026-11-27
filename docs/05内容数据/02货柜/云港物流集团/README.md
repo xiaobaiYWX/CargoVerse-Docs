@@ -1,15 +1,12 @@
-# 云港物流集团 · 货柜制作目录
+# 云港物流集团 · 货柜产品线
 
-| 系列 | G2 系列代号 | 确定制作规格 | 独立模板数 |
-| --- | --- | --- | ---: |
-| [Cistern 常规液罐](<Cistern 常规液罐/README.md>) | `cistern_g2` | M／L／X／XL | 4 |
-| [Courier 周转货柜](<Courier 周转货柜/README.md>) | `courier_g2` | S／M／L | 3 |
-| [Express 正放快运柜](<Express 正放快运柜/README.md>) | `express_g2` | S | 1 |
+系列和型号使用统一代号，不含接口缩写；各型号页直接列出参数、材料、制造门槛及模板状态。
+
+| 系列 | 代号 | 正式规格 | 模板状态 |
+| --- | --- | --- | --- |
+| [Courier 周转货柜](Courier 周转货柜/README.md) | `courier` | S／M／L | 正式型号均已接入 |
+| [Cistern 常规液罐](Cistern 常规液罐/README.md) | `cistern` | M／L／X／XL | 正式型号均已接入 |
+| [Express 正放快运柜](Express 正放快运柜/README.md) | `express` | S | 正式型号均已接入 |
+| [Parcel 轻邮货柜](Parcel 轻邮货柜/README.md) | `parcel` | S | 正式型号均已接入；初始系列 |
 
 [货柜总目录](../README.md)
-
-## 专用初始系列
-
-| 系列 | 规格 | 模板状态 |
-| --- | --- | --- |
-| [Parcel 轻邮货柜](<Parcel 轻邮货柜/README.md>) | S | 已接入／无能力 |

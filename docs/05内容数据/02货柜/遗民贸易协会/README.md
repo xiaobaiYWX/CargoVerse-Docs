@@ -1,14 +1,11 @@
-# 遗民贸易协会 · 货柜制作目录
+# 遗民贸易协会 · 货柜产品线
 
-| 系列 | G2 系列代号 | 确定制作规格 | 独立模板数 |
-| --- | --- | --- | ---: |
-| [Reliquary 遗物保藏柜](<Reliquary 遗物保藏柜/README.md>) | `reliquary_g2` | S／M | 2 |
-| [Salvage 修复货柜](<Salvage 修复货柜/README.md>) | `salvage_g2` | S／M／L | 3 |
+系列和型号使用统一代号，不含接口缩写；各型号页直接列出参数、材料、制造门槛及模板状态。
+
+| 系列 | 代号 | 正式规格 | 模板状态 |
+| --- | --- | --- | --- |
+| [Patchwork 拾荒货柜](Patchwork 拾荒货柜/README.md) | `patchwork` | S | 正式型号均已接入；初始系列 |
+| [Reliquary 遗物保藏柜](Reliquary 遗物保藏柜/README.md) | `reliquary` | S／M | 正式型号均已接入 |
+| [Salvage 修复货柜](Salvage 修复货柜/README.md) | `salvage` | S／M／L | 正式型号均已接入 |
 
 [货柜总目录](../README.md)
-
-## 专用初始系列
-
-| 系列 | 规格 | 模板状态 |
-| --- | --- | --- |
-| [Patchwork 拾荒货柜](<Patchwork 拾荒货柜/README.md>) | S | 已接入／无能力 |

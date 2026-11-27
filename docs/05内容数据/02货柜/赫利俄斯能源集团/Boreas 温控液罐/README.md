@@ -1,22 +1,21 @@
 # HEC Boreas 温控液罐
 
-更新：2026-11-12。**新版模板系列代号：`boreas_g2`。**
+统一系列代号：`boreas`。普通产品系列，使用 `boreas_g2` 模板。各规格按同一个系列命名，不按运行定义中的旧别名拆分产品线。
 
+## 规格与现行参数
 
-## 系列定位
+| 型号 | 容量 | 定义空重 Kpg | 调度 | 蓝图费 VB | 许可／声望 | 模板状态 |
+| --- | --- | ---: | ---: | ---: | --- | --- |
+| [boreas_s](boreas_s.md) | 64 桶 | 45 | 1 | 100 | S／0 | 已接入，无缺失 |
+| [boreas_m](boreas_m.md) | 128 桶 | 90 | 2 | 200 | M／1 | 已接入，无缺失 |
+| [boreas_l](boreas_l.md) | 256 桶 | 190 | 4 | 400 | L／2 | 已接入，无缺失 |
+| [boreas_x](boreas_x.md) | 512 桶 | 355 | 6 | 800 | X／3 | 已接入，无缺失 |
+| [boreas_xl](boreas_xl.md) | 1024 桶 | 580 | 8 | 1400 | XL／4 | 已接入，无缺失 |
 
-本系列提供密封、主动调温、真空隔层、遮光结构。容量、空重与调度点见各型号页。
+## 保护与制作
 
-## G2规格与逐型号映射
+密封结构、主动调温、真空隔层、遮光结构。各型号的能力完整参数、制造材料、投放渠道、模板路径与结构尺寸直接维护在上方型号页。实际空重仍受结构质量下限约束。
 
-| 定义详情 | 实际规格 | 新版模板资源 ID | 制作安排 |
-| --- | --- | --- | --- |
-| [cargoverse:hec/boreas_hd_s](<boreas_hd_s.md>) | S | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_s` | **已接入** |
-| [cargoverse:hec/boreas_hd_m](<boreas_hd_m.md>) | M | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_m` | **已接入** |
-| [cargoverse:hec/boreas_hd_l](<boreas_hd_l.md>) | L | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_l` | **已接入** |
-| [cargoverse:hec/boreas_hd_x](<boreas_hd_x.md>) | X | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_x` | **已接入** |
-| [cargoverse:hec/boreas_hd_xl](<boreas_hd_xl.md>) | XL | `cargoverse:cargo/hec/boreas_g2/hec_boreas_g2_xl` | **已接入** |
+本页只列正式型号，未开放规格与未使用模板统一留在[历史归档](../../99历史归档/README.md)。运行资源尚存的旧别名只在各型号页“运行资源对应”中查阅，不用作新的文档文件名。
 
-
-
-[制造商目录](../README.md) · [新版系列代号总览](../../新版模板系列代号.md)
+[制造商目录](../README.md) · [命名约定](<../../README.md#型号与模板命名>)
